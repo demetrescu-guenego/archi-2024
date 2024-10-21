@@ -1,8 +1,7 @@
 import { Directive } from "vue";
 
 export const vOnscreen: Directive<HTMLElement, string> = {
-  mounted: (el, binding, vnode) => {
-    console.log("binding: ", binding);
+  mounted: (el, binding) => {
     const className = binding.value;
     let firstTime = true;
 

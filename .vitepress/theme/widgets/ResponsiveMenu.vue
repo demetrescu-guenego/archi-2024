@@ -11,7 +11,6 @@ const props = defineProps<{ list: MenuItem[] }>();
 const route = useRoute();
 
 const isActive = (href: string) => {
-  console.log("route: ", route);
   return href === route.path;
 };
 

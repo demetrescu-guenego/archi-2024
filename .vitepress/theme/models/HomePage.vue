@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { MenuItem } from "../widgets/interfaces/MenuItem";
+import ParallaxImage from "../widgets/ParallaxImage.vue";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { vOnscreen } from "../widgets/onscreen.directive";
 import {
@@ -40,10 +41,8 @@ const menu: MenuItem[] = [
       </div>
     </section>
     <section>
-      <div class="px-2">
-        <h1 class="text-fuchsia-900 text-3xl font-bold my-8 text-center">
-          Notre activité
-        </h1>
+      <div class="px-2 max-w-4xl mx-auto pb-4">
+        <h1>Notre activité</h1>
         <p>
           Créé à Torcy (Seine et Marne) en 2003, notre cabinet d’architecture a
           pour objectif de
@@ -59,47 +58,40 @@ const menu: MenuItem[] = [
         <p>
           Nous vous aidons en particulier sur les cinq thématiques suivantes :
         </p>
-        <div v-onscreen="'introduce'" class="row">
-          <div class="col-6">
-            <div class="w-80">
-              <div class="block">
-                <h3><FontAwesomeIcon :icon="faCogs" /> Besoins</h3>
-                <p>
-                  Définir votre projet, avant tout selon vos besoins, vos
-                  souhaits et vos goûts, et aussi vos contraintes.
-                </p>
-              </div>
-              <div class="block">
-                <h3><FontAwesomeIcon :icon="faComments" /> Dialogue</h3>
-                <p>
-                  Dialoguer avec les administrations, en particulier pour
-                  obtenir un permis de construire, une demande de travaux ou
-                  autre.
-                </p>
-              </div>
-              <div class="block">
-                <h3><FontAwesomeIcon :icon="faUsers" /> Entrepreneurs</h3>
-                <p>
-                  Identifier et sélectionner les entrepreneurs susceptibles de
-                  pouvoir réaliser les travaux.
-                </p>
-              </div>
+        <div v-onscreen="'introduce'" class="flex flex-row flex-wrap gap-x-10">
+          <div class="w-full max-w-96">
+            <div class="block">
+              <h3><FontAwesomeIcon :icon="faCogs" /> Besoins</h3>
+              <p>
+                Définir votre projet, avant tout selon vos besoins, vos souhaits
+                et vos goûts, et aussi vos contraintes.
+              </p>
+            </div>
+            <div class="block">
+              <h3><FontAwesomeIcon :icon="faComments" /> Dialogue</h3>
+              <p>
+                Dialoguer avec les administrations, en particulier pour obtenir
+                un permis de construire, une demande de travaux ou autre.
+              </p>
+            </div>
+            <div class="block">
+              <h3><FontAwesomeIcon :icon="faUsers" /> Entrepreneurs</h3>
+              <p>
+                Identifier et sélectionner les entrepreneurs susceptibles de
+                pouvoir réaliser les travaux.
+              </p>
             </div>
           </div>
           <div class="col-6">
-            <div class="w-80">
-              <div class="block">
-                <h3><FontAwesomeIcon :icon="faEye" /> Suivi</h3>
-                <p>
-                  Organiser et suivre les chantiers et leur bonne réception.
-                </p>
-              </div>
-              <div class="block">
-                <h3><FontAwesomeIcon :icon="faBolt" /> Gestion</h3>
-                <p>
-                  Gérer les perturbations éventuelles avec les règles du métier.
-                </p>
-              </div>
+            <div class="block">
+              <h3><FontAwesomeIcon :icon="faEye" /> Suivi</h3>
+              <p>Organiser et suivre les chantiers et leur bonne réception.</p>
+            </div>
+            <div class="block">
+              <h3><FontAwesomeIcon :icon="faBolt" /> Gestion</h3>
+              <p>
+                Gérer les perturbations éventuelles avec les règles du métier.
+              </p>
             </div>
           </div>
         </div>
@@ -120,6 +112,62 @@ const menu: MenuItem[] = [
           français (châteaux, églises, anciens bâtiments industriels). Nous vous
           invitons à consulter sur notre site quelques examples de projet
           réalisés ou en cours.
+        </p>
+      </div>
+    </section>
+    <section class="parallax">
+      <ParallaxImage
+        portrait="/home/ferrieres-portrait.jpg"
+        landscape="/home/ferrieres-landscape.jpg"
+        alt="Chateau de Ferrières en brie (1855-1859, famille Rothschield), restauration par notre catbinet en 2015."
+      />
+      <figcaption class="bg-white text-center">
+        Chateau de Ferrières-en-Brie (1855-1859, famille Rothschild),
+        restauration par notre cabinet en 2016.
+      </figcaption>
+    </section>
+    <section>
+      <div v-onscreen="'introduce'" class="px-2 max-w-4xl mx-auto pb-24 pt-16">
+        <h1>Les architectes</h1>
+        <h4>Suzana DEMETRESCU-GUÉNÉGO (Responsable du cabinet)</h4>
+        <ul>
+          <li>
+            Architecte du patrimoine, diplômée du Centre des Hautes Etudes de
+            Chaillot (Paris - France)
+          </li>
+          <li>
+            Architecte DPLG, diplômée de l’Ecole d’Architecture de Paris
+            Val-de-Seine
+          </li>
+          <li>
+            Architecte-Urbaniste DUAB (diplômée de l’Ecole d’Architecture et
+            d'Urbanisme Ion Mincu Bucarest)
+          </li>
+          <li>Inscrite au tableau de l'ordre des architectes</li>
+        </ul>
+        <h4>Lizica DEMETRESCU</h4>
+        <ul>
+          <li>
+            Architecte-Urbaniste DIAB (diplômée de l’Institut d’Architecture et
+            d'Urbanisme Ion Mincu de Bucarest)
+          </li>
+        </ul>
+        <h4>Florent MASSUCCI</h4>
+        <ul>
+          <li>Architecte diplômé d'état (Paris Val de Seine)</li>
+          <li>Notre expert Autodesk Revit et BIM.</li>
+        </ul>
+        <h4>Claire BARBEY-PAYNEAU</h4>
+        <ul>
+          <li>Architecte diplômé d'état HMONP</li>
+          <li>
+            Architecte du patrimoine, diplômée de l’école de Chaillot (Paris -
+            France)
+          </li>
+        </ul>
+        <p>
+          <b>Notre cabinet d'architecture se développe et recrute ! </b>Pour
+          nous faire parvenir votre CV, <a ui-sref="contact">contactez nous</a>.
         </p>
       </div>
     </section>
