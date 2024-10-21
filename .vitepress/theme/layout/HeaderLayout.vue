@@ -12,16 +12,19 @@ const list: MenuItem[] = [
 
 <template>
   <header
-    class="flex h-16 items-center justify-between bg-fuchsia-800 text-white px-4"
+    class="flex h-16 items-center justify-between bg-fuchsia-800 text-white"
   >
-    <a href="#" class="flex items-center">
+    <a href="#" class="flex items-center px-4">
       <img
         src="/logo-white.svg"
         alt="Logo Cabinet d'architecture DEMETRESCU - GUÉNÉGO"
         class="h-10"
       />
-      <span class="text-xl max-w-64">
-        Cabinet d'architecture DEMETRESCU - GUÉNÉGO
+      <span
+        class="font-bold md:font-normal text-sm md:text-xl xl:text-2xl max-w-64"
+      >
+        <span>Cabinet d'architecture</span> <br />
+        <span>DEMETRESCU - GUÉNÉGO</span>
       </span>
     </a>
     <ResponsiveMenu :list="list" />
