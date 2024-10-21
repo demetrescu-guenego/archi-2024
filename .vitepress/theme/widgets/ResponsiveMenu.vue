@@ -50,7 +50,7 @@ const toggle = () => {
       <a
         :href="item.href"
         v-for="item in props.list"
-        class="flex items-center justify-center h-16 text-2xl"
+        class="flex items-center justify-center h-16 text-2xl active:bg-neutral-200"
       >
         {{ item.label }}
       </a>
