@@ -20,6 +20,11 @@ const isMenuOpen = ref(false);
 const toggle = () => {
   isMenuOpen.value = !isMenuOpen.value;
 };
+
+const close = () => {
+  console.log("close: ");
+  isMenuOpen.value = false;
+};
 </script>
 
 <template>
@@ -51,6 +56,7 @@ const toggle = () => {
         :href="item.href"
         v-for="item in props.list"
         class="flex items-center justify-center h-16 text-2xl active:bg-neutral-200"
+        @click="close()"
       >
         {{ item.label }}
       </a>
