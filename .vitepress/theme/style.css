@@ -2,7 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-fuchsia-900 font-bold;
+  }
+}
+
+.introduce.first-time h3,
+.introduce.first-time h4 {
+  animation: introduce 2s forwards;
+}
+
+@keyframes introduce {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .background {
+  pointer-events: none;
   display: block;
   position: absolute;
   z-index: 0;
