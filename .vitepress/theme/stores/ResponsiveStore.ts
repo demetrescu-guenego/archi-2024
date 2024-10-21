@@ -3,7 +3,7 @@ import { computed, ref } from "vue";
 export type ResponsiveMode = "mobile" | "desktop";
 
 const isLarge = () => {
-  return window.innerWidth > 760;
+  return window.innerWidth > 768;
 };
 
 const getMode = (): ResponsiveMode => {

@@ -20,9 +20,7 @@ const list: MenuItem[] = [
         alt="Logo Cabinet d'architecture DEMETRESCU - GUÉNÉGO"
         class="h-10"
       />
-      <span
-        class="font-bold md:font-normal text-sm md:text-xl xl:text-2xl max-w-64"
-      >
+      <span class="font-bold md:font-normal text-sm md:text-xl xl:text-2xl">
         <span>Cabinet d'architecture</span> <br />
         <span>DEMETRESCU - GUÉNÉGO</span>
       </span>

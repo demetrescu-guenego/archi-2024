@@ -23,7 +23,7 @@ const toggle = () => {
 </script>
 
 <template>
-  <nav class="flex gap-4" v-if="isDesktop">
+  <nav class="flex gap-4 px-4" v-if="isDesktop">
     <a
       :href="item.href"
       v-for="item in props.list"

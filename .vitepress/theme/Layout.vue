@@ -5,7 +5,9 @@ import BodyLayout from "./layout/BodyLayout.vue";
 </script>
 
 <template>
-  <HeaderLayout />
-  <BodyLayout />
-  <FooterLayout />
+  <div class="min-h-screen flex flex-col justify-between">
+    <HeaderLayout />
+    <BodyLayout />
+    <FooterLayout />
+  </div>
 </template>
