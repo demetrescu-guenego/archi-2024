@@ -12,7 +12,7 @@ const list: MenuItem[] = [
 
 <template>
   <header
-    class="flex h-16 items-center justify-between bg-fuchsia-800 text-white"
+    class="flex h-16 items-center justify-between bg-fuchsia-900 text-white"
   >
     <a href="#" class="flex items-center px-4">
       <img

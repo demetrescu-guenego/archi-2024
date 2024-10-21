@@ -16,6 +16,10 @@ const isActive = (href: string) => {
 };
 
 const isMenuOpen = ref(false);
+
+const toggle = () => {
+  isMenuOpen.value = !isMenuOpen.value;
+};
 </script>
 
 <template>
@@ -32,12 +36,22 @@ const isMenuOpen = ref(false);
       {{ item.label }}
     </a>
   </nav>
-  <div v-else class="relative">
-    <button class="flex items-center justify-center h-16 cursor-pointer px-4">
+  <div v-else>
+    <button
+      class="flex items-center justify-center h-16 cursor-pointer px-4"
+      @click="toggle()"
+    >
       <FontAwesomeIcon :icon="faBars" class="text-4xl" />
     </button>
-    <nav class="" v-if="isMenuOpen">
-      <a :href="item.href" v-for="item in props.list" class="">
+    <nav
+      v-if="isMenuOpen"
+      class="fixed top-16 left-0 right-0 bg-white text-fuchsia-900 flex flex-col z-10"
+    >
+      <a
+        :href="item.href"
+        v-for="item in props.list"
+        class="flex items-center justify-center h-16 text-2xl"
+      >
         {{ item.label }}
       </a>
     </nav>
