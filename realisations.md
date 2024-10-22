@@ -1,37 +1,39 @@
 ---
 layout: realisations
+
+# image will be /photos/projects/${id}/${name}/thumbnail-${name}.jpg
 categories:
   - id: chateau
     label: Châteaux
-    imageUrl: /photos/projects/chateau/ferrieres/thumbnail-ferrieres.jpg
+    name: ferrieres
   - id: eglise
     label: Eglises
-    imageUrl: thumbnail-chauconin
+    name: chauconin
   - id: rempart
     label: Remparts
-    imageUrl: thumbnail-charleville-mezieres
+    name: charleville-mezieres
   - id: abbaye
     label: Abbayes
-    imageUrl: thumbnail-dammarie-les-lys
+    name: dammarie-les-lys
   - id: ferme
     label: Fermes
-    imageUrl: thumbnail-coupvray
+    name: coupvray
   - id: restauration-par-ext
     label: Restauration - Parements extérieurs
-    imageUrl: thumbnail-bois-le-roi
+    name: bois-le-roi
   - id: serre
     label: Serres
-    imageUrl: thumbnail-villiers-en-biere
+    name: villiers-en-biere
   - id: tertiaire
     label: Tertiaire - Administration - Autres - Public
-    imageUrl: thumbnail-tournan-en-brie
+    name: tournan-en-brie
   - id: sport
     label: Sports - Loisirs
-    imageUrl: thumbnail-torcy-stade
+    name: torcy-stade
   - id: marche-couvert
     label: Marchés couverts
-    imageUrl: thumbnail-torcy-marche
+    name: torcy-marche
   - id: scolaire
     label: Scolaire - Education
-    imageUrl: thumbnail-poincy
+    name: poincy
 ---
