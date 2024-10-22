@@ -18,7 +18,7 @@ const getUrl = (c: Category) => {
 <template>
   <main class="flex-grow flex flex-col p-2">
     <h1>Nos réalisations</h1>
-    <div class="flex flex-wrap gap-8 justify-center">
+    <div class="flex flex-wrap gap-8 justify-center py-8">
       <a
         v-for="category in categories"
         :key="category.id"

@@ -11,9 +11,9 @@ const { site, frontmatter } = useData();
 
 <template>
   <HomePage v-if="frontmatter.layout === 'home'" />
-  <RealisationPage v-if="frontmatter.layout === 'realisations'" />
-  <ClientPage v-if="frontmatter.layout === 'clients'" />
-  <ContactPage v-if="frontmatter.layout === 'contact'" />
+  <RealisationPage v-else-if="frontmatter.layout === 'realisations'" />
+  <ClientPage v-else-if="frontmatter.layout === 'clients'" />
+  <ContactPage v-else-if="frontmatter.layout === 'contact'" />
   <div v-else>
     <a href="/">Home</a>
     <Content />
