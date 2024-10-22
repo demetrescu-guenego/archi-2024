@@ -1,8 +1,10 @@
 <script setup lang="ts">
-import { useData } from "vitepress";
+import { useData, Content } from "vitepress";
 import { Category } from "../interfaces/Category";
 
 const { site, frontmatter } = useData();
+console.log("site: ", site);
+console.log("frontmatter: ", frontmatter);
 
 const categories: Category[] = frontmatter.value.categories;
 
