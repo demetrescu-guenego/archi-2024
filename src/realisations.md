@@ -6,34 +6,34 @@ categories:
   - id: chateaux
     label: Châteaux
     name: ferrieres
-  - id: eglise
+  - id: eglises
     label: Eglises
     name: chauconin
-  - id: rempart
+  - id: remparts
     label: Remparts
     name: charleville-mezieres
-  - id: abbaye
+  - id: abbayes
     label: Abbayes
     name: dammarie-les-lys
-  - id: ferme
+  - id: fermes
     label: Fermes
     name: coupvray
-  - id: restauration-par-ext
+  - id: restaurations
     label: Parements extérieurs
     name: bois-le-roi
-  - id: serre
+  - id: serres
     label: Serres
     name: villiers-en-biere
-  - id: tertiaire
+  - id: tertiaires
     label: Tertiaire - Administration
     name: tournan-en-brie
-  - id: sport
+  - id: sports
     label: Sports - Loisirs
     name: torcy-stade
-  - id: marche-couvert
+  - id: marches
     label: Marchés couverts
     name: torcy
-  - id: scolaire
+  - id: ecoles
     label: Scolaire - Education
     name: poincy
 ---
