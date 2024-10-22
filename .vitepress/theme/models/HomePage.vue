@@ -121,10 +121,10 @@ const menu: MenuItem[] = [
         landscape="/home/ferrieres-landscape.jpg"
         alt="Chateau de Ferrières en brie (1855-1859, famille Rothschield), restauration par notre catbinet en 2015."
       />
-      <figcaption class="bg-white text-center">
+      <div class="bg-white text-center">
         Chateau de Ferrières-en-Brie (1855-1859, famille Rothschild),
         restauration par notre cabinet en 2016.
-      </figcaption>
+      </div>
     </section>
     <section>
       <div v-onscreen="'introduce'" class="px-2 max-w-4xl mx-auto pb-24 pt-16">

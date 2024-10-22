@@ -6,4 +6,5 @@ export default defineConfig({
   description: "Architectures, Patrimoine, Eglises, Abbayes, Châteaux, Granges",
   cleanUrls: true,
   head: [["link", { rel: "icon", href: "/favicon.png" }]],
+  srcDir: "./src",
 });
