@@ -2,6 +2,6 @@
 
 <template>
   <main class="flex-grow flex flex-col">
-    <h1>Clients</h1>
+    <h1>Nos clients</h1>
   </main>
 </template>
