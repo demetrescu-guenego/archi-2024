@@ -1,8 +1,8 @@
-import json from "../../data.json";
+import { data } from "../../data";
 
 export default {
   paths() {
-    const list = json.categories;
+    const list = data.categories;
 
     const result = list.map((item) => ({ params: item }));
     return result;
