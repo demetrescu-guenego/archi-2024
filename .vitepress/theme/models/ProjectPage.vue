@@ -1,9 +1,15 @@
 <script setup lang="ts">
-import { Content, useData } from "vitepress";
+import { Content, useData, useRoute } from "vitepress";
 import NiceTable from "../widgets/NiceTable.vue";
 import ParallaxImage from "../widgets/ParallaxImage.vue";
 
 const { frontmatter } = useData();
+const route = useRoute();
+console.log("route: ", route.path);
+
+const [, , category, name] = route.path.split("/");
+
+const parallax = `/photos/projects/${category}/${name}/parallax.jpg`;
 </script>
 
 <template>
@@ -19,8 +25,8 @@ const { frontmatter } = useData();
     </section>
     <section class="parallax">
       <ParallaxImage
-        portrait="/home/ferrieres-portrait.jpg"
-        landscape="/home/ferrieres-landscape.jpg"
+        :portrait="parallax"
+        :landscape="parallax"
         alt="Chateau de Ferrières en brie (1855-1859, famille Rothschield), restauration par notre catbinet en 2015."
       />
     </section>
