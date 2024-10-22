@@ -35,6 +35,7 @@ export const contentLoader = {
         label,
         projects,
       });
+      console.log("jsonString: ", jsonString);
 
       return `---
 ${jsonString}
