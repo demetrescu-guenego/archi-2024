@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useData } from "vitepress";
+import { Project } from "../interfaces/Project";
 
 const { site, frontmatter, params } = useData();
 if (params.value === undefined) {
@@ -10,10 +11,51 @@ console.log("frontmatter: ", frontmatter);
 console.log("site: ", site);
 
 const label = params.value.label;
+
+const projects: Project[] = [
+  {
+    id: "ferrieres",
+    label: "Château de Ferrieres en Brie",
+  },
+];
+
+const getImageUrl = (p: Project) => {
+  if (params.value === undefined) {
+    throw new Error("oups");
+  }
+  return `/photos/projects/${params.value.id}/${p.id}/thumbnail-${p.id}.jpg`;
+};
+
+const getUrl = (c: Project) => {
+  if (params.value === undefined) {
+    throw new Error("oups");
+  }
+  return `/realisations/${params.value.id}/${c.id}`;
+};
 </script>
 
 <template>
   <main class="flex-grow flex flex-col p-2">
     <h1>{{ label }}</h1>
+
+    <div class="flex flex-wrap gap-8 justify-center py-8">
+      <a
+        v-for="project in projects"
+        :key="project.id"
+        class="w-72 rounded-xl overflow-hidden flex flex-col shadow-xl hover:scale-105 transition-transform"
+        :href="getUrl(project)"
+      >
+        <img
+          :src="getImageUrl(project)"
+          :alt="project.label"
+          class="object-cover w-72 h-44"
+        />
+        <div
+          class="font-bold h-12 flex justify-center items-center text-center px-4"
+        >
+          {{ project.label }}
+        </div>
+      </a>
+    </div>
   </main>
 </template>
