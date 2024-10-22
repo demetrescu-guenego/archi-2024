@@ -32,7 +32,7 @@ categories:
     name: torcy-stade
   - id: marche-couvert
     label: Marchés couverts
-    name: torcy-marche
+    name: torcy
   - id: scolaire
     label: Scolaire - Education
     name: poincy
