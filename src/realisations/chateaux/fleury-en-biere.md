@@ -1,5 +1,6 @@
 ---
 layout: project
+label: Château de Fleury en Bière
 ---
 
 Notre cabinet d'architecture a assuré la mission complète de maîtrise d'oeuvre

@@ -2,41 +2,26 @@
 import { useData } from "vitepress";
 import { Project } from "../interfaces/Project";
 
-const { site, frontmatter, params } = useData();
-if (params.value === undefined) {
-  throw new Error("oups");
-}
-console.log("params: ", params);
+const { site, frontmatter } = useData();
+
 console.log("frontmatter: ", frontmatter);
 console.log("site: ", site);
 
-const label = params.value.label;
-
-const projects: Project[] = [
-  {
-    id: "ferrieres",
-    label: "Château de Ferrieres en Brie",
-  },
-];
+const projects: Project[] = frontmatter.value.projects;
+const category = frontmatter.value.category;
 
 const getImageUrl = (p: Project) => {
-  if (params.value === undefined) {
-    throw new Error("oups");
-  }
-  return `/photos/projects/${params.value.id}/${p.id}/thumbnail-${p.id}.jpg`;
+  return `/photos/projects/${category}/${p.id}/thumbnail-${p.id}.jpg`;
 };
 
 const getUrl = (c: Project) => {
-  if (params.value === undefined) {
-    throw new Error("oups");
-  }
-  return `/realisations/${params.value.id}/${c.id}`;
+  return `/realisations/${category}/${c.id}`;
 };
 </script>
 
 <template>
   <main class="flex-grow flex flex-col p-2">
-    <h1>{{ label }}</h1>
+    <h1>{{ frontmatter.label }}</h1>
 
     <div class="flex flex-wrap gap-8 justify-center py-8">
       <a

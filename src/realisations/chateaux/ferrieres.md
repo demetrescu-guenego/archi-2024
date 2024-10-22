@@ -1,5 +1,6 @@
 ---
 layout: project
+label: "Château de Ferrières en Brie"
 ---
 
 Notre cabinet d'architecture s'est occupé de l'étude préalable et de la mission
