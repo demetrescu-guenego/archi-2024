@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { useData, Content } from "vitepress";
+import { useData } from "vitepress";
 import { Category } from "../interfaces/Category";
+import json from "../../../data.json";
 
-const { site, frontmatter } = useData();
+const { site } = useData();
 console.log("site: ", site);
-console.log("frontmatter: ", frontmatter);
 
-const categories: Category[] = frontmatter.value.categories;
+const categories: Category[] = json.categories;
 
 const getImageUrl = (c: Category) => {
   return `/photos/projects/${c.id}/${c.name}/thumbnail-${c.name}.jpg`;
