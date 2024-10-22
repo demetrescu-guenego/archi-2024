@@ -4,7 +4,6 @@ export const data = {
       id: "chateaux",
       label: "Châteaux",
       name: "ferrieres",
-      projects: [],
     },
     {
       id: "eglises",

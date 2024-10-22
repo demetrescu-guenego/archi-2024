@@ -5,7 +5,6 @@ import ParallaxImage from "../widgets/ParallaxImage.vue";
 
 const { frontmatter } = useData();
 const route = useRoute();
-console.log("route: ", route.path);
 
 const [, , category, name] = route.path.split("/");
 
