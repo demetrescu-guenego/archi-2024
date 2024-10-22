@@ -13,9 +13,11 @@ const getLabel = (category: string) => {
 export const contentLoader = {
   name: "content-loader",
   async load(id: string) {
-    const regex = /^.*\/realisations\/(.*).md$/;
+    const regex = /^.*\/realisations\/([^/]*).md$/;
+    console.log("testing id: ", id);
     if (id.match(regex)) {
       const category = id.replace(regex, "$1");
+      console.log("found: ", category);
       const label = getLabel(category);
       const posts = await createContentLoader(`realisations/${category}/*.md`, {
         includeSrc: false,
