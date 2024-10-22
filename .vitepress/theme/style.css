@@ -25,11 +25,15 @@
   }
 
   h4 {
-    @apply mt-10 text-xl;
+    @apply mt-10 text-lg;
   }
 
   p {
     @apply my-3;
+  }
+
+  ul {
+    @apply list-disc pl-8;
   }
 }
 

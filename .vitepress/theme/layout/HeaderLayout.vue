@@ -18,11 +18,13 @@ const list: MenuItem[] = [
       <img
         src="/logo-white.svg"
         alt="Logo Cabinet d'architecture DEMETRESCU - GUÉNÉGO"
-        class="h-10"
+        class="h-12"
       />
-      <span class="font-bold md:font-normal text-sm md:text-xl xl:text-2xl">
-        <span>Cabinet d'architecture</span> <br />
-        <span>DEMETRESCU - GUÉNÉGO</span>
+      <span class="font-bold md:font-normal text-sm md:text-xl">
+        <span>
+          Cabinet d'architecture<br />
+          DEMETRESCU - GUÉNÉGO
+        </span>
       </span>
     </a>
     <ResponsiveMenu :list="list" />

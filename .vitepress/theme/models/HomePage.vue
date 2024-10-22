@@ -155,7 +155,7 @@ const menu: MenuItem[] = [
         <h4>Florent MASSUCCI</h4>
         <ul>
           <li>Architecte diplômé d'état (Paris Val de Seine)</li>
-          <li>Notre expert Autodesk Revit et BIM.</li>
+          <li>Expert Autodesk Autocad, Revit et BIM.</li>
         </ul>
         <h4>Claire BARBEY-PAYNEAU</h4>
         <ul>
@@ -167,7 +167,10 @@ const menu: MenuItem[] = [
         </ul>
         <p>
           <b>Notre cabinet d'architecture se développe et recrute ! </b>Pour
-          nous faire parvenir votre CV, <a ui-sref="contact">contactez nous</a>.
+          nous faire parvenir votre CV,
+          <a href="/contact" class="cursor-pointer underline text-blue-700"
+            >contactez nous</a
+          >.
         </p>
       </div>
     </section>
