@@ -1,5 +1,5 @@
-import { createContentLoader } from "vitepress";
-import { basename } from "./utils";
+// import { createContentLoader } from "vitepress";
+import { basename, createContentLoader } from "./utils";
 import { data } from "../../data";
 
 const getLabel = (category: string) => {
@@ -24,6 +24,7 @@ export const contentLoader = {
         excerpt: true,
         render: false,
       }).load();
+      console.log("posts: ", posts);
 
       const projects = posts.map((post) => {
         return { id: basename(post.url), label: post.frontmatter.label };
