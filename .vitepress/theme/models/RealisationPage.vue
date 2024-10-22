@@ -22,11 +22,19 @@ const getUrl = (c: Category) => {
       <a
         v-for="category in categories"
         :key="category.id"
-        class="w-72 rounded-sm overflow-hidden flex flex-col"
+        class="w-72 rounded-xl overflow-hidden flex flex-col shadow-xl hover:scale-105 transition-transform"
         :href="getUrl(category)"
       >
-        <img :src="getImageUrl(category)" :alt="category.label" />
-        <div>{{ category.label }}</div>
+        <img
+          :src="getImageUrl(category)"
+          :alt="category.label"
+          class="object-cover w-72 h-44"
+        />
+        <div
+          class="font-bold h-12 flex justify-center items-center text-center px-4"
+        >
+          {{ category.label }}
+        </div>
       </a>
     </div>
   </main>

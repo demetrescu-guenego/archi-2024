@@ -19,13 +19,13 @@ categories:
     label: Fermes
     name: coupvray
   - id: restauration-par-ext
-    label: Restauration - Parements extérieurs
+    label: Parements extérieurs
     name: bois-le-roi
   - id: serre
     label: Serres
     name: villiers-en-biere
   - id: tertiaire
-    label: Tertiaire - Administration - Autres - Public
+    label: Tertiaire - Administration
     name: tournan-en-brie
   - id: sport
     label: Sports - Loisirs
