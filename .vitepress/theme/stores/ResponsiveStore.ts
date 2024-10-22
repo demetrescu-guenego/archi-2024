@@ -3,7 +3,10 @@ import { computed, ref } from "vue";
 export type ResponsiveMode = "mobile" | "desktop";
 
 const isLarge = () => {
-  return window.innerWidth > 768;
+  if (!("window" in globalThis)) {
+    return true;
+  }
+  return globalThis.window.innerWidth > 768;
 };
 
 const getMode = (): ResponsiveMode => {
@@ -17,6 +20,9 @@ const getMode = (): ResponsiveMode => {
 const mode = ref<ResponsiveMode>(getMode());
 
 const init = () => {
+  if (!("window" in globalThis)) {
+    return;
+  }
   window.addEventListener("resize", () => {
     mode.value = getMode();
   });

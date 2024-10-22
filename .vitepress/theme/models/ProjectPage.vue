@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Content, useData, useRoute } from "vitepress";
+import { useData, useRoute } from "vitepress";
 import NiceTable from "../widgets/NiceTable.vue";
 import ParallaxImage from "../widgets/ParallaxImage.vue";
 

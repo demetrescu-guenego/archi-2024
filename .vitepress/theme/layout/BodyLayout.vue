@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useData, Content } from "vitepress";
+import { useData } from "vitepress";
 import HomePage from "../models/HomePage.vue";
 import RealisationPage from "../models/RealisationPage.vue";
 import ClientPage from "../models/ClientPage.vue";
