@@ -3,7 +3,7 @@ layout: realisations
 
 # image will be /photos/projects/${id}/${name}/thumbnail-${name}.jpg
 categories:
-  - id: chateau
+  - id: chateaux
     label: Châteaux
     name: ferrieres
   - id: eglise
