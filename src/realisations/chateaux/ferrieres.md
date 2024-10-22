@@ -1,6 +1,22 @@
 ---
 layout: project
 label: "Château de Ferrières en Brie"
+presentation:
+  - key: Maîtrise d'ouvrage
+    value: privée
+  - key: Monuments historiques
+    value: Classé MH
+
+interventions:
+  - key: 2013-2015
+    value:
+      Restauration complète et réaménagement du château de la famille Rothschild
+      en vue de l’ouverture d’une école d’hôtellerie, de gastronomie et de luxe
+    class: font-bold
+  - key: Missions
+    value: Mission de maîtrise d’œuvre Complète
+  - key: Montant des travaux
+    value: 10 000 000 € HT
 ---
 
 Notre cabinet d'architecture s'est occupé de l'étude préalable et de la mission

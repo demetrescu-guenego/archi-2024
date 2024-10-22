@@ -20,6 +20,10 @@
     @apply text-fuchsia-900 text-3xl font-bold my-8 text-center;
   }
 
+  h2 {
+    @apply text-fuchsia-900 text-2xl font-bold my-8;
+  }
+
   h3 {
     @apply mt-10 text-xl;
   }
