@@ -8,7 +8,7 @@ const props = defineProps<{
 
 <template>
   <table class="table">
-    <tbody>
+    <thead>
       <tr>
         <td>Maîtrise d'ouvrage</td>
         <td>
@@ -20,6 +20,8 @@ const props = defineProps<{
           </span>
         </td>
       </tr>
+    </thead>
+    <tbody>
       <tr v-if="input.classement">
         <td>Monuments historiques</td>
         <td>

@@ -59,7 +59,7 @@ const menu: MenuItem[] = [
           Nous vous aidons en particulier sur les cinq thématiques suivantes :
         </p>
         <div v-onscreen="'introduce'" class="flex flex-row flex-wrap gap-x-10">
-          <div class="w-full max-w-96">
+          <div class="w-full max-w-96 flex flex-col gap-4">
             <div class="block">
               <h3><FontAwesomeIcon :icon="faCogs" /> Besoins</h3>
               <p>
@@ -82,7 +82,7 @@ const menu: MenuItem[] = [
               </p>
             </div>
           </div>
-          <div class="col-6">
+          <div class="w-full max-w-96 flex flex-col gap-4">
             <div class="block">
               <h3><FontAwesomeIcon :icon="faEye" /> Suivi</h3>
               <p>Organiser et suivre les chantiers et leur bonne réception.</p>

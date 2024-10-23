@@ -25,7 +25,7 @@
   }
 
   h3 {
-    @apply mt-10 text-xl;
+    @apply mt-5 text-xl;
   }
 
   h4 {
@@ -164,10 +164,16 @@
 
 .table {
   @apply table-auto animate-[accordion_500ms_forwards];
-  tr {
-    @apply even:bg-neutral-50 odd:bg-neutral-100;
-    td {
-      @apply p-2;
+  td,
+  th {
+    @apply px-4 py-1 text-left;
+  }
+  thead {
+    @apply bg-fuchsia-800 text-white;
+  }
+  tbody {
+    tr {
+      @apply even:bg-neutral-100 odd:bg-neutral-50 hover:bg-neutral-200;
     }
   }
 }

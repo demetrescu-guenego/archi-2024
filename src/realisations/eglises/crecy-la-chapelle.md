@@ -6,7 +6,7 @@ moa:
   url: http://www.crecylachapelle.eu/
 client:
   name: Crécy-la-Chapelle
-  zip: 77580,
+  zip: 77580
   type: "Mairie"
 
 presentation:
