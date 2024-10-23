@@ -49,7 +49,7 @@ const getUrl = (p: Photo) => {
             <a
               v-for="photo in photos"
               :key="photo.url"
-              class="w-72 rounded-xl overflow-hidden flex flex-col shadow-xl hover:scale-105 hover:shadow-2xl transition-transform"
+              class="w-72 overflow-hidden flex flex-col shadow-xl hover:scale-105 hover:shadow-2xl transition-transform"
               :href="getUrl(photo)"
             >
               <img

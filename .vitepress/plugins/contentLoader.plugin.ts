@@ -10,34 +10,55 @@ const getLabel = (category: string) => {
 export const contentLoader = {
   name: "content-loader",
   async load(id: string) {
-    const regex = /^.*\/realisations\/([^/]*).md$/;
     console.log("testing id: ", id);
-    if (!id.match(regex)) {
-      return;
-    }
-    const category = id.replace(regex, "$1");
-    const label = getLabel(category);
-    const posts = await createContentLoader(`realisations/${category}/*.md`, {
-      includeSrc: false,
-      excerpt: true,
-      render: false,
-    }).load();
+    return (await realisationLoad(id)) ?? (await clientLoad(id));
+  },
+};
 
-    const projects = posts.map((post) => {
-      return { id: basename(post.url), label: post.frontmatter.label };
-    });
+const clientLoad = async (id: string) => {
+  const regex = /^.*\/clients.md$/;
+  if (!id.match(regex)) {
+    return;
+  }
+  // look at all the projects and generate the frontmatter.
+  const jsonString = JSON.stringify({
+    layout: "clients",
+  });
+  console.log("jsonString: ", jsonString);
 
-    const jsonString = JSON.stringify({
-      layout: "category",
-      category,
-      label,
-      projects,
-    });
-    console.log("jsonString: ", jsonString);
-
-    return `---
+  return `---
 ${jsonString}
 ---
 `;
-  },
+};
+
+const realisationLoad = async (id: string) => {
+  const regex = /^.*\/realisations\/([^/]*).md$/;
+  if (!id.match(regex)) {
+    return;
+  }
+  const category = id.replace(regex, "$1");
+  const label = getLabel(category);
+  const posts = await createContentLoader(`realisations/${category}/*.md`, {
+    includeSrc: false,
+    excerpt: true,
+    render: false,
+  }).load();
+
+  const projects = posts.map((post) => {
+    return { id: basename(post.url), label: post.frontmatter.label };
+  });
+
+  const jsonString = JSON.stringify({
+    layout: "category",
+    category,
+    label,
+    projects,
+  });
+  console.log("jsonString: ", jsonString);
+
+  return `---
+${jsonString}
+---
+`;
 };
