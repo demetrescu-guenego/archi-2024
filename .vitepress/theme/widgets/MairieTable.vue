@@ -9,7 +9,8 @@ const props = defineProps<{
 
 const router = useRouter();
 
-const mairies = props.input.sort((a, b) => (a.name < b.name ? -1 : 1));
+const mairies = [...props.input].sort((a, b) => (a.name < b.name ? -1 : 1));
+console.log("mairies: ", mairies);
 
 const gotoUrl = async (url: string) => {
   await router.go(`/clients/${toSlug(url)}`);
