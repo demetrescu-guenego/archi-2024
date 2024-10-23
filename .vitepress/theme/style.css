@@ -25,7 +25,7 @@
   }
 
   h3 {
-    @apply mt-5 text-xl;
+    @apply mt-5 mb-2 text-xl;
   }
 
   h4 {
@@ -170,6 +170,9 @@
   }
   thead {
     @apply bg-fuchsia-800 text-white;
+    a {
+      @apply text-white;
+    }
   }
   tbody {
     tr {

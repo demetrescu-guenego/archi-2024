@@ -1,45 +1,48 @@
 {
-  "priority": 500,
-  "title": "Château de Fleury-en-Bière",
-  "description": "Restauration de la Fabrique du parc du château",
+  "title": "Château de Rentilly à Bussy-Saint-Martin",
+  "description": "Travaux de sécurisation du château de Rentilly",
   "image": {
-    "main": "img/photo/project/chateau/fleury-en-biere/parallax.jpg",
-    "mainPortrait": "img/photo/project/chateau/fleury-en-biere/parallax-portrait.jpg",
+    "main": "img/photo/project/chateau/rentilly/chateau.jpg",
+    "mainPortrait": "img/photo/project/chateau/rentilly/chateau.jpg",
     "trios": [
       [
         {
-          "url": "img/photo/project/chateau/fleury-en-biere/01.jpg",
-          "caption": "Après restauration"
+          "url": "img/photo/project/chateau/rentilly/01.jpg",
+          "caption": ""
         },
         {
-          "url": "img/photo/project/chateau/fleury-en-biere/02.jpg",
-          "caption": "Avant incendie"
+          "url": "img/photo/project/chateau/rentilly/02.jpg",
+          "caption": ""
         },
         {
-          "url": "img/photo/project/chateau/fleury-en-biere/03.jpg",
-          "caption": "Incendie"
+          "url": "img/photo/project/chateau/rentilly/03.jpg",
+          "caption": ""
         }
       ]
     ]
   },
   "moa": {
-    "name": "privée"
+    "name": "Communauté d’agglomération de Marne et Gondoire",
+    "url": "http://www.marneetgondoire.fr/"
   },
   "interventions": [
     {
-      "year": "2016",
-      "ongoing": true,
-      "title": "Restauration de la Fabrique du parc du château",
-      "missions": ["Mission de maîtrise d’œuvre"],
-      "price": "50 000 € HT"
+      "year": 2010,
+      "title": "Travaux de sécurisation du château de Rentilly ",
+      "missions": ["Maîtrise d’œuvre", "OPC"],
+      "price": "388 500 € HT"
     },
     {
-      "year": 2015,
-      "title": "Restauration du pavillon d’entrée, dit de la Poterne",
-      "missions": ["Mission de maîtrise d’œuvre"],
-      "price": "100 000 € HT"
+      "year": 2008,
+      "title": "Restauration des menuiseries des pavillons d’entrée du parc",
+      "missions": ["Maîtrise d’œuvre", "OPC"],
+      "price": "150 000 € HT"
     }
   ],
-  "classement": "Classé MH",
-  "client": "privé"
+  "classement": "Inscrit MH",
+  "client": {
+    "name": "Communauté d’agglomération de Marne et Gondoire",
+    "zip": 77600,
+    "type": "Public Autres"
+  }
 }
