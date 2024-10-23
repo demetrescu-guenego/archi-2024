@@ -16,6 +16,9 @@ const photos = frontmatter.value.photos;
 const getImageUrl = (p: Photo) => {
   return `/photos/projects/${category}/${name}/${p.url}`;
 };
+const getUrl = (p: Photo) => {
+  return `/viewer?src=/photos/projects/${category}/${name}/${p.url}`;
+};
 </script>
 
 <template>
@@ -46,8 +49,8 @@ const getImageUrl = (p: Photo) => {
             <a
               v-for="photo in photos"
               :key="photo.url"
-              class="w-72 rounded-xl overflow-hidden flex flex-col shadow-xl hover:scale-105 transition-transform"
-              :href="getImageUrl(photo)"
+              class="w-72 rounded-xl overflow-hidden flex flex-col shadow-xl hover:scale-105 hover:shadow-2xl transition-transform"
+              :href="getUrl(photo)"
             >
               <img
                 :src="getImageUrl(photo)"
