@@ -1,6 +1,6 @@
 ---
 layout: project
-label: "Eglise de Crécy la Chapelle"
+label: "Eglise Saint Georges de Crécy-la-Chapelle"
 moa:
   name: Ville de Crécy-la-Chapelle (77)
   url: http://www.crecylachapelle.eu/
