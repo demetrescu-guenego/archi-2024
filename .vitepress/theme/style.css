@@ -34,13 +34,17 @@
 
   p {
     @apply my-3;
-    a {
-      @apply text-blue-700 underline cursor-pointer;
-    }
   }
 
   ul {
     @apply list-disc pl-8;
+  }
+
+  p,
+  table {
+    a {
+      @apply text-blue-700 underline cursor-pointer;
+    }
   }
 }
 
@@ -156,4 +160,14 @@
   margin: 0;
   overflow: hidden;
   background-color: transparent;
+}
+
+.table {
+  @apply table-auto animate-[accordion_500ms_forwards];
+  tr {
+    @apply even:bg-neutral-50 odd:bg-neutral-100;
+    td {
+      @apply p-2;
+    }
+  }
 }

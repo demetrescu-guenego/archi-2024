@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import { useData, useRoute } from "vitepress";
 import { Photo } from "../interfaces/Photo";
-import NiceTable from "../widgets/NiceTable.vue";
+import InterventionTable from "../widgets/InterventionTable.vue";
+import PresentationTable from "../widgets/PresentationTable.vue";
 import ParallaxImage from "../widgets/ParallaxImage.vue";
+import { ProjectData } from "../interfaces/ProjectData";
 
-const { frontmatter } = useData();
+const { frontmatter } = useData<ProjectData>();
 const route = useRoute();
 
 const [, , category, name] = route.path.split("/");
@@ -19,6 +21,9 @@ const getImageUrl = (p: Photo) => {
 const getUrl = (p: Photo) => {
   return `/viewer?src=/photos/projects/${category}/${name}/${p.url}`;
 };
+
+// dangerous code
+const projectData: ProjectData = frontmatter.value as ProjectData;
 </script>
 
 <template>
@@ -27,9 +32,9 @@ const getUrl = (p: Photo) => {
       <div class="px-2 max-w-5xl mx-auto pb-4">
         <h1>Réalisation: {{ frontmatter.label }}</h1>
         <h2>Présentation</h2>
-        <NiceTable :input="frontmatter.presentation" />
+        <PresentationTable :input="projectData" />
         <h2>Interventions</h2>
-        <NiceTable :input="frontmatter.interventions" />
+        <InterventionTable :input="frontmatter.interventions" />
       </div>
     </section>
     <section class="parallax">
