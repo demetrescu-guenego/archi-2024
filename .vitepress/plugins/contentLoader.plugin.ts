@@ -1,6 +1,7 @@
 // import { createContentLoader } from "vitepress";
-import { basename, createContentLoader } from "./utils";
 import { data } from "../../data";
+import { Intervention } from "../theme/interfaces/Intervention";
+import { basename, createContentLoader } from "./utils";
 
 const getLabel = (category: string) => {
   const c = data.categories.find((c) => c.id === category);
@@ -10,7 +11,6 @@ const getLabel = (category: string) => {
 export const contentLoader = {
   name: "content-loader",
   async load(id: string) {
-    console.log("testing id: ", id);
     return (await realisationLoad(id)) ?? (await clientLoad(id));
   },
 };
@@ -20,6 +20,7 @@ const clientLoad = async (id: string) => {
   if (!id.match(regex)) {
     return;
   }
+  console.log("id: ", id);
   // look at all the projects and generate the frontmatter.
   const posts = await createContentLoader(`realisations/**/*.md`, {
     includeSrc: false,
@@ -29,13 +30,12 @@ const clientLoad = async (id: string) => {
 
   const mairies = posts
     .filter((post) => {
-      return post.frontmatter.type === "Mairie";
+      return post.frontmatter.client?.type === "Mairie";
     })
     .map((post) => {
       return {
-        years: post.frontmatter.years,
-        name: post.frontmatter.name,
-        zipcode: post.frontmatter.zipcode,
+        ...post.frontmatter.client,
+        years: post.frontmatter.interventions.map((i: Intervention) => i.year),
       };
     });
 
@@ -74,7 +74,6 @@ const realisationLoad = async (id: string) => {
     label,
     projects,
   });
-  console.log("jsonString: ", jsonString);
 
   return `---
 ${jsonString}

@@ -1,11 +1,6 @@
 <script setup lang="ts">
-interface Intervention {
-  year: string;
-  ongoing?: boolean;
-  title: string;
-  missions: string[];
-  price: string;
-}
+import { Intervention } from "../interfaces/Intervention";
+
 const props = defineProps<{
   input: Intervention[];
 }>();

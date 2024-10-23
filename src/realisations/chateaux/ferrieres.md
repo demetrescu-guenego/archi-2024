@@ -1,11 +1,8 @@
 ---
 layout: project
 label: "Château de Ferrières en Brie"
-presentation:
-  - key: Maîtrise d'ouvrage
-    value: privée
-  - key: Monuments historiques
-    value: Classé MH
+moa:
+  name: privée
 
 interventions:
   - year: 2013-2015
