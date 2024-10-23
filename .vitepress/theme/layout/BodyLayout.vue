@@ -7,6 +7,7 @@ import CategoryPage from "../models/CategoryPage.vue";
 import ContactPage from "../models/ContactPage.vue";
 import ProjectPage from "../models/ProjectPage.vue";
 import ViewerPage from "../models/ViewerPage.vue";
+import MairiePage from "../models/MairiePage.vue";
 
 // https://vitepress.dev/reference/runtime-api#usedata
 const { site, frontmatter } = useData();
@@ -20,6 +21,7 @@ const { site, frontmatter } = useData();
   <ContactPage v-else-if="frontmatter.layout === 'contact'" />
   <ProjectPage v-else-if="frontmatter.layout === 'project'" />
   <ViewerPage v-else-if="frontmatter.layout === 'viewer'" />
+  <MairiePage v-else-if="frontmatter.layout === 'mairie'" />
   <div v-else>
     <a href="/">Home</a>
     <Content />
