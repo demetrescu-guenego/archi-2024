@@ -27,7 +27,7 @@ const getUrl = (c: Project) => {
       <a
         v-for="project in projects"
         :key="project.id"
-        class="w-72 rounded-xl overflow-hidden flex flex-col shadow-xl hover:scale-105 transition-transform"
+        class="w-72 overflow-hidden flex flex-col shadow-xl hover:scale-105 transition-transform"
         :href="getUrl(project)"
       >
         <img
@@ -35,9 +35,7 @@ const getUrl = (c: Project) => {
           :alt="project.label"
           class="object-cover w-72 h-44"
         />
-        <div
-          class="font-bold h-12 flex justify-center items-center text-center px-4"
-        >
+        <div class="h-12 flex justify-center items-center text-center px-4">
           {{ project.label }}
         </div>
       </a>
