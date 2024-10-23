@@ -20,7 +20,7 @@ interventions:
       - Maîtrise d"oeuvre
       - OPC
     price: 230 000 € HT
-classement: " Inscrit MH"
+classement: Inscrit MH
 client:
   name: Amillis
   zip: 77120
