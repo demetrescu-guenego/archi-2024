@@ -21,8 +21,27 @@ const clientLoad = async (id: string) => {
     return;
   }
   // look at all the projects and generate the frontmatter.
+  const posts = await createContentLoader(`realisations/**/*.md`, {
+    includeSrc: false,
+    excerpt: true,
+    render: false,
+  }).load();
+
+  const mairies = posts
+    .filter((post) => {
+      return post.frontmatter.type === "Mairie";
+    })
+    .map((post) => {
+      return {
+        years: post.frontmatter.years,
+        name: post.frontmatter.name,
+        zipcode: post.frontmatter.zipcode,
+      };
+    });
+
   const jsonString = JSON.stringify({
     layout: "clients",
+    mairies: mairies,
   });
   console.log("jsonString: ", jsonString);
 
