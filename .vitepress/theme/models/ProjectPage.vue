@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useData, useRoute } from "vitepress";
+import { Photo } from "../interfaces/Photo";
 import NiceTable from "../widgets/NiceTable.vue";
 import ParallaxImage from "../widgets/ParallaxImage.vue";
 
@@ -9,6 +10,12 @@ const route = useRoute();
 const [, , category, name] = route.path.split("/");
 
 const parallax = `/photos/projects/${category}/${name}/parallax.jpg`;
+
+const photos = frontmatter.value.photos;
+
+const getImageUrl = (p: Photo) => {
+  return `/photos/projects/${category}/${name}/${p.url}.jpg`;
+};
 </script>
 
 <template>
@@ -34,6 +41,27 @@ const parallax = `/photos/projects/${category}/${name}/parallax.jpg`;
         <h2>Description</h2>
         <Content />
         <h2>Photos</h2>
+        <div>
+          <div class="flex flex-wrap gap-8 justify-center py-8">
+            <a
+              v-for="photo in photos"
+              :key="photo.url"
+              class="w-72 rounded-xl overflow-hidden flex flex-col shadow-xl hover:scale-105 transition-transform"
+              :href="getImageUrl(photo)"
+            >
+              <img
+                :src="getImageUrl(photo)"
+                :alt="photo.label"
+                class="object-cover w-72 h-44"
+              />
+              <div
+                class="font-bold h-12 flex justify-center items-center text-center px-4"
+              >
+                {{ photo.label }}
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
