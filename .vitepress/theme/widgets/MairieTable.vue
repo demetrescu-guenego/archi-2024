@@ -37,7 +37,7 @@ const gotoUrl = async (url: string) => {
           {{ client.name }}
         </td>
         <td>{{ client.zip }}</td>
-        <td>{{ client.years.join(", ") }}</td>
+        <td>{{ client.years.join(" ") }}</td>
       </tr>
     </tbody>
   </table>

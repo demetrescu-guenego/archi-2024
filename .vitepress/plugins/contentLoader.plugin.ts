@@ -3,6 +3,24 @@ import { data } from "../../data";
 import { Intervention } from "../theme/interfaces/Intervention";
 import { basename, createContentLoader } from "./utils";
 
+interface Post {
+  url: string;
+  frontmatter: any;
+}
+
+const filterPost = (posts: Post[], type: string) => {
+  return posts
+    .filter((post) => {
+      return post.frontmatter.client?.type === type;
+    })
+    .map((post) => {
+      return {
+        ...post.frontmatter.client,
+        years: post.frontmatter.interventions.map((i: Intervention) => i.year),
+      };
+    });
+};
+
 const getLabel = (category: string) => {
   const c = data.categories.find((c) => c.id === category);
   return c !== undefined ? c.label : "label not found";
@@ -28,20 +46,13 @@ const clientLoad = async (id: string) => {
     render: false,
   }).load();
 
-  const mairies = posts
-    .filter((post) => {
-      return post.frontmatter.client?.type === "Mairie";
-    })
-    .map((post) => {
-      return {
-        ...post.frontmatter.client,
-        years: post.frontmatter.interventions.map((i: Intervention) => i.year),
-      };
-    });
+  const mairies = filterPost(posts, "Mairie");
+  const publicOthers = filterPost(posts, "Public Autres");
 
   const jsonString = JSON.stringify({
     layout: "clients",
-    mairies: mairies,
+    mairies,
+    publicOthers,
   });
   console.log("jsonString: ", jsonString);
 
