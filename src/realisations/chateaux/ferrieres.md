@@ -8,15 +8,13 @@ presentation:
     value: Classé MH
 
 interventions:
-  - key: 2013-2015
-    value:
+  - year: 2013-2015
+    title:
       Restauration complète et réaménagement du château de la famille Rothschild
       en vue de l’ouverture d’une école d’hôtellerie, de gastronomie et de luxe
-    class: font-bold
-  - key: Missions
-    value: Mission de maîtrise d’œuvre Complète
-  - key: Montant des travaux
-    value: 10 000 000 € HT
+    missions:
+      - Mission de maîtrise d’œuvre Complète
+    price: 10 000 000 € HT
 
 photos:
   - url: 01.jpg
