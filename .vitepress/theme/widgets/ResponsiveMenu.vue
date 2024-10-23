@@ -11,7 +11,10 @@ const props = defineProps<{ list: MenuItem[] }>();
 const route = useRoute();
 
 const isActive = (href: string) => {
-  return href === route.path;
+  if (href === "/") {
+    return route.path === "/";
+  }
+  return route.path.startsWith(href);
 };
 
 const isMenuOpen = ref(false);
