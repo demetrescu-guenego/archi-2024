@@ -17,6 +17,26 @@ interventions:
     value: Mission de maîtrise d’œuvre Complète
   - key: Montant des travaux
     value: 10 000 000 € HT
+
+photos:
+  - url: 01.jpg
+    label: Avant travaux
+  - url: 02.jpg
+    label: Pendant travaux
+  - url: 03.jpg
+    label: Réfection parements extérieurs
+  - url: 04.jpg
+    label: Façade Sud - côté jardins
+  - url: 05.jpg
+    label: Réfection plafond
+  - url: 06.jpg
+    label: Escalier de l'entrée
+  - url: 07.jpg
+    label: Façade Nord - côté entrée
+  - url: 08.jpg
+    label: Transformation en salle de restaurant de luxe
+  - url: 09.jpg
+    label: Salle de réception après restauration
 ---
 
 Notre cabinet d'architecture s'est occupé de l'étude préalable et de la mission

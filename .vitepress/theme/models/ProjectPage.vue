@@ -14,7 +14,7 @@ const parallax = `/photos/projects/${category}/${name}/parallax.jpg`;
 const photos = frontmatter.value.photos;
 
 const getImageUrl = (p: Photo) => {
-  return `/photos/projects/${category}/${name}/${p.url}.jpg`;
+  return `/photos/projects/${category}/${name}/${p.url}`;
 };
 </script>
 
