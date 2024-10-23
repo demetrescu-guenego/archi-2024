@@ -2,17 +2,18 @@
 import { useData } from "vitepress";
 import { Project } from "../interfaces/Project";
 
-const { site, frontmatter } = useData();
+const { frontmatter } = useData();
 
 const projects: Project[] = frontmatter.value.projects;
 const category = frontmatter.value.category;
+console.log("frontmatter.value: ", frontmatter.value);
 
 const getImageUrl = (p: Project) => {
-  return `/photos/projects/${category}/${p.id}/thumbnail-${p.id}.jpg`;
+  return `/photos/projects/${p.category}/${p.id}/thumbnail-${p.id}.jpg`;
 };
 
-const getUrl = (c: Project) => {
-  return `/realisations/${category}/${c.id}`;
+const getUrl = (p: Project) => {
+  return `/realisations/${p.category}/${p.id}`;
 };
 </script>
 

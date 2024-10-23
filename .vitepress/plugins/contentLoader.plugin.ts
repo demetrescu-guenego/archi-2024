@@ -1,7 +1,8 @@
 // import { createContentLoader } from "vitepress";
 import { data } from "../../data";
 import { Intervention } from "../theme/interfaces/Intervention";
-import { basename, createContentLoader } from "./utils";
+import { createContentLoader, toSlug } from "./utils";
+import { basename, dirname } from "path";
 
 interface Post {
   url: string;
@@ -29,8 +30,54 @@ const getLabel = (category: string) => {
 export const contentLoader = {
   name: "content-loader",
   async load(id: string) {
-    return (await realisationLoad(id)) ?? (await clientLoad(id));
+    return (
+      (await realisationLoad(id)) ??
+      (await clientLoad(id)) ??
+      (await mairieLoad(id))
+    );
   },
+};
+
+const mairieLoad = async (id: string) => {
+  const regex = /^.*\/clients\/([^/]*).md$/;
+  if (!id.match(regex)) {
+    return;
+  }
+  const place = id.replace(regex, "$1");
+  console.log("id: ", id);
+  // look at all the projects and generate the frontmatter.
+  const posts = await createContentLoader(`realisations/**/*.md`, {
+    includeSrc: false,
+    excerpt: true,
+    render: false,
+  }).load();
+
+  const projects = posts
+    .filter((post) => {
+      console.log("post: ", post);
+      if (typeof post.frontmatter.client !== "object") {
+        return false;
+      }
+      return toSlug(post.frontmatter.client.name) === place;
+    })
+    .map((post) => {
+      return {
+        id: basename(post.url),
+        label: post.frontmatter.label,
+        category: basename(dirname(post.url)),
+      };
+    });
+
+  const jsonString = JSON.stringify({
+    layout: "mairie",
+    projects,
+  });
+  console.log("jsonString: ", jsonString);
+
+  return `---
+${jsonString}
+---
+`;
 };
 
 const clientLoad = async (id: string) => {
