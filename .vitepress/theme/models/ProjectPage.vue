@@ -40,7 +40,7 @@ const getUrl = (p: Photo) => {
       />
     </section>
     <section>
-      <div class="px-2 max-w-4xl mx-auto pb-4">
+      <div class="px-2 max-w-5xl mx-auto pb-4">
         <h2>Description</h2>
         <Content />
         <h2>Photos</h2>
