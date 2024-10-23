@@ -1,5 +1,6 @@
 // import { createContentLoader } from "vitepress";
 import { data } from "../../data";
+import { Client } from "../theme/interfaces/Client";
 import { Intervention } from "../theme/interfaces/Intervention";
 import { createContentLoader, toSlug } from "./utils";
 import { basename, dirname } from "path";
@@ -52,13 +53,19 @@ const mairieLoad = async (id: string) => {
     render: false,
   }).load();
 
+  let client: Client | undefined = undefined;
+
   const projects = posts
     .filter((post) => {
       console.log("post: ", post);
       if (typeof post.frontmatter.client !== "object") {
         return false;
       }
-      return toSlug(post.frontmatter.client.name) === place;
+      if (toSlug(post.frontmatter.client.name) !== place) {
+        return false;
+      }
+      client = post.frontmatter.client;
+      return true;
     })
     .map((post) => {
       return {
@@ -70,6 +77,7 @@ const mairieLoad = async (id: string) => {
 
   const jsonString = JSON.stringify({
     layout: "mairie",
+    client,
     projects,
   });
   console.log("jsonString: ", jsonString);

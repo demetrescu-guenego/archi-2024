@@ -3,10 +3,9 @@ import { useData } from "vitepress";
 import { Project } from "../interfaces/Project";
 
 const { frontmatter } = useData();
+console.log("frontmatter: ", frontmatter.value);
 
 const projects: Project[] = frontmatter.value.projects;
-const category = frontmatter.value.category;
-console.log("frontmatter.value: ", frontmatter.value);
 
 const getImageUrl = (p: Project) => {
   return `/photos/projects/${p.category}/${p.id}/thumbnail-${p.id}.jpg`;
@@ -19,7 +18,11 @@ const getUrl = (p: Project) => {
 
 <template>
   <main class="flex-grow flex flex-col p-2">
-    <h1>{{ frontmatter.label }}</h1>
+    <h1>
+      Nos réalisations pour {{ frontmatter.client.name }} ({{
+        frontmatter.client.zip
+      }})
+    </h1>
 
     <div class="flex flex-wrap gap-8 justify-center py-8">
       <a
