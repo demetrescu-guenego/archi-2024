@@ -1,23 +1,45 @@
 {
-  "label": "Eglise Saint Martin du Mesnil-Amelot",
-  "description": "Restauration des parements extérieurs et réfection du beffroi du clocher - Eglise Saint Martin du Mesnil-Amelot",
-
+  "label": "Eglise Saint-Fiacre à Saint-Fiacre",
+  "description": "Eglise Saint-Fiacre à Saint-Fiacre",
+  "image": {
+    "main": "img/photo/project/eglise/saint-fiacre/parallax.jpg",
+    "mainPortrait": "img/photo/project/eglise/saint-fiacre/parallax-portrait.jpg",
+    "trios": [
+      [
+        {
+          "url": "img/photo/project/eglise/saint-fiacre/01.jpg",
+          "caption": ""
+        },
+        {
+          "url": "img/photo/project/eglise/saint-fiacre/02.jpg",
+          "caption": ""
+        },
+        {
+          "url": "img/photo/project/eglise/saint-fiacre/03.jpg",
+          "caption": ""
+        }
+      ]
+    ]
+  },
   "moa": {
-    "name": "Commune du Mesnil-Amelot (77)",
-    "url": "http://www.lemesnilamelot.fr/"
+    "name": "Commune de Saint-Fiacre (77)"
   },
   "interventions": [
     {
-      "year": "2016",
-      "title": "Restauration des parements extérieurs et réfection du beffroi du clocher",
-      "missions": ["Maîtrise d'oeuvre", "OPC"],
-      "price": "390 000 € HT"
+      "year": 2016,
+      "ongoing": true,
+      "title": "Restauration du clocher et des sols de l’église",
+      "missions": ["Maîtrise d’œuvre"],
+      "price": "130 000 € HT"
+    },
+    {
+      "year": 2015,
+      "title": "Etude préalable"
     }
   ],
-  "classement": "Classée MH",
   "client": {
-    "name": "Mesnil-Amélot",
-    "zip": 77990,
+    "name": "Saint-Fiacre",
+    "zip": 77470,
     "type": "Mairie"
   }
 }
