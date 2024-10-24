@@ -5,10 +5,6 @@ import path from "node:path";
 import { SiteConfig } from "vitepress";
 import { Post } from "./interfaces/Post";
 
-export const basename = (path) => {
-  return path.split("/").reverse()[0];
-};
-
 export const createContentLoader = (pattern: string, options: unknown) => {
   const config: SiteConfig = globalThis.VITEPRESS_CONFIG;
   return {
