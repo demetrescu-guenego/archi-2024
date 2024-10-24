@@ -1,29 +1,24 @@
 {
-  "title": "Marché couvert et réorganisation des extérieurs à Torcy",
-  "description": "Réhabilitation du Marché couvert et réorganisation des extérieurs à torcy",
-  "image": {
-    "main": "img/photo/project/marche-couvert/torcy/marche.jpg",
-    "mainPortrait": "img/photo/project/marche-couvert/torcy/marche.jpg",
-    "others": [
-      "img/photo/project/marche-couvert/torcy/marche.jpg",
-      "img/photo/project/marche-couvert/torcy/marche.jpg"
-    ]
-  },
+  "label": "Remparts de Charleville-Mézières",
+  "description": "Reprise de la structure des remparts, des charpentes et des bâtiments, 12 places du Château",
+
   "moa": {
-    "name": "Ville de Torcy (77)",
-    "url": "http://www.ville-torcy.fr/"
+    "name": "Conseil départemental des Ardennes (08)",
+    "url": "http://www.cd08.fr/"
   },
   "interventions": [
     {
-      "year": 2009,
-      "title": "Réhabilitation du Marché couvert et réorganisation des extérieurs",
-      "missions": ["Maîtrise d’œuvre", "OPC"],
-      "price": "450 000 € HT"
+      "year": "2015",
+      "ongoing": true,
+      "title": "Reprise de la structure des remparts, des charpentes et des bâtiments",
+      "missions": ["Maîtrise d'oeuvre", "OPC"],
+      "price": "360 000 € HT"
     }
   ],
+  "classement": "Inscrit MH",
   "client": {
-    "name": "Torcy",
-    "zip": 77200,
-    "type": "Mairie"
+    "name": "Conseil départemental des Ardennes",
+    "zip": "08000",
+    "type": "Public Autres"
   }
 }
