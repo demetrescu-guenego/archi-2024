@@ -1,41 +1,41 @@
 {
-  "label": "Beffroi communal à Grisy-Suisnes",
-  "description": "Restauration du beffroi communal à Grisy-Suisnes",
+  "label": "Mairie et Ecole de Sammeron",
+  "description": "Restauration des façades Mairie et Ecole à Sammeron",
   "image": {
-    "main": "img/photo/project/restauration-par-ext/grisy-suisnes/grisy-suisnes.jpg",
-    "mainPortrait": "img/photo/project/restauration-par-ext/grisy-suisnes/grisy-suisnes.jpg",
+    "main": "img/photo/project/restauration-par-ext/sammeron/mairie.jpg",
+    "mainPortrait": "img/photo/project/restauration-par-ext/sammeron/mairie.jpg",
     "trios": [
       [
         {
-          "url": "img/photo/project/restauration-par-ext/grisy-suisnes/01.jpg",
-          "caption": "Façade"
+          "url": "img/photo/project/restauration-par-ext/sammeron/01.jpg",
+          "caption": ""
         },
         {
-          "url": "img/photo/project/restauration-par-ext/grisy-suisnes/02.jpg",
-          "caption": "Horloge du beffroi"
+          "url": "img/photo/project/restauration-par-ext/sammeron/02.jpg",
+          "caption": ""
         },
         {
-          "url": "img/photo/project/restauration-par-ext/grisy-suisnes/03.jpg",
-          "caption": "Restauration de l'horloge"
+          "url": "img/photo/project/restauration-par-ext/sammeron/03.jpg",
+          "caption": ""
         }
       ]
     ]
   },
   "moa": {
-    "name": "Commune Grisy-Suisnes (77)",
-    "url": "http://www.grisy-suisnes.fr/"
+    "name": "Commune de Sammeron (77)",
+    "url": "http://www.sammeron.fr/"
   },
   "interventions": [
     {
-      "year": 2010,
-      "title": "Restauration du beffroi communal à Grisy-Suisnes",
-      "missions": ["Maîtrise d’œuvre", "OPC"],
-      "price": "170 000 € HT"
+      "year": 2012,
+      "title": "Restauration des façades Mairie et Ecole",
+      "missions": ["Maîtrise d’œuvre"],
+      "price": "147 500 € HT"
     }
   ],
   "client": {
-    "name": "Grisy-Suisnes",
-    "zip": 77166,
+    "name": "Sammeron",
+    "zip": 77260,
     "type": "Mairie"
   }
 }
