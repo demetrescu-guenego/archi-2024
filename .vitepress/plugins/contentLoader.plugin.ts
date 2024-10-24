@@ -1,8 +1,8 @@
 // import { createContentLoader } from "vitepress";
 import { basename } from "path";
+import { clientLoad } from "./loaders/client";
 import { mairieLoad } from "./loaders/mairie";
 import { createContentLoader } from "./utils/createContentLoader";
-import { filterPostByClientType } from "./utils/filter";
 import { getCategoryLabel } from "./utils/label";
 
 export const contentLoader = {
@@ -14,35 +14,6 @@ export const contentLoader = {
       (await mairieLoad(id))
     );
   },
-};
-
-const clientLoad = async (id: string) => {
-  const regex = /^.*\/clients.md$/;
-  if (!id.match(regex)) {
-    return;
-  }
-  console.log("id: ", id);
-  // look at all the projects and generate the frontmatter.
-  const posts = await createContentLoader(`realisations/**/*.md`, {
-    includeSrc: false,
-    excerpt: true,
-    render: false,
-  }).load();
-
-  const mairies = filterPostByClientType(posts, "Mairie");
-  const publicOthers = filterPostByClientType(posts, "Public Autres");
-
-  const jsonString = JSON.stringify({
-    layout: "clients",
-    mairies,
-    publicOthers,
-  });
-  console.log("jsonString: ", jsonString);
-
-  return `---
-${jsonString}
----
-`;
 };
 
 const realisationLoad = async (id: string) => {
