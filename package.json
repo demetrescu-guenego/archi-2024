@@ -7,7 +7,8 @@
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview",
-    "format": "prettier -w ."
+    "format": "prettier -w .",
+    "lint": "eslint"
   },
   "keywords": [],
   "author": "",
