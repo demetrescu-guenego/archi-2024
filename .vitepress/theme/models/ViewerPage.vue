@@ -23,7 +23,10 @@ const goBack = () => {
 </script>
 
 <template>
-  <div class="fixed top-0 left-0 right-0 bottom-0 bg-black"></div>
+  <div
+    class="fixed bottom-0 left-0 right-0 top-0 cursor-pointer bg-black"
+    @click="goBack"
+  ></div>
   <img :src="src" alt="Photo" class="my-image cursor-pointer" @click="goBack" />
 </template>
 

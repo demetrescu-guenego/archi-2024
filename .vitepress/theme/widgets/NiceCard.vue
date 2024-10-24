@@ -24,7 +24,12 @@ defineProps<{
         class="flex h-12 items-center justify-center px-4 text-center"
         :class="{ 'font-bold': boldLabel }"
       >
-        {{ project.label }}
+        <span v-if="project.label">
+          {{ project.label }}
+        </span>
+        <span v-else class="text-neutral-400" role="presentation">
+          Cliquer pour agrandir
+        </span>
       </div>
     </a>
   </div>
