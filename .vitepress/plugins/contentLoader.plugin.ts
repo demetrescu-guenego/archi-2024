@@ -1,15 +1,10 @@
 // import { createContentLoader } from "vitepress";
 import { basename, dirname } from "path";
-import { data } from "../../commons/data";
 import { Client } from "../theme/interfaces/Client";
 import { toSlug } from "../utils/slug";
 import { createContentLoader } from "./utils/createContentLoader";
 import { filterPostByClientType } from "./utils/filter";
-
-const getLabel = (category: string) => {
-  const c = data.categories.find((c) => c.id === category);
-  return c !== undefined ? c.label : "label not found";
-};
+import { getCategoryLabel } from "./utils/label";
 
 export const contentLoader = {
   name: "content-loader",
@@ -106,7 +101,7 @@ const realisationLoad = async (id: string) => {
     return;
   }
   const category = id.replace(regex, "$1");
-  const label = getLabel(category);
+  const label = getCategoryLabel(category);
   const posts = await createContentLoader(`realisations/${category}/*.md`, {
     includeSrc: false,
     excerpt: true,
