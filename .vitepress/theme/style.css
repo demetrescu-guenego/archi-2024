@@ -10,34 +10,16 @@
   animation: introduce 2s forwards;
 }
 
-.background {
-  pointer-events: none;
-  display: block;
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  overflow: hidden;
-  img {
-    width: 100%;
-    transform: translateZ(0);
-    animation: hypnotize 240s infinite;
-  }
-}
-
-@media only screen and (max-width: 768px) {
+@layer components {
   .background {
+    @apply pointer-events-none absolute bottom-0 left-0 right-0 top-0 z-0 block overflow-hidden;
+
     img {
-      animation: hypnotize-mobile 240s infinite;
+      @apply w-full animate-[hypnotize-mobile_240s_infinite] md:animate-[hypnotize_240s_infinite];
     }
   }
-}
 
-.parallax {
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  background-color: transparent;
+  .parallax {
+    @apply m-0 overflow-hidden bg-transparent p-0;
+  }
 }

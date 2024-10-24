@@ -20,7 +20,6 @@ const images = ref<
 const isLoaded = ref(false);
 
 onMounted(async () => {
-  console.log("mount parallax");
   const imgs = await Promise.all([
     loadImage(props.landscape),
     loadImage(props.portrait),
