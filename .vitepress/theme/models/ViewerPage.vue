@@ -13,8 +13,6 @@ if ("window" in globalThis) {
   }
 }
 
-const router = useRouter();
-
 const goBack = () => {
   if ("window" in globalThis) {
     window.history.back();
