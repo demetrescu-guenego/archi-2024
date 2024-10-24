@@ -25,3 +25,6 @@ client:
   zip: 21000
   type: Public Autres
 ---
+
+Notre cabinet d'architecture s'est occupé de la mission complète de maîtrise
+d'œuvre concernant la restauration des lucarnes du lycée Vauban à Auxerre.
