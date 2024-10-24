@@ -1,43 +1,23 @@
 <script setup lang="ts">
-import { useData } from "vitepress";
-import { Category } from "../../interfaces/Category";
 import { data } from "../../../commons/data";
-
-const { site } = useData();
-console.log("site: ", site);
+import { CardContent } from "../../interfaces/CardContent";
+import { Category } from "../../interfaces/Category";
+import NiceCard from "../widgets/NiceCard.vue";
 
 const categories: Category[] = data.categories;
 
-const getImageUrl = (c: Category) => {
-  return `/photos/projects/${c.id}/${c.name}/thumbnail-${c.name}.jpg`;
-};
-
-const getUrl = (c: Category) => {
-  return `/realisations/${c.id}`;
-};
+const cards: CardContent[] = categories.map((c) => {
+  return {
+    label: c.label,
+    url: `/realisations/${c.id}`,
+    imageUrl: `/photos/projects/${c.id}/${c.name}/thumbnail-${c.name}.jpg`,
+  };
+});
 </script>
 
 <template>
   <main class="flex flex-grow flex-col p-2">
     <h1>Nos réalisations</h1>
-    <div class="flex flex-wrap justify-center gap-8 py-8">
-      <a
-        v-for="category in categories"
-        :key="category.id"
-        class="flex w-72 flex-col overflow-hidden shadow-xl transition-transform hover:scale-105"
-        :href="getUrl(category)"
-      >
-        <img
-          :src="getImageUrl(category)"
-          :alt="category.label"
-          class="h-44 w-72 object-cover"
-        />
-        <div
-          class="flex h-12 items-center justify-center px-4 text-center font-bold"
-        >
-          {{ category.label }}
-        </div>
-      </a>
-    </div>
+    <NiceCard :input="cards" boldLabel />
   </main>
 </template>
