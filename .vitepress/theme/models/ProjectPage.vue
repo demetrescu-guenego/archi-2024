@@ -15,7 +15,7 @@ const [, , category, name] = route.path.split("/");
 
 const parallax = `/photos/projects/${category}/${name}/parallax.jpg`;
 
-const photos = frontmatter.value.photos;
+const photos = frontmatter.value.photos ?? [];
 
 // dangerous code
 const projectData: ProjectData = frontmatter.value as ProjectData;
@@ -51,7 +51,7 @@ const cards: CardContent[] = photos.map((p) => {
       <div class="mx-auto max-w-5xl px-2 pb-4">
         <h2>Description</h2>
         <Content />
-        <template v-if="photos">
+        <template v-if="cards.length > 0">
           <h2>Photos</h2>
           <div>
             <NiceCard :input="cards" />

@@ -1,4 +1,5 @@
 ---
+layout: project
 label: Eglise Saint Martin à Iverny
 description: Eglise Saint Martin à Iverny
 
