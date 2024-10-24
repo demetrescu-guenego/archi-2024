@@ -6,7 +6,7 @@ import { Intervention } from "../theme/interfaces/Intervention";
 import { Post } from "./interfaces/Post";
 import { createContentLoader, toSlug } from "./utils";
 
-const filterPost = (posts: Post[], type: string) => {
+const filterPostByClientType = (posts: Post[], type: string) => {
   return posts
     .filter((post) => {
       return post.frontmatter.client?.type === type;
@@ -97,8 +97,8 @@ const clientLoad = async (id: string) => {
     render: false,
   }).load();
 
-  const mairies = filterPost(posts, "Mairie");
-  const publicOthers = filterPost(posts, "Public Autres");
+  const mairies = filterPostByClientType(posts, "Mairie");
+  const publicOthers = filterPostByClientType(posts, "Public Autres");
 
   const jsonString = JSON.stringify({
     layout: "clients",
