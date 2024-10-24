@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { MenuItem } from "../widgets/interfaces/MenuItem";
+import { MenuItem } from "../../interfaces/MenuItem";
 import ResponsiveMenu from "../widgets/ResponsiveMenu.vue";
 
 const list: MenuItem[] = [

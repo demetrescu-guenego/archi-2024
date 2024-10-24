@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { MenuItem } from "../widgets/interfaces/MenuItem";
+import { MenuItem } from "../../interfaces/MenuItem";
 import ParallaxImage from "../widgets/ParallaxImage.vue";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { vOnscreen } from "../widgets/onscreen.directive";

@@ -3,7 +3,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { useRoute } from "vitepress";
 import { isDesktop } from "../stores/ResponsiveStore";
-import { MenuItem } from "./interfaces/MenuItem";
+import { MenuItem } from "../../interfaces/MenuItem";
 import { ref } from "vue";
 
 const props = defineProps<{ list: MenuItem[] }>();
