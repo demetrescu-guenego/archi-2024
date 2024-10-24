@@ -1,46 +1,19 @@
 {
-  "label": "Eglise Saint-Martin à Sammeron",
-  "description": "Eglise Saint-Martin à Sammeron",
-  "image": {
-    "main": "img/photo/project/eglise/sammeron/eglise.jpg",
-    "mainPortrait": "img/photo/project/eglise/sammeron/eglise.jpg",
-    "trios": [
-      [
-        {
-          "url": "img/photo/project/eglise/sammeron/01.jpg",
-          "caption": ""
-        },
-        {
-          "url": "img/photo/project/eglise/sammeron/02.jpg",
-          "caption": ""
-        },
-        {
-          "url": "img/photo/project/eglise/sammeron/03.jpg",
-          "caption": ""
-        }
-      ]
-    ]
-  },
+  "label": "Eglise Saint-Médard à Thieux",
+  "description": "Eglise Saint-Médard à Thieux",
+
   "moa": {
-    "name": "Commune de Sammeron (77)",
-    "url": "https://www.sammeron.fr/"
+    "name": "Commune de Thieux (77)"
   },
   "interventions": [
     {
-      "year": 2014,
-      "title": "Restauration du bas-côté sud",
-      "missions": ["Maîtrise d'oeuvre", "OPC"],
-      "price": "168 000 € HT"
-    },
-    {
-      "year": 2006,
+      "year": 2016,
       "title": "Etude préalable"
     }
   ],
-  "classement": " Inscrit MH",
   "client": {
-    "name": "Sammeron",
-    "zip": 77260,
+    "name": "Thieux",
+    "zip": 77230,
     "type": "Mairie"
   }
 }
