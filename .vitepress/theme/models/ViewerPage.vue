@@ -24,17 +24,9 @@ const goBack = () => {
 
 <template>
   <div
-    class="fixed bottom-0 left-0 right-0 top-0 cursor-pointer bg-black"
+    class="fixed bottom-0 left-0 right-0 top-0 flex cursor-pointer items-center justify-center bg-black"
     @click="goBack"
-  ></div>
-  <img :src="src" alt="Photo" class="my-image cursor-pointer" @click="goBack" />
+  >
+    <img :src="src" alt="Photo" class="animate-[fadein_300ms_ease-in]" />
+  </div>
 </template>
-
-<style scoped>
-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  animation: fadein 300ms ease-in;
-}
-</style>
