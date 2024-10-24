@@ -2,7 +2,7 @@ import { glob } from "glob";
 import matter from "gray-matter";
 import { readFileSync } from "node:fs";
 import path from "node:path";
-import { Post } from "../interfaces/Post";
+import { Post } from "../../interfaces/Post";
 import { specificConfig } from "../../siteconfig";
 
 export const createContentLoader = (pattern: string, options: unknown) => {

@@ -1,5 +1,5 @@
 import { Intervention } from "../../theme/interfaces/Intervention";
-import { Post } from "../interfaces/Post";
+import { Post } from "../../interfaces/Post";
 
 export const filterPostByClientType = (posts: Post[], type: string) => {
   return posts
