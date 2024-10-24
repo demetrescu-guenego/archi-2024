@@ -37,3 +37,6 @@ client:
   type: Mairie
   year: "2016"
 ---
+
+Notre cabinet a assuré la mission de maîtrise d'oeuvre pour la restauration de
+l'Eglise de Louan (77): restauration des parements intérieurs.

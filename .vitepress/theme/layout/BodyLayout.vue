@@ -11,8 +11,12 @@ import MairiePage from "../models/MairiePage.vue";
 
 const { frontmatter } = useData();
 const route = useRoute();
+console.log("route: ", route);
 
-const isProject = route.path.match(new RegExp("/realisations/[^/]+/[^/]+"));
+const isProject = () => {
+  return route.path.match(new RegExp("/realisations/[^/]+/[^/]+")) !== null;
+};
+console.log("isProject: ", isProject);
 </script>
 
 <template>
@@ -22,7 +26,7 @@ const isProject = route.path.match(new RegExp("/realisations/[^/]+/[^/]+"));
   <ClientPage v-else-if="frontmatter.layout === 'clients'" />
   <ContactPage v-else-if="frontmatter.layout === 'contact'" />
   <ProjectPage v-else-if="frontmatter.layout === 'project'" />
-  <ProjectPage v-else-if="isProject" />
+  <ProjectPage v-else-if="isProject()" />
   <ViewerPage v-else-if="frontmatter.layout === 'viewer'" />
   <MairiePage v-else-if="frontmatter.layout === 'mairie'" />
   <div v-else>
