@@ -1,34 +1,41 @@
 {
-  "title": "Crypte de l’Abbaye de Jouarre",
-  "description": "Réfection des parements extérieurs - Crypte de l’Abbaye de Jouarre",
+  "title": "Château de Bombon",
+  "description": "Réfection des toitures du pavillon d’entrée",
   "image": {
-    "main": "img/photo/project/abbaye/jouarre/crypte.jpg",
-    "mainPortrait": "img/photo/project/abbaye/jouarre/crypte.jpg",
-    "others": [
-      "img/photo/project/abbaye/jouarre/crypte.jpg",
-      "img/photo/project/abbaye/jouarre/crypte.jpg"
+    "main": "img/photo/project/chateau/bombon/parallax.jpg",
+    "mainPortrait": "img/photo/project/chateau/bombon/parallax.jpg",
+    "trios": [
+      [
+        {
+          "url": "img/photo/project/chateau/bombon/01.jpg",
+          "caption": "Juste avant la fin de la restauration"
+        },
+        {
+          "url": "img/photo/project/chateau/bombon/02.jpg",
+          "caption": "Façades"
+        },
+        {
+          "url": "img/photo/project/chateau/bombon/03.jpg",
+          "caption": "Entrée du château"
+        }
+      ]
     ]
   },
   "moa": {
-    "name": "Ville de Jouarre (77)",
-    "url": "http://www.jouarre.fr/"
+    "name": "privée"
   },
   "interventions": [
     {
       "year": 2016,
-      "title": "Réfection des parements extérieurs",
-      "missions": ["Etude", "AT"],
-      "price": "145 360 € HT"
+      "title": "Réfection des toitures du pavillon d’entrée",
+      "missions": ["Etude", "Autorisation de travaux"]
     },
     {
-      "year": 2015,
-      "title": "Etude préalable"
+      "year": 2013,
+      "title": "Réfection des toitures du pavillon d’entrée",
+      "missions": ["Etude Préalable"]
     }
   ],
-  "classement": "Classé MH",
-  "client": {
-    "name": "Jouarre",
-    "zip": 77640,
-    "type": "Mairie"
-  }
+  "classement": "Inscrit MH",
+  "client": "privé"
 }
