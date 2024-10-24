@@ -20,8 +20,10 @@ const cards: CardContent[] = projects.map((p) => {
 
 <template>
   <main class="flex flex-grow flex-col p-2">
-    <h1>{{ frontmatter.label }}</h1>
+    <section class="mx-auto max-w-5xl">
+      <h1>{{ frontmatter.label }}</h1>
 
-    <NiceCard :input="cards" />
+      <NiceCard :input="cards" />
+    </section>
   </main>
 </template>

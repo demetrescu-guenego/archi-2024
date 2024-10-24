@@ -1,48 +1,45 @@
 {
-  "title": "Château de Noisiel et manège à Noisiel",
-  "description": "Réfection des parements extérieurs du château de l’ancienne Chocolaterie Menier",
+  "label": "Eglise Notre Dame en l’Assomption à Bernay-Vilbert",
+  "description": "Eglise Notre Dame en l’Assomption à Bernay-Vilbert",
   "image": {
-    "main": "img/photo/project/chateau/noisiel/parallax.jpg",
-    "mainPortrait": "img/photo/project/chateau/noisiel/parallax.jpg",
+    "main": "img/photo/project/eglise/bernay-vilbert/eglise.jpg",
+    "mainPortrait": "img/photo/project/eglise/bernay-vilbert/eglise.jpg",
     "trios": [
       [
         {
-          "url": "img/photo/project/chateau/noisiel/01.jpg",
+          "url": "img/photo/project/eglise/bernay-vilbert/01.jpg",
+          "caption": "Coupe"
+        },
+        {
+          "url": "img/photo/project/eglise/bernay-vilbert/02.jpg",
           "caption": ""
         },
         {
-          "url": "img/photo/project/chateau/noisiel/02.jpg",
-          "caption": ""
-        },
-        {
-          "url": "img/photo/project/chateau/noisiel/03.jpg",
+          "url": "img/photo/project/eglise/bernay-vilbert/03.jpg",
           "caption": ""
         }
       ]
     ]
   },
   "moa": {
-    "name": "EPAMARNE",
-    "url": "https://www.epamarne-epafrance.fr/"
+    "name": "Commune de Bernay-Vilbert (77)",
+    "url": "http://bernay-vilbert.fr/"
   },
   "interventions": [
     {
-      "year": "2007 - 2008",
-      "title": "Réfection des parements extérieurs du château de l’ancienne Chocolaterie Menier",
-      "missions": ["Mission de maîtrise d’œuvre", "OPC"],
-      "price": "420 000 € HT"
+      "year": 2014,
+      "title": "Réfection des parements intérieurs et travaux d’électricité",
+      "missions": ["Maîtrise d’œuvre"],
+      "price": "68 400 € HT"
     },
     {
-      "year": "2006 - 2007",
-      "title": "Réfection des parements extérieurs du Manège de l’ancienne Chocolaterie Menier",
-      "missions": ["Mission de maîtrise d’œuvre", "OPC"],
-      "price": "350 000 € HT"
+      "year": 2008,
+      "title": "Etude préalable"
     }
   ],
-  "classement": "Inscrit MH",
   "client": {
-    "name": "EPAMARNE",
-    "zip": 77186,
-    "type": "Public Autres"
+    "name": "Bernay-Vilbert",
+    "zip": 77540,
+    "type": "Mairie"
   }
 }
