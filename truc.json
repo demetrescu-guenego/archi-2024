@@ -1,42 +1,41 @@
 {
-  "label": "Remparts de Vezelay",
-  "description": "Restauration des remparts et de la tour des Ursulines.",
+  "label": "Lycée Vauban à Auxerre",
+  "description": "Restauration des lucarnes du lycée Vauban à Auxerre",
   "image": {
-    "main": "img/photo/project/rempart/vezelay/parallax.jpg",
-    "mainPortrait": "img/photo/project/rempart/vezelay/parallax.jpg",
+    "main": "img/photo/project/restauration-par-ext/auxerre/auxerre.jpg",
+    "mainPortrait": "img/photo/project/restauration-par-ext/auxerre/auxerre.jpg",
     "trios": [
       [
         {
-          "url": "img/photo/project/rempart/vezelay/01.jpg",
-          "caption": "Brochure explicative"
+          "url": "img/photo/project/restauration-par-ext/auxerre/01.jpg",
+          "caption": ""
         },
         {
-          "url": "img/photo/project/rempart/vezelay/02.jpg",
-          "caption": "Avant intervention"
+          "url": "img/photo/project/restauration-par-ext/auxerre/02.jpg",
+          "caption": ""
         },
         {
-          "url": "img/photo/project/rempart/vezelay/03.jpg",
-          "caption": "Après intervention"
+          "url": "img/photo/project/restauration-par-ext/auxerre/03.jpg",
+          "caption": ""
         }
       ]
     ]
   },
   "moa": {
-    "name": "Conseil départemental de l’Yonne (89)",
-    "url": "http://www.yonne.fr/"
+    "name": "Conseil régional de Bourgogne (21)",
+    "url": "https://www.bourgognefranchecomte.fr/"
   },
   "interventions": [
     {
-      "year": "2012 – 2013",
-      "title": "Reprise de la structure des remparts, des charpentes et des bâtiments",
-      "missions": ["Maîtrise d'oeuvre", "OPC"],
-      "price": "636 000 € HT"
+      "year": 2011,
+      "title": "Restauration des lucarnes du lycée Vauban",
+      "missions": ["Maîtrise d’œuvre", "OPC"],
+      "price": "250 000 € HT"
     }
   ],
-  "classement": "Site patrimonial remarquable",
   "client": {
-    "name": "Conseil départemental de l'Yonne",
-    "zip": 89000,
+    "name": "Conseil régional de Bourgogne",
+    "zip": 21000,
     "type": "Public Autres"
   }
 }
