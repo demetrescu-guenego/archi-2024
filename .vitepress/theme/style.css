@@ -41,7 +41,8 @@
   }
 
   p,
-  table {
+  table,
+  address {
     a {
       @apply text-blue-700 underline cursor-pointer;
     }
