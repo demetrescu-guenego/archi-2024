@@ -1,46 +1,30 @@
 {
-  "label": "Eglise Saint Jacques le Mineur de Guignes",
-  "description": "Eglise Saint Jacques le Mineur de Guignes",
+  "label": "Eglise Saint Martin à Iverny",
+  "description": "Eglise Saint Martin à Iverny",
   "image": {
-    "main": "img/photo/project/eglise/guignes/parallax.jpg",
-    "mainPortrait": "img/photo/project/eglise/guignes/parallax-portrait.jpg",
-    "trios": [
-      [
-        {
-          "url": "img/photo/project/eglise/guignes/01.jpg",
-          "caption": "Dessins d'architecture"
-        },
-        {
-          "url": "img/photo/project/eglise/guignes/02.jpg",
-          "caption": "Intérieur"
-        },
-        {
-          "url": "img/photo/project/eglise/guignes/03.jpg",
-          "caption": "Exterieur"
-        }
-      ]
+    "main": "img/photo/project/eglise/iverny/eglise.jpg",
+    "mainPortrait": "img/photo/project/eglise/iverny/eglise.jpg",
+    "others": [
+      "img/photo/project/eglise/iverny/eglise.jpg",
+      "img/photo/project/eglise/iverny/eglise.jpg"
     ]
   },
   "moa": {
-    "name": "Commune de Guignes (77)",
-    "url": "http://www.ville-guignes.fr/"
+    "name": "Commune de Iverny (77)",
+    "url": "http://www.iverny.fr/"
   },
   "interventions": [
     {
       "year": "2016",
       "ongoing": true,
-      "title": "Restauration de la toiture de l’église",
-      "missions": ["Maîtrise d'oeuvre", "OPC"]
-    },
-    {
-      "year": 2016,
-      "title": "Etude préalable"
+      "title": "Restauration des parements intérieurs et réfection de l’installation electrique et de chauffage",
+      "missions": ["Maîtrise d’œuvre"],
+      "price": "300 000 € HT"
     }
   ],
-  "classement": " Inscrit MH",
   "client": {
-    "name": "Guignes",
-    "zip": 77390,
+    "name": "Iverny",
+    "zip": 77165,
     "type": "Mairie"
   }
 }
