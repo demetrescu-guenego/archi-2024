@@ -14,7 +14,7 @@ moa:
   name: Commune de Amillis (77)
 interventions:
   - year: "2016"
-    ongoing: true
+    ongoing: false
     title: Restauration des parements extérieurs de l’église
     missions:
       - Maîtrise d"oeuvre

@@ -14,7 +14,7 @@ const props = defineProps<{
           <td>
             <b>
               {{ intervention.year }}
-              <span ng-if="intervention.ongoing">- en cours</span>
+              <span v-if="intervention.ongoing">- en cours</span>
             </b>
           </td>
           <td>{{ intervention.title }}</td>

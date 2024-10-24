@@ -15,7 +15,7 @@ moa:
   name: privée
 interventions:
   - year: "2016"
-    ongoing: true
+    ongoing: false
     title: Restauration de la Fabrique du parc du château
     missions:
       - Mission de maîtrise d’œuvre

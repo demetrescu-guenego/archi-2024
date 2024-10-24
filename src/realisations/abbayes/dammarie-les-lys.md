@@ -7,7 +7,7 @@ moa:
   url: http://www.mairie-dammarie-les-lys.fr/
 interventions:
   - year: "2016"
-    ongoing: true
+    ongoing: false
     title: Restauration et mise en valeur des vestiges de l’ancienne abbaye
     missions:
       - Etude préalable

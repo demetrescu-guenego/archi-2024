@@ -11,7 +11,7 @@ client:
 
 interventions:
   - year: "2016"
-    ongoing: true
+    ongoing: false
     title: Réfection des menuiseries intérieures et de l'installation électrique
     missions:
       - Maîtrise d'oeuvre
