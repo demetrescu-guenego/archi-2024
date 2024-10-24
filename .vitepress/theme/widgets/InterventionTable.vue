@@ -7,7 +7,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <table class="table">
+  <table>
     <template v-for="intervention in props.input">
       <thead>
         <tr>

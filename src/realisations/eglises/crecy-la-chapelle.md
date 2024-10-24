@@ -9,12 +9,6 @@ client:
   zip: 77580
   type: "Mairie"
 
-presentation:
-  - key: Maîtrise d'ouvrage
-    value: Mairie de Crécy la Chapelle
-  - key: Monuments historiques
-    value: Classé MH
-
 interventions:
   - year: "2016"
     ongoing: true

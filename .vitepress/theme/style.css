@@ -1,4 +1,5 @@
 @import "./css/elements.css";
+@import "./css/animations.css";
 
 @tailwind base;
 @tailwind components;
@@ -7,17 +8,6 @@
 .introduce.first-time h3,
 .introduce.first-time h4 {
   animation: introduce 2s forwards;
-}
-
-@keyframes introduce {
-  from {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
 }
 
 .background {
@@ -45,94 +35,9 @@
   }
 }
 
-@keyframes hypnotize {
-  0% {
-    transform: scale(1.5) rotateZ(-180deg) translateY(100px);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(2);
-    opacity: 0.5;
-  }
-  100% {
-    transform: scale(1.5) rotateZ(+180deg) translateY(100px);
-    opacity: 1;
-  }
-}
-
-@keyframes hypnotize-mobile {
-  0% {
-    transform: scale(3) rotateZ(-180deg) translateY(50px) translateX(50px);
-    opacity: 1;
-  }
-  50% {
-    transform: translateY(50px) translateX(200px) scale(5);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(3) rotateZ(+180deg) translateY(200px);
-    opacity: 1;
-  }
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeout {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes accordion {
-  0% {
-    opacity: 0;
-    transform: scaleY(0);
-    transform-origin: top;
-  }
-  30% {
-    opacity: 0;
-    transform: scaleY(0);
-    transform-origin: top;
-  }
-  100% {
-    opacity: 1;
-    transform: scaleY(1);
-    transform-origin: top;
-  }
-}
-
 .parallax {
   padding: 0;
   margin: 0;
   overflow: hidden;
   background-color: transparent;
-}
-
-.table {
-  @apply table-auto animate-[accordion_500ms_forwards];
-  td,
-  th {
-    @apply px-4 py-1 text-left;
-  }
-  thead {
-    @apply bg-fuchsia-800 text-white;
-    a {
-      @apply text-white;
-    }
-  }
-  tbody {
-    tr {
-      @apply even:bg-neutral-100 odd:bg-neutral-50 hover:bg-neutral-200;
-    }
-  }
 }

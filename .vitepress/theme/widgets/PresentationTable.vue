@@ -7,7 +7,7 @@ defineProps<{
 </script>
 
 <template>
-  <table class="table">
+  <table>
     <thead>
       <tr>
         <td>Maîtrise d'ouvrage</td>
