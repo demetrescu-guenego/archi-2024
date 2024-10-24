@@ -1,37 +1,41 @@
 {
-  "label": "Ferme du couvent de Coupvray",
-  "description": "Restauration de la Maison de Maître - Ferme du couvent de Coupvray",
-
+  "label": "Marché d’Approvisionnement de Longjumeau",
+  "description": "Réhabilitation du Marché d’Approvisionnement à Longjumeau",
+  "image": {
+    "main": "img/photo/project/marche-couvert/longjumeau/marche.jpg",
+    "mainPortrait": "img/photo/project/marche-couvert/longjumeau/marche.jpg",
+    "trios": [
+      [
+        {
+          "url": "img/photo/project/marche-couvert/longjumeau/01.jpg",
+          "caption": "Façades"
+        },
+        {
+          "url": "img/photo/project/marche-couvert/longjumeau/02.jpg",
+          "caption": "Avant travaux"
+        },
+        {
+          "url": "img/photo/project/marche-couvert/longjumeau/03.jpg",
+          "caption": "Après travaux"
+        }
+      ]
+    ]
+  },
   "moa": {
-    "name": "Commune de Coupvray (77)",
-    "url": "http://www.coupvray.fr/"
+    "name": "Ville de Longjumeau (91)",
+    "url": "https://www.longjumeau.fr/"
   },
   "interventions": [
     {
-      "year": "2016",
-      "ongoing": true,
-      "title": "Restauration de la Maison de Maître",
-      "missions": ["Maîtrise d'oeuvre", "OPC"],
-      "price": "332 000 € HT"
-    },
-    {
-      "year": "2015",
-      "ongoing": true,
-      "title": "Restauration d’une partie de l’aile Ouest avec création d’une chaufferie bio-masse",
-      "missions": ["Maîtrise d'oeuvre", "OPC"],
-      "price": "432 000 € HT"
-    },
-    {
-      "year": "2013 - 2014",
-      "title": "Travaux de confortation de l’aile Sud",
-      "missions": ["Maîtrise d'oeuvre", "OPC"],
-      "price": "389 000 € HT"
+      "year": 2012,
+      "title": "Réhabilitation du Marché d’Approvisionnement",
+      "missions": ["Maîtrise d’œuvre", "OPC"],
+      "price": "457 495 € HT"
     }
   ],
-  "classement": "Inscrit MH",
   "client": {
-    "name": "Coupvray",
-    "zip": 77700,
+    "name": "Longjumeau",
+    "zip": 91160,
     "type": "Mairie"
   }
 }

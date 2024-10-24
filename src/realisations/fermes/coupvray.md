@@ -6,14 +6,12 @@ moa:
   url: http://www.coupvray.fr/
 interventions:
   - year: "2016"
-    ongoing: true
     title: Restauration de la Maison de Maître
     missions:
       - Maîtrise d'oeuvre
       - OPC
     price: 332 000 € HT
   - year: "2015"
-    ongoing: true
     title:
       Restauration d’une partie de l’aile Ouest avec création d’une chaufferie
       bio-masse
