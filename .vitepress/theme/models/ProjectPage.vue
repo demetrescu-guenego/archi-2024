@@ -5,6 +5,8 @@ import { ProjectData } from "../../interfaces/ProjectData";
 import InterventionTable from "../widgets/InterventionTable.vue";
 import ParallaxImage from "../widgets/ParallaxImage.vue";
 import PresentationTable from "../widgets/PresentationTable.vue";
+import NiceCard from "../widgets/NiceCard.vue";
+import { CardContent } from "../../interfaces/CardContent";
 
 const { frontmatter } = useData<ProjectData>();
 const route = useRoute();
@@ -15,15 +17,16 @@ const parallax = `/photos/projects/${category}/${name}/parallax.jpg`;
 
 const photos = frontmatter.value.photos;
 
-const getImageUrl = (p: Photo) => {
-  return `/photos/projects/${category}/${name}/${p.url}`;
-};
-const getUrl = (p: Photo) => {
-  return `/viewer?src=/photos/projects/${category}/${name}/${p.url}`;
-};
-
 // dangerous code
 const projectData: ProjectData = frontmatter.value as ProjectData;
+
+const cards: CardContent[] = photos.map((p) => {
+  return {
+    label: p.label,
+    url: `/viewer?src=/photos/projects/${category}/${name}/${p.url}`,
+    imageUrl: `/photos/projects/${category}/${name}/${p.url}`,
+  } satisfies CardContent;
+});
 </script>
 
 <template>
@@ -51,25 +54,7 @@ const projectData: ProjectData = frontmatter.value as ProjectData;
         <template v-if="photos">
           <h2>Photos</h2>
           <div>
-            <div class="flex flex-wrap justify-center gap-8 py-8">
-              <a
-                v-for="photo in photos"
-                :key="photo.url"
-                class="flex w-72 flex-col overflow-hidden shadow-xl transition-transform hover:scale-105 hover:shadow-2xl"
-                :href="getUrl(photo)"
-              >
-                <img
-                  :src="getImageUrl(photo)"
-                  :alt="photo.label"
-                  class="h-44 w-72 object-cover"
-                />
-                <div
-                  class="flex h-12 items-center justify-center px-4 text-center font-bold"
-                >
-                  {{ photo.label }}
-                </div>
-              </a>
-            </div>
+            <NiceCard :input="cards" />
           </div>
         </template>
       </div>
