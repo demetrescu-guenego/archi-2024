@@ -1,41 +1,29 @@
 {
-  "label": "Marché d’Approvisionnement de Longjumeau",
-  "description": "Réhabilitation du Marché d’Approvisionnement à Longjumeau",
+  "title": "Marché couvert et réorganisation des extérieurs à Torcy",
+  "description": "Réhabilitation du Marché couvert et réorganisation des extérieurs à torcy",
   "image": {
-    "main": "img/photo/project/marche-couvert/longjumeau/marche.jpg",
-    "mainPortrait": "img/photo/project/marche-couvert/longjumeau/marche.jpg",
-    "trios": [
-      [
-        {
-          "url": "img/photo/project/marche-couvert/longjumeau/01.jpg",
-          "caption": "Façades"
-        },
-        {
-          "url": "img/photo/project/marche-couvert/longjumeau/02.jpg",
-          "caption": "Avant travaux"
-        },
-        {
-          "url": "img/photo/project/marche-couvert/longjumeau/03.jpg",
-          "caption": "Après travaux"
-        }
-      ]
+    "main": "img/photo/project/marche-couvert/torcy/marche.jpg",
+    "mainPortrait": "img/photo/project/marche-couvert/torcy/marche.jpg",
+    "others": [
+      "img/photo/project/marche-couvert/torcy/marche.jpg",
+      "img/photo/project/marche-couvert/torcy/marche.jpg"
     ]
   },
   "moa": {
-    "name": "Ville de Longjumeau (91)",
-    "url": "https://www.longjumeau.fr/"
+    "name": "Ville de Torcy (77)",
+    "url": "http://www.ville-torcy.fr/"
   },
   "interventions": [
     {
-      "year": 2012,
-      "title": "Réhabilitation du Marché d’Approvisionnement",
+      "year": 2009,
+      "title": "Réhabilitation du Marché couvert et réorganisation des extérieurs",
       "missions": ["Maîtrise d’œuvre", "OPC"],
-      "price": "457 495 € HT"
+      "price": "450 000 € HT"
     }
   ],
   "client": {
-    "name": "Longjumeau",
-    "zip": 91160,
+    "name": "Torcy",
+    "zip": 77200,
     "type": "Mairie"
   }
 }
