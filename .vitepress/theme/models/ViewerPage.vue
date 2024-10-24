@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { useRouter } from "vitepress";
 import { ref } from "vue";
 
 const src = ref("/home/ferrieres-landscape-big.jpg");

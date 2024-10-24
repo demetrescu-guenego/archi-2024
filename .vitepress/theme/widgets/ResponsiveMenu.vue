@@ -33,6 +33,7 @@ const close = () => {
     <a
       :href="item.href"
       v-for="item in props.list"
+      :key="item.label"
       class="border-2 p-2 px-4 hover:border-white hover:border-opacity-50"
       :class="{
         'border-white': isActive(item.href),
@@ -56,6 +57,7 @@ const close = () => {
       <a
         :href="item.href"
         v-for="item in props.list"
+        :key="item.label"
         class="flex h-16 items-center justify-center text-2xl active:bg-neutral-200"
         @click="close()"
       >

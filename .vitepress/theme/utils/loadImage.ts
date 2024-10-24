@@ -5,7 +5,7 @@ export interface ImageLoaded {
 }
 
 export const loadImage = (url: string): Promise<ImageLoaded> => {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     const img = document.createElement("img");
     img.src = url;
     img.addEventListener("load", () => {

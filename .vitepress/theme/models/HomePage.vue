@@ -18,22 +18,23 @@ const menu: MenuItem[] = [
 </script>
 
 <template>
-  <main class="flex-grow flex flex-col">
-    <section class="block h-[80vh] relative bg-fuchsia-900 text-white">
-      <div role="presentation" class="block absolute background">
+  <main class="flex flex-grow flex-col">
+    <section class="relative block h-[80vh] bg-fuchsia-900 text-white">
+      <div role="presentation" class="background absolute block">
         <img src="/home/plan.svg" alt="Plan" class="w-96" />
       </div>
-      <div class="flex flex-col items-center justify-center h-full gap-12 px-4">
-        <p class="text-5xl md:text-6xl text-center">
+      <div class="flex h-full flex-col items-center justify-center gap-12 px-4">
+        <p class="text-center text-5xl md:text-6xl">
           Réussissez votre projet architectural&nbsp;!
         </p>
         <div
-          class="flex flex-col sm:flex-row sm:gap-x-20 gap-y-5 flex-wrap sm:justify-center w-full"
+          class="flex w-full flex-col flex-wrap gap-y-5 sm:flex-row sm:justify-center sm:gap-x-20"
         >
           <a
             v-for="item in menu"
+            :key="item.label"
             :href="item.href"
-            class="border-white border-2 px-8 py-4 text-xl sm:text-4xl text-center hover:bg-white hover:bg-opacity-10 cursor-pointer"
+            class="cursor-pointer border-2 border-white px-8 py-4 text-center text-xl hover:bg-white hover:bg-opacity-10 sm:text-4xl"
           >
             {{ item.label }}
           </a>
@@ -41,7 +42,7 @@ const menu: MenuItem[] = [
       </div>
     </section>
     <section>
-      <div class="px-2 max-w-4xl mx-auto pb-4">
+      <div class="mx-auto max-w-4xl px-2 pb-4">
         <h1>Notre activité</h1>
         <p>
           Créé à Torcy (Seine et Marne) en 2003, notre cabinet d’architecture a
@@ -59,7 +60,7 @@ const menu: MenuItem[] = [
           Nous vous aidons en particulier sur les cinq thématiques suivantes :
         </p>
         <div v-onscreen="'introduce'" class="flex flex-row flex-wrap gap-x-10">
-          <div class="w-full max-w-96 flex flex-col gap-4">
+          <div class="flex w-full max-w-96 flex-col gap-4">
             <div class="block">
               <h3><FontAwesomeIcon :icon="faCogs" /> Besoins</h3>
               <p>
@@ -82,7 +83,7 @@ const menu: MenuItem[] = [
               </p>
             </div>
           </div>
-          <div class="w-full max-w-96 flex flex-col gap-4">
+          <div class="flex w-full max-w-96 flex-col gap-4">
             <div class="block">
               <h3><FontAwesomeIcon :icon="faEye" /> Suivi</h3>
               <p>Organiser et suivre les chantiers et leur bonne réception.</p>
@@ -127,7 +128,7 @@ const menu: MenuItem[] = [
       </div>
     </section>
     <section>
-      <div v-onscreen="'introduce'" class="px-2 max-w-4xl mx-auto pb-24 pt-16">
+      <div v-onscreen="'introduce'" class="mx-auto max-w-4xl px-2 pb-24 pt-16">
         <h1>Les architectes</h1>
         <h4>Suzana DEMETRESCU-GUÉNÉGO (Responsable du cabinet)</h4>
         <ul>
@@ -168,7 +169,7 @@ const menu: MenuItem[] = [
         <p>
           <b>Notre cabinet d'architecture se développe et recrute ! </b>Pour
           nous faire parvenir votre CV,
-          <a href="/contact" class="cursor-pointer underline text-blue-700"
+          <a href="/contact" class="cursor-pointer text-blue-700 underline"
             >contactez nous</a
           >.
         </p>

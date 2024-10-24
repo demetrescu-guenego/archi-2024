@@ -65,7 +65,7 @@ const render = () => {
 
   let ratio;
 
-  const setOpacity = (mode) => {
+  const setOpacity = () => {
     if (imgElt.value === null) {
       return;
     }
@@ -78,7 +78,7 @@ const render = () => {
       imgElt.value.onload = setOpacity;
       imgElt.value.src = images.value.landscape.url;
     } else {
-      setOpacity("immediate");
+      setOpacity();
     }
     ratio = images.value.landscape.width / images.value.landscape.height;
   } else {
@@ -87,7 +87,7 @@ const render = () => {
       imgElt.value.onload = setOpacity;
       imgElt.value.src = images.value.portrait.url;
     } else {
-      setOpacity("immediate");
+      setOpacity();
     }
     ratio = images.value.portrait.width / images.value.portrait.height;
   }

@@ -5,7 +5,7 @@ import path from "node:path";
 import { Post } from "../../interfaces/Post";
 import { specificConfig } from "../../siteconfig";
 
-export const createContentLoader = (pattern: string, options: unknown) => {
+export const createContentLoader = (pattern: string) => {
   const srcDir = path.resolve(specificConfig.srcDir);
   return {
     async load(): Promise<Post[]> {
@@ -15,7 +15,7 @@ export const createContentLoader = (pattern: string, options: unknown) => {
         posix: true,
       });
       // extract them the frontmatter and the url
-      const posts: { url: string; frontmatter: any }[] = [];
+      const posts: Post[] = [];
       for (const file of files) {
         const src = readFileSync(path.join(srcDir, file), "utf-8");
         const matterContent = matter(src, { excerpt: false });
