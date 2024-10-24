@@ -1,51 +1,52 @@
 {
-  "label": "Eglise Saint Germain à Bombon",
-  "description": "Eglise Saint Germain à Bombon",
+  "title": "Eglise Saint Saturnin de Chauconin",
+  "description": "Restauration du transept - Eglise Saint Saturnin de Chauconin",
   "image": {
-    "main": "img/photo/project/eglise/bombon/eglise.jpg",
-    "mainPortrait": "img/photo/project/eglise/bombon/eglise.jpg",
+    "main": "img/photo/project/eglise/chauconin/saint-saturnin.jpg",
+    "mainPortrait": "img/photo/project/eglise/chauconin/saint-saturnin.jpg",
     "trios": [
       [
         {
-          "url": "img/photo/project/eglise/bombon/01.jpg",
+          "url": "img/photo/project/eglise/chauconin/01.jpg",
           "caption": "Coupe"
         },
         {
-          "url": "img/photo/project/eglise/bombon/02.jpg",
-          "caption": "Travaux"
+          "url": "img/photo/project/eglise/chauconin/02.jpg",
+          "caption": "Côté sud après intervention"
         },
         {
-          "url": "img/photo/project/eglise/bombon/03.jpg",
-          "caption": "Le clocher de l'église"
+          "url": "img/photo/project/eglise/chauconin/03.jpg",
+          "caption": "Côté est pendant intervention"
         }
       ]
     ]
   },
   "moa": {
-    "name": "Commune de Bombon (77)"
+    "name": "Mairie de Chauconin-Neufmontiers (77)",
+    "url": "http://chauconin-neufmontiers.fr/"
   },
   "interventions": [
     {
-      "year": 2013,
-      "title": "Restauration de l’installation électrique",
+      "year": 2012,
+      "title": "Restauration du transept",
+      "missions": ["Maîtrise d'oeuvre"],
+      "price": "303 000 € HT"
+    },
+    {
+      "year": 2007,
+      "title": "Travaux d'urgence",
       "missions": ["Maîtrise d'oeuvre"],
       "price": "15 000 € HT"
     },
     {
-      "year": 2012,
-      "title": "Restauration des façades sud et ouest",
-      "missions": ["Maîtrise d'oeuvre"],
-      "price": "150 000 € HT"
-    },
-    {
-      "year": 2009,
+      "year": 2006,
       "title": "Etude préalable"
     }
   ],
   "classement": "Inscrit MH",
   "client": {
-    "name": "Bombon",
-    "zip": 77720,
+    "name": "Chauconin-Neufmontiers",
+    "zip": 77124,
     "type": "Mairie"
   }
 }
