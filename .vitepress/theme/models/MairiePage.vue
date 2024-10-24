@@ -17,7 +17,10 @@ const getUrl = (p: Project) => {
 </script>
 
 <template>
-  <main class="flex-grow flex flex-col p-2">
+  <main
+    class="flex-grow flex flex-col p-2"
+    v-if="typeof frontmatter.client === 'object'"
+  >
     <h1>
       Nos réalisations pour {{ frontmatter.client.name }} ({{
         frontmatter.client.zip
