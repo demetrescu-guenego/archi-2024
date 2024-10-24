@@ -1,55 +1,41 @@
 {
-  "label": "Mairie de Bois-le-roi",
-  "description": "Rénovation extérieure et intérieure Mairie à Bois-le-roi",
+  "label": "Beffroi communal à Grisy-Suisnes",
+  "description": "Restauration du beffroi communal à Grisy-Suisnes",
   "image": {
-    "main": "img/photo/project/restauration-par-ext/bois-le-roi/parallax.jpg",
-    "mainPortrait": "img/photo/project/restauration-par-ext/bois-le-roi/parallax.jpg",
+    "main": "img/photo/project/restauration-par-ext/grisy-suisnes/grisy-suisnes.jpg",
+    "mainPortrait": "img/photo/project/restauration-par-ext/grisy-suisnes/grisy-suisnes.jpg",
     "trios": [
       [
         {
-          "url": "img/photo/project/restauration-par-ext/bois-le-roi/01.jpg",
-          "caption": "Façade principale - après travaux"
+          "url": "img/photo/project/restauration-par-ext/grisy-suisnes/01.jpg",
+          "caption": "Façade"
         },
         {
-          "url": "img/photo/project/restauration-par-ext/bois-le-roi/02.jpg",
-          "caption": "Façade arrière - après travaux"
+          "url": "img/photo/project/restauration-par-ext/grisy-suisnes/02.jpg",
+          "caption": "Horloge du beffroi"
         },
         {
-          "url": "img/photo/project/restauration-par-ext/bois-le-roi/03.jpg",
-          "caption": "Intérieur - après travaux"
-        }
-      ],
-      [
-        {
-          "url": "img/photo/project/restauration-par-ext/bois-le-roi/04.jpg",
-          "caption": "Façade principale - avant travaux"
-        },
-        {
-          "url": "img/photo/project/restauration-par-ext/bois-le-roi/05.jpg",
-          "caption": "Façade arrière - avant travaux"
-        },
-        {
-          "url": "img/photo/project/restauration-par-ext/bois-le-roi/06.jpg",
-          "caption": "Intérieur - avant travaux"
+          "url": "img/photo/project/restauration-par-ext/grisy-suisnes/03.jpg",
+          "caption": "Restauration de l'horloge"
         }
       ]
     ]
   },
   "moa": {
-    "name": "Ville de Bois-le-roi (77)",
-    "url": "https://www.ville-boisleroi.fr/"
+    "name": "Commune Grisy-Suisnes (77)",
+    "url": "http://www.grisy-suisnes.fr/"
   },
   "interventions": [
     {
-      "year": "2017",
-      "title": "Rénovation extérieure et intérieure mairie",
-      "missions": ["Maîtrise d’œuvre"],
-      "price": "350 000 € HT"
+      "year": 2010,
+      "title": "Restauration du beffroi communal à Grisy-Suisnes",
+      "missions": ["Maîtrise d’œuvre", "OPC"],
+      "price": "170 000 € HT"
     }
   ],
   "client": {
-    "name": "Bois-le-Roi",
-    "zip": 77590,
+    "name": "Grisy-Suisnes",
+    "zip": 77166,
     "type": "Mairie"
   }
 }
