@@ -1,30 +1,34 @@
 {
-  "label": "Eglise Saint Martin à Iverny",
-  "description": "Eglise Saint Martin à Iverny",
+  "label": "Eglise Saint Denis à Le Thillay",
+  "description": "Eglise Saint Denis à Le Thillay",
   "image": {
-    "main": "img/photo/project/eglise/iverny/eglise.jpg",
-    "mainPortrait": "img/photo/project/eglise/iverny/eglise.jpg",
+    "main": "img/photo/project/eglise/le-thillay/eglise.jpg",
+    "mainPortrait": "img/photo/project/eglise/le-thillay/eglise.jpg",
     "others": [
-      "img/photo/project/eglise/iverny/eglise.jpg",
-      "img/photo/project/eglise/iverny/eglise.jpg"
+      "img/photo/project/eglise/le-thillay/eglise.jpg",
+      "img/photo/project/eglise/le-thillay/eglise.jpg"
     ]
   },
   "moa": {
-    "name": "Commune de Iverny (77)",
-    "url": "http://www.iverny.fr/"
+    "name": "Commune du Le Thillay (95)",
+    "url": "http://www.mairie-le-thillay.fr/"
   },
   "interventions": [
     {
       "year": "2016",
       "ongoing": true,
-      "title": "Restauration des parements intérieurs et réfection de l’installation electrique et de chauffage",
+      "title": "Restauration du chevet",
       "missions": ["Maîtrise d’œuvre"],
-      "price": "300 000 € HT"
+      "price": "100 000 € HT"
+    },
+    {
+      "year": 2016,
+      "title": "Etude préalable"
     }
   ],
   "client": {
-    "name": "Iverny",
-    "zip": 77165,
+    "name": "Le Thillay",
+    "zip": 95500,
     "type": "Mairie"
   }
 }

@@ -1,12 +1,11 @@
 <script setup lang="ts">
 import { useData, useRoute } from "vitepress";
-import { Photo } from "../../interfaces/Photo";
+import { CardContent } from "../../interfaces/CardContent";
 import { ProjectData } from "../../interfaces/ProjectData";
 import InterventionTable from "../widgets/InterventionTable.vue";
+import NiceCard from "../widgets/NiceCard.vue";
 import ParallaxImage from "../widgets/ParallaxImage.vue";
 import PresentationTable from "../widgets/PresentationTable.vue";
-import NiceCard from "../widgets/NiceCard.vue";
-import { CardContent } from "../../interfaces/CardContent";
 
 const { frontmatter } = useData<ProjectData>();
 const route = useRoute();
