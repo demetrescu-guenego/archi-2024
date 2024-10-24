@@ -1,53 +1,8 @@
+@import "./css/elements.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer components {
-  section {
-    @apply bg-white;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply text-fuchsia-900 font-bold;
-  }
-
-  h1 {
-    @apply text-fuchsia-900 text-3xl font-bold my-8 text-center;
-  }
-
-  h2 {
-    @apply text-fuchsia-900 text-2xl font-bold my-8;
-  }
-
-  h3 {
-    @apply mt-5 mb-2 text-xl;
-  }
-
-  h4 {
-    @apply mt-10 text-lg;
-  }
-
-  p {
-    @apply my-3;
-  }
-
-  ul {
-    @apply list-disc pl-8;
-  }
-
-  p,
-  table,
-  address {
-    a {
-      @apply text-blue-700 underline cursor-pointer;
-    }
-  }
-}
 
 .introduce.first-time h3,
 .introduce.first-time h4 {

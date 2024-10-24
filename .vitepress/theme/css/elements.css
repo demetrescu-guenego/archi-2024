@@ -1,0 +1,46 @@
+@layer components {
+  section {
+    @apply bg-white;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold text-fuchsia-900;
+  }
+
+  h1 {
+    @apply my-8 text-center text-3xl;
+  }
+
+  h2 {
+    @apply my-8 text-2xl;
+  }
+
+  h3 {
+    @apply mb-2 mt-5 text-xl;
+  }
+
+  h4 {
+    @apply mt-10 text-lg;
+  }
+
+  p {
+    @apply my-3;
+  }
+
+  ul {
+    @apply list-disc pl-8;
+  }
+
+  p,
+  table,
+  address {
+    a {
+      @apply cursor-pointer text-blue-700 underline;
+    }
+  }
+}
