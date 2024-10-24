@@ -1,6 +1,6 @@
 import { createContentLoader } from "../../.vitepress/plugins/utils/createContentLoader";
 import { filterPostByClientType } from "../../.vitepress/plugins/utils/filter";
-import { IdWithLabel } from "../../commons/interfaces/IdWithLabel";
+import { IdWithLabel } from "../../.vitepress/interfaces/IdWithLabel";
 import { toSlug } from "../../.vitepress/utils/slug";
 
 const getPlaceData = async (): Promise<IdWithLabel[]> => {

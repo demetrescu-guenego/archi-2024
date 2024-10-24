@@ -1,5 +1,5 @@
 import { basename, dirname } from "node:path";
-import { Client } from "../../theme/interfaces/Client";
+import { Client } from "../../interfaces/Client";
 import { toSlug } from "../../utils/slug";
 import { createContentLoader } from "../utils/createContentLoader";
 

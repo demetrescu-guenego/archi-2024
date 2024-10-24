@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useData } from "vitepress";
-import { Project } from "../interfaces/Project";
+import { Project } from "../../interfaces/Project";
 
 const { frontmatter } = useData();
 console.log("frontmatter: ", frontmatter.value);

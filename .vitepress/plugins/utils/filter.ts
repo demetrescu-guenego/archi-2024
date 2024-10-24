@@ -1,4 +1,4 @@
-import { Intervention } from "../../theme/interfaces/Intervention";
+import { Intervention } from "../../interfaces/Intervention";
 import { Post } from "../../interfaces/Post";
 
 export const filterPostByClientType = (posts: Post[], type: string) => {

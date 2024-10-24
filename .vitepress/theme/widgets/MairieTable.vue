@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useRouter } from "vitepress";
-import { Client } from "../interfaces/Client";
+import { Client } from "../../interfaces/Client";
 import { toSlug } from "../utils/slug";
 
 const props = defineProps<{

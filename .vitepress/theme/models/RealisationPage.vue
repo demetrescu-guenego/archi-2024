@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useData } from "vitepress";
-import { Category } from "../interfaces/Category";
+import { Category } from "../../interfaces/Category";
 import { data } from "../../../commons/data";
 
 const { site } = useData();

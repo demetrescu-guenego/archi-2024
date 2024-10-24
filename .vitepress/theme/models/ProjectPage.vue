@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { useData, useRoute } from "vitepress";
-import { Photo } from "../interfaces/Photo";
+import { Photo } from "../../interfaces/Photo";
+import { ProjectData } from "../../interfaces/ProjectData";
 import InterventionTable from "../widgets/InterventionTable.vue";
-import PresentationTable from "../widgets/PresentationTable.vue";
 import ParallaxImage from "../widgets/ParallaxImage.vue";
-import { ProjectData } from "../interfaces/ProjectData";
+import PresentationTable from "../widgets/PresentationTable.vue";
 
 const { frontmatter } = useData<ProjectData>();
 const route = useRoute();

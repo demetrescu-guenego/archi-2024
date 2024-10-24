@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Intervention } from "../interfaces/Intervention";
+import { Intervention } from "../../interfaces/Intervention";
 
 const props = defineProps<{
   input: Intervention[];

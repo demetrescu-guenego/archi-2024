@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { ProjectData } from "../interfaces/ProjectData";
+import { ProjectData } from "../../interfaces/ProjectData";
 
-const props = defineProps<{
+defineProps<{
   input: ProjectData;
 }>();
 </script>
