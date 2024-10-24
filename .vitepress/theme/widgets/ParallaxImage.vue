@@ -145,15 +145,9 @@ div {
     background-color: black;
     max-width: none;
   }
-  transition: all 500ms;
+  transition: background-color 500ms;
   &.loaded {
     height: 500px;
   }
-}
-
-figcaption {
-  background-color: white;
-  text-align: center;
-  font-style: italic;
 }
 </style>

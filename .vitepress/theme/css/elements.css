@@ -45,7 +45,7 @@
   }
 
   table {
-    @apply table-auto animate-[accordion_500ms_forwards];
+    @apply table-auto md:animate-[accordion_500ms_forwards];
     td,
     th {
       @apply px-4 py-1 text-left;

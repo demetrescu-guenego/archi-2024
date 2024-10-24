@@ -11,5 +11,8 @@ export default defineConfig({
   srcDir: specificConfig.srcDir,
   vite: {
     plugins: [contentLoader],
+    server: {
+      host: true,
+    },
   },
 });
