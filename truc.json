@@ -1,34 +1,24 @@
 {
-  "label": "Eglise Saint Denis à Le Thillay",
-  "description": "Eglise Saint Denis à Le Thillay",
-  "image": {
-    "main": "img/photo/project/eglise/le-thillay/eglise.jpg",
-    "mainPortrait": "img/photo/project/eglise/le-thillay/eglise.jpg",
-    "others": [
-      "img/photo/project/eglise/le-thillay/eglise.jpg",
-      "img/photo/project/eglise/le-thillay/eglise.jpg"
-    ]
-  },
+  "title": "Eglise Saint Hubert de Les Mârets",
+  "description": "Eglise Saint Hubert de Les Mârets",
+
   "moa": {
-    "name": "Commune du Le Thillay (95)",
-    "url": "http://www.mairie-le-thillay.fr/"
+    "name": "Commune de Les Mârets (77)",
+    "url": "https://lesmarets.com/"
   },
   "interventions": [
     {
       "year": "2016",
       "ongoing": true,
-      "title": "Restauration du chevet",
-      "missions": ["Maîtrise d’œuvre"],
-      "price": "100 000 € HT"
-    },
-    {
-      "year": 2016,
-      "title": "Etude préalable"
+      "title": "Restauration des parements extérieurs du chœur ",
+      "missions": ["Maîtrise d'oeuvre", "OPC"],
+      "price": "140 000 € HT"
     }
   ],
+  "classement": "Classée MH",
   "client": {
-    "name": "Le Thillay",
-    "zip": 95500,
+    "name": "Les Mârets",
+    "zip": 77560,
     "type": "Mairie"
   }
 }
