@@ -2,23 +2,9 @@
 import { basename, dirname } from "path";
 import { data } from "../../commons/data";
 import { Client } from "../theme/interfaces/Client";
-import { Intervention } from "../theme/interfaces/Intervention";
 import { toSlug } from "../utils/slug";
-import { Post } from "./interfaces/Post";
 import { createContentLoader } from "./utils/createContentLoader";
-
-const filterPostByClientType = (posts: Post[], type: string) => {
-  return posts
-    .filter((post) => {
-      return post.frontmatter.client?.type === type;
-    })
-    .map((post) => {
-      return {
-        ...post.frontmatter.client,
-        years: post.frontmatter.interventions.map((i: Intervention) => i.year),
-      };
-    });
-};
+import { filterPostByClientType } from "./utils/filter";
 
 const getLabel = (category: string) => {
   const c = data.categories.find((c) => c.id === category);
