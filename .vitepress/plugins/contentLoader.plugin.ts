@@ -1,14 +1,10 @@
 // import { createContentLoader } from "vitepress";
+import { basename, dirname } from "path";
 import { data } from "../../data";
 import { Client } from "../theme/interfaces/Client";
 import { Intervention } from "../theme/interfaces/Intervention";
+import { Post } from "./interfaces/Post";
 import { createContentLoader, toSlug } from "./utils";
-import { basename, dirname } from "path";
-
-interface Post {
-  url: string;
-  frontmatter: any;
-}
 
 const filterPost = (posts: Post[], type: string) => {
   return posts

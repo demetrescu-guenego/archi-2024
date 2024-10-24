@@ -1,8 +1,9 @@
-import { readFileSync } from "node:fs";
 import { glob } from "glob";
 import matter from "gray-matter";
+import { readFileSync } from "node:fs";
 import path from "node:path";
 import { SiteConfig } from "vitepress";
+import { Post } from "./interfaces/Post";
 
 export const basename = (path) => {
   return path.split("/").reverse()[0];
@@ -11,7 +12,7 @@ export const basename = (path) => {
 export const createContentLoader = (pattern: string, options: unknown) => {
   const config: SiteConfig = globalThis.VITEPRESS_CONFIG;
   return {
-    async load() {
+    async load(): Promise<Post[]> {
       // look at all files in pattern
       const files = await glob(pattern, {
         cwd: config.srcDir,
