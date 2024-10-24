@@ -23,7 +23,7 @@ const init = () => {
   if (!("window" in globalThis)) {
     return;
   }
-  window.addEventListener("resize", () => {
+  globalThis.window.addEventListener("resize", () => {
     mode.value = getMode();
   });
 };

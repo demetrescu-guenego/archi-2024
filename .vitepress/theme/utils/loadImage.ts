@@ -6,7 +6,10 @@ export interface ImageLoaded {
 
 export const loadImage = (url: string): Promise<ImageLoaded> => {
   return new Promise((resolve) => {
-    const img = document.createElement("img");
+    if (!("window" in globalThis)) {
+      return;
+    }
+    const img = globalThis.window.document.createElement("img");
     img.src = url;
     img.addEventListener("load", () => {
       resolve({ url, width: img.width, height: img.height });

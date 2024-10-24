@@ -2,11 +2,14 @@ import { Directive } from "vue";
 
 export const vOnscreen: Directive<HTMLElement, string> = {
   mounted: (el, binding) => {
+    if (!("window" in globalThis)) {
+      return;
+    }
     const className = binding.value;
     let firstTime = true;
 
     const check = () => {
-      const wh = window.innerHeight;
+      const wh = globalThis.window.innerHeight;
       const rect = el.getBoundingClientRect();
 
       const isVisible = rect.bottom >= 0 && rect.top <= wh;
@@ -23,12 +26,12 @@ export const vOnscreen: Directive<HTMLElement, string> = {
       }
     };
 
-    window.document.addEventListener("touchmove", () => {
+    globalThis.window.document.addEventListener("touchmove", () => {
       check();
     });
 
     // for browsers
-    window.document.addEventListener("scroll", () => {
+    globalThis.window.document.addEventListener("scroll", () => {
       check();
     });
     check();

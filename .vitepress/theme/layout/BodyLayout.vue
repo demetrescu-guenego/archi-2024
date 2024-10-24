@@ -11,12 +11,10 @@ import MairiePage from "../models/MairiePage.vue";
 
 const { frontmatter } = useData();
 const route = useRoute();
-console.log("route: ", route);
 
 const isProject = () => {
   return route.path.match(new RegExp("/realisations/[^/]+/[^/]+")) !== null;
 };
-console.log("isProject: ", isProject);
 </script>
 
 <template>

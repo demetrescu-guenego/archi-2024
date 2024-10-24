@@ -14,7 +14,7 @@ if ("window" in globalThis) {
 
 const goBack = () => {
   if ("window" in globalThis) {
-    window.history.back();
+    globalThis.window.history.back();
   }
 };
 </script>

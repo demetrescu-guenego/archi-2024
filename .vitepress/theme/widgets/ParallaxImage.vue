@@ -20,6 +20,9 @@ const images = ref<
 const isLoaded = ref(false);
 
 onMounted(async () => {
+  if (!("window" in globalThis)) {
+    return;
+  }
   const imgs = await Promise.all([
     loadImage(props.landscape),
     loadImage(props.portrait),
@@ -40,6 +43,19 @@ onMounted(async () => {
   } else {
     render();
   }
+
+  globalThis.window.document.addEventListener("touchmove", () => {
+    render();
+  });
+
+  // window.addEventListener("resize", () => {
+  //   render();
+  // });
+
+  // for browsers
+  globalThis.window.document.addEventListener("scroll", () => {
+    render();
+  });
 });
 
 const render = () => {
@@ -55,8 +71,8 @@ const render = () => {
     return;
   }
 
-  const wh = window.innerHeight;
-  const ww = window.innerWidth;
+  const wh = globalThis.window.innerHeight;
+  const ww = globalThis.window.innerWidth;
   const wratio = ww / wh;
 
   const rect = divElt.value.getBoundingClientRect();
@@ -105,19 +121,6 @@ const render = () => {
     return;
   }
 };
-
-window.document.addEventListener("touchmove", () => {
-  render();
-});
-
-// window.addEventListener("resize", () => {
-//   render();
-// });
-
-// for browsers
-window.document.addEventListener("scroll", () => {
-  render();
-});
 </script>
 
 <template>
