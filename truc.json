@@ -1,45 +1,51 @@
 {
-  "label": "Eglise Notre Dame en l’Assomption à Bernay-Vilbert",
-  "description": "Eglise Notre Dame en l’Assomption à Bernay-Vilbert",
+  "label": "Eglise Saint Germain à Bombon",
+  "description": "Eglise Saint Germain à Bombon",
   "image": {
-    "main": "img/photo/project/eglise/bernay-vilbert/eglise.jpg",
-    "mainPortrait": "img/photo/project/eglise/bernay-vilbert/eglise.jpg",
+    "main": "img/photo/project/eglise/bombon/eglise.jpg",
+    "mainPortrait": "img/photo/project/eglise/bombon/eglise.jpg",
     "trios": [
       [
         {
-          "url": "img/photo/project/eglise/bernay-vilbert/01.jpg",
+          "url": "img/photo/project/eglise/bombon/01.jpg",
           "caption": "Coupe"
         },
         {
-          "url": "img/photo/project/eglise/bernay-vilbert/02.jpg",
-          "caption": ""
+          "url": "img/photo/project/eglise/bombon/02.jpg",
+          "caption": "Travaux"
         },
         {
-          "url": "img/photo/project/eglise/bernay-vilbert/03.jpg",
-          "caption": ""
+          "url": "img/photo/project/eglise/bombon/03.jpg",
+          "caption": "Le clocher de l'église"
         }
       ]
     ]
   },
   "moa": {
-    "name": "Commune de Bernay-Vilbert (77)",
-    "url": "http://bernay-vilbert.fr/"
+    "name": "Commune de Bombon (77)"
   },
   "interventions": [
     {
-      "year": 2014,
-      "title": "Réfection des parements intérieurs et travaux d’électricité",
-      "missions": ["Maîtrise d’œuvre"],
-      "price": "68 400 € HT"
+      "year": 2013,
+      "title": "Restauration de l’installation électrique",
+      "missions": ["Maîtrise d'oeuvre"],
+      "price": "15 000 € HT"
     },
     {
-      "year": 2008,
+      "year": 2012,
+      "title": "Restauration des façades sud et ouest",
+      "missions": ["Maîtrise d'oeuvre"],
+      "price": "150 000 € HT"
+    },
+    {
+      "year": 2009,
       "title": "Etude préalable"
     }
   ],
+  "classement": "Inscrit MH",
   "client": {
-    "name": "Bernay-Vilbert",
-    "zip": 77540,
+    "name": "Bombon",
+    "zip": 77720,
     "type": "Mairie"
   }
 }

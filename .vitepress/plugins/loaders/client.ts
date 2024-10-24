@@ -6,7 +6,6 @@ export const clientLoad = async (id: string) => {
   if (!id.match(regex)) {
     return;
   }
-  console.log("id: ", id);
   // look at all the projects and generate the frontmatter.
   const posts = await createContentLoader(`realisations/**/*.md`, {
     includeSrc: false,
@@ -22,7 +21,6 @@ export const clientLoad = async (id: string) => {
     mairies,
     publicOthers,
   });
-  console.log("jsonString: ", jsonString);
 
   return `---
 ${jsonString}

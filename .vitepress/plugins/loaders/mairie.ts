@@ -9,7 +9,6 @@ export const mairieLoad = async (id: string) => {
     return;
   }
   const place = id.replace(regex, "$1");
-  console.log("id: ", id);
   // look at all the projects and generate the frontmatter.
   const posts = await createContentLoader(`realisations/**/*.md`, {
     includeSrc: false,
@@ -21,7 +20,6 @@ export const mairieLoad = async (id: string) => {
 
   const projects = posts
     .filter((post) => {
-      console.log("post: ", post);
       if (typeof post.frontmatter.client !== "object") {
         return false;
       }
@@ -44,7 +42,6 @@ export const mairieLoad = async (id: string) => {
     client,
     projects,
   });
-  console.log("jsonString: ", jsonString);
 
   return `---
 ${jsonString}
