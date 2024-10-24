@@ -3,7 +3,7 @@ import matter from "gray-matter";
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import { SiteConfig } from "vitepress";
-import { Post } from "./interfaces/Post";
+import { Post } from "../interfaces/Post";
 
 export const createContentLoader = (pattern: string, options: unknown) => {
   const config: SiteConfig = globalThis.VITEPRESS_CONFIG;
@@ -28,16 +28,4 @@ export const createContentLoader = (pattern: string, options: unknown) => {
       return posts;
     },
   };
-};
-
-export const toSlug = (text: string) => {
-  text = text.normalize("NFD");
-
-  const result = text
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[ ']/g, "-")
-    .replace(/[^a-zA-Z0-9-]/g, "")
-    .toLowerCase();
-
-  return result;
 };

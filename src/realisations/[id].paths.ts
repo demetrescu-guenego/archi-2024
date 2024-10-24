@@ -1,4 +1,4 @@
-import { data } from "../../data";
+import { data } from "../../commons/data";
 
 export default {
   paths() {

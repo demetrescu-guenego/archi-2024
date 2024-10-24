@@ -1,10 +1,11 @@
 // import { createContentLoader } from "vitepress";
 import { basename, dirname } from "path";
-import { data } from "../../data";
+import { data } from "../../commons/data";
 import { Client } from "../theme/interfaces/Client";
 import { Intervention } from "../theme/interfaces/Intervention";
+import { toSlug } from "../utils/slug";
 import { Post } from "./interfaces/Post";
-import { createContentLoader, toSlug } from "./utils";
+import { createContentLoader } from "./utils/createContentLoader";
 
 const filterPostByClientType = (posts: Post[], type: string) => {
   return posts
