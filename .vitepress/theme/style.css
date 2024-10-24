@@ -5,11 +5,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.introduce.first-time h3,
-.introduce.first-time h4 {
-  animation: introduce 2s forwards;
-}
-
 @layer components {
   .background {
     @apply pointer-events-none absolute bottom-0 left-0 right-0 top-0 z-0 block overflow-hidden;
@@ -21,5 +16,10 @@
 
   .parallax {
     @apply m-0 overflow-hidden bg-transparent p-0;
+  }
+
+  .introduce.first-time h3,
+  .introduce.first-time h4 {
+    @apply animate-[introduce_2s_forwards];
   }
 }
