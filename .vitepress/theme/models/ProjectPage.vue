@@ -27,9 +27,9 @@ const projectData: ProjectData = frontmatter.value as ProjectData;
 </script>
 
 <template>
-  <main class="flex-grow flex flex-col">
+  <main class="flex flex-grow flex-col">
     <section class="bg-white">
-      <div class="px-2 max-w-5xl mx-auto pb-4">
+      <div class="mx-auto max-w-5xl px-2 pb-4">
         <h1>Réalisation: {{ frontmatter.label }}</h1>
         <h2>Présentation</h2>
         <PresentationTable :input="projectData" />
@@ -45,31 +45,33 @@ const projectData: ProjectData = frontmatter.value as ProjectData;
       />
     </section>
     <section>
-      <div class="px-2 max-w-5xl mx-auto pb-4">
+      <div class="mx-auto max-w-5xl px-2 pb-4">
         <h2>Description</h2>
         <Content />
-        <h2>Photos</h2>
-        <div>
-          <div class="flex flex-wrap gap-8 justify-center py-8">
-            <a
-              v-for="photo in photos"
-              :key="photo.url"
-              class="w-72 overflow-hidden flex flex-col shadow-xl hover:scale-105 hover:shadow-2xl transition-transform"
-              :href="getUrl(photo)"
-            >
-              <img
-                :src="getImageUrl(photo)"
-                :alt="photo.label"
-                class="object-cover w-72 h-44"
-              />
-              <div
-                class="font-bold h-12 flex justify-center items-center text-center px-4"
+        <template v-if="photos">
+          <h2>Photos</h2>
+          <div>
+            <div class="flex flex-wrap justify-center gap-8 py-8">
+              <a
+                v-for="photo in photos"
+                :key="photo.url"
+                class="flex w-72 flex-col overflow-hidden shadow-xl transition-transform hover:scale-105 hover:shadow-2xl"
+                :href="getUrl(photo)"
               >
-                {{ photo.label }}
-              </div>
-            </a>
+                <img
+                  :src="getImageUrl(photo)"
+                  :alt="photo.label"
+                  class="h-44 w-72 object-cover"
+                />
+                <div
+                  class="flex h-12 items-center justify-center px-4 text-center font-bold"
+                >
+                  {{ photo.label }}
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
+        </template>
       </div>
     </section>
   </main>

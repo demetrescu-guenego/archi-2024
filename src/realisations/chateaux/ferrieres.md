@@ -1,6 +1,6 @@
 ---
 layout: project
-label: "Château de Ferrières en Brie"
+label: Château de Ferrières en Brie
 moa:
   name: privée
 
