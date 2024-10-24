@@ -9,12 +9,9 @@ const getPlaceData = async (): Promise<IdWithLabel[]> => {
     excerpt: true,
     render: false,
   }).load();
-  console.log("xxx posts: ", posts);
 
   const mairies = filterPostByClientType(posts, "Mairie");
-  console.log("mairies: ", mairies);
   const publicOthers = filterPostByClientType(posts, "Public Autres");
-  console.log("publicOthers: ", publicOthers);
 
   const clients = [...mairies, ...publicOthers].map((post) => {
     return {
@@ -22,7 +19,6 @@ const getPlaceData = async (): Promise<IdWithLabel[]> => {
       label: post.name,
     } satisfies IdWithLabel;
   });
-  console.log("clients: ", clients);
 
   return clients;
 };

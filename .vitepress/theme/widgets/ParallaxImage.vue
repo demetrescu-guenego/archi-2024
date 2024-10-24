@@ -43,7 +43,6 @@ onMounted(async () => {
 });
 
 const render = () => {
-  console.log("rendering");
   if (images.value === undefined) {
     return;
   }
