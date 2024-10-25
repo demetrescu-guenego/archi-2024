@@ -1,61 +1,55 @@
 {
-  "label": "Gymnase Jean Moulin à Torcy",
-  "description": "Aménagement d’un local associatif Club House, Gymnase Jean Moulin à Torcy",
+  "label": "Salle polyvalente à Bussy-Saint-Martin",
+  "description": "Extension de la salle polyvalente à Bussy-Saint-Martin",
   "image": {
-    "main": "img/photo/project/sport/torcy/parallax.jpg",
-    "mainPortrait": "img/photo/project/sport/torcy/parallax-portrait.jpg",
+    "main": "img/photo/project/tertiaire/bussy-st-martin/parallax.jpg",
+    "mainPortrait": "img/photo/project/tertiaire/bussy-st-martin/parallax-portrait.jpg",
     "trios": [
       [
         {
-          "url": "img/photo/project/sport/torcy/01.jpg",
-          "caption": "Avant travaux"
+          "url": "img/photo/project/tertiaire/bussy-st-martin/01.jpg",
+          "caption": "Pendant les travaux"
         },
         {
-          "url": "img/photo/project/sport/torcy/02.jpg",
-          "caption": "Avant travaux"
+          "url": "img/photo/project/tertiaire/bussy-st-martin/02.jpg",
+          "caption": "Percement d'un mur de structure"
         },
         {
-          "url": "img/photo/project/sport/torcy/03.jpg",
-          "caption": "Avant travaux"
+          "url": "img/photo/project/tertiaire/bussy-st-martin/03.jpg",
+          "caption": "Après travaux"
         }
       ],
       [
         {
-          "url": "img/photo/project/sport/torcy/04.jpg",
-          "caption": "Après travaux - extérieur"
+          "url": "img/photo/project/tertiaire/bussy-st-martin/04.jpg",
+          "caption": "Volet paysager"
         },
         {
-          "url": "img/photo/project/sport/torcy/05.jpg",
-          "caption": "Après travaux - extérieur"
+          "url": "img/photo/project/tertiaire/bussy-st-martin/05.jpg",
+          "caption": "Vue aérienne Google avant travaux"
         },
         {
-          "url": "img/photo/project/sport/torcy/06.jpg",
-          "caption": "Après travaux - intérieur"
-        }
-      ],
-      [
-        {
-          "url": "img/photo/project/sport/torcy/07.jpg",
-          "caption": "Après travaux - intérieur"
+          "url": "img/photo/project/tertiaire/bussy-st-martin/06.jpg",
+          "caption": "Vue aérienne 3D Google après travaux"
         }
       ]
     ]
   },
   "moa": {
-    "name": "Ville de Torcy (77)",
-    "url": "http://www.ville-torcy.fr/"
+    "name": "Commune de Bussy-Saint-Martin (77)",
+    "url": "http://www.bussy-saint-martin.com/"
   },
   "interventions": [
     {
       "year": 2016,
-      "title": "Aménagement d’un local associatif « Club House »",
-      "missions": ["Etude", "Autorisation de travaux"],
-      "price": "110 000 Euros HT"
+      "title": "Extension de la salle polyvalente à Bussy-Saint-Martin",
+      "missions": ["Maîtrise d'oeuvre"],
+      "price": "184 000 € HT"
     }
   ],
   "client": {
-    "name": "Torcy",
-    "zip": 77200,
+    "name": "Bussy-Saint-Martin",
+    "zip": 77600,
     "type": "Mairie"
   }
 }
