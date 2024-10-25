@@ -136,7 +136,7 @@ div {
   z-index: -2;
   padding: 0;
   margin: 0;
-  height: 3em;
+  height: 500px;
   overflow: hidden;
   background-color: #eee;
   img {
