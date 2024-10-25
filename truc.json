@@ -1,36 +1,29 @@
 {
-  "label": "Construction d’un immeuble de bureaux et entrepôt à Chanteloup-en-Brie",
-  "description": "Construction d’un immeuble de bureaux et entrepôt à Chanteloup-en-Brie",
+  "label": "Aménagement CPAM de la ville de Joigny",
+  "description": "Aménagement CPAM de la ville de Joigny",
   "image": {
-    "main": "img/photo/project/tertiaire/chanteloup-en-brie/chanteloup-en-brie.jpg",
-    "mainPortrait": "img/photo/project/tertiaire/chanteloup-en-brie/chanteloup-en-brie.jpg",
-    "trios": [
-      [
-        {
-          "url": "img/photo/project/tertiaire/chanteloup-en-brie/01.jpg",
-          "caption": ""
-        },
-        {
-          "url": "img/photo/project/tertiaire/chanteloup-en-brie/02.jpg",
-          "caption": ""
-        },
-        {
-          "url": "img/photo/project/tertiaire/chanteloup-en-brie/03.jpg",
-          "caption": ""
-        }
-      ]
+    "main": "img/photo/project/tertiaire/joigny/cpam.jpg",
+    "mainPortrait": "img/photo/project/tertiaire/joigny/cpam.jpg",
+    "others": [
+      "img/photo/project/tertiaire/joigny/cpam.jpg",
+      "img/photo/project/tertiaire/joigny/cpam.jpg"
     ]
   },
   "moa": {
-    "name": "privée"
+    "name": "Ville de Joigny (89)",
+    "url": "http://www.ville-joigny.fr/"
   },
   "interventions": [
     {
-      "year": 2011,
-      "title": "Construction d’un immeuble de bureaux et entrepôt à Chanteloup-en-Brie",
-      "missions": ["Maîtrise d’œuvre", "Autorisation de travaux"],
-      "price": "1 000 000 € HT"
+      "year": 2015,
+      "title": "Aménagement CPAM",
+      "missions": ["Maîtrise d'oeuvre"],
+      "price": "210 000 € HT"
     }
   ],
-  "client": "privé"
+  "client": {
+    "name": "Joigny",
+    "zip": 89300,
+    "type": "Mairie"
+  }
 }
