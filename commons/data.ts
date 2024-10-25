@@ -51,7 +51,7 @@ export const data = {
       name: "torcy",
     },
     {
-      id: "ecoles",
+      id: "scolaire",
       label: "Scolaire - Education",
       name: "poincy",
     },
