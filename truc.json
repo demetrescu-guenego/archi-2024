@@ -1,41 +1,23 @@
 {
-  "label": "Hôtel de Police Municipale à Moissy-Cramayel",
-  "description": "Réhabilitation de l’Hôtel de Police Municipale à Moissy-Cramayel",
-  "image": {
-    "main": "img/photo/project/tertiaire/moissy-cramayel/moissy-cramayel.jpg",
-    "mainPortrait": "img/photo/project/tertiaire/moissy-cramayel/moissy-cramayel.jpg",
-    "trios": [
-      [
-        {
-          "url": "img/photo/project/tertiaire/moissy-cramayel/01.jpg",
-          "caption": "Façade"
-        },
-        {
-          "url": "img/photo/project/tertiaire/moissy-cramayel/02.jpg",
-          "caption": "Pendant travaux"
-        },
-        {
-          "url": "img/photo/project/tertiaire/moissy-cramayel/03.jpg",
-          "caption": "Après travaux"
-        }
-      ]
-    ]
-  },
+  "label": "Ateliers communaux à Sammeron",
+  "description": "Construction des ateliers communaux à Sammeron",
+
   "moa": {
-    "name": "Ville de Moissy-Cramayel (77)",
-    "url": "http://www.moissy-cramayel.fr/"
+    "name": "Commune de Sammeron (77)",
+    "url": "https://www.sammeron.fr/"
   },
   "interventions": [
     {
-      "year": 2012,
-      "title": "Réhabilitation de l’Hôtel de Police Municipale à Moissy-Cramayel",
-      "missions": ["Maîtrise d’œuvre"],
-      "price": "506 000 € HT"
+      "year": "2017",
+      "ongoing": true,
+      "title": "Construction des ateliers communaux à Sammeron",
+      "missions": ["Maîtrise d'oeuvre"],
+      "price": "280 000 € HT"
     }
   ],
   "client": {
-    "name": "Moissy-Cramayel",
-    "zip": 77550,
+    "name": "Sammeron",
+    "zip": 77260,
     "type": "Mairie"
   }
 }
