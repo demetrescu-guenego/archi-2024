@@ -1,29 +1,36 @@
 {
-  "label": "Aménagement CPAM de la ville de Joigny",
-  "description": "Aménagement CPAM de la ville de Joigny",
+  "label": "Réhabilitation d’un immeuble ancien à Maisoncelles-en-Brie",
+  "description": "Réhabilitation d’un immeuble ancien avec création d’un bar-brasserie et un multiservice à Maisoncelles-en-Brie",
   "image": {
-    "main": "img/photo/project/tertiaire/joigny/cpam.jpg",
-    "mainPortrait": "img/photo/project/tertiaire/joigny/cpam.jpg",
-    "others": [
-      "img/photo/project/tertiaire/joigny/cpam.jpg",
-      "img/photo/project/tertiaire/joigny/cpam.jpg"
+    "main": "img/photo/project/tertiaire/maisoncelles-en-brie/maisoncelles-en-brie.jpg",
+    "mainPortrait": "img/photo/project/tertiaire/maisoncelles-en-brie/maisoncelles-en-brie.jpg",
+    "trios": [
+      [
+        {
+          "url": "img/photo/project/tertiaire/maisoncelles-en-brie/01.jpg",
+          "caption": "Intérieur en travaux"
+        },
+        {
+          "url": "img/photo/project/tertiaire/maisoncelles-en-brie/02.jpg",
+          "caption": "Extérieurs"
+        }
+      ]
     ]
   },
   "moa": {
-    "name": "Ville de Joigny (89)",
-    "url": "http://www.ville-joigny.fr/"
+    "name": "Commune de Maisoncelles-en-Brie (77)"
   },
   "interventions": [
     {
-      "year": 2015,
-      "title": "Aménagement CPAM",
-      "missions": ["Maîtrise d'oeuvre"],
-      "price": "210 000 € HT"
+      "year": 2010,
+      "title": "Réhabilitation d’un immeuble ancien avec création d’un bar-brasserie et un multiservice à Maisoncelles-en-Brie",
+      "missions": ["Maîtrise d’œuvre", "OPC"],
+      "price": "370 000 € HT"
     }
   ],
   "client": {
-    "name": "Joigny",
-    "zip": 89300,
+    "name": "Maisoncelles-en-Brie",
+    "zip": 77580,
     "type": "Mairie"
   }
 }
