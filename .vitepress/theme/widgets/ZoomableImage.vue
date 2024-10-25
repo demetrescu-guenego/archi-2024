@@ -9,11 +9,14 @@ const props = defineProps<{
 const frame = useTemplateRef("frame");
 const img = useTemplateRef("img");
 
-const zoom = ref(1);
+const scale = ref(1);
+const initScale = ref(1);
 const tr = reactive<Point>({ x: 0, y: 0 });
 const style = computed(
   () =>
-    `transform: ` + `scale(${zoom.value}) ` + `translate(${tr.x}px, ${tr.y}px)`,
+    `transform: ` +
+    `scale(${scale.value}) ` +
+    `translate(${tr.x}px, ${tr.y}px)`,
 );
 
 const render = (width: number, height: number) => {
@@ -33,13 +36,18 @@ const render = (width: number, height: number) => {
   const frameRatio = frameWidth / frameHeight;
 
   if (ratio < frameRatio) {
-    console.log("portrait");
-    zoom.value = frameHeight / height;
-  } else {
     console.log("paysage");
-    zoom.value = frameWidth / width;
+    if (frameHeight > height) {
+      initScale.value = frameHeight / height;
+    }
+  } else {
+    console.log("portrait");
+    if (frameWidth > width) {
+      initScale.value = frameWidth / width;
+    }
   }
-  console.log("zoom: ", zoom.value);
+  console.log("zoom: ", initScale.value);
+  scale.value = initScale.value;
 
   const start: Point = { x: 0, y: 0 };
 
@@ -47,21 +55,23 @@ const render = (width: number, height: number) => {
     event.preventDefault();
     event.stopPropagation();
     console.log("mouse down");
-    console.log("zoom: ", zoom.value);
+    console.log("zoom: ", scale.value);
 
     console.log("event.pageX: ", event.pageX);
-    start.x = event.pageX - tr.x;
-    start.y = event.pageY - tr.y;
+
+    const f = 1 / scale.value;
+    start.x = event.pageX * f - tr.x;
+    start.y = event.pageY * f - tr.y;
 
     const mousemove = (event: MouseEvent) => {
       event.preventDefault();
       event.stopPropagation();
       console.log("mousemove");
-      console.log("zoom: ", zoom.value);
+      console.log("zoom: ", scale.value);
 
-      tr.x = event.pageX - start.x;
+      tr.x = event.pageX * f - start.x;
       console.log("tr.x: ", tr.x);
-      tr.y = event.pageY - start.y;
+      tr.y = event.pageY * f - start.y;
     };
 
     const mouseup = (event: MouseEvent) => {
@@ -75,6 +85,22 @@ const render = (width: number, height: number) => {
     document.addEventListener("mousemove", mousemove);
     document.addEventListener("mouseup", mouseup);
   });
+
+  frame.value.addEventListener("wheel", (event) => {
+    console.log("event: ", event);
+    console.log("event: ", event.deltaY);
+    const zoomIn = event.deltaY < 0;
+    // compute the scale factor
+    const zoomFactor = 1.5;
+    scale.value *= zoomIn ? zoomFactor : 1 / zoomFactor;
+
+    scale.value = Math.max(scale.value, 0.1 * initScale.value);
+
+    const delta = { x: 0, y: 0 };
+
+    tr.x = tr.x - delta.x;
+    tr.y = tr.y - delta.y;
+  });
 };
 
 onMounted(() => {
@@ -87,10 +113,6 @@ onMounted(() => {
   modelImg.addEventListener("load", () => {
     render(modelImg.width, modelImg.height);
   });
-
-  //   const handleMouseMove = () => {
-  //     console.log("mouse move");
-  //   };
 });
 </script>
 
