@@ -1,29 +1,36 @@
 {
-  "label": "Construction d’un hangar de stockage et bureaux à Chambly",
-  "description": "Construction d’un hangar de stockage et bureaux à Chambly",
+  "label": "Construction d’un immeuble de bureaux et entrepôt à Chanteloup-en-Brie",
+  "description": "Construction d’un immeuble de bureaux et entrepôt à Chanteloup-en-Brie",
   "image": {
-    "main": "img/photo/project/tertiaire/chambly/chambly.jpg",
-    "mainPortrait": "img/photo/project/tertiaire/chambly/chambly.jpg",
-    "others": [
-      "img/photo/project/tertiaire/chambly/chambly.jpg",
-      "img/photo/project/tertiaire/chambly/chambly.jpg"
+    "main": "img/photo/project/tertiaire/chanteloup-en-brie/chanteloup-en-brie.jpg",
+    "mainPortrait": "img/photo/project/tertiaire/chanteloup-en-brie/chanteloup-en-brie.jpg",
+    "trios": [
+      [
+        {
+          "url": "img/photo/project/tertiaire/chanteloup-en-brie/01.jpg",
+          "caption": ""
+        },
+        {
+          "url": "img/photo/project/tertiaire/chanteloup-en-brie/02.jpg",
+          "caption": ""
+        },
+        {
+          "url": "img/photo/project/tertiaire/chanteloup-en-brie/03.jpg",
+          "caption": ""
+        }
+      ]
     ]
   },
   "moa": {
-    "name": "Ville de Chambly (60)",
-    "url": "http://www.ville-chambly.fr/"
+    "name": "privée"
   },
   "interventions": [
     {
-      "year": "2017",
-      "title": "Construction d’un hangar de stockage et bureaux",
-      "missions": ["Maîtrise d'oeuvre"],
-      "price": "480 000 € HT"
+      "year": 2011,
+      "title": "Construction d’un immeuble de bureaux et entrepôt à Chanteloup-en-Brie",
+      "missions": ["Maîtrise d’œuvre", "Autorisation de travaux"],
+      "price": "1 000 000 € HT"
     }
   ],
-  "client": {
-    "name": "Chambly",
-    "zip": 60230,
-    "type": "Mairie"
-  }
+  "client": "privé"
 }
