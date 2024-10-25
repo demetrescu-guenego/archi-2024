@@ -1,40 +1,41 @@
 {
-  "label": "Espace Jeunes à Dammarie-les-Lys",
-  "description": "espace Jeunes à Dammarie-les-Lys",
+  "label": "L’Orangerie du domaine de Villiers-en-Bière",
+  "description": "Restauration de l’orangerie du domaine de Villiers-en-Bière",
   "image": {
-    "main": "img/photo/project/scolaire/dammarie-les-lys/espace-jeunes.jpg",
-    "mainPortrait": "img/photo/project/scolaire/dammarie-les-lys/espace-jeunes.jpg",
+    "main": "img/photo/project/serre/villiers-en-biere/serre.jpg",
+    "mainPortrait": "img/photo/project/serre/villiers-en-biere/serre.jpg",
     "trios": [
       [
         {
-          "url": "img/photo/project/scolaire/dammarie-les-lys/01.jpg",
-          "caption": "Pendant le chantier"
+          "url": "img/photo/project/serre/villiers-en-biere/01.jpg",
+          "caption": "Plan du relevé"
         },
         {
-          "url": "img/photo/project/scolaire/dammarie-les-lys/02.jpg",
-          "caption": "Après les travaux - bibliothèque"
+          "url": "img/photo/project/serre/villiers-en-biere/02.jpg",
+          "caption": "Extérieur de l'orangerie"
         },
         {
-          "url": "img/photo/project/scolaire/dammarie-les-lys/03.jpg",
-          "caption": "Après les travaux - espace accueil"
+          "url": "img/photo/project/serre/villiers-en-biere/03.jpg",
+          "caption": "Intérieur de l'orangerie"
         }
       ]
     ]
   },
   "moa": {
-    "name": "Ville de Dammarie-les-Lys (77)",
-    "url": "http://www.mairie-dammarie-les-lys.fr/"
+    "name": "Commune de Villiers-en-Bière (77)",
+    "url": "http://www.mairievilliersenbiere.fr/"
   },
   "interventions": [
     {
-      "year": 2012,
-      "title": "Aménagement espace Jeunes",
-      "missions": ["Maîtrise d’œuvre", "OPC"],
-      "price": "620 000 € HT"
+      "year": "2017",
+      "ongoing": true,
+      "title": "Restauration de l’Orangerie du domaine de Villiers-en-Bière",
+      "missions": ["Maîtrise d'oeuvre", "OPC"],
+      "price": "150 000 € HT"
     }
   ],
   "client": {
-    "name": "Dammarie-les-Lys",
+    "name": "Villiers-en-Bière",
     "zip": 77190,
     "type": "Mairie"
   }
