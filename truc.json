@@ -1,55 +1,29 @@
 {
-  "label": "Salle polyvalente à Bussy-Saint-Martin",
-  "description": "Extension de la salle polyvalente à Bussy-Saint-Martin",
+  "label": "Construction d’un hangar de stockage et bureaux à Chambly",
+  "description": "Construction d’un hangar de stockage et bureaux à Chambly",
   "image": {
-    "main": "img/photo/project/tertiaire/bussy-st-martin/parallax.jpg",
-    "mainPortrait": "img/photo/project/tertiaire/bussy-st-martin/parallax-portrait.jpg",
-    "trios": [
-      [
-        {
-          "url": "img/photo/project/tertiaire/bussy-st-martin/01.jpg",
-          "caption": "Pendant les travaux"
-        },
-        {
-          "url": "img/photo/project/tertiaire/bussy-st-martin/02.jpg",
-          "caption": "Percement d'un mur de structure"
-        },
-        {
-          "url": "img/photo/project/tertiaire/bussy-st-martin/03.jpg",
-          "caption": "Après travaux"
-        }
-      ],
-      [
-        {
-          "url": "img/photo/project/tertiaire/bussy-st-martin/04.jpg",
-          "caption": "Volet paysager"
-        },
-        {
-          "url": "img/photo/project/tertiaire/bussy-st-martin/05.jpg",
-          "caption": "Vue aérienne Google avant travaux"
-        },
-        {
-          "url": "img/photo/project/tertiaire/bussy-st-martin/06.jpg",
-          "caption": "Vue aérienne 3D Google après travaux"
-        }
-      ]
+    "main": "img/photo/project/tertiaire/chambly/chambly.jpg",
+    "mainPortrait": "img/photo/project/tertiaire/chambly/chambly.jpg",
+    "others": [
+      "img/photo/project/tertiaire/chambly/chambly.jpg",
+      "img/photo/project/tertiaire/chambly/chambly.jpg"
     ]
   },
   "moa": {
-    "name": "Commune de Bussy-Saint-Martin (77)",
-    "url": "http://www.bussy-saint-martin.com/"
+    "name": "Ville de Chambly (60)",
+    "url": "http://www.ville-chambly.fr/"
   },
   "interventions": [
     {
-      "year": 2016,
-      "title": "Extension de la salle polyvalente à Bussy-Saint-Martin",
+      "year": "2017",
+      "title": "Construction d’un hangar de stockage et bureaux",
       "missions": ["Maîtrise d'oeuvre"],
-      "price": "184 000 € HT"
+      "price": "480 000 € HT"
     }
   ],
   "client": {
-    "name": "Bussy-Saint-Martin",
-    "zip": 77600,
+    "name": "Chambly",
+    "zip": 60230,
     "type": "Mairie"
   }
 }
