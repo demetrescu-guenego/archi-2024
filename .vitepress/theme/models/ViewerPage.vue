@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
+// TODO: desktop only: ll the photo zoomable with mouse scroll and pan with mousemove
+
 const src = ref("/home/ferrieres-landscape-big.jpg");
 
 if ("window" in globalThis) {
@@ -24,6 +26,10 @@ const goBack = () => {
     class="fixed bottom-0 left-0 right-0 top-0 flex cursor-pointer items-center justify-center bg-black"
     @click="goBack"
   >
-    <img :src="src" alt="Photo" class="animate-[fadein_300ms_ease-in]" />
+    <img
+      :src="src"
+      alt="Photo"
+      class="w-[80%] animate-[fadein_300ms_ease-in]"
+    />
   </div>
 </template>
