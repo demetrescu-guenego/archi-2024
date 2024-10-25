@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, onMounted, reactive, ref, useTemplateRef } from "vue";
-import { Point } from "../../interfaces/Point";
+import { Point, Vector } from "../../interfaces/Point";
 
 const props = defineProps<{
   src: string;
@@ -15,8 +15,8 @@ const tr = reactive<Point>({ x: 0, y: 0 });
 const style = computed(
   () =>
     `transform: ` +
-    `scale(${scale.value}) ` +
-    `translate(${tr.x}px, ${tr.y}px)`,
+    `translate(${tr.x}px, ${tr.y}px) ` +
+    `scale(${scale.value}) `,
 );
 
 const render = (width: number, height: number) => {
@@ -59,9 +59,8 @@ const render = (width: number, height: number) => {
 
     console.log("event.pageX: ", event.pageX);
 
-    const f = 1 / scale.value;
-    start.x = event.pageX * f - tr.x;
-    start.y = event.pageY * f - tr.y;
+    start.x = event.pageX - tr.x;
+    start.y = event.pageY - tr.y;
 
     const mousemove = (event: MouseEvent) => {
       event.preventDefault();
@@ -69,9 +68,9 @@ const render = (width: number, height: number) => {
       console.log("mousemove");
       console.log("zoom: ", scale.value);
 
-      tr.x = event.pageX * f - start.x;
+      tr.x = event.pageX - start.x;
       console.log("tr.x: ", tr.x);
-      tr.y = event.pageY * f - start.y;
+      tr.y = event.pageY - start.y;
     };
 
     const mouseup = (event: MouseEvent) => {
@@ -87,19 +86,40 @@ const render = (width: number, height: number) => {
   });
 
   frame.value.addEventListener("wheel", (event) => {
+    if (img.value === null) {
+      return;
+    }
     console.log("event: ", event);
     console.log("event: ", event.deltaY);
     const zoomIn = event.deltaY < 0;
-    // compute the scale factor
-    const zoomFactor = 1.5;
-    scale.value *= zoomIn ? zoomFactor : 1 / zoomFactor;
+
+    const zf = 1.5; // zoom factor
+    scale.value *= zoomIn ? zf : 1 / zf;
+    console.log("scale.value: ", scale.value);
 
     scale.value = Math.max(scale.value, 0.1 * initScale.value);
 
-    const delta = { x: 0, y: 0 };
+    const rect = img.value.getBoundingClientRect();
+    console.log("rect: ", rect);
+    const center: Point = {
+      x: rect.x + rect.width / 2,
+      y: rect.y + rect.height / 2,
+    };
+    console.log("center: ", center);
 
-    tr.x = tr.x - delta.x;
-    tr.y = tr.y - delta.y;
+    console.log("event.pageX: ", event.pageX);
+    console.log("event.pageY: ", event.pageY);
+    const dtc: Vector = {
+      x: event.pageX - center.x,
+      y: event.pageY - center.y,
+    };
+
+    console.log("dtc: ", dtc);
+    // const f = scale.value / initScale.value;
+
+    // const sign = zoomIn ? 1 : -1;
+    // tr.x += sign * dtc.x;
+    // tr.y += sign * dtc.y;
   });
 };
 
