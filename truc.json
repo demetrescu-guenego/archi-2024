@@ -1,42 +1,61 @@
 {
-  "label": "L’Orangerie du domaine de Villiers-en-Bière",
-  "description": "Restauration de l’orangerie du domaine de Villiers-en-Bière",
+  "label": "Gymnase Jean Moulin à Torcy",
+  "description": "Aménagement d’un local associatif Club House, Gymnase Jean Moulin à Torcy",
   "image": {
-    "main": "img/photo/project/serre/villiers-en-biere/serre.jpg",
-    "mainPortrait": "img/photo/project/serre/villiers-en-biere/serre.jpg",
+    "main": "img/photo/project/sport/torcy/parallax.jpg",
+    "mainPortrait": "img/photo/project/sport/torcy/parallax-portrait.jpg",
     "trios": [
       [
         {
-          "url": "img/photo/project/serre/villiers-en-biere/01.jpg",
-          "caption": "Plan du relevé"
+          "url": "img/photo/project/sport/torcy/01.jpg",
+          "caption": "Avant travaux"
         },
         {
-          "url": "img/photo/project/serre/villiers-en-biere/02.jpg",
-          "caption": "Extérieur de l'orangerie"
+          "url": "img/photo/project/sport/torcy/02.jpg",
+          "caption": "Avant travaux"
         },
         {
-          "url": "img/photo/project/serre/villiers-en-biere/03.jpg",
-          "caption": "Intérieur de l'orangerie"
+          "url": "img/photo/project/sport/torcy/03.jpg",
+          "caption": "Avant travaux"
+        }
+      ],
+      [
+        {
+          "url": "img/photo/project/sport/torcy/04.jpg",
+          "caption": "Après travaux - extérieur"
+        },
+        {
+          "url": "img/photo/project/sport/torcy/05.jpg",
+          "caption": "Après travaux - extérieur"
+        },
+        {
+          "url": "img/photo/project/sport/torcy/06.jpg",
+          "caption": "Après travaux - intérieur"
+        }
+      ],
+      [
+        {
+          "url": "img/photo/project/sport/torcy/07.jpg",
+          "caption": "Après travaux - intérieur"
         }
       ]
     ]
   },
   "moa": {
-    "name": "Commune de Villiers-en-Bière (77)",
-    "url": "http://www.mairievilliersenbiere.fr/"
+    "name": "Ville de Torcy (77)",
+    "url": "http://www.ville-torcy.fr/"
   },
   "interventions": [
     {
-      "year": "2017",
-      "ongoing": true,
-      "title": "Restauration de l’Orangerie du domaine de Villiers-en-Bière",
-      "missions": ["Maîtrise d'oeuvre", "OPC"],
-      "price": "150 000 € HT"
+      "year": 2016,
+      "title": "Aménagement d’un local associatif « Club House »",
+      "missions": ["Etude", "Autorisation de travaux"],
+      "price": "110 000 Euros HT"
     }
   ],
   "client": {
-    "name": "Villiers-en-Bière",
-    "zip": 77190,
+    "name": "Torcy",
+    "zip": 77200,
     "type": "Mairie"
   }
 }
