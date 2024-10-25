@@ -30,3 +30,6 @@ client:
   zip: 77600
   type: Mairie
 ---
+
+Notre cabinet d'architecture a réalisé une mission complète de maîtrise d'œuvre
+concernant l'extension de la salle polyvalente à Bussy-Saint-Martin.
