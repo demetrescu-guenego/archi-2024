@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
+import ZoomableImage from "../widgets/ZoomableImage.vue";
 
 // TODO: desktop only: ll the photo zoomable with mouse scroll and pan with mousemove
 
@@ -22,14 +23,10 @@ const goBack = () => {
 </script>
 
 <template>
-  <div
-    class="fixed bottom-0 left-0 right-0 top-0 flex cursor-pointer items-center justify-center bg-black"
+  <ZoomableImage
+    class="fixed bottom-0 left-0 right-0 top-0 cursor-pointer bg-black"
+    :src="src"
+    label="Photo"
     @click="goBack"
-  >
-    <img
-      :src="src"
-      alt="Photo"
-      class="w-[80%] animate-[fadein_300ms_ease-in]"
-    />
-  </div>
+  />
 </template>
