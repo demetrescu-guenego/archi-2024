@@ -19,7 +19,7 @@ const style = computed(
     `scale(${scale.value}) `,
 );
 
-const render = (width: number, height: number) => {
+const render = () => {
   if (frame.value === null) {
     return;
   }
@@ -27,6 +27,9 @@ const render = (width: number, height: number) => {
   if (img.value === null) {
     return;
   }
+
+  const width = img.value.width;
+  const height = img.value.height;
 
   const ratio = width / height;
 
@@ -36,17 +39,18 @@ const render = (width: number, height: number) => {
   const frameRatio = frameWidth / frameHeight;
 
   if (ratio < frameRatio) {
-    console.log("paysage");
-    if (frameHeight > height) {
-      initScale.value = frameHeight / height;
-    }
-  } else {
     console.log("portrait");
-    if (frameWidth > width) {
-      initScale.value = frameWidth / width;
-    }
+    console.log("height: ", height);
+    console.log("frameHeight: ", frameHeight);
+
+    initScale.value = frameHeight / height;
+  } else {
+    console.log("paysage");
+
+    initScale.value = frameWidth / width;
   }
-  console.log("zoom: ", initScale.value);
+  console.log("initScale.value: ", initScale.value);
+
   scale.value = initScale.value;
 
   const start: Point = { x: 0, y: 0 };
@@ -80,7 +84,7 @@ const render = (width: number, height: number) => {
     if (img.value === null) {
       return;
     }
-    console.log("event: ", event.deltaY);
+
     const zoomIn = event.deltaY < 0;
 
     if (scale.value < 0.1 * initScale.value && !zoomIn) {
@@ -90,18 +94,14 @@ const render = (width: number, height: number) => {
     const zf = 1.5; // zoom factor
     const zoom = zoomIn ? zf : 1 / zf;
     const newScaleValue = zoom * scale.value;
-    console.log("newScaleValue: ", newScaleValue);
 
     const rect = img.value.getBoundingClientRect();
-    console.log("rect: ", rect);
+
     const center: Point = {
       x: rect.x + rect.width / 2,
       y: rect.y + rect.height / 2,
     };
-    console.log("center: ", center);
 
-    console.log("event.pageX: ", event.pageX);
-    console.log("event.pageY: ", event.pageY);
     const ptc: Vector = {
       x: center.x - event.pageX,
       y: center.y - event.pageY,
@@ -121,7 +121,6 @@ const render = (width: number, height: number) => {
   });
 
   frame.value.addEventListener("dblclick", (event) => {
-    console.log("dblclick: ", event);
     event.preventDefault();
     event.stopPropagation();
     scale.value = initScale.value;
@@ -134,11 +133,12 @@ onMounted(() => {
   if (!("window" in globalThis)) {
     return;
   }
+  if (img.value === null) {
+    return;
+  }
 
-  const modelImg = document.createElement("img");
-  modelImg.src = props.src;
-  modelImg.addEventListener("load", () => {
-    render(modelImg.width, modelImg.height);
+  img.value.addEventListener("load", () => {
+    render();
   });
 });
 </script>
