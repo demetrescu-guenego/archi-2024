@@ -76,16 +76,16 @@ const render = (width: number, height: number) => {
     document.addEventListener("mouseup", mouseup);
   });
 
-  frame.value.addEventListener("wheel", (event) => {
-    if (scale.value < 0.1 * initScale.value) {
-      return;
-    }
-
+  img.value.addEventListener("wheel", (event) => {
     if (img.value === null) {
       return;
     }
     console.log("event: ", event.deltaY);
     const zoomIn = event.deltaY < 0;
+
+    if (scale.value < 0.1 * initScale.value && !zoomIn) {
+      return;
+    }
 
     const zf = 1.5; // zoom factor
     const zoom = zoomIn ? zf : 1 / zf;
