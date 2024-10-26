@@ -2,7 +2,7 @@
 import { computed, onMounted, reactive, ref, useTemplateRef } from "vue";
 import { Point, Vector } from "../../interfaces/Point";
 
-const props = defineProps<{
+defineProps<{
   src: string;
 }>();
 
