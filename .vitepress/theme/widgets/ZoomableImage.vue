@@ -119,6 +119,15 @@ const render = (width: number, height: number) => {
     tr.x = newTrx;
     tr.y = newTry;
   });
+
+  frame.value.addEventListener("dblclick", (event) => {
+    console.log("dblclick: ", event);
+    event.preventDefault();
+    event.stopPropagation();
+    scale.value = initScale.value;
+    tr.x = 0;
+    tr.y = 0;
+  });
 };
 
 onMounted(() => {
@@ -138,7 +147,7 @@ onMounted(() => {
   <div class="flex">
     <div
       ref="frame"
-      class="flex flex-grow items-center justify-center overflow-hidden"
+      class="flex flex-grow select-none items-center justify-center overflow-hidden"
     >
       <img
         :src="src"

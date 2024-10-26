@@ -14,12 +14,6 @@ if ("window" in globalThis) {
     src.value = params.src;
   }
 }
-
-const goBack = () => {
-  if ("window" in globalThis) {
-    globalThis.window.history.back();
-  }
-};
 </script>
 
 <template>
@@ -27,6 +21,5 @@ const goBack = () => {
     class="fixed bottom-0 left-0 right-0 top-0 cursor-pointer bg-black"
     :src="src"
     label="Photo"
-    @click="goBack"
   />
 </template>
