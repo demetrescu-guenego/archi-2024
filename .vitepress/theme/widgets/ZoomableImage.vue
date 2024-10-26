@@ -54,10 +54,6 @@ const render = (width: number, height: number) => {
   img.value.addEventListener("mousedown", (event: MouseEvent) => {
     event.preventDefault();
     event.stopPropagation();
-    console.log("mouse down");
-    console.log("zoom: ", scale.value);
-
-    console.log("event.pageX: ", event.pageX);
 
     start.x = event.pageX - tr.x;
     start.y = event.pageY - tr.y;
@@ -65,18 +61,13 @@ const render = (width: number, height: number) => {
     const mousemove = (event: MouseEvent) => {
       event.preventDefault();
       event.stopPropagation();
-      console.log("mousemove");
-      console.log("zoom: ", scale.value);
-
       tr.x = event.pageX - start.x;
-      console.log("tr.x: ", tr.x);
       tr.y = event.pageY - start.y;
     };
 
     const mouseup = (event: MouseEvent) => {
       event.preventDefault();
       event.stopPropagation();
-      console.log("mouse up");
       document.removeEventListener("mousemove", mousemove);
       document.removeEventListener("mouseup", mouseup);
     };
@@ -86,18 +77,20 @@ const render = (width: number, height: number) => {
   });
 
   frame.value.addEventListener("wheel", (event) => {
+    if (scale.value < 0.1 * initScale.value) {
+      return;
+    }
+
     if (img.value === null) {
       return;
     }
-    console.log("event: ", event);
     console.log("event: ", event.deltaY);
     const zoomIn = event.deltaY < 0;
 
     const zf = 1.5; // zoom factor
-    scale.value *= zoomIn ? zf : 1 / zf;
-    console.log("scale.value: ", scale.value);
-
-    scale.value = Math.max(scale.value, 0.1 * initScale.value);
+    const zoom = zoomIn ? zf : 1 / zf;
+    const newScaleValue = zoom * scale.value;
+    console.log("newScaleValue: ", newScaleValue);
 
     const rect = img.value.getBoundingClientRect();
     console.log("rect: ", rect);
@@ -109,17 +102,22 @@ const render = (width: number, height: number) => {
 
     console.log("event.pageX: ", event.pageX);
     console.log("event.pageY: ", event.pageY);
-    const dtc: Vector = {
-      x: event.pageX - center.x,
-      y: event.pageY - center.y,
+    const ptc: Vector = {
+      x: center.x - event.pageX,
+      y: center.y - event.pageY,
     };
 
-    console.log("dtc: ", dtc);
-    // const f = scale.value / initScale.value;
+    const ctnc: Vector = {
+      x: ptc.x * (zoom - 1),
+      y: ptc.y * (zoom - 1),
+    };
 
-    // const sign = zoomIn ? 1 : -1;
-    // tr.x += sign * dtc.x;
-    // tr.y += sign * dtc.y;
+    const newTrx = tr.x + ctnc.x;
+    const newTry = tr.y + ctnc.y;
+
+    scale.value = newScaleValue;
+    tr.x = newTrx;
+    tr.y = newTry;
   });
 };
 
