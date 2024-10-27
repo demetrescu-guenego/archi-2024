@@ -20,13 +20,15 @@ const list: MenuItem[] = [
         alt="Logo Cabinet d'architecture DEMETRESCU - GUÉNÉGO"
         class="h-12"
       />
-      <span class="font-bold md:font-normal text-sm md:text-xl">
+      <span class="text-sm font-bold md:text-xl md:font-normal">
         <span>
           Cabinet d'architecture<br />
           DEMETRESCU - GUÉNÉGO
         </span>
       </span>
     </a>
-    <ResponsiveMenu :list="list" />
+    <ClientOnly>
+      <ResponsiveMenu :list="list" />
+    </ClientOnly>
   </header>
 </template>

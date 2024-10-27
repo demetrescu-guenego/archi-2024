@@ -8,8 +8,11 @@ import RegisterSW from "./widgets/RegisterSW.vue";
 <template>
   <div class="flex min-h-screen flex-col justify-between">
     <HeaderLayout />
+
     <BodyLayout />
+
     <FooterLayout />
   </div>
+
   <RegisterSW />
 </template>
