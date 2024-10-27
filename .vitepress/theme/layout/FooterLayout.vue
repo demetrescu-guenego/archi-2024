@@ -4,7 +4,7 @@ import ThisYear from "./../widgets/ThisYear.vue";
 
 <template>
   <footer
-    class="flex items-center justify-center bg-neutral-400 p-4 text-white"
+    class="flex items-center justify-center bg-neutral-500 p-4 text-white"
   >
     <span class="text-center">
       Copyright © 2003-<ThisYear /> - Cabinet d'Architecture Demetrescu -

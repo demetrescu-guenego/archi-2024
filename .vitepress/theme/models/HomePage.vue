@@ -21,7 +21,13 @@ const menu: MenuItem[] = [
   <main class="flex flex-grow flex-col">
     <section class="relative block h-[80vh] bg-fuchsia-900 text-white">
       <div role="presentation" class="background absolute block">
-        <img src="/home/plan.svg" alt="Plan" class="w-96" />
+        <img
+          src="/home/plan.svg"
+          alt="Plan"
+          class=""
+          width="1024"
+          height="1024"
+        />
       </div>
       <div class="flex h-full flex-col items-center justify-center gap-12 px-4">
         <p class="text-center text-5xl md:text-6xl">
