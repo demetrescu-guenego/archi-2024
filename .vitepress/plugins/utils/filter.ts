@@ -17,9 +17,9 @@ export const filterPostByClientType = (
       const client = post.frontmatter.client as Client;
       return {
         ...client,
-        years: post.frontmatter.interventions.map(
-          (i: Intervention) => +String(i.year).substring(0, 4),
-        ),
+        years: post.frontmatter.interventions
+          .map((i: Intervention) => +String(i.year).substring(0, 4))
+          .sort(),
       };
     });
 };
