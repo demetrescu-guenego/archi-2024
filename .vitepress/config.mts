@@ -2,6 +2,7 @@ import { defineConfig, HeadConfig } from "vitepress";
 import { withPwa } from "@vite-pwa/vitepress";
 import { contentLoader } from "./plugins/contentLoader.plugin";
 import { specificConfig } from "./siteconfig";
+import removeConsole from "vite-plugin-remove-console";
 
 const head: HeadConfig[] = [
   ["link", { rel: "icon", href: "/favicon.ico", sizes: "48x48" }],
@@ -28,7 +29,7 @@ export default withPwa(
     cleanUrls: true,
     srcDir: specificConfig.srcDir,
     vite: {
-      plugins: [contentLoader],
+      plugins: [contentLoader, removeConsole()],
       server: {
         host: true,
       },
