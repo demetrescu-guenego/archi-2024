@@ -146,9 +146,9 @@ const menu: MenuItem[] = [
     <section>
       <div v-onscreen="'introduce'" class="mx-auto max-w-4xl px-2 pb-24 pt-16">
         <h1>Les architectes</h1>
-        <h4 class="block-title">
+        <h2 class="block-title">
           Suzana DEMETRESCU-GUÉNÉGO (Responsable du cabinet)
-        </h4>
+        </h2>
         <ul>
           <li>
             Architecte du patrimoine, diplômée du Centre des Hautes Etudes de
@@ -164,19 +164,19 @@ const menu: MenuItem[] = [
           </li>
           <li>Inscrite au tableau de l'ordre des architectes</li>
         </ul>
-        <h4 class="block-title">Lizica DEMETRESCU</h4>
+        <h2 class="block-title">Lizica DEMETRESCU</h2>
         <ul>
           <li>
             Architecte-Urbaniste DIAB (diplômée de l’Institut d’Architecture et
             d'Urbanisme Ion Mincu de Bucarest)
           </li>
         </ul>
-        <h4 class="block-title">Florent MASSUCCI</h4>
+        <h2 class="block-title">Florent MASSUCCI</h2>
         <ul>
           <li>Architecte diplômé d'état (Paris Val de Seine)</li>
           <li>Expert Autodesk Autocad, Revit et BIM.</li>
         </ul>
-        <h4 class="block-title">Claire BARBEY-PAYNEAU</h4>
+        <h2 class="block-title">Claire BARBEY-PAYNEAU</h2>
         <ul>
           <li>Architecte diplômé d'état HMONP</li>
           <li>
