@@ -19,6 +19,7 @@ export default withPwa(
       },
     },
     pwa: {
+      outDir: "../.vitepress/dist",
       pwaAssets: {
         disabled: false,
         config: true,
