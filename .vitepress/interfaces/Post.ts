@@ -1,4 +1,10 @@
+import { Client } from "./Client";
+import { Intervention } from "./Intervention";
+
 export interface Post {
   url: string;
-  frontmatter: unknown;
+  frontmatter: {
+    client?: Client | string;
+    interventions: Intervention[];
+  };
 }

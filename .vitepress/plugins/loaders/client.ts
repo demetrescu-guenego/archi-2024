@@ -7,11 +7,7 @@ export const clientLoad = async (id: string) => {
     return;
   }
   // look at all the projects and generate the frontmatter.
-  const posts = await createContentLoader(`realisations/**/*.md`, {
-    includeSrc: false,
-    excerpt: true,
-    render: false,
-  }).load();
+  const posts = await createContentLoader(`realisations/**/*.md`).load();
 
   const mairies = filterPostByClientType(posts, "Mairie");
   const publicOthers = filterPostByClientType(posts, "Public Autres");
