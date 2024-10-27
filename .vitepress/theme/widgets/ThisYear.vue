@@ -3,5 +3,5 @@ const year = new Date().getFullYear();
 </script>
 
 <template>
-  {{ year }}
+  <span>{{ year }}</span>
 </template>
