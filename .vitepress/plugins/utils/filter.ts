@@ -1,12 +1,23 @@
 import { Intervention } from "../../interfaces/Intervention";
 import { Post } from "../../interfaces/Post";
 import { Client } from "../../interfaces/Client";
+import { sort } from "./sort";
+
+const reducer = (acc: Map<string, Client>, client: Client) => {
+  const item = acc.get(client.name);
+  if (item) {
+    client.years.push(...client.years);
+    return acc;
+  }
+  acc.set(client.name, client);
+  return acc;
+};
 
 export const filterPostByClientType = (
   posts: Post[],
   type: string,
 ): Client[] => {
-  return posts
+  const iterator = posts
     .filter((post) => {
       if (typeof post.frontmatter.client !== "object") {
         return false;
@@ -21,5 +32,11 @@ export const filterPostByClientType = (
           .map((i: Intervention) => +String(i.year).substring(0, 4))
           .sort(),
       };
-    });
+    })
+    .reduce(reducer, new Map<string, Client>())
+    .values();
+  return [...iterator].map((client) => {
+    client.years = sort(client.years);
+    return client;
+  });
 };
