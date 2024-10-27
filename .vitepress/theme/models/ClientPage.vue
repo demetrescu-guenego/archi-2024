@@ -9,14 +9,14 @@ const { frontmatter } = useData();
 <template>
   <main class="">
     <section class="bg-white p-2">
-      <div class="flex-grow flex flex-col max-w-5xl mx-auto pb-16">
+      <div class="mx-auto flex max-w-5xl flex-grow flex-col pb-16">
         <h1>Nos clients</h1>
         <p>
           Nous indiquons ici seulement nos clients publics, les clients privés
           souhaitant la plupart rester sous confidence.
         </p>
         <h2>Public</h2>
-        <h3>Mairies</h3>
+        <h3 class="block-title">Mairies</h3>
         <MairieTable :input="frontmatter.mairies" />
       </div>
     </section>
@@ -32,8 +32,8 @@ const { frontmatter } = useData();
       </div>
     </section>
     <section class="bg-white p-2">
-      <div class="flex-grow flex flex-col max-w-5xl mx-auto pb-16">
-        <h3>Autres entités publiques</h3>
+      <div class="mx-auto flex max-w-5xl flex-grow flex-col pb-16">
+        <h3 class="block-title">Autres entités publiques</h3>
         <MairieTable :input="frontmatter.publicOthers" />
       </div>
     </section>

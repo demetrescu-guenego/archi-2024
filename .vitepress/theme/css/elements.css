@@ -62,4 +62,8 @@
       }
     }
   }
+
+  .block-title {
+    @apply mb-2 mt-5 text-lg;
+  }
 }

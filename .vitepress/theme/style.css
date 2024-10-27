@@ -18,8 +18,7 @@
     @apply m-0 overflow-hidden bg-transparent p-0;
   }
 
-  .introduce.first-time h3,
-  .introduce.first-time h4 {
+  .introduce.first-time .block-title {
     @apply animate-[introduce_2s_forwards];
   }
 }

@@ -68,21 +68,27 @@ const menu: MenuItem[] = [
         <div v-onscreen="'introduce'" class="flex flex-row flex-wrap gap-x-10">
           <div class="flex w-full max-w-96 flex-col gap-4">
             <div class="block">
-              <h3><FontAwesomeIcon :icon="faCogs" /> Besoins</h3>
+              <h2 class="block-title">
+                <FontAwesomeIcon :icon="faCogs" /> Besoins
+              </h2>
               <p>
                 Définir votre projet, avant tout selon vos besoins, vos souhaits
                 et vos goûts, et aussi vos contraintes.
               </p>
             </div>
             <div class="block">
-              <h3><FontAwesomeIcon :icon="faComments" /> Dialogue</h3>
+              <h2 class="block-title">
+                <FontAwesomeIcon :icon="faComments" /> Dialogue
+              </h2>
               <p>
                 Dialoguer avec les administrations, en particulier pour obtenir
                 un permis de construire, une demande de travaux ou autre.
               </p>
             </div>
             <div class="block">
-              <h3><FontAwesomeIcon :icon="faUsers" /> Entrepreneurs</h3>
+              <h2 class="block-title">
+                <FontAwesomeIcon :icon="faUsers" /> Entrepreneurs
+              </h2>
               <p>
                 Identifier et sélectionner les entrepreneurs susceptibles de
                 pouvoir réaliser les travaux.
@@ -91,11 +97,15 @@ const menu: MenuItem[] = [
           </div>
           <div class="flex w-full max-w-96 flex-col gap-4">
             <div class="block">
-              <h3><FontAwesomeIcon :icon="faEye" /> Suivi</h3>
+              <h2 class="block-title">
+                <FontAwesomeIcon :icon="faEye" /> Suivi
+              </h2>
               <p>Organiser et suivre les chantiers et leur bonne réception.</p>
             </div>
             <div class="block">
-              <h3><FontAwesomeIcon :icon="faBolt" /> Gestion</h3>
+              <h2 class="block-title">
+                <FontAwesomeIcon :icon="faBolt" /> Gestion
+              </h2>
               <p>
                 Gérer les perturbations éventuelles avec les règles du métier.
               </p>
@@ -136,7 +146,9 @@ const menu: MenuItem[] = [
     <section>
       <div v-onscreen="'introduce'" class="mx-auto max-w-4xl px-2 pb-24 pt-16">
         <h1>Les architectes</h1>
-        <h4>Suzana DEMETRESCU-GUÉNÉGO (Responsable du cabinet)</h4>
+        <h4 class="block-title">
+          Suzana DEMETRESCU-GUÉNÉGO (Responsable du cabinet)
+        </h4>
         <ul>
           <li>
             Architecte du patrimoine, diplômée du Centre des Hautes Etudes de
@@ -152,19 +164,19 @@ const menu: MenuItem[] = [
           </li>
           <li>Inscrite au tableau de l'ordre des architectes</li>
         </ul>
-        <h4>Lizica DEMETRESCU</h4>
+        <h4 class="block-title">Lizica DEMETRESCU</h4>
         <ul>
           <li>
             Architecte-Urbaniste DIAB (diplômée de l’Institut d’Architecture et
             d'Urbanisme Ion Mincu de Bucarest)
           </li>
         </ul>
-        <h4>Florent MASSUCCI</h4>
+        <h4 class="block-title">Florent MASSUCCI</h4>
         <ul>
           <li>Architecte diplômé d'état (Paris Val de Seine)</li>
           <li>Expert Autodesk Autocad, Revit et BIM.</li>
         </ul>
-        <h4>Claire BARBEY-PAYNEAU</h4>
+        <h4 class="block-title">Claire BARBEY-PAYNEAU</h4>
         <ul>
           <li>Architecte diplômé d'état HMONP</li>
           <li>
