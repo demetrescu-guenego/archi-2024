@@ -14,11 +14,11 @@ const list: MenuItem[] = [
   <header
     class="flex h-16 items-center justify-between bg-fuchsia-900 text-white"
   >
-    <a href="/" class="flex items-center px-4">
+    <a href="/" class="flex items-center px-2">
       <img
         src="/logo-white.svg"
         alt="Logo Cabinet d'architecture DEMETRESCU - GUÉNÉGO"
-        class="h-12"
+        class="h-12 w-12"
       />
       <span class="text-sm font-bold md:text-xl md:font-normal">
         <span>
