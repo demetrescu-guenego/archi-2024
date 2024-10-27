@@ -1,6 +1,6 @@
 // https://vitepress.dev/guide/custom-theme
-import MainLayout from "./MainLayout.vue";
 import type { Theme } from "vitepress";
+import MainLayout from "./MainLayout.vue";
 import "./style.css";
 
 export default {

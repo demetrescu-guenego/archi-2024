@@ -2,12 +2,14 @@
 import HeaderLayout from "./layout/HeaderLayout.vue";
 import FooterLayout from "./layout/FooterLayout.vue";
 import BodyLayout from "./layout/BodyLayout.vue";
+import RegisterSW from "./widgets/RegisterSW.vue";
 </script>
 
 <template>
-  <div class="min-h-screen flex flex-col justify-between">
+  <div class="flex min-h-screen flex-col justify-between">
     <HeaderLayout />
     <BodyLayout />
     <FooterLayout />
   </div>
+  <RegisterSW />
 </template>

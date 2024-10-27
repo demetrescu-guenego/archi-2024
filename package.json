@@ -8,7 +8,8 @@
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview",
     "format": "prettier -w .",
-    "lint": "eslint"
+    "lint": "eslint",
+    "generate-pwa-assets": "pwa-assets-generator"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +18,8 @@
   "devDependencies": {
     "@eslint/js": "^9.13.0",
     "@types/node": "^22.7.9",
+    "@vite-pwa/assets-generator": "^0.2.6",
+    "@vite-pwa/vitepress": "^0.5.3",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.13.0",
     "eslint-plugin-vue": "^9.29.1",
