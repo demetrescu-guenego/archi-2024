@@ -9,7 +9,7 @@
     "docs:preview": "vitepress preview",
     "format": "prettier -w .",
     "lint": "eslint",
-    "generate-pwa-assets": "pwa-assets-generator"
+    "generate-pwa-assets": "pwa-assets-generator --preset minimal-2023 src/public/logo-purple.svg"
   },
   "keywords": [],
   "author": "",
