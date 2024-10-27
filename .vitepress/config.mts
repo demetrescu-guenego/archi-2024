@@ -1,7 +1,21 @@
-import { defineConfig } from "vitepress";
+import { defineConfig, HeadConfig } from "vitepress";
 import { withPwa } from "@vite-pwa/vitepress";
 import { contentLoader } from "./plugins/contentLoader.plugin";
 import { specificConfig } from "./siteconfig";
+
+const head: HeadConfig[] = [
+  ["link", { rel: "icon", href: "/favicon.ico", sizes: "48x48" }],
+  [
+    "link",
+    {
+      rel: "icon",
+      href: "/favicon.svg",
+      sizes: "any",
+      type: "image/svg+xml",
+    },
+  ],
+  ["link", { name: "apple-touch-icon", href: "/apple-touch-icon-180x180.png" }],
+];
 
 // https://vitepress.dev/reference/site-config
 export default withPwa(
@@ -10,6 +24,7 @@ export default withPwa(
     title: "Cabinet d'architecture DEMETRESCU - GUÉNÉGO",
     description:
       "Architectures, Patrimoine, Eglises, Abbayes, Châteaux, Granges",
+    head: head,
     cleanUrls: true,
     srcDir: specificConfig.srcDir,
     vite: {
@@ -20,10 +35,6 @@ export default withPwa(
     },
     pwa: {
       outDir: "../.vitepress/dist",
-      pwaAssets: {
-        disabled: false,
-        config: true,
-      },
       manifest: {
         name: "Guénégo Architectes",
         short_name: "Guénégo Archi",
