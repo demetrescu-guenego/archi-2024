@@ -12,7 +12,7 @@ const cards: CardContent[] = projects.map((p) => {
   return {
     label: p.label,
     url: `/realisations/${p.category}/${p.id}`,
-    imageUrl: `/photos/projects/${p.category}/${p.id}/thumbnail-${p.id}.jpg`,
+    imageUrl: `/photos/projects/${p.category}/${p.id}/thumbnail-${p.id}.webp`,
   } satisfies CardContent;
 });
 </script>
