@@ -12,8 +12,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const menu: MenuItem[] = [
-  { href: "/realisations", label: "Réalisations" },
   { href: "/clients", label: "Clients" },
+  { href: "/realisations", label: "Réalisations" },
 ];
 </script>
 
@@ -42,9 +42,9 @@ const menu: MenuItem[] = [
             :href="item.href"
             class="cursor-pointer border-2 border-white px-8 py-4 text-center text-xl hover:bg-white hover:bg-opacity-10 sm:text-4xl"
             :class="{
-              'bg-opacity-25': !index,
-              'bg-white': !index,
-              'hover:bg-opacity-35': !index,
+              'bg-opacity-25': index,
+              'bg-white': index,
+              'hover:bg-opacity-35': index,
             }"
           >
             {{ item.label }}
