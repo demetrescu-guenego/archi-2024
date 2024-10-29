@@ -16,6 +16,7 @@ const head: HeadConfig[] = [
     },
   ],
   ["link", { name: "apple-touch-icon", href: "/apple-touch-icon-180x180.png" }],
+  ["meta", { property: "og:image", content: "/home/ferrieres-portrait.jpg" }],
 ];
 
 // https://vitepress.dev/reference/site-config
