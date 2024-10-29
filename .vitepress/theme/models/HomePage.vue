@@ -37,10 +37,15 @@ const menu: MenuItem[] = [
           class="flex w-full flex-col flex-wrap gap-y-5 sm:flex-row sm:justify-center sm:gap-x-20"
         >
           <a
-            v-for="item in menu"
+            v-for="(item, index) in menu"
             :key="item.label"
             :href="item.href"
             class="cursor-pointer border-2 border-white px-8 py-4 text-center text-xl hover:bg-white hover:bg-opacity-10 sm:text-4xl"
+            :class="{
+              'bg-opacity-25': !index,
+              'bg-white': !index,
+              'hover:bg-opacity-35': !index,
+            }"
           >
             {{ item.label }}
           </a>
