@@ -20,7 +20,7 @@ const head: HeadConfig[] = [
     "meta",
     {
       property: "og:image",
-      content: "https://archi.guenego.com/home/ferrieres-portrait.jpg",
+      content: "https://archi.guenego.com/home/ferrieres-landscape.jpg",
     },
   ],
 ];
