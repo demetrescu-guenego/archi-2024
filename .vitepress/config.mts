@@ -37,6 +37,7 @@ export default withPwa(
     },
     pwa: {
       outDir: "../.vitepress/dist",
+      includeAssets: ["/home/*.jpg"],
       manifest: {
         name: "Guénégo Architectes",
         short_name: "Guénégo Archi",
