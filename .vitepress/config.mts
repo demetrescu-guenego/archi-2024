@@ -24,7 +24,7 @@ export default withPwa(
     lang: "fr",
     title: "Cabinet d'architecture DEMETRESCU - GUÉNÉGO",
     description:
-      "Architectures, Patrimoine, Eglises, Abbayes, Châteaux, Granges",
+      "Seine et Marne, 77, Torcy - Architectures, Patrimoine, Eglises, Abbayes, Châteaux, Granges, Restauration - Mairies, Collectivités Locales",
     head: head,
     cleanUrls: true,
     srcDir: specificConfig.srcDir,
