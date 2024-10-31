@@ -1,53 +1,9 @@
 import { withPwa } from "@vite-pwa/vitepress";
 import removeConsole from "vite-plugin-remove-console";
-import { defineConfig, HeadConfig } from "vitepress";
+import { defineConfig } from "vitepress";
 import { contentLoader } from "./plugins/contentLoader.plugin";
 import { specificConfig } from "./siteconfig";
-
-const head: HeadConfig[] = [
-  ["link", { rel: "icon", href: "/favicon.ico", sizes: "48x48" }],
-  [
-    "link",
-    {
-      rel: "icon",
-      href: "/favicon.svg",
-      sizes: "any",
-      type: "image/svg+xml",
-    },
-  ],
-  ["link", { name: "apple-touch-icon", href: "/apple-touch-icon-180x180.png" }],
-];
-
-const transformHead = ({ pageData }) => {
-  console.log("pageData: ", pageData);
-  const { layout } = pageData.frontmatter;
-
-  if (layout === "project") {
-    const path = pageData.relativePath.replace(/^(.*)\.md$/, "$1");
-    const parallax = `/photos/projects/${path}/parallax.jpg`;
-
-    const head: HeadConfig[] = [
-      [
-        "meta",
-        {
-          property: "og:image",
-          content: `https://archi.guenego.com${parallax}`,
-        },
-      ],
-    ];
-    return head;
-  }
-  const head: HeadConfig[] = [
-    [
-      "meta",
-      {
-        property: "og:image",
-        content: "https://archi.guenego.com/home/ferrieres-landscape.jpg",
-      },
-    ],
-  ];
-  return head;
-};
+import { head, transformHead } from "./config/header";
 
 // https://vitepress.dev/reference/site-config
 export default withPwa(
@@ -56,7 +12,7 @@ export default withPwa(
     title: "Cabinet d'architecture DEMETRESCU - GUÉNÉGO",
     description:
       "Seine et Marne, 77, Torcy - Architectures, Patrimoine, Eglises, Abbayes, Châteaux, Granges, Restauration - Mairies, Collectivités Locales",
-    head: head,
+    head,
     transformHead,
     cleanUrls: true,
     srcDir: specificConfig.srcDir,
