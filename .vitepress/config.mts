@@ -1,8 +1,8 @@
-import { defineConfig, HeadConfig } from "vitepress";
 import { withPwa } from "@vite-pwa/vitepress";
+import removeConsole from "vite-plugin-remove-console";
+import { defineConfig, HeadConfig } from "vitepress";
 import { contentLoader } from "./plugins/contentLoader.plugin";
 import { specificConfig } from "./siteconfig";
-import removeConsole from "vite-plugin-remove-console";
 
 const head: HeadConfig[] = [
   ["link", { rel: "icon", href: "/favicon.ico", sizes: "48x48" }],
@@ -16,14 +16,38 @@ const head: HeadConfig[] = [
     },
   ],
   ["link", { name: "apple-touch-icon", href: "/apple-touch-icon-180x180.png" }],
-  [
-    "meta",
-    {
-      property: "og:image",
-      content: "https://archi.guenego.com/home/ferrieres-landscape.jpg",
-    },
-  ],
 ];
+
+const transformHead = ({ pageData }) => {
+  console.log("pageData: ", pageData);
+  const { layout } = pageData.frontmatter;
+
+  if (layout === "project") {
+    const path = pageData.relativePath.replace(/^(.*)\.md$/, "$1");
+    const parallax = `/photos/projects/${path}/parallax.jpg`;
+
+    const head: HeadConfig[] = [
+      [
+        "meta",
+        {
+          property: "og:image",
+          content: `https://archi.guenego.com${parallax}`,
+        },
+      ],
+    ];
+    return head;
+  }
+  const head: HeadConfig[] = [
+    [
+      "meta",
+      {
+        property: "og:image",
+        content: "https://archi.guenego.com/home/ferrieres-landscape.jpg",
+      },
+    ],
+  ];
+  return head;
+};
 
 // https://vitepress.dev/reference/site-config
 export default withPwa(
@@ -33,6 +57,7 @@ export default withPwa(
     description:
       "Seine et Marne, 77, Torcy - Architectures, Patrimoine, Eglises, Abbayes, Châteaux, Granges, Restauration - Mairies, Collectivités Locales",
     head: head,
+    transformHead,
     cleanUrls: true,
     srcDir: specificConfig.srcDir,
     vite: {
@@ -43,7 +68,7 @@ export default withPwa(
     },
     pwa: {
       outDir: "../.vitepress/dist",
-      includeAssets: ["/home/*.jpg"],
+      includeAssets: ["/home/*.jpg", "/projects/**/*.{jpg,webp}"],
       manifest: {
         name: "Guénégo Architectes",
         short_name: "Guénégo Archi",
