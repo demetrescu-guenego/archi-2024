@@ -9,13 +9,18 @@ const { frontmatter } = useData();
 const projects: Project[] = frontmatter.value.projects;
 const category: string = frontmatter.value.category;
 
-const cards: CardContent[] = projects.map((p) => {
-  return {
-    label: p.label,
-    url: `/realisations/${category}/${p.id}`,
-    imageUrl: `/photos/projects/${category}/${p.id}/thumbnail-${p.id}.webp`,
-  } satisfies CardContent;
-});
+const cards: CardContent[] = projects
+  .map((p) => {
+    return {
+      label: p.label,
+      url: `/realisations/${category}/${p.id}`,
+      imageUrl: `/photos/projects/${category}/${p.id}/thumbnail-${p.id}.webp`,
+      id: p.id,
+    } satisfies CardContent & { id: string };
+  })
+  .sort((p1, p2) => {
+    return p1.id < p2.id ? -1 : 1;
+  });
 </script>
 
 <template>
