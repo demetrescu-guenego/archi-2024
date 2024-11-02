@@ -12,8 +12,13 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const menu: MenuItem[] = [
+  { href: "/realisations", label: "Réalisations", primary: true },
   { href: "/clients", label: "Clients" },
-  { href: "/realisations", label: "Réalisations" },
+  {
+    href: "https://www.google.com/search?sca_esv=b81127c47418f4ee&sxsrf=ADLYWIKobqdXiZOHqZtDic4tR8VEj_cKxQ:1730544642990&uds=ADvngMjcH0KdF7qGWtwTBrP0nt7dXqmxI-gK6jkjQ6cxws4pbiJkeD7NOHzebkLIS2pNDumEeYZuBJDjbDikw8z-y9RHPTyawP0RduxQ4RcV4DPZBV7cRIAvKIVi_D_PfehrarfSDWpNeQJiO2QwmCXOwo56XDOlJ5Uz1Ql3Ze3rK3B6NJc_QXXXi69xtIIq2kRJrX8znvOd&si=ACC90nzcy7sviKw0NTZoUBUzhQehr3jouizIrVSf6avWI23m1YfULqRNYKxMNlE_zWeMHCNIGPN9wuFtprYefmXYRz1VmY8DZ2qbdoNUsTGTgxfmmVGzhS8%3D&q=Cabinet+d%27architecture+DEMETRESCU+-+GUENEGO+Avis&sa=X&ved=2ahUKEwi9ntqVvb2JAxV1Q6QEHXg8B2wQ3PALegQINhAF&biw=1536&bih=737&dpr=2.5",
+    label: "Avis Google",
+    newWindow: true,
+  },
 ];
 </script>
 
@@ -37,15 +42,16 @@ const menu: MenuItem[] = [
           class="flex w-full flex-col flex-wrap gap-y-5 sm:flex-row sm:justify-center sm:gap-x-20"
         >
           <a
-            v-for="(item, index) in menu"
+            v-for="item in menu"
             :key="item.label"
             :href="item.href"
             class="cursor-pointer border-2 border-white px-8 py-4 text-center text-xl hover:bg-white hover:bg-opacity-10 sm:text-4xl"
             :class="{
-              'bg-opacity-25': index,
-              'bg-white': index,
-              'hover:bg-opacity-35': index,
+              'bg-opacity-25': item.primary,
+              'bg-white': item.primary,
+              'hover:bg-opacity-35': item.primary,
             }"
+            :target="item.newWindow ? '_blank' : '_self'"
           >
             {{ item.label }}
           </a>
