@@ -8,6 +8,7 @@ export const pwa: PwaOptions = {
     short_name: "Guénégo Archi",
     description: "Cabinet d'architecture GUÉNÉGO - DEMETRESCU",
     theme_color: "#ffffff",
+    orientation: "portrait-primary",
     lang: "fr",
     icons: [
       {
