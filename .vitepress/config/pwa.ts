@@ -5,7 +5,7 @@ export const pwa: PwaOptions = {
   includeAssets: ["/home/*.jpg", "/photos/**/*.{jpg,webp}"],
   manifest: {
     name: "Guénégo Architectes",
-    short_name: "Guénégo Archi",
+    short_name: "Guénégo",
     description: "Cabinet d'architecture GUÉNÉGO - DEMETRESCU",
     theme_color: "#ffffff",
     orientation: "portrait-primary",
