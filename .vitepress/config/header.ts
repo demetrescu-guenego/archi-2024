@@ -11,7 +11,7 @@ export const head: HeadConfig[] = [
       type: "image/svg+xml",
     },
   ],
-  ["link", { name: "apple-touch-icon", href: "/apple-touch-icon-180x180.png" }],
+  ["link", { rel: "apple-touch-icon", href: "/apple-touch-icon-180x180.png" }],
 ];
 
 export const transformHead = ({ pageData }) => {
