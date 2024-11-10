@@ -12,6 +12,13 @@ export const head: HeadConfig[] = [
     },
   ],
   ["link", { rel: "apple-touch-icon", href: "/apple-touch-icon-180x180.png" }],
+  // ["script", { src: "https://cdn.botpress.cloud/webchat/v2.2/inject.js" }],
+  // [
+  //   "script",
+  //   {
+  //     src: "https://files.bpcontent.cloud/2024/11/10/12/20241110125112-DCSUYDWO.js",
+  //   },
+  // ],
 ];
 
 export const transformHead = ({ pageData }) => {
