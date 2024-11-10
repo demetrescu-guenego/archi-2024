@@ -28,7 +28,7 @@ interventions:
       - Maîtrise d"oeuvre
       - OPC
     price: 143 000 € HT
-classement: Inscrit MH
+classement:
 client:
   name: Fontenailles
   zip: 77370
