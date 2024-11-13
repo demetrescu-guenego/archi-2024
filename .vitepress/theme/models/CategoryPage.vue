@@ -9,6 +9,23 @@ const { frontmatter } = useData();
 const projects: Project[] = frontmatter.value.projects;
 const category: string = frontmatter.value.category;
 
+const getLastIntervention = (p: Project): number => {
+  const interventions = p.interventions ?? [];
+  const year = interventions
+    .map((intervention) => {
+      if (typeof intervention.year === "number") {
+        return intervention.year;
+      }
+      if (typeof intervention.year === "string") {
+        return +intervention.year.substring(0, 4);
+      }
+      return 0;
+    })
+    .sort()
+    .at(0);
+  return year ?? 0;
+};
+
 const cards: CardContent[] = projects
   .map((p) => {
     return {
@@ -16,10 +33,11 @@ const cards: CardContent[] = projects
       url: `/realisations/${category}/${p.id}`,
       imageUrl: `/photos/projects/${category}/${p.id}/thumbnail-${p.id}.webp`,
       id: p.id,
+      year: getLastIntervention(p),
     } satisfies CardContent & { id: string };
   })
   .sort((p1, p2) => {
-    return p1.id < p2.id ? -1 : 1;
+    return p1.year < p2.year ? 1 : -1;
   });
 </script>
 

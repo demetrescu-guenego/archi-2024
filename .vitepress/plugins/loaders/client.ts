@@ -1,7 +1,5 @@
-import { Client } from "../../interfaces/Client";
 import { createContentLoader } from "../utils/createContentLoader";
 import { filterPostByClientType } from "../utils/filter";
-import { sort } from "../utils/sort";
 
 export const clientLoad = async (id: string) => {
   const regex = /^.*\/clients.md$/;

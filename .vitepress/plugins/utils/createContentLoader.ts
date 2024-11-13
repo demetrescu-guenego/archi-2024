@@ -22,7 +22,7 @@ export const createContentLoader = (pattern: string) => {
 
         posts.push({
           url: file.replace(/.md$/, ""),
-          frontmatter: matterContent.data,
+          frontmatter: matterContent.data as Post["frontmatter"],
         });
       }
       return posts;
