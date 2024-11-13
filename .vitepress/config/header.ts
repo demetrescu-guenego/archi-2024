@@ -22,8 +22,6 @@ export const head: HeadConfig[] = [
 ];
 
 export const transformHead = ({ pageData }) => {
-  console.log("pageData: ", pageData);
-
   const isProject =
     pageData.relativePath.match(new RegExp("realisations/[^/]+/[^/]+")) !==
     null;
