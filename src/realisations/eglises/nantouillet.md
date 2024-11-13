@@ -22,7 +22,7 @@ photos:
   - url: 09.jpg
     label: Avant travaux
   - url: 10.jpg
-    label: Réfection parements extérieurs
+    label: Carte postale ancienne
 
 moa:
   name: Commune de Nantouillet (77)
