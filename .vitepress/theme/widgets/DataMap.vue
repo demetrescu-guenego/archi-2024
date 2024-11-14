@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import * as L from "leaflet";
 import { onMounted, useTemplateRef } from "vue";
 import { Localisation } from "../../interfaces/Localisation";
 
@@ -10,7 +9,9 @@ console.log("props: ", props);
 
 const mapElt = useTemplateRef("map");
 
-onMounted(() => {
+onMounted(async () => {
+  const L = await import("leaflet");
+  console.log("L: ", L);
   console.log("map");
   if (mapElt.value === null) {
     return;

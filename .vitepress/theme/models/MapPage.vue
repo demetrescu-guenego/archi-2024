@@ -7,10 +7,8 @@ import DataMap from "../widgets/DataMap.vue";
 import { toSlug } from "../../utils/slug";
 
 const { frontmatter } = useData();
-console.log("frontmatter: ", frontmatter);
 
 const mairies: Client[] = frontmatter.value.mairies;
-console.log("mairies: ", mairies);
 const publicOthers: Client[] = frontmatter.value.publicOthers;
 console.log("publicOthers: ", publicOthers);
 
@@ -29,6 +27,8 @@ const localisations: Localisation[] = [...mairies, ...publicOthers].map((c) => {
 <template>
   <main class="flex flex-grow flex-col">
     <h1 class="my-2">Carte de nos réalisations</h1>
-    <DataMap :localisations class="grow" />
+    <ClientOnly>
+      <DataMap :localisations class="grow" />
+    </ClientOnly>
   </main>
 </template>

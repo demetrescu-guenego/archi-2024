@@ -29,10 +29,6 @@ const init = () => {
 init();
 
 export const getGPSCoordFromZipcode = (zipcode: string | number): GPSCoord => {
-  console.log("zipcode: ", zipcode);
-  console.log("zipcode: ", typeof zipcode);
-  console.log("map.size: ", map.size);
   const gps = map.get(zipcode.toString());
-  console.log("gps: ", gps);
   return gps ?? DEFAULT_GPS;
 };
