@@ -12,11 +12,11 @@ photos:
   - url: 03.jpg
     label: Intérieur après travaux
   - url: 04.jpg
-    label: Plan
+    label: Façade - Coupe
   - url: 05.jpg
-    label: Plan
+    label: Façade - Coupe
   - url: 06.jpg
-    label: Plan
+    label: Façade - Coupe
 
 moa:
   name: Ville de Tournan-en-Brie (77)
