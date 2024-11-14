@@ -6,23 +6,28 @@ description:
 
 photos:
   - url: 01.jpg
-    label: Avant travaux
+    label: Après travaux
   - url: 02.jpg
-    label: Dessins architecturaux
+    label: Avant travaux
   - url: 03.jpg
-    label: Rendu projet
+    label: Intérieur après travaux
   - url: 04.jpg
-    label: Rendu projet
+    label: Plan
+  - url: 05.jpg
+    label: Plan
+  - url: 06.jpg
+    label: Plan
 
 moa:
   name: Ville de Tournan-en-Brie (77)
-  url: http://www.tournan-en-brie.fr/
+  url: https://www.tournan-en-brie.fr/
 interventions:
   - year: "2017"
     title: Réhabilitation d’une ancienne grange en locaux administratifs
     missions:
       - Maîtrise d'oeuvre
-    price: 741 900 € HT
+      - OPC
+    price: 1 008 000 € HT
 client:
   name: Tournan-en-Brie
   zip: 77220
