@@ -27,8 +27,8 @@ const localisations: Localisation[] = [...mairies, ...publicOthers].map((c) => {
 </script>
 
 <template>
-  <main class="flex flex-grow flex-col p-2">
-    <h1>Carte de nos réalisations</h1>
-    <DataMap :localisations />
+  <main class="flex flex-grow flex-col">
+    <h1 class="my-2">Carte de nos réalisations</h1>
+    <DataMap :localisations class="grow" />
   </main>
 </template>
