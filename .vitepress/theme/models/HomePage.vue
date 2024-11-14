@@ -12,8 +12,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const menu: MenuItem[] = [
-  { href: "/clients", label: "Clients" },
   { href: "/realisations", label: "Réalisations", primary: true },
+  { href: "/clients", label: "Clients" },
+  { href: "/carte", label: "Carte" },
 ];
 </script>
 

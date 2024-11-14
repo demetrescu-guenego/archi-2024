@@ -2,8 +2,9 @@ import { createContentLoader } from "../utils/createContentLoader";
 import { filterPostByClientType } from "../utils/filter";
 
 export const clientLoad = async (id: string) => {
-  const regex = /^.*\/clients.md$/;
-  if (!id.match(regex)) {
+  const regex = /^.*\/(clients|carte).md$/;
+  const matches = id.match(regex);
+  if (!matches) {
     return;
   }
   // look at all the projects and generate the frontmatter.
@@ -13,7 +14,7 @@ export const clientLoad = async (id: string) => {
   const publicOthers = filterPostByClientType(posts, "Public Autres");
 
   const jsonString = JSON.stringify({
-    layout: "clients",
+    layout: matches[1] === "clients" ? "clients" : "map",
     mairies,
     publicOthers,
   });

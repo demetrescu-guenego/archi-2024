@@ -8,6 +8,7 @@ import ContactPage from "../models/ContactPage.vue";
 import ProjectPage from "../models/ProjectPage.vue";
 import ViewerPage from "../models/ViewerPage.vue";
 import MairiePage from "../models/MairiePage.vue";
+import MapPage from "../models/MapPage.vue";
 
 const { frontmatter } = useData();
 const route = useRoute();
@@ -27,6 +28,7 @@ const isProject = () => {
   <ProjectPage v-else-if="isProject()" />
   <ViewerPage v-else-if="frontmatter.layout === 'viewer'" />
   <MairiePage v-else-if="frontmatter.layout === 'mairie'" />
+  <MapPage v-else-if="frontmatter.layout === 'map'" />
   <div v-else>
     <a href="/">Home</a>
     <Content />
