@@ -4,6 +4,7 @@ import { Client } from "../../interfaces/Client";
 import { GPSCoord } from "../../interfaces/GPSCoord";
 import { Localisation } from "../../interfaces/Localisation";
 import DataMap from "../widgets/DataMap.vue";
+import { toSlug } from "../../utils/slug";
 
 const { frontmatter } = useData();
 console.log("frontmatter: ", frontmatter);
@@ -19,7 +20,7 @@ const localisations: Localisation[] = [...mairies, ...publicOthers].map((c) => {
   return {
     label: c.name,
     gps: c.gps ?? DEFAULT_GPS,
-    url: "/clients/${c.name}",
+    url: `/clients/${toSlug(c.name)}`,
     zipcode: c.zip,
   };
 });

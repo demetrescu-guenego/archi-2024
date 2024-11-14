@@ -1,6 +1,7 @@
+import { Client } from "../../interfaces/Client";
 import { Intervention } from "../../interfaces/Intervention";
 import { Post } from "../../interfaces/Post";
-import { Client } from "../../interfaces/Client";
+import { getGPSCoordFromZipcode } from "../../utils/gps";
 import { sort } from "./sort";
 
 const reducer = (acc: Map<string, Client>, client: Client) => {
@@ -28,7 +29,7 @@ export const filterPostByClientType = (
       const client = post.frontmatter.client as Client;
       return {
         ...client,
-        years: post.frontmatter.interventions
+        years: (post.frontmatter.interventions ?? [])
           .map((i: Intervention) => +String(i.year).substring(0, 4))
           .sort(),
       };
@@ -37,6 +38,7 @@ export const filterPostByClientType = (
     .values();
   return [...iterator].map((client) => {
     client.years = sort(client.years);
+    client.gps = getGPSCoordFromZipcode(client.zip);
     return client;
   });
 };

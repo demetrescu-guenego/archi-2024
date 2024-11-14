@@ -2,6 +2,7 @@
   "name": "archi2024",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "docs:dev": "vitepress dev",
@@ -18,10 +19,12 @@
   "description": "",
   "devDependencies": {
     "@eslint/js": "^9.13.0",
+    "@types/d3": "^7.4.3",
     "@types/node": "^22.7.9",
     "@vite-pwa/assets-generator": "^0.2.6",
     "@vite-pwa/vitepress": "^0.5.3",
     "autoprefixer": "^10.4.20",
+    "d3": "^7.9.0",
     "eslint": "^9.13.0",
     "eslint-plugin-vue": "^9.29.1",
     "glob": "^11.0.0",

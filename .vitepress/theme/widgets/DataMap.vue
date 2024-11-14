@@ -7,4 +7,8 @@ const props = defineProps<{
 console.log("props: ", props);
 </script>
 
-<template>Carte</template>
+<template>
+  <div v-for="localisation in localisations" :key="localisation.label">
+    {{ localisation }}
+  </div>
+</template>
