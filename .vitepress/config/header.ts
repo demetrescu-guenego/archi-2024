@@ -19,6 +19,19 @@ export const head: HeadConfig[] = [
   //     src: "https://files.bpcontent.cloud/2024/11/10/12/20241110125112-DCSUYDWO.js",
   //   },
   // ],
+
+  ["link", { rel: "preconnect", href: "https://fonts.googleapis.com" }],
+  [
+    "link",
+    { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: "" },
+  ],
+  [
+    "link",
+    {
+      rel: "stylesheet",
+      href: "https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Sarala:wght@400;700&display=swap",
+    },
+  ],
 ];
 
 export const transformHead = ({ pageData }) => {

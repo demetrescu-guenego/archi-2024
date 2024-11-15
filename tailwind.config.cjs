@@ -3,6 +3,9 @@ module.exports = {
   content: ["./.vitepress/theme/**/*.{vue,js,ts,jsx,tsx,html,md}"],
   theme: {
     extend: {},
+    fontFamily: {
+      sans: ["Sarala", "sans-serif"],
+    },
   },
   plugins: [],
 };
