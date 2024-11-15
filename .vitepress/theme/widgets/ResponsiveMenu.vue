@@ -51,14 +51,14 @@ const close = () => {
       <FontAwesomeIcon :icon="faBars" class="text-4xl" />
     </button>
     <nav
-      :class="{ 'h-0': !isMenuOpen, 'h-64': isMenuOpen }"
-      class="fixed left-0 right-0 top-16 z-10 flex flex-col overflow-hidden bg-white text-fuchsia-900 transition-[height]"
+      :class="isMenuOpen ? 'h-64 border-b' : 'h-0'"
+      class="fixed left-0 right-0 top-16 z-10 flex flex-col overflow-hidden border-neutral-300 bg-white text-fuchsia-900 transition-[height]"
     >
       <a
         :href="item.href"
         v-for="item in props.list"
         :key="item.label"
-        class="flex h-16 items-center justify-center text-2xl active:bg-neutral-200"
+        class="flex h-16 items-center justify-center text-2xl hover:bg-neutral-100 active:bg-neutral-200"
         @click="close()"
       >
         {{ item.label }}
