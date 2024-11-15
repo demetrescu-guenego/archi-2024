@@ -5,6 +5,7 @@ import { useRoute } from "vitepress";
 import { isDesktop } from "../stores/ResponsiveStore";
 import { MenuItem } from "../../interfaces/MenuItem";
 import { ref } from "vue";
+import { transition } from "d3";
 
 const props = defineProps<{ list: MenuItem[] }>();
 
@@ -51,8 +52,8 @@ const close = () => {
       <FontAwesomeIcon :icon="faBars" class="text-4xl" />
     </button>
     <nav
-      v-if="isMenuOpen"
-      class="fixed left-0 right-0 top-16 z-10 flex flex-col bg-white text-fuchsia-900"
+      :class="{ 'h-0': !isMenuOpen, 'h-64': isMenuOpen }"
+      class="fixed left-0 right-0 top-16 z-10 flex flex-col bg-white text-fuchsia-900 transition-[height]"
     >
       <a
         :href="item.href"
