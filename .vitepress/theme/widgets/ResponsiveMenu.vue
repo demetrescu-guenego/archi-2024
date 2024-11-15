@@ -34,7 +34,7 @@ const close = () => {
       :href="item.href"
       v-for="item in props.list"
       :key="item.label"
-      class="border-2 p-2 px-4 hover:border-white hover:border-opacity-50"
+      class="border p-2 px-4 hover:border-white hover:border-opacity-50"
       :class="{
         'border-white': isActive(item.href),
         'border-transparent': !isActive(item.href),

@@ -31,7 +31,7 @@ const menu: MenuItem[] = [
         />
       </div>
       <div class="flex h-full flex-col items-center justify-center gap-12 px-4">
-        <p class="text-center text-5xl md:text-6xl">
+        <p class="text-center text-4xl font-bold italic md:text-6xl">
           Réussissez votre projet architectural&nbsp;!
         </p>
         <div
@@ -41,7 +41,7 @@ const menu: MenuItem[] = [
             v-for="item in menu"
             :key="item.label"
             :href="item.href"
-            class="cursor-pointer border-2 border-white px-8 py-4 text-center text-xl hover:bg-white hover:bg-opacity-10 sm:text-4xl"
+            class="cursor-pointer border border-white px-8 py-4 text-center text-xl hover:bg-white hover:bg-opacity-10 sm:text-4xl"
             :class="{
               'bg-opacity-25': item.primary,
               'bg-white': item.primary,
