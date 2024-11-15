@@ -53,7 +53,7 @@ const close = () => {
     </button>
     <nav
       :class="{ 'h-0': !isMenuOpen, 'h-64': isMenuOpen }"
-      class="fixed left-0 right-0 top-16 z-10 flex flex-col bg-white text-fuchsia-900 transition-[height]"
+      class="fixed left-0 right-0 top-16 z-10 flex flex-col overflow-hidden bg-white text-fuchsia-900 transition-[height]"
     >
       <a
         :href="item.href"
