@@ -30,7 +30,7 @@ const gotoUrl = async (url: string) => {
         v-for="client in mairies"
         :key="client.name"
         @click="gotoUrl(client.name)"
-        class="cursor-pointer"
+        class="tr-selectable"
       >
         <td>
           {{ client.name }}
