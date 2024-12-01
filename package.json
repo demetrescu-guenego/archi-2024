@@ -4,10 +4,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "docs:dev": "vitepress dev",
-    "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview",
+    "start": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview",
     "format": "prettier -w .",
     "lint": "eslint",
     "generate-pwa-assets": "pwa-assets-generator --preset minimal-2023 src/public/logo-purple.svg",

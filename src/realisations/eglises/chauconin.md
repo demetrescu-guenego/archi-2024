@@ -10,23 +10,82 @@ photos:
     label: Côté sud après intervention
   - url: 03.jpg
     label: Côté est pendant intervention
+  - url: 04.jpg
+    label: Beffroi avec en fond la charpente de Notre Dame de Paris
+  - url: 05.jpg
+    label: Cloche de Saint Saturnin
+  - url: 06.jpg
+    label: Nouveau clocher 2024
+  - url: 07.jpg
+    label: Montage du clocher 2024
+  - url: 08.jpg
+    label: Chevet après réfection
+  - url: 09.jpg
+    label: Chantier toiture sacristie
+  - url: 10.jpg
+    label: Nouveau vitrail 2010
+  - url: 11.jpg
+    label: Chantier sacristie
+  - url: 12.jpg
+    label: Aquarelle Lizica 2006
+  - url: 13.jpg
+    label: Inondatation 2018
+  - url: 14.jpg
+    label: Chevet avant réfection 2017
+  - url: 15.jpg
+    label: Eglise en 2020
 
 moa:
   name: Mairie de Chauconin-Neufmontiers (77)
   url: http://chauconin-neufmontiers.fr/
 interventions:
+  - year: 2023 - 2024
+    title:
+      Réfection des parements extérieurs et intérieurs de la nef et du clocher
+    missions:
+      - Maîtrise d'oeuvre
+      - OPC
+    price: 727 000 € HT
+
+  - year: 2022 - 2023
+    title: Réfection des enduits de la sacristie
+    missions:
+      - Maîtrise d'oeuvre
+
+  - year: 2020
+    title: Mise à jour de l'étude préalable
+    missions:
+      - Etude et Rédaction
+
+  - year: 2018
+    title: Réfection des enduits de la chapelle nord
+    missions:
+      - Maîtrise d'oeuvre
+
+  - year: 2017
+    title: Réfection des parements extérieurs, toiture du chevet
+    missions:
+      - Maîtrise d'oeuvre
+      - OPC
+
   - year: 2012
     title: Restauration du transept
     missions:
       - Maîtrise d'oeuvre
+      - OPC
     price: 303 000 € HT
+
   - year: 2007
     title: Travaux d'urgence
     missions:
       - Maîtrise d'oeuvre
     price: 15 000 € HT
+
   - year: 2006
     title: Etude préalable
+    missions:
+      - Etude et Rédaction
+
 classement: Inscrit MH
 client:
   name: Chauconin-Neufmontiers
@@ -34,19 +93,5 @@ client:
   type: Mairie
 ---
 
-« **L’originalité de l'église SAINT-SATURNIN** consiste dans la conception
-architecturale qui réunit une période charnière de l’histoire : un passage
-harmonieux de l’architecture gothique à la resplendissante Renaissance
-française.
-
-Construite à partir de 1580, elle se présente sous la forme d’une large nef
-unique à cinq travées terminées par une abside arrondie. Deux chapelles, l’une
-au nord, l’autre au sud donnent au plan un aspect cruciforme. Le transept est
-englobé complètement dans l’unité spatiale de la nef. A l’intérieur de l’église,
-les formes très épurées des murs sont animées par la lumière naturelle des
-fenêtres très larges qui occupent plus de la moitié des parois de chaque travée,
-lumière qui affine et dématérialise les colonnes engagées. Cette ambiance qui
-résulte du jeu subtil entre le «solide» et le «diaphane» est accompagnée d’une
-parfaite acoustique qui renforce le caractère majestueux de l’édifice. »
-
-**Suzana Guénégo, architecte**
+L'église Saint-Saturnin de Chauconin-Neufmontiers est la toute première église
+sur laquelle le cabinet d'architecture est intervenue, en 2005.
