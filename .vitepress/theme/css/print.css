@@ -1,10 +1,15 @@
 @page {
-  size: 7in 9.25in;
+  size: 21cm 29.7cm;
   margin: 0mm 0mm 0mm 0mm;
 }
 
 @media print {
   div.printable {
+    width: 21cm;
+    height: 29.7cm;
+    max-height: 29.7cm;
+    background-color: aquamarine;
+    overflow: hidden;
     footer {
       display: none;
     }

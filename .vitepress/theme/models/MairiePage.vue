@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useData } from "vitepress";
 import { Project } from "../../interfaces/Project";
-import NiceCard from "../widgets/NiceCard.vue";
+import NiceCards from "../widgets/NiceCards.vue";
 import { CardContent } from "../../interfaces/CardContent";
 
 const { frontmatter } = useData();
@@ -28,6 +28,6 @@ const cards: CardContent[] = projects.map((p) => {
       }})
     </h1>
 
-    <NiceCard :input="cards" />
+    <NiceCards :input="cards" />
   </main>
 </template>

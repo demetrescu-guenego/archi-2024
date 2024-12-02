@@ -2,7 +2,7 @@
 import { data } from "../../../commons/data";
 import { CardContent } from "../../interfaces/CardContent";
 import { Category } from "../../interfaces/Category";
-import NiceCard from "../widgets/NiceCard.vue";
+import NiceCards from "../widgets/NiceCards.vue";
 
 const categories: Category[] = data.categories;
 
@@ -18,6 +18,6 @@ const cards: CardContent[] = categories.map((c) => {
 <template>
   <main class="flex flex-grow flex-col p-2">
     <h1>Nos réalisations</h1>
-    <NiceCard :input="cards" boldLabel />
+    <NiceCards :input="cards" boldLabel />
   </main>
 </template>

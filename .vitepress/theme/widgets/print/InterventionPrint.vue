@@ -12,12 +12,14 @@ const props = defineProps<{
       {{ intervention.year }}
       <span v-if="intervention.ongoing">- en cours </span>:
       {{ intervention.title }}, <br />
-      {{ intervention.missions.join(", ") }}, <br />
+      <span v-if="intervention.missions"
+        >{{ intervention.missions.join(", ") }}, <br
+      /></span>
       <span v-if="intervention.price">
         Montant des Travaux : {{ intervention.price }}
       </span>
     </li>
-    <li>
+    <li v-if="props.input.length > 4">
       Autres interventions en
       {{
         props.input

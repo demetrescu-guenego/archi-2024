@@ -2,7 +2,7 @@
 import { useData } from "vitepress";
 import { CardContent } from "../../interfaces/CardContent";
 import { Project } from "../../interfaces/Project";
-import NiceCard from "../widgets/NiceCard.vue";
+import NiceCards from "../widgets/NiceCards.vue";
 
 const { frontmatter } = useData();
 
@@ -46,7 +46,7 @@ const cards: CardContent[] = projects
     <section class="mx-auto max-w-5xl">
       <h1>{{ frontmatter.label }}</h1>
 
-      <NiceCard :input="cards" />
+      <NiceCards :input="cards" />
     </section>
   </main>
 </template>
