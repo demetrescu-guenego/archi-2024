@@ -1,20 +1,20 @@
 ---
 layout: project
-label: Église Saint-Paul de Chailly-en-Bière
+title: Église Saint-Paul de Chailly-en-Bière
 
 photos:
   - url: 01.jpg
-    label: Après travaux
+    title: Après travaux
   - url: 02.jpg
-    label: Avant travaux
+    title: Avant travaux
   - url: 03.jpg
-    label: Chantier
+    title: Chantier
   - url: 04.jpg
-    label:
+    title:
   - url: 05.jpg
-    label:
+    title:
   - url: 06.jpg
-    label:
+    title:
 
 moa:
   name: Commune de Chailly-en-Bière (77)

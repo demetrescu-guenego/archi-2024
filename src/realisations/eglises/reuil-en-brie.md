@@ -1,14 +1,14 @@
 ---
-label: Eglise Saint-Jacques et Saint-Philippe à Reuil-en-Brie
+title: Eglise Saint-Jacques et Saint-Philippe à Reuil-en-Brie
 description: Eglise Saint Jacques et Saint Philippe à Reuil-en-Brie
 
 photos:
   - url: 01.jpg
-    label: Coupe
+    title: Coupe
   - url: 02.jpg
-    label: Clocher
+    title: Clocher
   - url: 03.jpg
-    label: Extérieur
+    title: Extérieur
 
 moa:
   name: Commune de Reuil-en-Brie (77)

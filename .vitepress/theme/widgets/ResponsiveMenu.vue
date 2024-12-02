@@ -33,14 +33,14 @@ const close = () => {
     <a
       :href="item.href"
       v-for="item in props.list"
-      :key="item.label"
+      :key="item.title"
       class="border p-2 px-4 hover:border-white hover:border-opacity-50"
       :class="{
         'border-white': isActive(item.href),
         'border-transparent': !isActive(item.href),
       }"
     >
-      {{ item.label }}
+      {{ item.title }}
     </a>
   </nav>
   <div v-else>
@@ -57,11 +57,11 @@ const close = () => {
       <a
         :href="item.href"
         v-for="item in props.list"
-        :key="item.label"
+        :key="item.title"
         class="flex h-16 items-center justify-center text-2xl hover:bg-neutral-100 active:bg-neutral-200"
         @click="close()"
       >
-        {{ item.label }}
+        {{ item.title }}
       </a>
     </nav>
   </div>

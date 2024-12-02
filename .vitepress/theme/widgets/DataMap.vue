@@ -43,7 +43,7 @@ onMounted(async () => {
     })
       .addTo(map)
       .bindPopup(
-        `<a href="${localisation.url}" style="text-decoration: underline;">${localisation.label} (${localisation.zipcode})</a>`,
+        `<a href="${localisation.url}" style="text-decoration: underline;">${localisation.title} (${localisation.zipcode})</a>`,
       );
   }
 });

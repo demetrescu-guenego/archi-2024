@@ -1,14 +1,14 @@
 ---
 layout: project
-label: Château de Bombon
+title: Château de Bombon
 description: Réfection des toitures du pavillon d’entrée
 photos:
   - url: 01.jpg
-    label: Juste avant la fin de la restauration
+    title: Juste avant la fin de la restauration
   - url: 02.jpg
-    label: Façades
+    title: Façades
   - url: 03.jpg
-    label: Entrée du château
+    title: Entrée du château
 
 moa:
   name: privée

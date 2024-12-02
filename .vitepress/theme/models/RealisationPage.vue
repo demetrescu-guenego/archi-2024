@@ -8,7 +8,7 @@ const categories: Category[] = data.categories;
 
 const cards: CardContent[] = categories.map((c) => {
   return {
-    label: c.label,
+    title: c.title,
     url: `/realisations/${c.id}`,
     imageUrl: `/photos/projects/${c.id}/${c.name}/thumbnail-${c.name}.webp`,
   };

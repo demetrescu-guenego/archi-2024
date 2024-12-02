@@ -1,15 +1,15 @@
 ---
-label: Immeuble de bureaux et entrepôt à Chanteloup-en-Brie
+title: Immeuble de bureaux et entrepôt à Chanteloup-en-Brie
 description:
   Construction d’un immeuble de bureaux et entrepôt à Chanteloup-en-Brie
 
 photos:
   - url: 01.jpg
-    label: Plan du projet
+    title: Plan du projet
   - url: 02.jpg
-    label: Pendant les travaux
+    title: Pendant les travaux
   - url: 03.jpg
-    label: Après travaux
+    title: Après travaux
 
 moa:
   name: privée

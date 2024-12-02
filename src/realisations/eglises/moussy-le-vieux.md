@@ -1,20 +1,20 @@
 ---
-label: Eglise Saint Martin de Moussy-le-Vieux
+title: Eglise Saint Martin de Moussy-le-Vieux
 description: Restauration du clocher - Eglise Saint Martin de Moussy-le-Vieux
 
 photos:
   - url: 01.jpg
-    label: Carte postale ancienne
+    title: Carte postale ancienne
   - url: 02.jpg
-    label: Eglise avant restauration du clocher
+    title: Eglise avant restauration du clocher
   - url: 03.jpg
-    label: Lizica faisant le relevé
+    title: Lizica faisant le relevé
   - url: 04.jpg
-    label: Echaffaudage du clocher
+    title: Echaffaudage du clocher
   - url: 05.jpg
-    label: Après restauration du clocher
+    title: Après restauration du clocher
   - url: 06.jpg
-    label: Horloge du clocher restaurée
+    title: Horloge du clocher restaurée
 
 moa:
   name: Commune de Moussy-le-Vieux (77)

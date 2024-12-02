@@ -1,6 +1,6 @@
 ---
 layout: project
-label: Crypte de l’Abbaye de Jouarre
+title: Crypte de l’Abbaye de Jouarre
 description: Réfection des parements extérieurs - Crypte de l’Abbaye de Jouarre
 
 moa:

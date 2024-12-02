@@ -1,15 +1,15 @@
 ---
 priority: 999
-label: Construction d’un entrepôt et bureaux à Villenoy (2)
+title: Construction d’un entrepôt et bureaux à Villenoy (2)
 description: Construction d’un entrepôt et bureaux à Villenoy
 
 photos:
   - url: 01.jpg
-    label: Avant projet
+    title: Avant projet
   - url: 02.jpg
-    label: Volet paysager
+    title: Volet paysager
   - url: 03.jpg
-    label: Après travaux
+    title: Après travaux
 
 moa:
   name: privée

@@ -1,22 +1,22 @@
 ---
-label: Locaux administratifs à Tournan-en-Brie
+title: Locaux administratifs à Tournan-en-Brie
 description:
   Réhabilitation d’une ancienne grange en locaux administratifs à
   Tournan-en-Brie
 
 photos:
   - url: 01.jpg
-    label: Après travaux
+    title: Après travaux
   - url: 02.jpg
-    label: Avant travaux
+    title: Avant travaux
   - url: 03.jpg
-    label: Intérieur après travaux
+    title: Intérieur après travaux
   - url: 04.jpg
-    label: Façade - Coupe
+    title: Façade - Coupe
   - url: 05.jpg
-    label: Façade - Coupe
+    title: Façade - Coupe
   - url: 06.jpg
-    label: Façade - Coupe
+    title: Façade - Coupe
 
 moa:
   name: Ville de Tournan-en-Brie (77)

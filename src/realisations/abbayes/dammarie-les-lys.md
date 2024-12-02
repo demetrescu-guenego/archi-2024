@@ -1,6 +1,6 @@
 ---
 layout: project
-label: Abbaye du Lys de Dammarie-les-Lys
+title: Abbaye du Lys de Dammarie-les-Lys
 
 moa:
   name: Ville de Dammarie-les-Lys (77)

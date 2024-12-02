@@ -1,21 +1,21 @@
 ---
 priority: 1000
-label: Ecole de Poincy
+title: Ecole de Poincy
 description: Réhabilitation de l’école à Poincy
 
 photos:
   - url: 01.jpg
-    label: Façade principale - après travaux
+    title: Façade principale - après travaux
   - url: 02.jpg
-    label: Façade arrière - après travaux
+    title: Façade arrière - après travaux
   - url: 03.jpg
-    label: Intérieur - après travaux
+    title: Intérieur - après travaux
   - url: 04.jpg
-    label: Façade principale - avant travaux
+    title: Façade principale - avant travaux
   - url: 05.jpg
-    label: Façade arrière - avant travaux
+    title: Façade arrière - avant travaux
   - url: 06.jpg
-    label: Intérieur - avant travaux
+    title: Intérieur - avant travaux
 
 moa:
   name: Commune de Poincy (77)

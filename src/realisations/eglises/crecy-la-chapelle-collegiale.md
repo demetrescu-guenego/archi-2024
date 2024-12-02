@@ -1,28 +1,28 @@
 ---
 layout: project
-label: Collégiale Notre-Dame de l’Assomption de Crécy-la-Chapelle
+title: Collégiale Notre-Dame de l’Assomption de Crécy-la-Chapelle
 
 photos:
   - url: 01.jpg
-    label: Après travaux
+    title: Après travaux
   - url: 02.jpg
-    label: Pendant travaux
+    title: Pendant travaux
   - url: 03.jpg
-    label: Avant travaux
+    title: Avant travaux
   - url: 04.jpg
-    label: Coupe longitudinale
+    title: Coupe longitudinale
   - url: 05.jpg
-    label: Coupe transversale
+    title: Coupe transversale
   - url: 06.jpg
-    label: Plan
+    title: Plan
   - url: 07.jpg
-    label: Voutes avant travaux
+    title: Voutes avant travaux
   - url: 08.jpg
-    label: Voutes après travaux
+    title: Voutes après travaux
   - url: 09.jpg
-    label: Chantier toiture
+    title: Chantier toiture
   - url: 10.jpg
-    label: Carte postale ancienne
+    title: Carte postale ancienne
 
 moa:
   name: Commune de Crécy-la-Chapelle (77)

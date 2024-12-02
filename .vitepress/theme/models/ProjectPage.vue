@@ -24,7 +24,7 @@ const projectData: ProjectData = frontmatter.value as ProjectData;
 
 const cards: CardContent[] = photos.map((p) => {
   return {
-    label: p.label,
+    title: p.title,
     url: `/viewer?src=/photos/projects/${category}/${name}/${p.url}`,
     imageUrl: `/photos/projects/${category}/${name}/${p.url}`,
   } satisfies CardContent;
@@ -35,7 +35,7 @@ const cards: CardContent[] = photos.map((p) => {
   <main class="flex flex-grow flex-col print:hidden">
     <section class="bg-white">
       <div class="mx-auto max-w-5xl px-2 pb-4">
-        <h1>Réalisation: {{ frontmatter.label }}</h1>
+        <h1>Réalisation: {{ frontmatter.title }}</h1>
         <h2>Présentation</h2>
         <PresentationTable :input="projectData" />
         <h2>Interventions</h2>
@@ -67,7 +67,7 @@ const cards: CardContent[] = photos.map((p) => {
   >
     <section>
       <div class="mx-auto max-w-5xl px-2 pb-4">
-        <h1>Réalisation: {{ frontmatter.label }}</h1>
+        <h1>Réalisation: {{ frontmatter.title }}</h1>
         <h2>Présentation</h2>
         <PresentationPrint :input="projectData" />
         <h2>Interventions</h2>

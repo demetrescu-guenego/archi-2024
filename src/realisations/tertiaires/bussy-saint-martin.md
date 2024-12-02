@@ -1,20 +1,20 @@
 ---
-label: Salle polyvalente à Bussy-Saint-Martin
+title: Salle polyvalente à Bussy-Saint-Martin
 description: Extension de la salle polyvalente à Bussy-Saint-Martin
 
 photos:
   - url: 01.jpg
-    label: Pendant les travaux
+    title: Pendant les travaux
   - url: 02.jpg
-    label: Percement d'un mur de structure
+    title: Percement d'un mur de structure
   - url: 03.jpg
-    label: Après travaux
+    title: Après travaux
   - url: 04.jpg
-    label: Volet paysager
+    title: Volet paysager
   - url: 05.jpg
-    label: Vue aérienne Google avant travaux
+    title: Vue aérienne Google avant travaux
   - url: 06.jpg
-    label: Vue aérienne 3D Google après travaux
+    title: Vue aérienne 3D Google après travaux
 
 moa:
   name: Commune de Bussy-Saint-Martin (77)

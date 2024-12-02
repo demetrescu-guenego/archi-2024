@@ -1,5 +1,5 @@
 ---
-label: Remparts de Charleville-Mézières
+title: Remparts de Charleville-Mézières
 description:
   Reprise de la structure des remparts, des charpentes et des bâtiments, 12
   places du Château

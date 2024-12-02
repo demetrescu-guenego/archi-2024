@@ -1,5 +1,5 @@
 ---
-label: Eglise Saint Martin du Mesnil-Amelot
+title: Eglise Saint Martin du Mesnil-Amelot
 description:
   Restauration des parements extérieurs et réfection du beffroi du clocher -
   Eglise Saint Martin du Mesnil-Amelot

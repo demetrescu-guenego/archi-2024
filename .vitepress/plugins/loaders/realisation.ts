@@ -8,7 +8,7 @@ export const realisationLoad = async (id: string) => {
     return;
   }
   const category = id.replace(regex, "$1");
-  const label = getCategoryLabel(category);
+  const title = getCategoryLabel(category);
   const posts = await createContentLoader(
     `realisations/${category}/*.md`,
   ).load();
@@ -16,15 +16,15 @@ export const realisationLoad = async (id: string) => {
   const projects = posts.map((post) => {
     return {
       id: basename(post.url),
-      label: post.frontmatter.label,
+      title: post.frontmatter.title,
       interventions: post.frontmatter.interventions,
     };
   });
 
   const jsonString = JSON.stringify({
+    title,
     layout: "category",
     category,
-    label,
     projects,
   });
 

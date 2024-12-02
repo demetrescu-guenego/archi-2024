@@ -1,6 +1,6 @@
 ---
 layout: project
-label: Eglise Notre Dame en l’Assomption à Bernay-Vilbert
+title: Eglise Notre Dame en l’Assomption à Bernay-Vilbert
 description: Eglise Notre Dame en l’Assomption à Bernay-Vilbert
 
 photos:

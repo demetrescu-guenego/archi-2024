@@ -1,39 +1,39 @@
 ---
 layout: project
-label: Eglise Saint Saturnin de Chauconin
+title: Eglise Saint Saturnin de Chauconin
 description: Restauration du transept - Eglise Saint Saturnin de Chauconin
 
 photos:
   - url: 01.jpg
-    label: Coupe
+    title: Coupe
   - url: 02.jpg
-    label: Côté sud après intervention
+    title: Côté sud après intervention
   - url: 03.jpg
-    label: Côté est pendant intervention
+    title: Côté est pendant intervention
   - url: 04.jpg
-    label: Beffroi avec en fond la charpente de Notre Dame de Paris
+    title: Beffroi avec en fond la charpente de Notre Dame de Paris
   - url: 05.jpg
-    label: Cloche de Saint Saturnin
+    title: Cloche de Saint Saturnin
   - url: 06.jpg
-    label: Nouveau clocher 2024
+    title: Nouveau clocher 2024
   - url: 07.jpg
-    label: Montage du clocher 2024
+    title: Montage du clocher 2024
   - url: 08.jpg
-    label: Chevet après réfection
+    title: Chevet après réfection
   - url: 09.jpg
-    label: Chantier toiture sacristie
+    title: Chantier toiture sacristie
   - url: 10.jpg
-    label: Nouveau vitrail 2010
+    title: Nouveau vitrail 2010
   - url: 11.jpg
-    label: Chantier sacristie
+    title: Chantier sacristie
   - url: 12.jpg
-    label: Aquarelle Lizica 2006
+    title: Aquarelle Lizica 2006
   - url: 13.jpg
-    label: Inondatation 2018
+    title: Inondatation 2018
   - url: 14.jpg
-    label: Chevet avant réfection 2017
+    title: Chevet avant réfection 2017
   - url: 15.jpg
-    label: Eglise en 2020
+    title: Eglise en 2020
 
 moa:
   name: Mairie de Chauconin-Neufmontiers (77)

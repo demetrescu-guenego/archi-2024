@@ -1,14 +1,14 @@
 ---
-label: Stade de Varennes-sur-Seine
+title: Stade de Varennes-sur-Seine
 description: Construction d’un club house Stade de Varennes-sur-Seine (77)
 
 photos:
   - url: 01.jpg
-    label: Présentation du projet
+    title: Présentation du projet
   - url: 02.jpg
-    label: Avant le projet
+    title: Avant le projet
   - url: 03.jpg
-    label: Après travaux
+    title: Après travaux
 
 moa:
   name: Commune de Varennes sur Seine (77)

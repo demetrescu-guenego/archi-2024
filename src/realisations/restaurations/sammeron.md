@@ -1,14 +1,14 @@
 ---
-label: Mairie et Ecole de Sammeron
+title: Mairie et Ecole de Sammeron
 description: Restauration des façades Mairie et Ecole à Sammeron
 
 photos:
   - url: 01.jpg
-    label: Avant travaux
+    title: Avant travaux
   - url: 02.jpg
-    label: Pendant travaux
+    title: Pendant travaux
   - url: 03.jpg
-    label: Réfection parements extérieurs
+    title: Réfection parements extérieurs
 
 moa:
   name: Commune de Sammeron (77)

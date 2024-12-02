@@ -1,20 +1,20 @@
 ---
-label: Eglise Saint-Pierre et Saint-Paul de Villeneuve-sous-Dammartin
+title: Eglise Saint-Pierre et Saint-Paul de Villeneuve-sous-Dammartin
 description: Eglise Saint-Pierre et Saint-Paul de Villeneuve-sous-Dammartin
 
 photos:
   - url: 01.jpg
-    label: Clocher avant travaux
+    title: Clocher avant travaux
   - url: 02.jpg
-    label: Clocher pendant travaux
+    title: Clocher pendant travaux
   - url: 03.jpg
-    label: Clocher après travaux
+    title: Clocher après travaux
   - url: 04.jpg
-    label: Bas côté avant travaux
+    title: Bas côté avant travaux
   - url: 05.jpg
-    label: Bas côté après travaux
+    title: Bas côté après travaux
   - url: 06.jpg
-    label: Perspective ̀d'artiste <br/> (Lizica DEMETRESCU)
+    title: Perspective ̀d'artiste <br/> (Lizica DEMETRESCU)
 
 moa:
   name: Commune de Villeneuve-sous-Dammartin (77)

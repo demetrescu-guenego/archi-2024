@@ -1,23 +1,23 @@
 ---
-label: Gymnase Jean Moulin à Torcy
+title: Gymnase Jean Moulin à Torcy
 description:
   Aménagement d’un local associatif Club House, Gymnase Jean Moulin à Torcy
 
 photos:
   - url: 01.jpg
-    label: Avant travaux
+    title: Avant travaux
   - url: 02.jpg
-    label: Avant travaux
+    title: Avant travaux
   - url: 03.jpg
-    label: Avant travaux
+    title: Avant travaux
   - url: 04.jpg
-    label: Après travaux - extérieur
+    title: Après travaux - extérieur
   - url: 05.jpg
-    label: Après travaux - extérieur
+    title: Après travaux - extérieur
   - url: 06.jpg
-    label: Après travaux - intérieur
+    title: Après travaux - intérieur
   - url: 07.jpg
-    label: Après travaux - intérieur
+    title: Après travaux - intérieur
 
 moa:
   name: Ville de Torcy (77)

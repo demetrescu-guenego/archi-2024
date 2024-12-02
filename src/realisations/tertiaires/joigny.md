@@ -1,5 +1,5 @@
 ---
-label: Aménagement CPAM de la ville de Joigny
+title: Aménagement CPAM de la ville de Joigny
 description: Aménagement CPAM de la ville de Joigny
 
 moa:

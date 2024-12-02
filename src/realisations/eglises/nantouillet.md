@@ -1,28 +1,28 @@
 ---
 layout: project
-label: Eglise Saint-Denis de Nantouillet
+title: Eglise Saint-Denis de Nantouillet
 
 photos:
   - url: 01.jpg
-    label: Coupe longitudinale
+    title: Coupe longitudinale
   - url: 02.jpg
-    label: Coupe transversale
+    title: Coupe transversale
   - url: 03.jpg
-    label: Façade Ouest
+    title: Façade Ouest
   - url: 04.jpg
-    label: Après travaux
+    title: Après travaux
   - url: 05.jpg
-    label: Après travaux
+    title: Après travaux
   - url: 06.jpg
-    label: Avant travaux
+    title: Avant travaux
   - url: 07.jpg
-    label: Avant travaux
+    title: Avant travaux
   - url: 08.jpg
-    label: Pendant travaux
+    title: Pendant travaux
   - url: 09.jpg
-    label: Avant travaux
+    title: Avant travaux
   - url: 10.jpg
-    label: Carte postale ancienne
+    title: Carte postale ancienne
 
 moa:
   name: Commune de Nantouillet (77)

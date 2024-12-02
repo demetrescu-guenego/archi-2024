@@ -14,6 +14,7 @@ export const clientLoad = async (id: string) => {
   const publicOthers = filterPostByClientType(posts, "Public Autres");
 
   const jsonString = JSON.stringify({
+    title: matches[1] === "clients" ? "Clients" : "Carte",
     layout: matches[1] === "clients" ? "clients" : "map",
     mairies,
     publicOthers,

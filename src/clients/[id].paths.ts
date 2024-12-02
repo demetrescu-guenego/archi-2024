@@ -4,11 +4,7 @@ import { IdWithLabel } from "../../.vitepress/interfaces/IdWithLabel";
 import { toSlug } from "../../.vitepress/utils/slug";
 
 const getPlaceData = async (): Promise<IdWithLabel[]> => {
-  const posts = await createContentLoader(`realisations/**/*.md`, {
-    includeSrc: false,
-    excerpt: true,
-    render: false,
-  }).load();
+  const posts = await createContentLoader(`realisations/**/*.md`).load();
 
   const mairies = filterPostByClientType(posts, "Mairie");
   const publicOthers = filterPostByClientType(posts, "Public Autres");
@@ -16,7 +12,7 @@ const getPlaceData = async (): Promise<IdWithLabel[]> => {
   const clients = [...mairies, ...publicOthers].map((post) => {
     return {
       id: toSlug(post.name),
-      label: post.name,
+      title: post.name,
     } satisfies IdWithLabel;
   });
 

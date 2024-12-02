@@ -1,15 +1,15 @@
 ---
 layout: project
-label: Eglise Saint Germain à Bombon
+title: Eglise Saint Germain à Bombon
 description: Eglise Saint Germain à Bombon
 
 photos:
   - url: 01.jpg
-    label: Coupe
+    title: Coupe
   - url: 02.jpg
-    label: Travaux
+    title: Travaux
   - url: 03.jpg
-    label: Le clocher de l'église
+    title: Le clocher de l'église
 
 moa:
   name: Commune de Bombon (77)

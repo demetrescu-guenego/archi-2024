@@ -10,13 +10,14 @@ export const mairieLoad = async (id: string) => {
   }
   const place = id.replace(regex, "$1");
   // look at all the projects and generate the frontmatter.
-  const posts = await createContentLoader(`realisations/**/*.md`, {
-    includeSrc: false,
-    excerpt: true,
-    render: false,
-  }).load();
+  const posts = await createContentLoader(`realisations/**/*.md`).load();
 
-  let client: Client | undefined = undefined;
+  let client: Client = {
+    name: "inconnu",
+    zip: "00000",
+    type: "Mairie",
+    years: [],
+  };
 
   const projects = posts
     .filter((post) => {
@@ -32,12 +33,13 @@ export const mairieLoad = async (id: string) => {
     .map((post) => {
       return {
         id: basename(post.url),
-        label: post.frontmatter.label,
+        title: post.frontmatter.title,
         category: basename(dirname(post.url)),
       };
     });
 
   const jsonString = JSON.stringify({
+    title: `${client.name} (${client.zip})`,
     layout: "mairie",
     client,
     projects,

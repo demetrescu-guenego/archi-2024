@@ -1,5 +1,5 @@
 ---
-label: Eglise Saint Hubert de Les Mârets
+title: Eglise Saint Hubert de Les Mârets
 description: Eglise Saint Hubert de Les Mârets
 moa:
   name: Commune de Les Mârets (77)

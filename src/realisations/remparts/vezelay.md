@@ -1,14 +1,14 @@
 ---
-label: Remparts de Vezelay
+title: Remparts de Vezelay
 description: Restauration des remparts et de la tour des Ursulines.
 
 photos:
   - url: 01.jpg
-    label: Brochure explicative
+    title: Brochure explicative
   - url: 02.jpg
-    label: Avant intervention
+    title: Avant intervention
   - url: 03.jpg
-    label: Après intervention
+    title: Après intervention
 
 moa:
   name: Conseil départemental de l’Yonne (89)

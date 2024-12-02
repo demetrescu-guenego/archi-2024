@@ -3,7 +3,7 @@ import { CardContent } from "../../../interfaces/CardContent";
 
 defineProps<{
   input: CardContent[];
-  boldLabel?: boolean;
+  boldtitle?: boolean;
 }>();
 </script>
 
@@ -34,7 +34,7 @@ defineProps<{
   >
     <img
       v-for="project in input"
-      :key="project.label"
+      :key="project.title"
       :src="project.imageUrl"
       class="h-full overflow-hidden object-cover"
     />
@@ -45,7 +45,7 @@ defineProps<{
   >
     <img
       v-for="project in input.slice(0, 9)"
-      :key="project.label"
+      :key="project.title"
       :src="project.imageUrl"
       class="h-full w-full overflow-hidden object-cover"
     />

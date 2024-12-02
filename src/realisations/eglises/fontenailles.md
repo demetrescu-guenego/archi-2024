@@ -1,20 +1,20 @@
 ---
 layout: project
-label: Eglise Saint-Fiacre
+title: Eglise Saint-Fiacre
 
 photos:
   - url: 01.jpg
-    label: Après travaux
+    title: Après travaux
   - url: 02.jpg
-    label: Après travaux
+    title: Après travaux
   - url: 03.jpg
-    label: Chantier
+    title: Chantier
   - url: 04.jpg
-    label: Chantier
+    title: Chantier
   - url: 05.jpg
-    label: Avant travaux
+    title: Avant travaux
   - url: 06.jpg
-    label: Avant travaux
+    title: Avant travaux
 
 moa:
   name: Commune de Fontenailles (77)

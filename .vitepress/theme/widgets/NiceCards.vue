@@ -11,7 +11,7 @@ defineProps<{
   <div class="flex flex-wrap justify-center gap-8 py-8">
     <a
       v-for="project in input"
-      :key="project.label"
+      :key="project.title"
       class="flex w-72 flex-col overflow-hidden shadow-xl transition-transform hover:scale-105"
       :href="project.url"
     >
@@ -24,7 +24,7 @@ defineProps<{
         class="flex h-12 items-center justify-center px-4 text-center"
         :class="{ 'font-bold': boldLabel }"
       >
-        <span v-if="project.label" v-html="project.label"> </span>
+        <span v-if="project.title" v-html="project.title"> </span>
         <span v-else class="text-neutral-400" role="presentation">
           Cliquer pour agrandir
         </span>

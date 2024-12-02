@@ -1,14 +1,14 @@
 ---
-label: Hôtel de Police Municipale à Moissy-Cramayel
+title: Hôtel de Police Municipale à Moissy-Cramayel
 description: Réhabilitation de l’Hôtel de Police Municipale à Moissy-Cramayel
 
 photos:
   - url: 01.jpg
-    label: Façade
+    title: Façade
   - url: 02.jpg
-    label: Pendant travaux
+    title: Pendant travaux
   - url: 03.jpg
-    label: Après travaux
+    title: Après travaux
 
 moa:
   name: Ville de Moissy-Cramayel (77)

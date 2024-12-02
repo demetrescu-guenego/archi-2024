@@ -1,14 +1,14 @@
 ---
-label: Réhabilitation d’un immeuble ancien à Maisoncelles-en-Brie
+title: Réhabilitation d’un immeuble ancien à Maisoncelles-en-Brie
 description:
   Réhabilitation d’un immeuble ancien avec création d’un bar-brasserie et un
   multiservice à Maisoncelles-en-Brie
 
 photos:
   - url: 01.jpg
-    label: Intérieur en travaux
+    title: Intérieur en travaux
   - url: 02.jpg
-    label: Extérieurs
+    title: Extérieurs
 
 moa:
   name: Commune de Maisoncelles-en-Brie (77)

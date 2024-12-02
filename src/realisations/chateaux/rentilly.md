@@ -1,15 +1,15 @@
 ---
 layout: project
 
-label: Château de Rentilly à Bussy-Saint-Martin
+title: Château de Rentilly à Bussy-Saint-Martin
 
 photos:
   - url: 01.jpg
-    label: Avant travaux
+    title: Avant travaux
   - url: 02.jpg
-    label: Pendant travaux
+    title: Pendant travaux
   - url: 03.jpg
-    label: Réfection parements extérieurs
+    title: Réfection parements extérieurs
 
 moa:
   name: Communauté d’agglomération de Marne et Gondoire

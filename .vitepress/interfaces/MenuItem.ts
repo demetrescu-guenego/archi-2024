@@ -1,6 +1,6 @@
 export interface MenuItem {
   href: string;
-  label: string;
+  title: string;
   newWindow?: boolean;
   primary?: boolean;
 }

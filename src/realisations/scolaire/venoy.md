@@ -1,17 +1,17 @@
 ---
 priority: 500
-label: Laboratoire d’analyses sensorielles au Lycée La Brosse
+title: Laboratoire d’analyses sensorielles au Lycée La Brosse
 description:
   Réalisation d’un laboratoire d’analyses sensorielles au Lycée La Brosse à
   Venoy
 
 photos:
   - url: 01.jpg
-    label: Plan du projet
+    title: Plan du projet
   - url: 02.jpg
-    label: Unité de plateforme sensorielle
+    title: Unité de plateforme sensorielle
   - url: 03.jpg
-    label: Pendant les travaux
+    title: Pendant les travaux
 
 moa:
   name: Conseil régional de Bourgogne (21)

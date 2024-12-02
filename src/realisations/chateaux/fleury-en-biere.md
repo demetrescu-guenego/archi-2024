@@ -1,15 +1,15 @@
 ---
 layout: project
-label: Château de Fleury en Bière
+title: Château de Fleury en Bière
 priority: 500
 description: Restauration de la Fabrique du parc du château
 photos:
   - url: 01.jpg
-    label: Après restauration
+    title: Après restauration
   - url: 02.jpg
-    label: Avant incendie
+    title: Avant incendie
   - url: 03.jpg
-    label: Incendie
+    title: Incendie
 
 moa:
   name: privée

@@ -1,14 +1,14 @@
 ---
-label: Eglise Saint Lambert de Varennes-sur-Seine
+title: Eglise Saint Lambert de Varennes-sur-Seine
 description: Eglise Saint Lambert de Varennes-sur-Seine
 
 photos:
   - url: 01.jpg
-    label: Plans fait à la main
+    title: Plans fait à la main
   - url: 02.jpg
-    label: Restauration de la couverture
+    title: Restauration de la couverture
   - url: 03.jpg
-    label: Restauration des parements intérieurs
+    title: Restauration des parements intérieurs
 
 moa:
   name: Commune de Varennes sur Seine (77)

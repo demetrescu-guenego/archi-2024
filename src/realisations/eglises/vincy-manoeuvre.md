@@ -1,13 +1,13 @@
 ---
-label: Eglise Notre-Dame-de-la-Nativité de Vincy-Manoeuvre
+title: Eglise Notre-Dame-de-la-Nativité de Vincy-Manoeuvre
 
 photos:
   - url: 01.jpg
-    label: Après travaux
+    title: Après travaux
   - url: 02.jpg
-    label: Pendant travaux
+    title: Pendant travaux
   - url: 03.jpg
-    label: Avant travaux
+    title: Avant travaux
 
 moa:
   name: Commune de Vincy-Manoeuvre (77)

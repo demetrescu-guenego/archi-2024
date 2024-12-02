@@ -1,5 +1,5 @@
 ---
-label: Ferme du couvent de Coupvray
+title: Ferme du couvent de Coupvray
 description: Restauration de la Maison de Maître - Ferme du couvent de Coupvray
 moa:
   name: Commune de Coupvray (77)

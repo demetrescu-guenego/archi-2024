@@ -1,14 +1,14 @@
 ---
-label: Eglise Saint Sulpice à Maisoncelles-en-Brie
+title: Eglise Saint Sulpice à Maisoncelles-en-Brie
 description: Eglise Saint Sulpice à Maisoncelles-en-Brie
 
 photos:
   - url: 01.jpg
-    label: Avant travaux
+    title: Avant travaux
   - url: 02.jpg
-    label: Pendant travaux
+    title: Pendant travaux
   - url: 03.jpg
-    label: Réfection parements extérieurs
+    title: Réfection parements extérieurs
 
 moa:
   name: Commune de Maisoncelles-en-Brie (77)

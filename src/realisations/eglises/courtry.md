@@ -1,20 +1,20 @@
 ---
 layout: project
-label: Église Saint-Médard de Courtry
+title: Église Saint-Médard de Courtry
 
 photos:
   - url: 01.jpg
-    label: Après travaux
+    title: Après travaux
   - url: 02.jpg
-    label: Avant travaux
+    title: Avant travaux
   - url: 03.jpg
-    label: Chantier
+    title: Chantier
   - url: 04.jpg
-    label: Plan
+    title: Plan
   - url: 05.jpg
-    label: Coupe
+    title: Coupe
   - url: 06.jpg
-    label: Façade
+    title: Façade
 
 moa:
   name: Commune de Courtry (77)

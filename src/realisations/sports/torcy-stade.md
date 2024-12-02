@@ -1,15 +1,15 @@
 ---
-label: Stade Fremoy à Torcy
+title: Stade Fremoy à Torcy
 description:
   Aménagement d’un local associatif de type Club House, Stade Fremoy à Torcy
 
 photos:
   - url: 01.jpg
-    label: Avant le projet
+    title: Avant le projet
   - url: 02.jpg
-    label: Projet proposé
+    title: Projet proposé
   - url: 03.jpg
-    label: Projet réalisé
+    title: Projet réalisé
 
 moa:
   name: Ville de Torcy (77)

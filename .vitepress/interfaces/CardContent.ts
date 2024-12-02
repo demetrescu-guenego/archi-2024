@@ -1,5 +1,5 @@
 export interface CardContent {
-  label: string;
+  title: string;
   url: string;
   imageUrl: string;
   year?: number;

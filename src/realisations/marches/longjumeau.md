@@ -1,14 +1,14 @@
 ---
-label: Marché d’Approvisionnement de Longjumeau
+title: Marché d’Approvisionnement de Longjumeau
 description: Réhabilitation du Marché d’Approvisionnement à Longjumeau
 
 photos:
   - url: 01.jpg
-    label: Façades
+    title: Façades
   - url: 02.jpg
-    label: Avant travaux
+    title: Avant travaux
   - url: 03.jpg
-    label: Après travaux
+    title: Après travaux
 
 moa:
   name: Ville de Longjumeau (91)

@@ -1,5 +1,5 @@
 ---
-label: Etablissements scolaires à Chelles
+title: Etablissements scolaires à Chelles
 description:
   Travaux de mise en accessibilité de deux établissements scolaires à Chelles
 moa:

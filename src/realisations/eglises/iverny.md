@@ -1,6 +1,6 @@
 ---
 layout: project
-label: Eglise Saint Martin à Iverny
+title: Eglise Saint Martin à Iverny
 description: Eglise Saint Martin à Iverny
 
 moa:

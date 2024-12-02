@@ -12,9 +12,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const menu: MenuItem[] = [
-  { href: "/realisations", label: "Réalisations", primary: true },
-  { href: "/clients", label: "Clients" },
-  { href: "/carte", label: "Carte" },
+  { href: "/realisations", title: "Réalisations", primary: true },
+  { href: "/clients", title: "Clients" },
+  { href: "/carte", title: "Carte" },
 ];
 </script>
 
@@ -39,7 +39,7 @@ const menu: MenuItem[] = [
         >
           <a
             v-for="item in menu"
-            :key="item.label"
+            :key="item.title"
             :href="item.href"
             class="cursor-pointer border border-white px-8 py-4 text-center text-xl hover:bg-white hover:bg-opacity-10 sm:text-4xl"
             :class="{
@@ -49,7 +49,7 @@ const menu: MenuItem[] = [
             }"
             :target="item.newWindow ? '_blank' : '_self'"
           >
-            {{ item.label }}
+            {{ item.title }}
           </a>
         </div>
       </div>

@@ -1,26 +1,26 @@
 ---
 layout: project
-label: Eglise Saint-Pierre-et-Saint-Paul
+title: Eglise Saint-Pierre-et-Saint-Paul
 
 photos:
   - url: 01.jpg
-    label: Extérieurs
+    title: Extérieurs
   - url: 02.jpg
-    label: Poutre IPN
+    title: Poutre IPN
   - url: 03.jpg
-    label: Réfection parements extérieurs
+    title: Réfection parements extérieurs
   - url: 04.jpg
-    label: Après
+    title: Après
   - url: 05.jpg
-    label: Avant
+    title: Avant
   - url: 06.jpg
-    label: Réfection voute clocher
+    title: Réfection voute clocher
   - url: 07.jpg
-    label: Coupes
+    title: Coupes
   - url: 08.jpg
-    label: Façades
+    title: Façades
   - url: 09.jpg
-    label: Carte Postale 1965
+    title: Carte Postale 1965
 
 moa:
   name: Commune de Choisy-en-Brie (77)

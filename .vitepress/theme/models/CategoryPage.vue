@@ -29,7 +29,7 @@ const getLastIntervention = (p: Project): number => {
 const cards: CardContent[] = projects
   .map((p) => {
     return {
-      label: p.label,
+      title: p.title,
       url: `/realisations/${category}/${p.id}`,
       imageUrl: `/photos/projects/${category}/${p.id}/thumbnail-${p.id}.webp`,
       id: p.id,
@@ -44,7 +44,7 @@ const cards: CardContent[] = projects
 <template>
   <main class="flex flex-grow flex-col p-2">
     <section class="mx-auto max-w-5xl">
-      <h1>{{ frontmatter.label }}</h1>
+      <h1>{{ frontmatter.title }}</h1>
 
       <NiceCards :input="cards" />
     </section>

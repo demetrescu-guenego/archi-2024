@@ -1,6 +1,6 @@
 ---
 layout: project
-label: Château de Noisiel et manège à Noisiel
+title: Château de Noisiel et manège à Noisiel
 description:
   Réfection des parements extérieurs du château de l’ancienne Chocolaterie
   Menier

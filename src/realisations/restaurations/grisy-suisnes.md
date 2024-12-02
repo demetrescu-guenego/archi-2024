@@ -1,14 +1,14 @@
 ---
-label: Beffroi communal à Grisy-Suisnes
+title: Beffroi communal à Grisy-Suisnes
 description: Restauration du beffroi communal à Grisy-Suisnes
 
 photos:
   - url: 01.jpg
-    label: Façade
+    title: Façade
   - url: 02.jpg
-    label: Horloge du beffroi
+    title: Horloge du beffroi
   - url: 03.jpg
-    label: Restauration de l'horloge
+    title: Restauration de l'horloge
 
 moa:
   name: Commune Grisy-Suisnes (77)

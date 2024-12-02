@@ -1,6 +1,6 @@
 ---
 layout: project
-label: "Eglise Saint Georges de Crécy-la-Chapelle"
+title: "Eglise Saint Georges de Crécy-la-Chapelle"
 moa:
   name: Ville de Crécy-la-Chapelle (77)
   url: http://www.crecylachapelle.eu/
@@ -26,11 +26,11 @@ interventions:
 
 photos:
   - url: 01.jpg
-    label: Plan
+    title: Plan
   - url: 02.jpg
-    label: Tour du clocher en travaux
+    title: Tour du clocher en travaux
   - url: 03.jpg
-    label: Refection des parements autour de l'horloge du clocher
+    title: Refection des parements autour de l'horloge du clocher
 ---
 
 L’église Saint-Georges est au centre du bourg de Crécy-la-Chapelle. Même si on

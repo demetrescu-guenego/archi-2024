@@ -1,14 +1,14 @@
 ---
-label: Eglises de Louan-Villegruis-Fontaine
+title: Eglises de Louan-Villegruis-Fontaine
 description: Eglises de Louan-Villegruis-Fontaine
 
 photos:
   - url: 01.jpg
-    label: Avant restauration
+    title: Avant restauration
   - url: 02.jpg
-    label: Après restauration
+    title: Après restauration
   - url: 03.jpg
-    label: L'église de Louan
+    title: L'église de Louan
 
 moa:
   name: Commune de Louan-Villegruis-Fontaine (77)

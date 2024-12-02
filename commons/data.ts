@@ -2,57 +2,57 @@ export const data = {
   categories: [
     {
       id: "chateaux",
-      label: "Châteaux",
+      title: "Châteaux",
       name: "ferrieres",
     },
     {
       id: "eglises",
-      label: "Eglises",
+      title: "Eglises",
       name: "chauconin",
     },
     {
       id: "remparts",
-      label: "Remparts",
+      title: "Remparts",
       name: "charleville-mezieres",
     },
     {
       id: "abbayes",
-      label: "Abbayes",
+      title: "Abbayes",
       name: "dammarie-les-lys",
     },
     {
       id: "fermes",
-      label: "Fermes",
+      title: "Fermes",
       name: "coupvray",
     },
     {
       id: "restaurations",
-      label: "Parements extérieurs",
+      title: "Parements extérieurs",
       name: "bois-le-roi",
     },
     {
       id: "serres",
-      label: "Serres",
+      title: "Serres",
       name: "villiers-en-biere",
     },
     {
       id: "tertiaires",
-      label: "Tertiaire - Administration",
+      title: "Tertiaire - Administration",
       name: "tournan-en-brie",
     },
     {
       id: "sports",
-      label: "Sports - Loisirs",
+      title: "Sports - Loisirs",
       name: "torcy-stade",
     },
     {
       id: "marches",
-      label: "Marchés couverts",
+      title: "Marchés couverts",
       name: "torcy",
     },
     {
       id: "scolaire",
-      label: "Scolaire - Education",
+      title: "Scolaire - Education",
       name: "poincy",
     },
   ],

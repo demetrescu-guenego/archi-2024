@@ -1,14 +1,14 @@
 ---
-label: L’Orangerie du domaine de Villiers-en-Bière
+title: L’Orangerie du domaine de Villiers-en-Bière
 description: Restauration de l’orangerie du domaine de Villiers-en-Bière
 
 photos:
   - url: 01.jpg
-    label: Plan du relevé
+    title: Plan du relevé
   - url: 02.jpg
-    label: Extérieur de l'orangerie
+    title: Extérieur de l'orangerie
   - url: 03.jpg
-    label: Intérieur de l'orangerie
+    title: Intérieur de l'orangerie
 
 moa:
   name: Commune de Villiers-en-Bière (77)

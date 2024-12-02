@@ -1,5 +1,5 @@
 ---
-label: Eglise Saint Denis à Le Thillay
+title: Eglise Saint Denis à Le Thillay
 description: Eglise Saint Denis à Le Thillay
 
 moa:

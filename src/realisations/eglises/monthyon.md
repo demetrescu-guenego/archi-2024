@@ -1,26 +1,26 @@
 ---
-label: Eglise Saint-Georges à Monthyon
+title: Eglise Saint-Georges à Monthyon
 description: Restauration de la toiture - Eglise Saint Georges à Monthyon
 
 photos:
   - url: 01.jpg
-    label: Fin de chantier 2024
+    title: Fin de chantier 2024
   - url: 02.jpg
-    label: Avant travaux 2022
+    title: Avant travaux 2022
   - url: 03.jpg
-    label: Pendant travaux 2023
+    title: Pendant travaux 2023
   - url: 04.jpg
-    label: Toiture neuve 2011
+    title: Toiture neuve 2011
   - url: 05.jpg
-    label: Après travaux toiture 2011
+    title: Après travaux toiture 2011
   - url: 06.jpg
-    label: Chantier toiture 2010
+    title: Chantier toiture 2010
   - url: 07.jpg
-    label: Coupe
+    title: Coupe
   - url: 08.jpg
-    label: Façade
+    title: Façade
   - url: 09.jpg
-    label: Aquarelle
+    title: Aquarelle
 
 moa:
   name: Commune de Monthyon (77)

@@ -1,5 +1,5 @@
 ---
-label: Construction d’un hangar de stockage et bureaux à Chambly
+title: Construction d’un hangar de stockage et bureaux à Chambly
 description: Construction d’un hangar de stockage et bureaux à Chambly
 
 moa:

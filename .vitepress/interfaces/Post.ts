@@ -4,7 +4,7 @@ import { Intervention } from "./Intervention";
 export interface Post {
   url: string;
   frontmatter: {
-    label: string;
+    title: string;
     client?: Client | string;
     interventions?: Intervention[];
   };

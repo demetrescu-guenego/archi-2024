@@ -1,14 +1,14 @@
 ---
-label: Eglise Saint-Fiacre à Saint-Fiacre
+title: Eglise Saint-Fiacre à Saint-Fiacre
 description: Eglise Saint-Fiacre à Saint-Fiacre
 
 photos:
   - url: 01.jpg
-    label:
+    title:
   - url: 02.jpg
-    label:
+    title:
   - url: 03.jpg
-    label:
+    title:
 
 moa:
   name: Commune de Saint-Fiacre (77)

@@ -1,14 +1,14 @@
 ---
 layout: project
-label: Eglise Sainte Flodoberthe et Saint Pierre d’Amillis
+title: Eglise Sainte Flodoberthe et Saint Pierre d’Amillis
 
 photos:
   - url: 01.jpg
-    label: Pendant travaux
+    title: Pendant travaux
   - url: 02.jpg
-    label: Réfection couverture
+    title: Réfection couverture
   - url: 03.jpg
-    label: Réfection parements extérieurs
+    title: Réfection parements extérieurs
 
 moa:
   name: Commune de Amillis (77)

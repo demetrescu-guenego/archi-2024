@@ -1,5 +1,5 @@
 ---
-label: Eglise Saint-Médard à Thieux
+title: Eglise Saint-Médard à Thieux
 description: Eglise Saint-Médard à Thieux
 moa:
   name: Commune de Thieux (77)

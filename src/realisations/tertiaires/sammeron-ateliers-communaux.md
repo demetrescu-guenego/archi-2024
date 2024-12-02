@@ -1,5 +1,5 @@
 ---
-label: Ateliers communaux à Sammeron
+title: Ateliers communaux à Sammeron
 description: Construction des ateliers communaux à Sammeron
 moa:
   name: Commune de Sammeron (77)

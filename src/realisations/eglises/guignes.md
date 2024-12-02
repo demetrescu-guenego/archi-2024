@@ -1,15 +1,15 @@
 ---
 layout: project
-label: Eglise Saint Jacques le Mineur de Guignes
+title: Eglise Saint Jacques le Mineur de Guignes
 description: Eglise Saint Jacques le Mineur de Guignes
 
 photos:
   - url: 01.jpg
-    label: Dessins d'architecture
+    title: Dessins d'architecture
   - url: 02.jpg
-    label: Intérieur
+    title: Intérieur
   - url: 03.jpg
-    label: Exterieur
+    title: Exterieur
 
 moa:
   name: Commune de Guignes (77)

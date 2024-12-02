@@ -1,14 +1,14 @@
 ---
-label: Eglise Saint Martin à Sammeron
+title: Eglise Saint Martin à Sammeron
 description: Eglise Saint Martin à Sammeron
 
 photos:
   - url: 01.jpg
-    label: Extérieur
+    title: Extérieur
   - url: 02.jpg
-    label: Intérieur
+    title: Intérieur
   - url: 03.jpg
-    label: Travaux
+    title: Travaux
 
 moa:
   name: Commune de Sammeron (77)

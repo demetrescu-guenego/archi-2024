@@ -16,7 +16,7 @@ const DEFAULT_GPS: GPSCoord = { latitude: 0, longitude: 0 };
 
 const localisations: Localisation[] = [...mairies, ...publicOthers].map((c) => {
   return {
-    label: c.name,
+    title: c.name,
     gps: c.gps ?? DEFAULT_GPS,
     url: `/clients/${toSlug(c.name)}`,
     zipcode: c.zip,

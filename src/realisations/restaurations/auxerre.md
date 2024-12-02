@@ -1,14 +1,14 @@
 ---
-label: Lycée Vauban à Auxerre
+title: Lycée Vauban à Auxerre
 description: Restauration des lucarnes du lycée Vauban à Auxerre
 
 photos:
   - url: 01.jpg
-    label: Bâtiment
+    title: Bâtiment
   - url: 02.jpg
-    label: Avant travaux
+    title: Avant travaux
   - url: 03.jpg
-    label: Après travaux
+    title: Après travaux
 
 moa:
   name: Conseil régional de Bourgogne (21)
