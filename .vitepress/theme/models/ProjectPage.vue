@@ -7,6 +7,7 @@ import NiceCard from "../widgets/NiceCard.vue";
 import ParallaxImage from "../widgets/ParallaxImage.vue";
 import PresentationTable from "../widgets/PresentationTable.vue";
 import PresentationPrint from "../widgets/print/PresentationPrint.vue";
+import InterventionPrint from "../widgets/print/InterventionPrint.vue";
 
 const { frontmatter } = useData<ProjectData>();
 const route = useRoute();
@@ -67,7 +68,7 @@ const cards: CardContent[] = photos.map((p) => {
         <h2>Présentation</h2>
         <PresentationPrint :input="projectData" />
         <h2>Interventions</h2>
-        <InterventionTable :input="frontmatter.interventions" />
+        <InterventionPrint :input="frontmatter.interventions" />
       </div>
     </section>
     <section class="parallax print:hidden">
