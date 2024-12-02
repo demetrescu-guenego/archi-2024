@@ -14,7 +14,7 @@
 
   h1 {
     @apply my-8 text-center text-3xl;
-    @apply print:m-0;
+    @apply print:m-2;
   }
 
   h2 {
