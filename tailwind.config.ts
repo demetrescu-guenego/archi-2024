@@ -4,7 +4,11 @@ import plugin from "tailwindcss/plugin";
 export default {
   content: ["./.vitepress/theme/**/*.{vue,js,ts,jsx,tsx,html,md}"],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        print: { raw: "print" },
+      },
+    },
     fontFamily: {
       sans: ["Sarala", "sans-serif"],
     },
