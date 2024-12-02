@@ -39,7 +39,7 @@ const cards: CardContent[] = photos.map((p) => {
         <InterventionTable :input="frontmatter.interventions" />
       </div>
     </section>
-    <section class="parallax">
+    <section class="parallax print:hidden">
       <ParallaxImage
         :portrait="parallax"
         :landscape="parallax"

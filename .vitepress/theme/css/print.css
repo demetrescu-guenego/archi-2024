@@ -5,13 +5,8 @@
 
 @media print {
   div.printable {
-    header,
     footer {
       display: none;
-    }
-
-    h1 {
-      border: 1px solid black;
     }
   }
 }

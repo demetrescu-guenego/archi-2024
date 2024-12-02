@@ -14,22 +14,27 @@
 
   h1 {
     @apply my-8 text-center text-3xl;
+    @apply print:m-0;
   }
 
   h2 {
     @apply my-8 text-2xl;
+    @apply print:mb-0 print:mt-4;
   }
 
   h3 {
     @apply mb-2 mt-5 text-xl;
+    @apply print:my-0;
   }
 
   h4 {
     @apply mt-10 text-lg;
+    @apply print:my-0;
   }
 
   p {
     @apply my-3;
+    @apply print:my-0;
   }
 
   ul {

@@ -12,7 +12,7 @@ const list: MenuItem[] = [
 
 <template>
   <header
-    class="flex h-16 items-center justify-between bg-fuchsia-900 text-white"
+    class="flex h-16 items-center justify-between bg-fuchsia-900 text-white print:bg-fuchsia-900 print:text-white"
   >
     <a href="/" class="flex items-center px-2">
       <img
@@ -28,7 +28,7 @@ const list: MenuItem[] = [
       </span>
     </a>
     <ClientOnly>
-      <ResponsiveMenu :list="list" />
+      <ResponsiveMenu :list="list" class="print:hidden" />
     </ClientOnly>
   </header>
 </template>
