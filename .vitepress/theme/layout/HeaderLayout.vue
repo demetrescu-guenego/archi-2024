@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { MenuItem } from "../../interfaces/MenuItem";
 import ResponsiveMenu from "../widgets/ResponsiveMenu.vue";
-import PrintOnly from "../widgets/PrintOnly.vue";
 
 const list: MenuItem[] = [
   { href: "/", label: "Accueil" },
@@ -31,8 +30,8 @@ const list: MenuItem[] = [
     <ClientOnly>
       <ResponsiveMenu :list="list" class="print:hidden" />
     </ClientOnly>
-    <PrintOnly>
+    <div class="hidden print:block">
       <img src="/home/header.jpg" class="print:h-20" />
-    </PrintOnly>
+    </div>
   </header>
 </template>
