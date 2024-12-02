@@ -1,3 +1,4 @@
 ---
+title: Accueil
 layout: home
 ---

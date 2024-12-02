@@ -10,7 +10,8 @@ import { specificConfig } from "./siteconfig";
 export default withPwa(
   defineConfig({
     lang: "fr",
-    title: "Cabinet d'architecture DEMETRESCU - GUÉNÉGO",
+    title: "xxx",
+    titleTemplate: "Cabinet d'architecture DEMETRESCU - GUÉNÉGO",
     description:
       "Seine et Marne, 77, Torcy - Architectures, Patrimoine, Eglises, Abbayes, Châteaux, Granges, Restauration - Mairies, Collectivités Locales",
     head,

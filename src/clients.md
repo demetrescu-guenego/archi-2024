@@ -1,3 +1,4 @@
 ---
+title: Clients
 layout: clients
 ---
