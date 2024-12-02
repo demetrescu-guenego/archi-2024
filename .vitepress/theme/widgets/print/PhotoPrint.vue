@@ -41,7 +41,7 @@ defineProps<{
   </div>
   <div
     v-else
-    class="grid-wrap grid h-80 flex-grow grid-cols-3 grid-rows-3 justify-stretch gap-0 bg-red-300"
+    class="grid-wrap grid h-80 flex-grow grid-cols-3 grid-rows-3 justify-stretch gap-0"
   >
     <img
       v-for="project in input.slice(0, 9)"
