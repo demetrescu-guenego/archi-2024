@@ -1,0 +1,17 @@
+@page {
+  size: 7in 9.25in;
+  margin: 0mm 0mm 0mm 0mm;
+}
+
+@media print {
+  div.printable {
+    header,
+    footer {
+      display: none;
+    }
+
+    h1 {
+      border: 1px solid black;
+    }
+  }
+}

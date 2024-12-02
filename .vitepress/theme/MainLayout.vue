@@ -6,7 +6,7 @@ import RegisterSW from "./widgets/RegisterSW.vue";
 </script>
 
 <template>
-  <div class="flex min-h-screen flex-col justify-between">
+  <div class="printable flex min-h-screen flex-col justify-between">
     <HeaderLayout />
 
     <BodyLayout />
