@@ -70,10 +70,10 @@ const render = async () => {
 
   if (ratio < frameRatio) {
     console.log("portrait");
-    initScale.value = frameHeight / height.value;
+    initScale.value = 1;
   } else {
     console.log("paysage");
-    initScale.value = frameWidth / width.value;
+    initScale.value = 1;
   }
   console.log("initScale.value: ", initScale.value);
 
@@ -213,23 +213,6 @@ const handlePrevious = async () => {
 
 <template>
   <div class="fixed bottom-0 left-0 right-0 top-0 flex cursor-pointer bg-black">
-    <div class="fixed right-1 top-1" @click="handleClose">
-      <FontAwesomeIcon :icon="faTimes" class="text-white" size="2x" />
-    </div>
-    <div
-      class="fixed left-4 top-1/2"
-      @click="handlePrevious"
-      v-show="currentIndex > 0"
-    >
-      <FontAwesomeIcon :icon="faChevronLeft" class="text-white" size="2x" />
-    </div>
-    <div
-      class="fixed right-4 top-1/2"
-      @click="handleNext"
-      v-show="currentIndex < cards.length - 1"
-    >
-      <FontAwesomeIcon :icon="faChevronRight" class="text-white" size="2x" />
-    </div>
     <div
       ref="frame"
       class="flex flex-grow select-none items-center justify-center overflow-hidden"
@@ -243,6 +226,24 @@ const handlePrevious = async () => {
         ref="img"
         @click.stop
       />
+    </div>
+
+    <div class="fixed right-4 top-4" @click="handleClose">
+      <FontAwesomeIcon :icon="faTimes" class="text-white" size="2x" />
+    </div>
+    <div
+      class="fixed bottom-4 left-4 sm:bottom-1/2"
+      @click="handlePrevious"
+      v-show="currentIndex > 0"
+    >
+      <FontAwesomeIcon :icon="faChevronLeft" class="text-white" size="2x" />
+    </div>
+    <div
+      class="fixed bottom-4 right-4 sm:bottom-1/2"
+      @click="handleNext"
+      v-show="currentIndex < cards.length - 1"
+    >
+      <FontAwesomeIcon :icon="faChevronRight" class="text-white" size="2x" />
     </div>
   </div>
 </template>
