@@ -9,6 +9,7 @@ import PresentationTable from "../widgets/PresentationTable.vue";
 import PresentationPrint from "../widgets/print/PresentationPrint.vue";
 import InterventionPrint from "../widgets/print/InterventionPrint.vue";
 import PhotoPrint from "../widgets/print/PhotoPrint.vue";
+import { Photo } from "../../interfaces/Photo";
 
 const { frontmatter } = useData<ProjectData>();
 const route = useRoute();
@@ -17,7 +18,7 @@ const [, , category, name] = route.path.split("/");
 
 const parallax = `/photos/projects/${category}/${name}/parallax.jpg`;
 
-const photos = frontmatter.value.photos ?? [];
+const photos: Photo[] = frontmatter.value.photos ?? [];
 
 // dangerous code
 const projectData: ProjectData = frontmatter.value as ProjectData;
