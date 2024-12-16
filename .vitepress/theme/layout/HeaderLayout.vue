@@ -3,9 +3,9 @@ import { MenuItem } from "../../interfaces/MenuItem";
 import ResponsiveMenu from "../widgets/ResponsiveMenu.vue";
 
 const list: MenuItem[] = [
-  { href: "/", title: "Accueil" },
   { href: "/realisations", title: "Réalisations" },
   { href: "/clients", title: "Clients" },
+  { href: "/carte", title: "Carte" },
   { href: "/contact", title: "Contact" },
 ];
 </script>

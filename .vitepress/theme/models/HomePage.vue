@@ -9,12 +9,14 @@ import {
   faComments,
   faEye,
   faUsers,
+  faMap,
+  faLandmark,
 } from "@fortawesome/free-solid-svg-icons";
 
 const menu: MenuItem[] = [
-  { href: "/realisations", title: "Réalisations", primary: true },
-  { href: "/clients", title: "Clients" },
-  { href: "/carte", title: "Carte" },
+  { href: "/realisations", title: "Réalisations", icon: faLandmark },
+  { href: "/clients", title: "Clients", icon: faUsers },
+  { href: "/carte", title: "Carte", icon: faMap },
 ];
 </script>
 
@@ -41,7 +43,7 @@ const menu: MenuItem[] = [
             v-for="item in menu"
             :key="item.title"
             :href="item.href"
-            class="cursor-pointer border border-white px-8 py-4 text-center text-xl hover:bg-white hover:bg-opacity-10 sm:text-4xl"
+            class="flex cursor-pointer items-center justify-center gap-2 border border-white px-8 py-4 text-center text-xl hover:bg-white hover:bg-opacity-10 sm:text-4xl"
             :class="{
               'bg-opacity-25': item.primary,
               'bg-white': item.primary,
@@ -49,7 +51,8 @@ const menu: MenuItem[] = [
             }"
             :target="item.newWindow ? '_blank' : '_self'"
           >
-            {{ item.title }}
+            <FontAwesomeIcon v-if="item.icon" :icon="item.icon" />
+            <span>{{ item.title }}</span>
           </a>
         </div>
       </div>
