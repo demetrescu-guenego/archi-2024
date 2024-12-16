@@ -232,14 +232,14 @@ const handlePrevious = async () => {
       <FontAwesomeIcon :icon="faTimes" class="text-white" size="2x" />
     </div>
     <div
-      class="fixed bottom-4 left-4 sm:bottom-1/2"
+      class="fixed bottom-6 left-4 sm:bottom-1/2"
       @click="handlePrevious"
       v-show="currentIndex > 0"
     >
       <FontAwesomeIcon :icon="faChevronLeft" class="text-white" size="2x" />
     </div>
     <div
-      class="fixed bottom-4 right-4 sm:bottom-1/2"
+      class="fixed bottom-6 right-4 sm:bottom-1/2"
       @click="handleNext"
       v-show="currentIndex < cards.length - 1"
     >
