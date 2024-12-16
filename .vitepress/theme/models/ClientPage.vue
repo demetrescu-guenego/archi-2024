@@ -20,22 +20,19 @@ const { frontmatter } = useData();
         <MairieTable :input="frontmatter.mairies" />
       </div>
     </section>
+
+    <section class="bg-white p-2">
+      <div class="mx-auto flex max-w-5xl flex-grow flex-col pb-16">
+        <h3 class="block-title">Collectivités locales, ...</h3>
+        <MairieTable :input="frontmatter.publicOthers" />
+      </div>
+    </section>
     <section class="parallax">
       <ParallaxImage
         portrait="/home/clients-portrait.jpg"
         landscape="/home/clients-landscape.jpg"
         alt="Avec nos clients"
       />
-      <div class="bg-white text-center">
-        Chateau de Ferrières-en-Brie (1855-1859, famille Rothschild),
-        restauration par notre cabinet en 2016.
-      </div>
-    </section>
-    <section class="bg-white p-2">
-      <div class="mx-auto flex max-w-5xl flex-grow flex-col pb-16">
-        <h3 class="block-title">Autres entités publiques</h3>
-        <MairieTable :input="frontmatter.publicOthers" />
-      </div>
     </section>
   </main>
 </template>
