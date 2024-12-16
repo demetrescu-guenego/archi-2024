@@ -2,8 +2,6 @@
 import { onMounted, ref } from "vue";
 import ZoomableImage from "../widgets/ZoomableImage.vue";
 
-// TODO: desktop only: ll the photo zoomable with mouse scroll and pan with mousemove
-
 const src = ref("/home/ferrieres-landscape-big.jpg");
 
 onMounted(() => {
