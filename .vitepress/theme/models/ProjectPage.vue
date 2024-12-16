@@ -1,15 +1,17 @@
 <script setup lang="ts">
 import { useData, useRoute } from "vitepress";
+import { ref } from "vue";
 import { CardContent } from "../../interfaces/CardContent";
+import { Photo } from "../../interfaces/Photo";
 import { ProjectData } from "../../interfaces/ProjectData";
+import ImageGallery from "../widgets/ImageGallery.vue";
 import InterventionTable from "../widgets/InterventionTable.vue";
-import NiceCards from "../widgets/NiceCards.vue";
 import ParallaxImage from "../widgets/ParallaxImage.vue";
 import PresentationTable from "../widgets/PresentationTable.vue";
-import PresentationPrint from "../widgets/print/PresentationPrint.vue";
 import InterventionPrint from "../widgets/print/InterventionPrint.vue";
 import PhotoPrint from "../widgets/print/PhotoPrint.vue";
-import { Photo } from "../../interfaces/Photo";
+import PresentationPrint from "../widgets/print/PresentationPrint.vue";
+import ProjectCards from "../widgets/ProjectCards.vue";
 
 const { frontmatter } = useData<ProjectData>();
 const route = useRoute();
@@ -30,6 +32,19 @@ const cards: CardContent[] = photos.map((p) => {
     imageUrl: `/photos/projects/${category}/${name}/${p.url}`,
   } satisfies CardContent;
 });
+
+const isShowingImage = ref(false);
+const currentIndex = ref(0);
+
+const handleView = (index: number) => {
+  console.log("index: ", index);
+  isShowingImage.value = true;
+  currentIndex.value = index;
+};
+
+const handleClose = () => {
+  isShowingImage.value = false;
+};
 </script>
 
 <template>
@@ -57,12 +72,18 @@ const cards: CardContent[] = photos.map((p) => {
         <template v-if="cards.length > 0">
           <h2>Photos</h2>
           <div>
-            <NiceCards :input="cards" />
+            <ProjectCards :input="cards" @view="handleView" />
           </div>
         </template>
       </div>
     </section>
   </main>
+  <ImageGallery
+    v-if="isShowingImage"
+    :cards="cards"
+    :index="currentIndex"
+    @close="handleClose()"
+  />
   <main
     class="hidden print:flex print:flex-grow print:flex-col print:justify-between"
   >
