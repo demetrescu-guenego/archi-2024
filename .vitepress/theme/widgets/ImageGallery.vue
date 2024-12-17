@@ -254,25 +254,33 @@ const handlePrevious = async () => {
     </div>
 
     <div
-      class="fixed right-4 top-4 flex items-center gap-2 text-2xl text-white"
+      class="fixed right-4 top-4 flex items-center gap-2 text-2xl text-neutral-500"
       @click="handleClose"
     >
       <span>{{ currentIndex + 1 }}/{{ cards.length }}</span>
-      <FontAwesomeIcon :icon="faTimes" class="text-white" />
+      <FontAwesomeIcon :icon="faTimes" class="text-neutral-500" />
     </div>
     <div
       class="fixed bottom-6 left-4 sm:bottom-1/2"
       @click="handlePrevious"
       v-show="isDesktop && currentIndex > 0"
     >
-      <FontAwesomeIcon :icon="faChevronLeft" class="text-white" size="2x" />
+      <FontAwesomeIcon
+        :icon="faChevronLeft"
+        class="text-neutral-500"
+        size="2x"
+      />
     </div>
     <div
       class="fixed bottom-6 right-4 sm:bottom-1/2"
       @click="handleNext"
       v-show="isDesktop && currentIndex < cards.length - 1"
     >
-      <FontAwesomeIcon :icon="faChevronRight" class="text-white" size="2x" />
+      <FontAwesomeIcon
+        :icon="faChevronRight"
+        class="text-neutral-500"
+        size="2x"
+      />
     </div>
   </div>
 </template>
