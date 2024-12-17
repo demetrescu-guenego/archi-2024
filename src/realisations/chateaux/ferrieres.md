@@ -32,6 +32,11 @@ photos:
     title: Transformation en salle de restaurant de luxe
   - url: 09.jpg
     title: Salle de réception après restauration
+
+client:
+  name: Ferrières-en-Brie
+  zip: 77164
+  type: Privé
 ---
 
 Notre cabinet d'architecture s'est occupé de l'étude préalable et de la mission

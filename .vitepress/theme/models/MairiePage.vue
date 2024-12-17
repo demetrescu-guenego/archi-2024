@@ -23,7 +23,7 @@ const cards: CardContent[] = projects.map((p) => {
     v-if="typeof frontmatter.client === 'object'"
   >
     <h1>
-      Nos réalisations publiques pour {{ frontmatter.client.name }} ({{
+      Nos réalisations situées à {{ frontmatter.client.name }} ({{
         frontmatter.client.zip
       }})
     </h1>
