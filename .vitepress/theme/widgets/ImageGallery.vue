@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, onMounted, reactive, ref, useTemplateRef } from "vue";
+import { isDesktop } from "../../theme/stores/ResponsiveStore";
 import { Point, Vector } from "../../interfaces/Point";
 import { CardContent } from "../../interfaces/CardContent";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
@@ -190,6 +191,30 @@ onMounted(() => {
       await render();
     })();
   });
+
+  let touchstartX = 0;
+  let touchendX = 0;
+
+  const checkDirection = () => {
+    if (touchendX < touchstartX) {
+      handleNext();
+    }
+    if (touchendX > touchstartX) {
+      handlePrevious();
+    }
+  };
+
+  const handleTouchStart = (e: TouchEvent) => {
+    touchstartX = e.changedTouches[0].screenX;
+  };
+
+  const handleTouchEnd = (e: TouchEvent) => {
+    touchendX = e.changedTouches[0].screenX;
+    checkDirection();
+  };
+
+  img.value.addEventListener("touchstart", handleTouchStart);
+  img.value.addEventListener("touchend", handleTouchEnd);
 });
 
 const handleClose = () => {
@@ -228,20 +253,24 @@ const handlePrevious = async () => {
       />
     </div>
 
-    <div class="fixed right-4 top-4" @click="handleClose">
-      <FontAwesomeIcon :icon="faTimes" class="text-white" size="2x" />
+    <div
+      class="fixed right-4 top-4 flex items-center gap-2 text-2xl text-white"
+      @click="handleClose"
+    >
+      <span>{{ currentIndex + 1 }}/{{ cards.length }}</span>
+      <FontAwesomeIcon :icon="faTimes" class="text-white" />
     </div>
     <div
       class="fixed bottom-6 left-4 sm:bottom-1/2"
       @click="handlePrevious"
-      v-show="currentIndex > 0"
+      v-show="isDesktop && currentIndex > 0"
     >
       <FontAwesomeIcon :icon="faChevronLeft" class="text-white" size="2x" />
     </div>
     <div
       class="fixed bottom-6 right-4 sm:bottom-1/2"
       @click="handleNext"
-      v-show="currentIndex < cards.length - 1"
+      v-show="isDesktop && currentIndex < cards.length - 1"
     >
       <FontAwesomeIcon :icon="faChevronRight" class="text-white" size="2x" />
     </div>
