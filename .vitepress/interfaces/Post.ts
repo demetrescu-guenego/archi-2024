@@ -6,6 +6,7 @@ export interface Post {
   frontmatter: {
     title: string;
     client?: Client | string;
+    lieu?: Client | string;
     interventions?: Intervention[];
   };
 }

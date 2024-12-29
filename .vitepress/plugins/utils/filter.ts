@@ -43,7 +43,6 @@ export const filterPostByClientType = (
   return [...iterator].map((client) => {
     client.years = sort(client.years);
     const key = client.zip + normalize(client.name);
-    console.log("key: ", key);
     client.gps = getGPSCoordFromZipcode(key);
     return client;
   });

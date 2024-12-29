@@ -25,6 +25,9 @@ client:
   name: Conseil départemental de l'Yonne
   zip: 89000
   type: Public Autres
+lieu:
+  name: Vezelay
+  zip: 89450
 ---
 
 Notre cabinet d'architecture a assuré la mission complète de maîtrise d'oeuvre
