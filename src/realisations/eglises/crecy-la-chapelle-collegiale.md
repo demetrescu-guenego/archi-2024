@@ -40,6 +40,9 @@ classement: Classé MH
 client:
   name: Crécy-la-Chapelle
   zip: 77580
+  gps:
+    latitude: 48.85800314428498
+    longitude: 2.926301107824734
   type: Mairie
 ---
 

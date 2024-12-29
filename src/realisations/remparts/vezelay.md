@@ -22,12 +22,12 @@ interventions:
     price: 636 000 € HT
 classement: Site patrimonial remarquable
 client:
-  name: Conseil départemental de l'Yonne
+  name: Conseil départemental de l’Yonne
   zip: 89000
   type: Public Autres
-lieu:
-  name: Vezelay
-  zip: 89450
+  commune:
+    name: Vezelay
+    zip: 89450
 ---
 
 Notre cabinet d'architecture a assuré la mission complète de maîtrise d'oeuvre

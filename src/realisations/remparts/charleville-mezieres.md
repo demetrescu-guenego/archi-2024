@@ -17,7 +17,10 @@ interventions:
 classement: Inscrit MH
 client:
   name: Conseil départemental des Ardennes
-  zip: "08000"
+  zip: 08000
+  commune:
+    name: CHARLEVILLE MEZIERES
+    zip: "08000"
   type: Public Autres
 ---
 

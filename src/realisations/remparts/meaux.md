@@ -24,6 +24,9 @@ interventions:
 client:
   name: Ville de Meaux
   zip: "77100"
+  gps:
+    latitude: 48.96151943756754
+    longitude: 2.8810746105379437
   type: Mairie
 ---
 

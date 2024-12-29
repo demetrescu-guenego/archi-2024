@@ -22,7 +22,7 @@ interventions:
     price: 150 400 Euros HT
 client:
   name: Varennes-sur-Seine
-  zip: 77230
+  zip: 77130
   type: Mairie
 ---
 

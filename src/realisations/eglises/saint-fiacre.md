@@ -24,6 +24,9 @@ interventions:
 client:
   name: Saint-Fiacre
   zip: 77470
+  gps:
+    latitude: 48.92271164182753
+    longitude: 2.954791273838619
   type: Mairie
 ---
 

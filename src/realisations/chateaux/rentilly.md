@@ -31,6 +31,9 @@ classement: Inscrit MH
 client:
   name: Communauté d’agglomération de Marne et Gondoire
   zip: 77600
+  commune:
+    name: BUSSY ST MARTIN
+    zip: 77600
   type: Public Autres
 ---
 

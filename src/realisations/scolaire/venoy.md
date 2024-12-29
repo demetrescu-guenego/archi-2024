@@ -27,6 +27,9 @@ interventions:
 client:
   name: Conseil régional de Bourgogne
   zip: 21000
+  gps:
+    latitude: 47.79073319334198
+    longitude: 3.653636158222043
   type: Public Autres
 ---
 

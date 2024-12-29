@@ -7,6 +7,9 @@ moa:
 client:
   name: Crécy-la-Chapelle
   zip: 77580
+  gps:
+    latitude: 48.855454024987665
+    longitude: 2.9116717426094287
   type: "Mairie"
 
 interventions:

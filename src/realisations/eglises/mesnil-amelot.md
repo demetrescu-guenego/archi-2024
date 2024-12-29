@@ -18,6 +18,9 @@ classement: Classée MH
 client:
   name: Mesnil-Amélot
   zip: 77990
+  gps:
+    latitude: 49.017260352007824
+    longitude: 2.5933116739477526
   type: Mairie
 ---
 

@@ -30,6 +30,9 @@ classement: Inscrit MH
 client:
   name: Chailly-en-Bière
   zip: 77930
+  gps:
+    latitude: 48.46624129800641
+    longitude: 2.6078856763675273
   type: Mairie
 ---
 

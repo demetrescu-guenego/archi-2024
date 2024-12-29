@@ -28,6 +28,9 @@ interventions:
 client:
   name: Bussy-Saint-Martin
   zip: 77600
+  gps:
+    latitude: 48.84998320272441
+    longitude: 2.6898648095998428
   type: Mairie
 ---
 

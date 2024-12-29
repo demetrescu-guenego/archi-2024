@@ -2,6 +2,7 @@ import { Client } from "../../interfaces/Client";
 import { Intervention } from "../../interfaces/Intervention";
 import { Post } from "../../interfaces/Post";
 import { getGPSCoordFromZipcode } from "../../utils/gps";
+import { toSlug } from "../../utils/slug";
 import { sort } from "./sort";
 
 const reducer = (acc: Map<string, Client>, client: Client) => {
@@ -15,7 +16,9 @@ const reducer = (acc: Map<string, Client>, client: Client) => {
 };
 
 const normalize = (mairie: string) => {
-  return mairie.toUpperCase().replaceAll(/[^A-Z]/g, " ");
+  return toSlug(mairie)
+    .toUpperCase()
+    .replaceAll(/[^A-Z]/g, " ");
 };
 
 export const filterPostByClientType = (
@@ -31,6 +34,7 @@ export const filterPostByClientType = (
     })
     .map((post) => {
       const client = post.frontmatter.client as Client;
+
       return {
         ...client,
         years: (post.frontmatter.interventions ?? [])
@@ -42,8 +46,12 @@ export const filterPostByClientType = (
     .values();
   return [...iterator].map((client) => {
     client.years = sort(client.years);
-    const key = client.zip + normalize(client.name);
-    client.gps = getGPSCoordFromZipcode(key);
+    const key = client.commune
+      ? client.commune.zip + normalize(client.commune.name)
+      : client.zip + normalize(client.name);
+    console.log("key: ", key);
+    client.gps = client.gps ?? getGPSCoordFromZipcode(key);
+    console.log("client.gps: ", client.gps);
     return client;
   });
 };

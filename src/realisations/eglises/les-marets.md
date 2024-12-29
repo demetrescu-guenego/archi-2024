@@ -15,6 +15,9 @@ classement: Classée MH
 client:
   name: Les Mârets
   zip: 77560
+  gps:
+    latitude: 48.67070917769673
+    longitude: 3.3138570658412956
   type: Mairie
 ---
 

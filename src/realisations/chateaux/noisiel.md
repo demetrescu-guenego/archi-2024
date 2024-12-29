@@ -34,6 +34,9 @@ classement: Inscrit MH
 client:
   name: EPAMARNE
   zip: 77186
+  gps:
+    latitude: 48.85625144277545
+    longitude: 2.62283626724466
   type: Public Autres
 ---
 

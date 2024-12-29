@@ -37,6 +37,9 @@ classement: Classée MH
 client:
   name: Ferrières-en-Brie
   zip: 77164
+  gps:
+    latitude: 48.82125772243411
+    longitude: 2.70428914082979
   type: Mairie
 ---
 
