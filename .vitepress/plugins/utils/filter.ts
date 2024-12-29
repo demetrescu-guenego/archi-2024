@@ -49,9 +49,7 @@ export const filterPostByClientType = (
     const key = client.commune
       ? client.commune.zip + normalize(client.commune.name)
       : client.zip + normalize(client.name);
-    console.log("key: ", key);
     client.gps = client.gps ?? getGPSCoordFromZipcode(key);
-    console.log("client.gps: ", client.gps);
     return client;
   });
 };
