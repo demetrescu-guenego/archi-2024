@@ -22,7 +22,7 @@ const init = () => {
   for (const r of csv) {
     const geopoint = r._geopoint;
     const [latitude, longitude] = geopoint.split(",").map((s) => +s);
-    map.set(r.code_postal, { latitude, longitude });
+    map.set(r.code_postal + r.nom_de_la_commune, { latitude, longitude });
   }
 };
 

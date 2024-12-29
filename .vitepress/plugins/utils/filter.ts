@@ -14,6 +14,10 @@ const reducer = (acc: Map<string, Client>, client: Client) => {
   return acc;
 };
 
+const normalize = (mairie: string) => {
+  return mairie.toUpperCase().replaceAll(/[^A-Z]/g, " ");
+};
+
 export const filterPostByClientType = (
   posts: Post[],
   type: string,
@@ -38,7 +42,9 @@ export const filterPostByClientType = (
     .values();
   return [...iterator].map((client) => {
     client.years = sort(client.years);
-    client.gps = getGPSCoordFromZipcode(client.zip);
+    const key = client.zip + normalize(client.name);
+    console.log("key: ", key);
+    client.gps = getGPSCoordFromZipcode(key);
     return client;
   });
 };
