@@ -20,7 +20,10 @@ interventions:
       - Etudes
       - Autorisation de travaux
     price: 500 000 € HT
-client: privé
+client:
+  name: Villenoy
+  zip: 77124
+  type: prive
 ---
 
 Notre cabinet d'architecture a réalisé le projet de construction d’un entrepôt

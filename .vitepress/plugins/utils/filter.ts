@@ -1,8 +1,7 @@
 import { Client } from "../../interfaces/Client";
 import { Intervention } from "../../interfaces/Intervention";
 import { Post } from "../../interfaces/Post";
-import { getGPSCoordFromZipcode } from "../../utils/gps";
-import { toSlug } from "../../utils/slug";
+import { getGPSCoordFromZipcode, normalize } from "../../utils/gps";
 import { sort } from "./sort";
 
 const reducer = (acc: Map<string, Client>, client: Client) => {
@@ -13,12 +12,6 @@ const reducer = (acc: Map<string, Client>, client: Client) => {
   }
   acc.set(client.name, client);
   return acc;
-};
-
-const normalize = (mairie: string) => {
-  return toSlug(mairie)
-    .toUpperCase()
-    .replaceAll(/[^A-Z]/g, " ");
 };
 
 export const filterPostByClientType = (

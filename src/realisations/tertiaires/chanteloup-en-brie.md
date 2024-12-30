@@ -21,7 +21,10 @@ interventions:
       - Maîtrise d’œuvre
       - Autorisation de travaux
     price: 1 000 000 € HT
-client: privé
+client:
+  name: CHANTELOUP EN BRIE
+  zip: 77600
+  type: privé
 ---
 
 Notre cabinet d'architecture a réalisé le projet de construction d’un immeuble

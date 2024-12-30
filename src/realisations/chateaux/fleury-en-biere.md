@@ -26,7 +26,10 @@ interventions:
       - Mission de maîtrise d’œuvre
     price: 100 000 € HT
 classement: Classé MH
-client: privé
+client:
+  name: FLEURY EN BIERE
+  zip: 77930
+  type: privé
 ---
 
 Notre cabinet d'architecture a assuré la mission complète de maîtrise d'oeuvre

@@ -2,7 +2,7 @@ import { createContentLoader } from "../utils/createContentLoader";
 import { filterPostByClientType } from "../utils/filter";
 
 export const clientLoad = async (id: string) => {
-  const regex = /^.*\/(clients|carte).md$/;
+  const regex = /^.*\/clients.md$/;
   const matches = id.match(regex);
   if (!matches) {
     return;
@@ -14,8 +14,8 @@ export const clientLoad = async (id: string) => {
   const publicOthers = filterPostByClientType(posts, "Public Autres");
 
   const jsonString = JSON.stringify({
-    title: matches[1] === "clients" ? "Clients" : "Carte",
-    layout: matches[1] === "clients" ? "clients" : "map",
+    title: "Clients",
+    layout: "clients",
     mairies,
     publicOthers,
   });

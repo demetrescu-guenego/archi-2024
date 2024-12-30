@@ -1,6 +1,7 @@
+import { csvParse } from "d3";
 import { readFileSync } from "node:fs";
 import { GPSCoord } from "../interfaces/GPSCoord";
-import { csvParse } from "d3";
+import { toSlug } from "./slug";
 
 const DEFAULT_GPS: GPSCoord = {
   latitude: 0,
@@ -27,6 +28,12 @@ const init = () => {
 };
 
 init();
+
+export const normalize = (mairie: string) => {
+  return toSlug(mairie)
+    .toUpperCase()
+    .replaceAll(/[^A-Z]/g, " ");
+};
 
 export const getGPSCoordFromZipcode = (zipcode: string | number): GPSCoord => {
   const gps = map.get(zipcode.toString());

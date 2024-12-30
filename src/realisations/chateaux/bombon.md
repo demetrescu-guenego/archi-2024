@@ -23,7 +23,11 @@ interventions:
     missions:
       - Etude Préalable
 classement: Inscrit MH
-client: privé
+client:
+  name: Bombon
+  zip: 77720
+  type: Privé
+  gps: 48.56688265778493, 2.8600517788118562
 ---
 
 Notre cabinet d'architecture s'est occupé de l'étude préalable concernant la
