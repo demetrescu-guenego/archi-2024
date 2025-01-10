@@ -11,10 +11,10 @@ const props = defineProps<{
     <li v-for="(intervention, index) in props.input.slice(0, 4)" :key="index">
       {{ intervention.year }}
       <span v-if="intervention.ongoing">- en cours </span>:
-      {{ intervention.title }}, <br />
+      {{ intervention.title }} <br />
       <span v-if="intervention.missions"
-        >{{ intervention.missions.join(", ") }}, <br
-      /></span>
+        >{{ intervention.missions.join(", ") }} <br />
+      </span>
       <span v-if="intervention.price">
         Montant des Travaux : {{ intervention.price }}
       </span>
