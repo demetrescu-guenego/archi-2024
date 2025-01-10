@@ -15,7 +15,7 @@ const thumbnails = await glob("./**/thumbnail-*.jpg", {
 
 const width = 288;
 const height = 176;
-const scale = 1;
+const scale = 2.5;
 
 for (const thumbnail of thumbnails) {
   const file = join(cwd, thumbnail);

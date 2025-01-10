@@ -8,7 +8,7 @@ export const data = {
     {
       id: "eglises",
       title: "Eglises",
-      name: "chauconin",
+      name: "fontenailles",
     },
     {
       id: "remparts",
@@ -18,7 +18,7 @@ export const data = {
     {
       id: "abbayes",
       title: "Abbayes",
-      name: "dammarie-les-lys",
+      name: "jouarre",
     },
     {
       id: "fermes",
