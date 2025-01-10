@@ -45,6 +45,7 @@ const close = () => {
   </nav>
   <div v-else>
     <button
+      aria-label="Menu"
       class="flex h-16 cursor-pointer items-center justify-center px-4"
       @click="toggle()"
     >

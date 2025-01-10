@@ -31,7 +31,7 @@ const list: MenuItem[] = [
       <ResponsiveMenu :list="list" class="print:hidden" />
     </ClientOnly>
     <div class="hidden print:block">
-      <img src="/home/header.jpg" class="print:h-20" />
+      <img src="/home/header.jpg" loading="lazy" class="print:h-20" />
     </div>
   </header>
 </template>

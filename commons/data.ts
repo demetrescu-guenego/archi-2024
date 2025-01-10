@@ -13,7 +13,7 @@ export const data = {
     {
       id: "remparts",
       title: "Remparts",
-      name: "charleville-mezieres",
+      name: "meaux",
     },
     {
       id: "abbayes",

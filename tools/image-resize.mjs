@@ -13,6 +13,10 @@ const thumbnails = await glob("./**/thumbnail-*.jpg", {
   posix: true,
 });
 
+const width = 288;
+const height = 176;
+const scale = 1;
+
 for (const thumbnail of thumbnails) {
   const file = join(cwd, thumbnail);
   console.log("file: ", file);
@@ -23,8 +27,12 @@ for (const thumbnail of thumbnails) {
   await sharp(file)
     .toFormat("webp")
     .webp({ quality: 100 })
-    .resize(288, 176)
+    .resize(width * scale, height * scale, {
+      fit: "cover",
+      kernel: "lanczos3",
+    })
     .toFile(newfile);
+
   // await sleep(0);
   // await unlink(file);
   // await rename(newfile, file);
