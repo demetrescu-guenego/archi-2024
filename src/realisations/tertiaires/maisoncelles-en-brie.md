@@ -25,6 +25,7 @@ client:
   name: Maisoncelles-en-Brie
   zip: 77580
   type: Mairie
+  gps: 48.862544376490014, 2.990160945372992
 ---
 
 Notre cabinet d'architecture a réalisé la mission complète de maîtrise d'œuvre
