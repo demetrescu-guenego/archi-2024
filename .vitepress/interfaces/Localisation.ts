@@ -1,8 +1,8 @@
-import { GPSCoord } from "./GPSCoord";
+import { GPSCoordObject } from "./GPSCoord";
 
 export interface Localisation {
   zipcode: string | number;
-  gps: GPSCoord;
+  gps: GPSCoordObject;
   title: string;
   url: string;
 }
