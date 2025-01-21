@@ -32,7 +32,11 @@ client:
   name: Tournan-en-Brie
   zip: 77220
   type: Mairie
+  gps: 48.74018373253343, 2.7639091014862065
 ---
 
 Notre cabinet d'architecture assure la mission complète de maîtrise d'oeuvre
 concernant la réhabilitation de la grange qui jouxte la mairie.
+
+A cette occasion le projet a reçu le
+[prix 2020 du ruban du patrimoine](https://www.rubansdupatrimoine.ffbatiment.fr/les-laureats#/Laureate/Detail/1678).
