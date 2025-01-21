@@ -25,6 +25,7 @@ client:
   name: Pringy
   zip: 77310
   type: Mairie
+  gps: 48.52212093034822, 2.558586285694232
 ---
 
 Notre Cabinet d'architecture a assuré en 2022 la restauration de la fabrique du
