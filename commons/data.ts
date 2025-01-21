@@ -26,6 +26,11 @@ export const data = {
       name: "coupvray",
     },
     {
+      id: "folies",
+      title: "Folies",
+      name: "pringy",
+    },
+    {
       id: "restaurations",
       title: "Parements extérieurs",
       name: "bois-le-roi",
