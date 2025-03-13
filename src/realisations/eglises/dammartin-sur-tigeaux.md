@@ -29,7 +29,7 @@ interventions:
     ongoing: false
     title: Restauration du clocher
     missions:
-      - Maîtrise d"oeuvre
+      - Maîtrise d'oeuvre
       - OPC
     price: 97 000 € HT
 
@@ -37,7 +37,7 @@ interventions:
     ongoing: false
     title: Réfection ponctuelle de maçonnerie, charpente et couverture
     missions:
-      - Maîtrise d"oeuvre
+      - Maîtrise d'oeuvre
       - OPC
     price: 40 000 € HT
 
@@ -45,7 +45,7 @@ interventions:
     ongoing: false
     title: Réfection des toitures de la travée ouest de la nef
     missions:
-      - Maîtrise d"oeuvre
+      - Maîtrise d'oeuvre
     price: 66 000 € HT
 
 client:
