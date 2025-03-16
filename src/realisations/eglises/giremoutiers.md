@@ -10,11 +10,17 @@ photos:
   - url: 03.jpg
     title: Pendant travaux
   - url: 04.jpg
-    title: Travaus toiture
+    title: Travaux toiture
   - url: 05.jpg
     title: Découverte de la charpente
   - url: 06.jpg
     title: Echaffaudage
+  - url: 07.jpg
+    title: Toiture après travaux
+  - url: 08.jpg
+    title: Levage de charpente
+  - url: 09.jpg
+    title: Levage de charpente
 
 moa:
   name: Commune de Giremoutiers (77)
@@ -28,7 +34,7 @@ interventions:
     missions:
       - Maîtrise d"oeuvre
       - OPC
-    price: 310 000 € HT
+    price: 336 000 € HT
 classement: Plusieurs objets mobiliers inscrit MH.
 client:
   name: Giremoutiers
