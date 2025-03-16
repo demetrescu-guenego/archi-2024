@@ -4,17 +4,17 @@ title: Eglise de l'Invention-de-la-Sainte-Croix de Bassevelle
 
 photos:
   - url: 01.jpg
-    title: Pendant travaux
+    title: Grue pendant travaux
   - url: 02.jpg
-    title: Réfection couverture
+    title: Grue pendant travaux
   - url: 03.jpg
     title: Réfection parements extérieurs
   - url: 04.jpg
-    title: Pendant travaux
+    title: Après travaux
   - url: 05.jpg
-    title: Réfection couverture
+    title: Avant travaux
   - url: 06.jpg
-    title: Réfection parements extérieurs
+    title: Visite de chantier
 
 moa:
   name: Commune de Bassevelle (77)
