@@ -33,6 +33,7 @@ client:
   name: Fontenailles
   zip: 77370
   type: Mairie
+  gps: 48.55665611938155, 2.9540490596678857
 ---
 
 L'Eglise de Saint-Fiacre

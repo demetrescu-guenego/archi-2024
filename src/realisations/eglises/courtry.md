@@ -38,6 +38,7 @@ client:
   name: Courtry
   zip: 77181
   type: Mairie
+  gps: 48.918656549011466, 2.603698953041287
 ---
 
 Notre Cabinet d'architecture a conduit la mission de Maîtrise d'oeuvre

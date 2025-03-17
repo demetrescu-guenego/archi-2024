@@ -18,6 +18,7 @@ client:
   name: Iverny
   zip: 77165
   type: Mairie
+  gps: 48.99908226064904, 2.7874658746247802
 ---
 
 Notre cabinet d'architecture a assuré la maîtrise d'oeuvre concernant la

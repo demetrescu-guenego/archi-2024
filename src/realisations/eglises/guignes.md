@@ -27,6 +27,7 @@ client:
   name: Guignes
   zip: 77390
   type: Mairie
+  gps: 48.63705606778091, 2.7975786959461564
 ---
 
 Notre cabinet d'architecture assure la maîtrise d'oeuvre de la restauration de
