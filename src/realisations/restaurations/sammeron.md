@@ -23,6 +23,7 @@ client:
   name: Sammeron
   zip: 77260
   type: Mairie
+  gps: 48.948624485513314, 3.0863119871652978
 ---
 
 Notre cabinet d'architecture a assuré une mission complète de maîtrise d'œuvre

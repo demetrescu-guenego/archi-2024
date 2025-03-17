@@ -15,6 +15,7 @@ client:
   name: Joigny
   zip: 89300
   type: Mairie
+  gps: 47.981171776343494, 3.3989829994216714
 ---
 
 Notre cabinet d'architecture a réalisé une mission de MOE complète pour refaire

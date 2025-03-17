@@ -29,6 +29,7 @@ client:
   name: Bois-le-Roi
   zip: 77590
   type: Mairie
+  gps: 48.47633612859748, 2.6941042014735928
 ---
 
 Notre cabinet d'architecture s'est occupé de la mission complète de maîtrise

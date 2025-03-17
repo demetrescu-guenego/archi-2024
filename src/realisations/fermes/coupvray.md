@@ -30,6 +30,7 @@ client:
   name: Coupvray
   zip: 77700
   type: Mairie
+  gps: 48.88639160450881, 2.7921669105220652
 ---
 
 Notre cabinet d'architecture a assuré la mission de maîtrise d'oeuvre concernant

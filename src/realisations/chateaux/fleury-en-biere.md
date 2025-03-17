@@ -30,6 +30,7 @@ client:
   name: FLEURY EN BIERE
   zip: 77930
   type: privé
+  gps: 48.445957133354405, 2.548499774300992
 ---
 
 Notre cabinet d'architecture a assuré la mission complète de maîtrise d'oeuvre

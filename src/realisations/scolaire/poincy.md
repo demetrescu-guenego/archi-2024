@@ -31,6 +31,7 @@ client:
   name: Poincy
   zip: 77470
   type: Mairie
+  gps: 48.96844286873872, 2.9347170946488648
 ---
 
 Notre cabinet d'architecture a assuré la mission complète de maîtrise d'œuvre

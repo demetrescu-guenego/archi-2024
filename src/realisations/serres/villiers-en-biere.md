@@ -25,6 +25,7 @@ client:
   name: Villiers-en-Bière
   zip: 77190
   type: Mairie
+  gps: 48.4947888913169, 2.6010143649761384
 ---
 
 Notre cabinet d'architecture s'est occupé de l'étude préalable et de la mission

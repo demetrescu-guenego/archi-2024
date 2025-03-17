@@ -35,6 +35,7 @@ client:
     name: BUSSY ST MARTIN
     zip: 77600
   type: Public Autres
+  gps: 48.84699257103524, 2.6712788426089604
 ---
 
 Notre cabinet d'architecture s'est occupé de travaux de sécurisation du château

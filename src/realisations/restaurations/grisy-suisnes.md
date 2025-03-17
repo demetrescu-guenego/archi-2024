@@ -24,6 +24,7 @@ client:
   name: Grisy-Suisnes
   zip: 77166
   type: Mairie
+  gps: 48.68546889820754, 2.665161661023513
 ---
 
 Inauguré en 1897, ce beffroi communal a été élevé afin de tenter de remplacer le

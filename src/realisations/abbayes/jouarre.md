@@ -20,6 +20,7 @@ client:
   name: Jouarre
   zip: 77640
   type: Mairie
+  gps: 48.926811293666006, 3.131403060632346
 ---
 
 Réfection des parements extérieurs - Crypte de l'Abbaye de Jouarre

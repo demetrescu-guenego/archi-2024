@@ -15,6 +15,7 @@ client:
   name: Chambly
   zip: 60230
   type: Mairie
+  gps: 49.17186009771592, 2.2317990820038736
 ---
 
 Notre cabinet d'architecture a réalisé le projet de construction d’un hangar de

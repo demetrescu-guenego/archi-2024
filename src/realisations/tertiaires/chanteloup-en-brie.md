@@ -25,6 +25,7 @@ client:
   name: CHANTELOUP EN BRIE
   zip: 77600
   type: privé
+  gps: 48.854202043664905, 2.7433289454307768
 ---
 
 Notre cabinet d'architecture a réalisé le projet de construction d’un immeuble

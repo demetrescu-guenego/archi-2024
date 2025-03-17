@@ -16,6 +16,7 @@ client:
   name: Chelles
   zip: 77500
   type: Mairie
+  gps: 48.87644818613803, 2.592290830149289
 ---
 
 Notre cabinet d'architecture a assuré la maîtrise d'oeuvre concernant les

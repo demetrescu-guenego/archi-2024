@@ -37,6 +37,7 @@ client:
   name: Ferrières-en-Brie
   zip: 77164
   type: Privé
+  gps: 48.81969484470319, 2.712064716701498
 ---
 
 Notre cabinet d'architecture s'est occupé de l'étude préalable et de la mission

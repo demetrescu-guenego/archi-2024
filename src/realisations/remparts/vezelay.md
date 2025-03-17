@@ -28,6 +28,7 @@ client:
   commune:
     name: Vezelay
     zip: 89450
+  gps: 47.46763475198147, 3.7467083990146484
 ---
 
 Notre cabinet d'architecture a assuré la mission complète de maîtrise d'oeuvre

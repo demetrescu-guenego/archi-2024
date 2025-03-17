@@ -24,4 +24,5 @@ client:
   name: Dammarie-les-Lys
   zip: 77190
   type: Mairie
+  gps: 48.51776900900269, 2.6344462069762637
 ---

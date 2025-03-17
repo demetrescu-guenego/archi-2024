@@ -22,6 +22,7 @@ client:
     name: CHARLEVILLE MEZIERES
     zip: "08000"
   type: Public Autres
+  gps: 49.76114724903762, 4.71754935075732
 ---
 
 Notre cabinet d'architecture s'est occupé de la mission complète de maîtrise

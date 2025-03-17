@@ -16,6 +16,7 @@ client:
   name: Dammarie-les-Lys
   zip: 77190
   type: Mairie
+  gps: 48.518331649012815, 2.6321401215948055
 ---
 
 Notre cabinet d'architecture s'est occupé de l'étude préalable concernant la

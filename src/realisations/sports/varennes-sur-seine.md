@@ -24,6 +24,7 @@ client:
   name: Varennes-sur-Seine
   zip: 77130
   type: Mairie
+  gps: 48.37648779342626, 2.9250605311118503
 ---
 
 Notre cabinet d'architecture a réalisé la mission complète de maîtrise d'œuvre

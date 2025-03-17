@@ -25,6 +25,7 @@ client:
   name: Torcy
   zip: 77200
   type: Mairie
+  gps: 48.85444504096189, 2.6519859859136963
 ---
 
 Notre cabinet d'architecture a fait le projet d'aménagement d’un local

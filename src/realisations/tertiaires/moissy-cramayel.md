@@ -23,6 +23,7 @@ client:
   name: Moissy-Cramayel
   zip: 77550
   type: Mairie
+  gps: 48.62763829055426, 2.5889271923481885
 ---
 
 Notre cabinet d'architecture a réalisé la mission complète de maîtrise d'œuvre

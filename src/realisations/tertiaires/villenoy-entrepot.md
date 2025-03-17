@@ -24,6 +24,7 @@ client:
   name: Villenoy
   zip: 77124
   type: prive
+  gps: 48.946360782113686, 2.8691128026409523
 ---
 
 Notre cabinet d'architecture a réalisé le projet de construction d’un entrepôt

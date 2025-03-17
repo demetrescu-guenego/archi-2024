@@ -17,6 +17,7 @@ client:
   name: Torcy
   zip: 77200
   type: Mairie
+  gps: 48.84972116581919, 2.653281517509277
 ---
 
 Notre cabinet d'architecture a assuré le marché couvert et réorganisation des

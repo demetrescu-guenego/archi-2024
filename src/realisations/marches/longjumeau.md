@@ -24,6 +24,7 @@ client:
   name: Longjumeau
   zip: 91160
   type: Mairie
+  gps: 48.696539736570514, 2.2929550288329663
 ---
 
 Notre cabinet d'architecture a assuré la réhabilitation du Marché
