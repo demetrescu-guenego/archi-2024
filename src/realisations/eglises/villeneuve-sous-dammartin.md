@@ -38,6 +38,7 @@ client:
   name: Villeneuve-sous-Dammartin
   zip: 77230
   type: Mairie
+  gps: 49.03450570686172, 2.642030343708884
 ---
 
 Notre cabinet d'architecture a assuré une mission de maîtrise d'œuvre pour la

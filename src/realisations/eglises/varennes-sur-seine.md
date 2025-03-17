@@ -44,6 +44,7 @@ client:
   name: Varennes-sur-Seine
   zip: 77130
   type: Mairie
+  gps: 48.37517902867547, 2.925627509693133
 ---
 
 Notre cabinet est intervenu sur l'église Saint-Lambert de Varennes-sur-Seine,

@@ -43,6 +43,7 @@ client:
   name: Nantouillet
   zip: 77230
   type: Mairie
+  gps: 49.00131038519463, 2.7037922595781043
 ---
 
 Notre Cabinet d'architecture a assuré la mission de Maîtrise d'oeuvre et OPC de

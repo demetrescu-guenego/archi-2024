@@ -32,6 +32,7 @@ client:
   name: Moussy-le-Vieux
   zip: 77230
   type: Mairie
+  gps: 49.04588598893808, 2.624798189972465
 ---
 
 Notre cabinet d'architecture a assuré la mission de maîtrise d'œuvre concernant

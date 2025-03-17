@@ -20,6 +20,7 @@ client:
   name: Reuil-en-Brie
   zip: 77260
   type: Mairie
+  gps: 48.95893715491248, 3.1449619141290475
 ---
 
 Notre cabinet d'architecture a assuré une mission d'étude préalable concernant

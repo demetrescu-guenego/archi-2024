@@ -38,6 +38,7 @@ client:
   name: Yebles
   zip: 77390
   type: Mairie
+  gps: 48.63780786516533, 2.7712713685115533
 ---
 
 Notre Cabinet d'architecture assure depuis 2022 la restauration complète de

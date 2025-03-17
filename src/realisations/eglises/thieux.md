@@ -10,6 +10,7 @@ client:
   name: Thieux
   zip: 77230
   type: Mairie
+  gps: 49.01087462361021, 2.6699744330094974
 ---
 
 Notre cabinet d'architecture a assuré une mission d'étude préalable pour la

@@ -25,6 +25,7 @@ client:
   name: Vincy-Manoeuvre
   zip: 77139
   type: Mairie
+  gps: 49.078181872732515, 2.9629015686399796
 ---
 
 Notre cabinet d'architecture a assuré une mission de maîtrise d'œuvre pour la
