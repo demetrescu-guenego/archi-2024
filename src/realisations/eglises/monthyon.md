@@ -43,6 +43,7 @@ client:
   name: Monthyon
   zip: 77122
   type: Mairie
+  gps: 49.00724225467008, 2.8264998607752525
 ---
 
 Notre cabinet d'architecture a assuré la mission de maîtrise d'œuvre concernant

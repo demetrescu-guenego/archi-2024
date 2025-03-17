@@ -44,6 +44,7 @@ client:
   name: Montdauphin
   zip: 77320
   type: Mairie
+  gps: 48.85154489199395, 3.427209738055072
 ---
 
 Notre Cabinet d'architecture a assuré la réfection des parements du choeur et du

@@ -36,6 +36,7 @@ client:
   zip: 77560
   type: Mairie
   year: "2016"
+  gps: 48.61630155580873, 3.515876071701001
 ---
 
 Notre cabinet a assuré la mission de maîtrise d'oeuvre pour la restauration de
