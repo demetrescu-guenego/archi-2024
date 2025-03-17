@@ -23,6 +23,7 @@ client:
   name: Bernay-Vilbert
   zip: 77540
   type: Mairie
+  gps: 48.677710827267724, 3.1923484750282394
 ---
 
 L'Église Notre-Dame-de l'Assomption de Vilbert date du XVe siécle.

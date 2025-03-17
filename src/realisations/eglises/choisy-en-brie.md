@@ -36,6 +36,7 @@ client:
   name: Choisy-en-Brie
   zip: 77320
   type: Mairie
+  gps: 48.758692980338516, 3.2195616971695444
 ---
 
 Notre cabinet d'architecture a effectué la mission de Maîtrise d'oeuvre complète

@@ -25,6 +25,7 @@ client:
   name: Amillis
   zip: 77120
   type: Mairie
+  gps: 48.74027817653606, 3.129191006943007
 ---
 
 La construction de l'Église Saint-Pierre-et-Sainte-Flodoberthe remonte au 11ème

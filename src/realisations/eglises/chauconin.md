@@ -91,6 +91,7 @@ client:
   name: Chauconin-Neufmontiers
   zip: 77124
   type: Mairie
+  gps: 48.966026667640435, 2.8422481032262303
 ---
 
 L'église Saint-Saturnin de Chauconin-Neufmontiers est la toute première église

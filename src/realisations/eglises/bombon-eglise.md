@@ -33,6 +33,7 @@ client:
   name: Bombon
   zip: 77720
   type: Mairie
+  gps: 48.574187085219904, 2.8586814462954764
 ---
 
 La construction de l'Église Eglise Saint Germain de Bombon remonte au 12ème
