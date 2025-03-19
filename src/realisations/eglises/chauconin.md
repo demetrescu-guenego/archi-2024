@@ -34,6 +34,8 @@ photos:
     title: Chevet avant réfection 2017
   - url: 15.jpg
     title: Eglise en 2020
+  - url: 16.jpg
+    title: Clocher intérieur en 2025
 
 moa:
   name: Mairie de Chauconin-Neufmontiers (77)
