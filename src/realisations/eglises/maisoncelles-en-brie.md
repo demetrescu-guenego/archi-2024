@@ -4,20 +4,57 @@ description: Eglise Saint Sulpice à Maisoncelles-en-Brie
 
 photos:
   - url: 01.jpg
-    title: Avant travaux
+    title: Après travaux
   - url: 02.jpg
-    title: Pendant travaux
+    title: Avant travaux
   - url: 03.jpg
-    title: Réfection parements extérieurs
+    title: Pendant travaux
+  - url: 04.jpg
+    title: Evacuation des déchets
+  - url: 05.jpg
+    title: Charpente et combles
+  - url: 06.jpg
+    title: Réfection parements intérieurs
+  - url: 07.jpg
+    title: Pose couverture
+  - url: 08.jpg
+    title: Pose des tuiles
+  - url: 09.jpg
+    title: Chantier couverture
+  - url: 10.jpg
+    title: Maisoncelles depuis l'église
+  - url: 11.jpg
+    title: Echafaudage
+  - url: 12.jpg
+    title: Travaux charpente
+  - url: 13.jpg
+    title: Description projet
+  - url: 14.jpg
+    title: Description projet
+  - url: 15.jpg
+    title: Plan
 
 moa:
   name: Commune de Maisoncelles-en-Brie (77)
 interventions:
-  - year: 2007
-    title: Travaux d’urgence
+  - year: 2011
+    title:
+      Travaux d’urgence, réfection ponctuelle de la toiture, travaux de peinture
     missions:
       - Maîtrise d'oeuvre
     price: 15 000 € HT
+  - year: 2012
+    title: Mise en valeur des dalles funéraires
+    missions:
+      - Maîtrise d'oeuvre
+    price: 15 000 € HT
+  - year: 2021
+    title: Réfection des toitures et travaux divers de l’église Saint-Sulpice
+    missions:
+      - Maîtrise d'oeuvre
+      - OPC
+    price: 308 000 € HT
+
 client:
   name: Maisoncelles-en-Brie
   zip: 77580
