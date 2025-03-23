@@ -12,6 +12,8 @@ photos:
 
 moa:
   name: Commune de Amillis (77)
+  url: https://www.amillis.fr/
+
 interventions:
   - year: "2016"
     ongoing: false
