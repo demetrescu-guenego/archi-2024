@@ -64,7 +64,7 @@ const getCurrentIndex = () => {
   if (isNaN(index)) {
     return -1;
   }
-  return index;
+  return index - 1;
 };
 
 const onBackEvent = (event) => {
