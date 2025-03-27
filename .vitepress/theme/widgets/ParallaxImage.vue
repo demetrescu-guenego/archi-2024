@@ -125,7 +125,7 @@ const render = () => {
 
 <template>
   <div ref="divRef" :class="{ loaded: isLoaded }">
-    <img :src="imageSrc" alt="props.alt" ref="imageRef" />
+    <img :src="imageSrc" :alt="props.alt" ref="imageRef" />
   </div>
 </template>
 

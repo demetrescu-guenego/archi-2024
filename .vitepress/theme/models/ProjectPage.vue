@@ -62,7 +62,7 @@ const handleClose = () => {
       <ParallaxImage
         :portrait="parallax"
         :landscape="parallax"
-        alt="Chateau de Ferrières en brie (1855-1859, famille Rothschield), restauration par notre catbinet en 2015."
+        :alt="frontmatter.title"
       />
     </section>
     <section>

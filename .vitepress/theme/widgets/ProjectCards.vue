@@ -18,13 +18,13 @@ const handleClick = (index: number) => {
 <template>
   <div class="flex flex-wrap justify-center gap-8 py-8">
     <div
-      v-for="(project, index) in input"
-      :key="project.title"
+      v-for="(card, index) in input"
+      :key="card.title"
       class="flex w-72 cursor-pointer flex-col overflow-hidden shadow-xl transition-transform hover:scale-105"
       @click="handleClick(index)"
     >
       <img
-        :src="project.imageUrl"
+        :src="card.imageUrl"
         alt=""
         class="border-neutral-2=300 h-44 w-72 border-[0.2px] object-cover"
       />
@@ -32,7 +32,7 @@ const handleClick = (index: number) => {
         class="flex h-12 items-center justify-center px-4 text-center"
         :class="{ 'font-bold': boldLabel }"
       >
-        <span v-if="project.title" v-html="project.title"> </span>
+        <span v-if="card.title" v-html="card.title"> </span>
         <span v-else class="text-neutral-400" role="presentation">
           Cliquer pour agrandir
         </span>
