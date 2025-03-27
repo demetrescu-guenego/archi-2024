@@ -41,7 +41,7 @@ const prefix = "#viewer-";
 const handleView = (index: number) => {
   isShowingImage.value = true;
   currentIndex.value = index;
-  const url = window.location.pathname + prefix + index;
+  const url = window.location.pathname + prefix + (index + 1);
   if (!window.location.hash) {
     history.pushState({}, "", url);
   } else {
