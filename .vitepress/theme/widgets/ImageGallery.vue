@@ -18,6 +18,7 @@ const props = defineProps<{
 
 const emit = defineEmits<{
   (e: "close"): void;
+  (e: "update", index: number): void;
 }>();
 
 const currentIndex = ref(props.index);
@@ -224,6 +225,7 @@ const handleClose = () => {
 const handleNext = async () => {
   if (currentIndex.value < props.cards.length - 1) {
     currentIndex.value++;
+    emit("update", currentIndex.value);
     await render();
   }
 };
@@ -231,6 +233,7 @@ const handleNext = async () => {
 const handlePrevious = async () => {
   if (currentIndex.value > 0) {
     currentIndex.value--;
+    emit("update", currentIndex.value);
     await render();
   }
 };

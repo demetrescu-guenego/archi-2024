@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useData, useRoute } from "vitepress";
-import { ref } from "vue";
+import { onMounted, onUnmounted, ref } from "vue";
 import { CardContent } from "../../interfaces/CardContent";
 import { Photo } from "../../interfaces/Photo";
 import { ProjectData } from "../../interfaces/ProjectData";
@@ -34,17 +34,67 @@ const cards: CardContent[] = photos.map((p) => {
 });
 
 const isShowingImage = ref(false);
-const currentIndex = ref(0);
+const currentIndex = ref(-1);
+
+const prefix = "#viewer-";
 
 const handleView = (index: number) => {
-  console.log("index: ", index);
   isShowingImage.value = true;
   currentIndex.value = index;
+  const url = window.location.pathname + prefix + index;
+  if (!window.location.hash) {
+    history.pushState({}, "", url);
+  } else {
+    history.replaceState({}, "", url);
+  }
 };
 
 const handleClose = () => {
   isShowingImage.value = false;
+  currentIndex.value = -1;
+  history.pushState({}, "", window.location.pathname);
 };
+
+const getCurrentIndex = () => {
+  const hash = window.location.hash;
+  if (!hash.startsWith(prefix)) {
+    return -1;
+  }
+  const index = parseInt(hash.substring(prefix.length));
+  if (isNaN(index)) {
+    return -1;
+  }
+  return index;
+};
+
+const onBackEvent = (event) => {
+  console.log("Back or forward button clicked!");
+  console.log("Current URL:", window.location.href);
+  console.log("State:", event.state);
+
+  const index = getCurrentIndex();
+  console.log("index: ", index);
+  if (index !== -1) {
+    handleView(index);
+  } else {
+    handleClose();
+  }
+};
+
+onMounted(() => {
+  console.log("mounted");
+  const index = getCurrentIndex();
+  console.log("index: ", index);
+  if (index !== -1) {
+    handleView(index);
+  }
+
+  window.addEventListener("popstate", onBackEvent);
+});
+
+onUnmounted(() => {
+  window.removeEventListener("popstate", onBackEvent);
+});
 </script>
 
 <template>
@@ -83,6 +133,7 @@ const handleClose = () => {
     :cards="cards"
     :index="currentIndex"
     @close="handleClose()"
+    @update="handleView"
   />
   <main
     class="hidden print:flex print:flex-grow print:flex-col print:justify-between"
