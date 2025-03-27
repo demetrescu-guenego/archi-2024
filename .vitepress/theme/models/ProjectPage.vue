@@ -52,7 +52,7 @@ const handleView = (index: number) => {
 const handleClose = () => {
   isShowingImage.value = false;
   currentIndex.value = -1;
-  history.pushState({}, "", window.location.pathname);
+  history.replaceState({}, "", window.location.pathname);
 };
 
 const getCurrentIndex = () => {
