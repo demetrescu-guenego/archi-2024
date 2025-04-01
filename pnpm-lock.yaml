@@ -20,6 +20,9 @@ importers:
       leaflet:
         specifier: ^1.9.4
         version: 1.9.4
+      vue:
+        specifier: ^3.5.13
+        version: 3.5.13(typescript@5.8.2)
     devDependencies:
       '@eslint/js':
         specifier: ^9.23.0

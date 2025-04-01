@@ -44,7 +44,8 @@
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/vue-fontawesome": "^3.0.8",
-    "leaflet": "^1.9.4"
+    "leaflet": "^1.9.4",
+    "vue": "^3.5.13"
   },
   "packageManager": "pnpm@10.7.0"
 }
