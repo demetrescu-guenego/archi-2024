@@ -1,5 +1,12 @@
 <script setup lang="ts">
-import { computed, onMounted, reactive, ref, useTemplateRef } from "vue";
+import {
+  computed,
+  onMounted,
+  onUnmounted,
+  reactive,
+  ref,
+  useTemplateRef,
+} from "vue";
 import { isDesktop } from "../../theme/stores/ResponsiveStore";
 import { Point, Vector } from "../../interfaces/Point";
 import { CardContent } from "../../interfaces/CardContent";
@@ -179,45 +186,6 @@ const initEvent = () => {
   });
 };
 
-onMounted(() => {
-  if (!("window" in globalThis)) {
-    return;
-  }
-  if (img.value === null) {
-    return;
-  }
-
-  img.value.addEventListener("load", () => {
-    (async () => {
-      await render();
-    })();
-  });
-
-  let touchstartX = 0;
-  let touchendX = 0;
-
-  const checkDirection = () => {
-    if (touchendX < touchstartX) {
-      handleNext();
-    }
-    if (touchendX > touchstartX) {
-      handlePrevious();
-    }
-  };
-
-  const handleTouchStart = (e: TouchEvent) => {
-    touchstartX = e.changedTouches[0].screenX;
-  };
-
-  const handleTouchEnd = (e: TouchEvent) => {
-    touchendX = e.changedTouches[0].screenX;
-    checkDirection();
-  };
-
-  img.value.addEventListener("touchstart", handleTouchStart);
-  img.value.addEventListener("touchend", handleTouchEnd);
-});
-
 const handleClose = () => {
   emit("close");
 };
@@ -237,6 +205,60 @@ const handlePrevious = async () => {
     await render();
   }
 };
+
+let touchstartX = 0;
+let touchendX = 0;
+
+const touchThreshold = 100; // Minimum distance to trigger swipe
+
+const checkDirection = () => {
+  if (touchendX < touchstartX - touchThreshold) {
+    handleNext();
+  }
+  if (touchendX > touchstartX + touchThreshold) {
+    handlePrevious();
+  }
+};
+
+const handleTouchStart = (e: TouchEvent) => {
+  touchstartX = e.changedTouches[0].screenX;
+};
+
+const handleTouchEnd = (e: TouchEvent) => {
+  touchendX = e.changedTouches[0].screenX;
+  checkDirection();
+};
+
+const onLoad = () => {
+  (async () => {
+    await render();
+  })();
+};
+
+onMounted(() => {
+  if (!("window" in globalThis)) {
+    return;
+  }
+  if (img.value === null) {
+    return;
+  }
+
+  img.value.addEventListener("load", onLoad);
+  img.value.addEventListener("touchstart", handleTouchStart);
+  img.value.addEventListener("touchend", handleTouchEnd);
+});
+
+onUnmounted(() => {
+  if (!("window" in globalThis)) {
+    return;
+  }
+  if (img.value === null) {
+    return;
+  }
+  img.value.removeEventListener("load", onLoad);
+  img.value.removeEventListener("touchstart", handleTouchStart);
+  img.value.removeEventListener("touchend", handleTouchEnd);
+});
 </script>
 
 <template>
