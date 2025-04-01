@@ -4,7 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "vitepress dev",
+    "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview",
     "format": "prettier -w .",
