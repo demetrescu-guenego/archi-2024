@@ -33,6 +33,12 @@ photos:
     title: Description projet
   - url: 15.jpg
     title: Plan
+  - url: 16.jpg
+    title: Avant Accès PMR
+  - url: 17.jpg
+    title: Après Accès PMR
+  - url: 18.jpg
+    title: Accès PMR
 
 moa:
   name: Commune de Maisoncelles-en-Brie (77)
@@ -48,6 +54,11 @@ interventions:
     missions:
       - Maîtrise d'oeuvre
     price: 15 000 € HT
+  - year: 2018
+    title: Création d'un accès PMR
+    missions:
+      - Maîtrise d'oeuvre
+    price: 80 000 € HT
   - year: 2021
     title: Réfection des toitures et travaux divers de l’église Saint-Sulpice
     missions:
