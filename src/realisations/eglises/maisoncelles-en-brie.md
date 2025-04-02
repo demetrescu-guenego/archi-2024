@@ -59,7 +59,7 @@ client:
   name: Maisoncelles-en-Brie
   zip: 77580
   type: Mairie
-  gps: 48.86249912074424, 2.99098418821392
+  gps: 48.8624571969771, 2.9912040564421414
 ---
 
 L’église est dédiée à Saint-Jean Baptiste. Orientée vers l’est, cette église est

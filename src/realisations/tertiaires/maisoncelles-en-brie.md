@@ -12,6 +12,8 @@ photos:
 
 moa:
   name: Commune de Maisoncelles-en-Brie (77)
+  url: https://www.maisoncelles-en-brie.fr/
+
 interventions:
   - year: 2010
     title:
@@ -25,7 +27,7 @@ client:
   name: Maisoncelles-en-Brie
   zip: 77580
   type: Mairie
-  gps: 48.862544376490014, 2.990160945372992
+  gps: 48.86250836866283, 2.9905402097679463
 ---
 
 Notre cabinet d'architecture a réalisé la mission complète de maîtrise d'œuvre
