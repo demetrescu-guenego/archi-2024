@@ -1,43 +1,27 @@
 ---
 layout: project
-title: Aménagement CPAM de la ville de Joigny
+title: Construction d'une aire de lavage
 
 photos:
   - url: 01.jpg
-    title: Chantier Accès PMR
   - url: 02.jpg
-    title: Chantier Accès PMR
   - url: 03.jpg
-    title: Chantier Accès PMR
-  - url: 04.jpg
-    title: Refections des intérieurs
-  - url: 05.jpg
-    title: Refections des intérieurs
-  - url: 06.jpg
-    title: Refections des intérieurs
-  - url: 07.jpg
-    title: Après travaux
-  - url: 08.jpg
-    title: Refections des intérieurs
-  - url: 09.jpg
-    title: Refections des intérieurs
 
 moa:
-  name: Ville de Joigny (89)
-  url: https://www.ville-joigny.fr/
+  name: Privé
 
 interventions:
-  - year: 2015
-    title: Aménagement CPAM
-    missions:
-      - Maîtrise d'oeuvre
-    price: 210 000 € HT
+  - year: 2016
+    title: Permis de construire
+  - year: 2020
+    title: Permis de construire modificatif
+
 client:
-  name: Joigny
-  zip: 89300
-  type: Mairie
-  gps: 47.981171776343494, 3.3989829994216714
+  name: Privé
+  zip: 93420
+  type: Privé
+  gps: 48.956908496745264, 2.5629227032609516
 ---
 
-Notre cabinet d'architecture a réalisé une mission de MOE complète pour refaire
-à neuf les locaux de la CPAM de Joigny (89).
+Notre cabinet d'architecture a réalisé une mission de permis de construire pour
+la station de lavage et ses abords.
