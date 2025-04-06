@@ -4,8 +4,11 @@ title: Construction d'une aire de lavage
 
 photos:
   - url: 01.jpg
+    title: Lavage intérieur
   - url: 02.jpg
+    title: Lavage extérieur
   - url: 03.jpg
+    title: Google Maps 2025
 
 moa:
   name: Privé
