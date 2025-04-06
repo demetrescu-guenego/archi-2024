@@ -191,19 +191,16 @@ const handleClose = () => {
 };
 
 const handleNext = async () => {
-  if (currentIndex.value < props.cards.length - 1) {
-    currentIndex.value++;
-    emit("update", currentIndex.value);
-    await render();
-  }
+  currentIndex.value = (currentIndex.value + 1) % props.cards.length;
+  emit("update", currentIndex.value);
+  await render();
 };
 
 const handlePrevious = async () => {
-  if (currentIndex.value > 0) {
-    currentIndex.value--;
-    emit("update", currentIndex.value);
-    await render();
-  }
+  currentIndex.value =
+    (currentIndex.value - 1 + props.cards.length) % props.cards.length;
+  emit("update", currentIndex.value);
+  await render();
 };
 
 let touchstartX = 0;
@@ -288,7 +285,7 @@ onUnmounted(() => {
     <div
       class="fixed bottom-6 left-4 sm:bottom-1/2"
       @click="handlePrevious"
-      v-show="isDesktop && currentIndex > 0"
+      v-show="isDesktop"
     >
       <FontAwesomeIcon
         :icon="faChevronLeft"
@@ -299,7 +296,7 @@ onUnmounted(() => {
     <div
       class="fixed bottom-6 right-4 sm:bottom-1/2"
       @click="handleNext"
-      v-show="isDesktop && currentIndex < cards.length - 1"
+      v-show="isDesktop"
     >
       <FontAwesomeIcon
         :icon="faChevronRight"
