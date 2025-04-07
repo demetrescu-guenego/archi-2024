@@ -4,17 +4,17 @@ description: Travaux de mise en accessibilité
 
 photos:
   - url: 01.jpg
-    title:
+    title: Cage d'escalier après travaux
   - url: 02.jpg
-    title:
+    title: Extérieur cage d'escalier pendant travaux
   - url: 03.jpg
-    title:
+    title: Début des travaux
   - url: 04.jpg
-    title:
+    title: Après travaux
   - url: 05.jpg
-    title:
+    title: Après travaux
   - url: 06.jpg
-    title:
+    title: Après travaux
 
 moa:
   name: Ville de Chelles (77)
