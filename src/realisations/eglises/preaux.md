@@ -35,61 +35,61 @@ client:
 ## Présentation
 
 L’église **Notre-Dame de la Nativité** est située dans le hameau de Préaux,
-rattaché à la commune de **Lorrez-le-Bocage-Préaux** (Seine-et-Marne). Elle date
-du **XIIIe siècle** et reflète l’architecture religieuse rurale du **Gâtinais**.
-Elle est **inscrite à l’inventaire des Monuments Historiques depuis 1949**.
+rattaché à la commune de **Lorrez-le-Bocage-Préaux** (Seine-et-Marne). Elle est
+datée du **XIIIe siècle**. L’édifice est **inscrit à l’inventaire des Monuments
+Historiques depuis 1949**
+([Base Mérimée – PA00087068](https://www.pop.culture.gouv.fr/notice/merimee/PA00087068)).
 
 ---
 
 ## Architecture extérieure
 
-- L’église se compose d’un **volume unique**, regroupant nef, chœur et autel.
-- Son **clocher roman**, datant du **XIIe siècle**, est flanqué d’une
-  **échauguette** et décoré d’une **gargouille**.
-- Elle est entourée de **l’ancien cimetière**, dans la tradition des églises
-  rurales de la région.
+- L’église présente un **volume unique**.
+- Elle possède un **clocher**, flanqué d’une **échauguette** et orné d’une
+  **gargouille**
+  ([Églises du Confluent](https://eglisesduconfluent.fr/Pages/77-Preaux-NDNativite.php)).
+- Le bâtiment est **entouré de l’ancien cimetière**.
+
+Aucune mention de style architectural spécifique n’a été retrouvée dans les
+sources consultées.
 
 ---
 
-## Intérieur et éléments remarquables
+## Intérieur et éléments signalés
 
 - **Maître-autel** :  
-  Orné d’un **retable** représentant _La Présentation de la Vierge au temple_,
-  encadré par une **statue de la Vierge à l’Enfant**.
+  Retable représentant la **Présentation de la Vierge au temple**, accompagné
+  d’une **statue de la Vierge à l’Enfant**.
 
 - **Tabernacle** :  
-  En bois doré sculpté, de style XVIIe siècle, décoré de motifs religieux comme
-  le **Bon Pasteur**.
+  En **bois doré sculpté**, attribué au **XVIIe siècle**, décoré de motifs
+  religieux, dont **le Bon Pasteur**.
 
 - **Autel de la Vierge** :  
-  Présente une scène de l’**Annonciation**, avec l’ange Gabriel annonçant à
-  Marie sa maternité divine.
+  Décoré d’une scène de **l’Annonciation**.
 
-- **Autres éléments notables** :
-  - Croix de **Saint Léonard** (1847)
-  - Chemin de croix avec stations
+- **Autres éléments** :
+  - **Croix de Saint Léonard** datée de **1847**.
+  - **Chemin de croix** avec ses stations.
 
----
-
-## État de conservation et restauration
-
-L’église nécessite d’importants travaux de restauration, notamment :
-
-- Toiture
-- Parements intérieurs et extérieurs
-- Vitraux
-- Électricité
-
-Un **projet de restauration** soutenu par la **Fondation du patrimoine** est en
-cours. Le budget total est estimé à **781 000 €**. Une **première phase** de
-travaux est prévue au **second semestre 2024**, avec pour priorité la
-**réhabilitation de la toiture**.
+(Source :
+[Églises du Confluent](https://eglisesduconfluent.fr/Pages/77-Preaux-NDNativite.php))
 
 ---
 
-## Conclusion
+## Travaux et restauration
 
-L’église **Notre-Dame de la Nativité de Préaux** est un exemple précieux de
-**patrimoine religieux rural** en Île-de-France. Par sa simplicité
-architecturale et la qualité de son mobilier liturgique, elle constitue un
-témoin remarquable de l’histoire locale.
+L’église nécessite des travaux concernant :
+
+- La toiture
+- Les parements intérieurs et extérieurs
+- Les vitraux
+- L’installation électrique
+
+Une **campagne de financement** est en cours, en partenariat avec la **Fondation
+du patrimoine**. Le montant estimé des travaux est de **781 000 €**. Une
+première phase est prévue pour le **second semestre 2024**, portant sur la
+toiture.
+
+(Source :
+[Fondation du Patrimoine](https://www.fondation-patrimoine.org/les-projets/eglise-de-preaux-a-lorrez-le-bocage-preaux))
