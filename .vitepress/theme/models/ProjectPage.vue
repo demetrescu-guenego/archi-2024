@@ -116,7 +116,7 @@ onUnmounted(() => {
       />
     </section>
     <section>
-      <div class="mx-auto max-w-5xl px-2 pb-4">
+      <div class="project-description mx-auto max-w-5xl px-2 pb-4">
         <h2>Description</h2>
         <Content />
         <template v-if="cards.length > 0">
@@ -145,8 +145,6 @@ onUnmounted(() => {
         <PresentationPrint :input="projectData" />
         <h2>Interventions</h2>
         <InterventionPrint :input="frontmatter.interventions" />
-        <h2>Description</h2>
-        <Content />
       </div>
     </section>
 

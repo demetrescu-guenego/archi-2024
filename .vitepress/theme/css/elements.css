@@ -71,4 +71,10 @@
   .block-title {
     @apply mb-2 mt-5 text-lg;
   }
+
+  .project-description {
+    a {
+      @apply text-blue-700 underline;
+    }
+  }
 }
