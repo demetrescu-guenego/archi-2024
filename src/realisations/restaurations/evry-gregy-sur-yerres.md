@@ -20,7 +20,7 @@ photos:
   - url: 08.jpg
     title: Chaussée après travaux
   - url: 09.jpg
-    title: Parapets
+    title: Parapet
 
 moa:
   name: Commune de Evry-Gregy-sur-Yerres (77)
