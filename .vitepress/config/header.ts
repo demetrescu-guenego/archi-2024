@@ -62,7 +62,7 @@ export const transformHead = ({ pageData }) => {
       "meta",
       {
         property: "og:image",
-        content: "https://archi.guenego.com/home/ferrieres-landscape.jpg",
+        content: "https://archi.guenego.com/home/carte.jpg",
       },
     ],
   ];
