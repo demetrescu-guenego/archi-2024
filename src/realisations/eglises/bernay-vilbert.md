@@ -23,10 +23,26 @@ client:
   name: Bernay-Vilbert
   zip: 77540
   type: Mairie
-  gps: 48.677710827267724, 3.1923484750282394
+  gps: 48.68267746679577, 2.923199938289012
 ---
 
-L'Église Notre-Dame-de l'Assomption de Vilbert date du XVe siécle.
+L'église **Notre-Dame-de-l'Assomption** de Vilbert, située dans le hameau de
+Vilbert sur la commune de Bernay-Vilbert (Seine-et-Marne), est un édifice
+religieux datant du **XVe siècle**, avec des aménagements réalisés aux
+**XVIIIᵉ** et **XIXᵉ siècles**.
 
-Notre cabinet d'architecture a assuré une mission de maîtrise d'oeuvre visant à
-restaurer les parements intérieurs.
+![Église de Vilbert](https://tse2.mm.bing.net/th?id=OIP.AdGsFT5xKTP1aEhpHpqwXAHaE0&pid=Api)
+
+### Architecture
+
+L'église est un exemple typique de l'architecture religieuse de la Brie, avec
+une structure en **pierre de meulière**. Elle est dotée d'un **clocher à
+flèche** et d'un portail en arc brisé. À l'intérieur, on peut admirer une croix
+de procession en bois et cuivre doré du **XIVᵉ siècle**, classée monument
+historique.
+
+### Environnement
+
+L'église est située dans un cadre paisible, entourée de champs et de bois,
+offrant ainsi un lieu de culte et de recueillement apprécié des habitants et des
+visiteurs.
