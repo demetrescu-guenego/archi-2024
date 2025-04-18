@@ -1,6 +1,7 @@
 import { glob } from "glob";
 import { basename, dirname, join, normalize } from "node:path";
 import sharp from "sharp";
+import { stat } from "node:fs/promises";
 
 sharp.cache({ files: 0 });
 
@@ -21,17 +22,32 @@ for (const thumbnail of thumbnails) {
   const file = join(cwd, thumbnail);
   console.log("file: ", file);
   const dir = dirname(file);
-  const newfile = join(dir, basename(file, "jpg") + "webp");
-  console.log("newfile: ", newfile);
+  const avifFile = join(dir, basename(file, "jpg") + "avif");
+  console.log("avifFile: ", avifFile);
+  const webpFile = join(dir, basename(file, "jpg") + "webp");
+  console.log("webpFile: ", webpFile);
 
   await sharp(file)
-    .toFormat("webp")
-    .webp({ quality: 100 })
     .resize(width * scale, height * scale, {
       fit: "cover",
       kernel: "lanczos3",
     })
-    .toFile(newfile);
+    .toFormat("avif", { quality: 80, chromaSubsampling: "4:2:0" })
+    .toFile(avifFile);
+
+  const { size: avifSize } = await stat(avifFile);
+  console.log("avif size: ", avifSize);
+
+  await sharp(file)
+    .resize(width * scale, height * scale, {
+      fit: "cover",
+      kernel: "lanczos3",
+    })
+    .toFormat("webp", { quality: 100 })
+    .toFile(webpFile);
+
+  const { size: webpSize } = await stat(webpFile);
+  console.log("webp size: ", webpSize);
 
   // await sleep(0);
   // await unlink(file);

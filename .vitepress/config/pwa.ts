@@ -2,7 +2,7 @@ import { PwaOptions } from "@vite-pwa/vitepress";
 
 export const pwa: PwaOptions = {
   outDir: "../.vitepress/dist",
-  includeAssets: ["/home/*.jpg", "/photos/**/*.{jpg,webp}"],
+  includeAssets: ["/home/*.jpg", "/photos/**/*.{jpg,webp,avif}"],
   manifest: {
     name: "Guénégo Architectes",
     short_name: "Guénégo",

@@ -10,7 +10,7 @@ const cards: CardContent[] = categories.map((c) => {
   return {
     title: c.title,
     url: `/realisations/${c.id}`,
-    imageUrl: `/photos/projects/${c.id}/${c.name}/thumbnail-${c.name}.webp`,
+    imageUrl: `/photos/projects/${c.id}/${c.name}/thumbnail-${c.name}.avif`,
   };
 });
 </script>

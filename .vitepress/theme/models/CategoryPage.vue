@@ -31,7 +31,7 @@ const cards: CardContent[] = projects
     return {
       title: p.title,
       url: `/realisations/${category}/${p.id}`,
-      imageUrl: `/photos/projects/${category}/${p.id}/thumbnail-${p.id}.webp`,
+      imageUrl: `/photos/projects/${category}/${p.id}/thumbnail-${p.id}.avif`,
       id: p.id,
       year: getLastIntervention(p),
     } satisfies CardContent & { id: string };
