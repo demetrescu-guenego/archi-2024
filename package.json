@@ -10,8 +10,7 @@
     "format": "prettier -w .",
     "lint": "eslint",
     "generate-pwa-assets": "pwa-assets-generator --preset minimal-2023 src/public/logo-purple.svg",
-    "resize": "node tools/image-resize.mjs",
-    "regenerate": "node tools/image-regenerate-jpg.mjs"
+    "resize": "node tools/image-resize.mjs"
   },
   "keywords": [],
   "author": "",
