@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useData } from "vitepress";
+import { computed } from "vue";
 import { CardContent } from "../../interfaces/CardContent";
 import { Project } from "../../interfaces/Project";
 import NiceCards from "../widgets/NiceCards.vue";
@@ -39,12 +40,16 @@ const cards: CardContent[] = projects
   .sort((p1, p2) => {
     return p1.year < p2.year ? 1 : -1;
   });
+
+const title = computed(() => {
+  return `${frontmatter.value.title}: ${cards.length} projets`;
+});
 </script>
 
 <template>
   <main class="flex flex-grow flex-col p-2">
     <section class="mx-auto max-w-5xl">
-      <h1>{{ frontmatter.title }}</h1>
+      <h1 :title>{{ frontmatter.title }}</h1>
 
       <NiceCards :input="cards" />
     </section>
