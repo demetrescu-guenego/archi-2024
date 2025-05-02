@@ -1,0 +1,26 @@
+@import "leaflet/dist/leaflet.css";
+@import "./css/elements.css";
+@import "./css/animations.css";
+@import "./css/print.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .background {
+    @apply pointer-events-none absolute bottom-0 left-0 right-0 top-0 z-0 block overflow-hidden;
+
+    img {
+      @apply w-full animate-[hypnotize-mobile_240s_infinite] md:animate-[hypnotize_240s_infinite];
+    }
+  }
+
+  .parallax {
+    @apply m-0 overflow-hidden bg-transparent p-0;
+  }
+
+  .introduce.first-time .block-title {
+    @apply animate-[introduce_2s_forwards];
+  }
+}

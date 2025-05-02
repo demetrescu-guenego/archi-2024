@@ -1,0 +1,80 @@
+@layer components {
+  section {
+    @apply bg-white;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold text-fuchsia-900;
+  }
+
+  h1 {
+    @apply my-8 text-center text-3xl;
+    @apply print:m-2;
+  }
+
+  h2 {
+    @apply my-8 text-2xl;
+    @apply print:mb-0 print:mt-4;
+  }
+
+  h3 {
+    @apply mb-2 mt-5 text-xl;
+    @apply print:my-0;
+  }
+
+  h4 {
+    @apply mt-10 text-lg;
+    @apply print:my-0;
+  }
+
+  p {
+    @apply my-3;
+    @apply print:my-0;
+  }
+
+  ul {
+    @apply list-disc pl-8;
+  }
+
+  p,
+  table,
+  address {
+    a {
+      @apply cursor-pointer text-blue-700 underline;
+    }
+  }
+
+  table {
+    @apply table-auto md:animate-[accordion_500ms_forwards];
+    td,
+    th {
+      @apply px-4 py-1 text-left;
+    }
+    thead {
+      @apply bg-fuchsia-800 text-white;
+      a {
+        @apply text-white;
+      }
+    }
+    tbody {
+      tr {
+        @apply odd:bg-neutral-50 even:bg-neutral-100;
+      }
+    }
+  }
+
+  .block-title {
+    @apply mb-2 mt-5 text-lg;
+  }
+
+  .project-description {
+    a {
+      @apply text-blue-700 underline;
+    }
+  }
+}

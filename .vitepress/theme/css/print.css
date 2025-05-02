@@ -1,0 +1,16 @@
+@page {
+  size: 21cm 29.7cm;
+  margin: 0mm 0mm 0mm 0mm;
+}
+
+@media print {
+  div.printable {
+    width: 21cm;
+    height: 29.7cm;
+    max-height: 29.7cm;
+    overflow: hidden;
+    footer {
+      display: none;
+    }
+  }
+}
