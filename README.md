@@ -51,6 +51,44 @@ pnpm dev
 pnpm build
 ```
 
+## Déploiement
+
+### GitHub Pages
+
+Le projet est configuré pour un déploiement automatique sur GitHub Pages via
+GitHub Actions.
+
+#### Configuration du déploiement
+
+- Le déploiement se déclenche automatiquement sur les push vers la branche
+  `master`
+- Utilise PNPM comme gestionnaire de paquets
+- Node.js version 20
+- Workflow disponible dans `.github/workflows/deploy.yml`
+
+#### Étapes de déploiement
+
+```bash
+# Installation des dépendances
+pnpm install
+
+# Build du site
+pnpm run build
+
+# Le déploiement sur GitHub Pages est automatique après un push sur master
+```
+
+#### Permissions requises
+
+- `contents: read` - Pour accéder au contenu du repository
+- `pages: write` - Pour déployer sur GitHub Pages
+- `id-token: write` - Pour l'authentification
+
+#### URLs de déploiement
+
+- Le site est déployé sur l'environnement `github-pages`
+- L'URL de production est générée automatiquement par GitHub Pages
+
 ## Suggestions d'amélioration
 
 ### 1. Optimisation des performances
