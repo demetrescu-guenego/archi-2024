@@ -243,6 +243,26 @@ onMounted(() => {
   img.value.addEventListener("load", onLoad);
   img.value.addEventListener("touchstart", handleTouchStart);
   img.value.addEventListener("touchend", handleTouchEnd);
+
+  // Ajouter l'event listener pour les touches du clavier
+  const handleKeyDown = (event: KeyboardEvent) => {
+    switch (event.key) {
+      case "ArrowLeft":
+        handlePrevious();
+        break;
+      case "ArrowRight":
+        handleNext();
+        break;
+    }
+  };
+
+  // Ajouter l'event listener
+  window.addEventListener("keydown", handleKeyDown);
+
+  // Nettoyer l'event listener lors du démontage
+  onUnmounted(() => {
+    window.removeEventListener("keydown", handleKeyDown);
+  });
 });
 
 onUnmounted(() => {
