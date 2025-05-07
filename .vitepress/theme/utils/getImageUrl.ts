@@ -1,6 +1,5 @@
 export const getImageUrl = (url: string): string => {
-  // realisations/eglises/courtry
-  console.log("url: ", url);
+  // url is in the form : realisations/eglises/courtry
   const [, category, name] = url.split("/");
 
   // photos/projects/chateaux/coupvray/thumbnail-coupvray.avif

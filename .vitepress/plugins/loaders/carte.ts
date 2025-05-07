@@ -14,7 +14,6 @@ import { createContentLoader } from "../utils/createContentLoader";
 export const carteLoad = async (id: string) => {
   const regex = /^.*\/(carte|search).md$/;
   const matches = id.match(regex);
-  console.log("matches: ", matches);
   if (!matches) {
     return;
   }
