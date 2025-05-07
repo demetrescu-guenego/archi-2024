@@ -1,12 +1,22 @@
 <script setup lang="ts">
 import { ref, computed } from "vue";
 import { useData } from "vitepress";
+import { Post } from "../../interfaces/Post";
 
-const { site } = useData();
 const searchQuery = ref("");
 
+const { frontmatter } = useData();
+
+const posts: Post[] = frontmatter.value.posts;
+
 const projects = computed(() => {
-  const allProjects = site.value.projects || [];
+  const allProjects = posts.map((post) => {
+    return {
+      title: post.frontmatter.title,
+      url: post.url,
+      client: post.frontmatter.client,
+    };
+  });
 
   if (!searchQuery.value) return allProjects;
 
@@ -38,13 +48,6 @@ const projects = computed(() => {
         class="group overflow-hidden rounded-lg border border-gray-200 transition-transform hover:-translate-y-1 hover:shadow-lg dark:border-gray-700"
       >
         <a :href="project.url" class="block">
-          <div class="aspect-w-16 aspect-h-9 overflow-hidden">
-            <img
-              :src="project.coverImage"
-              :alt="project.title"
-              class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-            />
-          </div>
           <div class="p-4">
             <h3
               class="mb-2 text-lg font-semibold text-gray-900 dark:text-gray-100"

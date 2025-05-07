@@ -1,7 +1,6 @@
 import { getGPSCoordFromZipcode, normalize } from "../../utils/gps";
 import { createContentLoader } from "../utils/createContentLoader";
 
-
 /** * carteLoad function
  * This function loads the content of the carte or search page.
  * It uses the createContentLoader function to load the content of the page.
@@ -21,6 +20,7 @@ export const carteLoad = async (id: string) => {
   }
   const name = matches[1];
   const layout = name === "carte" ? "map" : name;
+  const title = name === "carte" ? "Carte" : "Recherche";
   // look at all the projects and generate the frontmatter.
   const posts = await createContentLoader(`realisations/*/*.md`).load();
 
@@ -38,7 +38,7 @@ export const carteLoad = async (id: string) => {
   });
 
   const jsonString = JSON.stringify({
-    title: "Carte",
+    title,
     layout,
     posts: filteredPosts,
   });
