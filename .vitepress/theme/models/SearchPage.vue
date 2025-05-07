@@ -28,14 +28,8 @@ const projects = computed(() => {
 
   return allProjects.filter((project) => {
     const projectTitle = project.title.toLowerCase();
-    const cityName = project.client.commune
-      ? project.client.commune.name.toLowerCase()
-      : project.client.name.toLowerCase();
 
-    return (
-      fuzzySearch(projectTitle, searchQuery.value) ||
-      fuzzySearch(cityName, searchQuery.value)
-    );
+    return fuzzySearch(projectTitle, searchQuery.value);
   });
 });
 
