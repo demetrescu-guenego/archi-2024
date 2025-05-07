@@ -50,7 +50,7 @@ const cards = computed(() => {
         v-model="searchQuery"
         type="text"
         placeholder="Rechercher par ville..."
-        class="w-full rounded-lg border border-black px-4 py-2 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:border-gray-700 dark:bg-gray-800 dark:focus:border-blue-400"
+        class="w-full rounded-lg border border-fuchsia-900 px-4 py-2 focus:border-fuchsia-700 focus:outline-none focus:ring-2 focus:ring-fuchsia-700"
       />
     </div>
 
