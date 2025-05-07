@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import { useRoute } from "vitepress";
+import { useRoute, useRouter } from "vitepress";
 import { ref } from "vue";
 import { MenuItem } from "../../interfaces/MenuItem";
 import { isDesktop } from "../stores/ResponsiveStore";
 
 const props = defineProps<{ list: MenuItem[] }>();
-
+const router = useRouter();
 const route = useRoute();
 
 const isActive = (href: string) => {
@@ -26,6 +26,11 @@ const toggle = () => {
 const close = () => {
   isMenuOpen.value = false;
 };
+
+const goToSearch = () => {
+  router.go("/search");
+  close(); // Close mobile menu if open
+};
 </script>
 
 <template>
@@ -42,6 +47,12 @@ const close = () => {
     >
       {{ item.title }}
     </a>
+    <button
+      @click="goToSearch"
+      class="flex items-center justify-center border border-transparent p-2 px-4 hover:border-white hover:border-opacity-50"
+    >
+      <FontAwesomeIcon :icon="faMagnifyingGlass" />
+    </button>
   </nav>
   <div v-else>
     <button
@@ -52,7 +63,7 @@ const close = () => {
       <FontAwesomeIcon :icon="faBars" class="text-4xl" />
     </button>
     <nav
-      :class="isMenuOpen ? 'h-64 border-b' : 'h-0'"
+      :class="isMenuOpen ? 'h-80' : 'h-0'"
       class="fixed left-0 right-0 top-16 z-10 flex flex-col overflow-hidden border-neutral-300 bg-white text-fuchsia-900 transition-[height]"
     >
       <a
@@ -64,6 +75,13 @@ const close = () => {
       >
         {{ item.title }}
       </a>
+      <button
+        @click="goToSearch"
+        class="flex h-16 items-center justify-center text-2xl hover:bg-neutral-100 active:bg-neutral-200"
+      >
+        <FontAwesomeIcon :icon="faMagnifyingGlass" class="mr-2" />
+        <span>Rechercher</span>
+      </button>
     </nav>
   </div>
 </template>
