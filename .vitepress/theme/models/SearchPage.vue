@@ -14,13 +14,15 @@ const { frontmatter } = useData();
 const posts: Post[] = frontmatter.value.posts;
 
 const projects = computed(() => {
-  const allProjects = posts.map((post) => {
-    return {
-      title: post.frontmatter.title,
-      url: post.url,
-      client: post.frontmatter.client,
-    };
-  });
+  const allProjects = posts
+    .map((post) => {
+      return {
+        title: post.frontmatter.title,
+        url: post.url,
+        client: post.frontmatter.client,
+      };
+    })
+    .sort((a, b) => (a.title < b.title ? -1 : 1));
 
   if (!searchQuery.value) return allProjects;
 
