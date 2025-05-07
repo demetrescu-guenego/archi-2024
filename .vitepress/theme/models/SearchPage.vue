@@ -5,6 +5,7 @@ import { CardContent } from "../../interfaces/CardContent";
 import { Post } from "../../interfaces/Post";
 import { getImageUrl } from "../utils/getImageUrl";
 import NiceCards from "../widgets/NiceCards.vue";
+import { fuzzySearch } from "../utils/fuzzySearch";
 
 const searchQuery = ref("");
 
@@ -24,11 +25,15 @@ const projects = computed(() => {
   if (!searchQuery.value) return allProjects;
 
   return allProjects.filter((project) => {
+    const projectTitle = project.title.toLowerCase();
     const cityName = project.client.commune
       ? project.client.commune.name.toLowerCase()
       : project.client.name.toLowerCase();
 
-    return cityName.includes(searchQuery.value.toLowerCase());
+    return (
+      fuzzySearch(projectTitle, searchQuery.value) ||
+      fuzzySearch(cityName, searchQuery.value)
+    );
   });
 });
 
