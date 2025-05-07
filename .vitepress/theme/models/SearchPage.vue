@@ -45,17 +45,15 @@ const cards = computed(() => {
 
 <template>
   <div class="px-8 py-6">
-    <div class="mx-auto max-w-2xl">
+    <div class="mx-auto max-w-5xl">
       <input
         v-model="searchQuery"
         type="text"
         placeholder="Rechercher par ville..."
-        class="w-full rounded-lg border border-gray-200 px-4 py-2 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:border-gray-700 dark:bg-gray-800 dark:focus:border-blue-400"
+        class="w-full rounded-lg border border-black px-4 py-2 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:border-gray-700 dark:bg-gray-800 dark:focus:border-blue-400"
       />
     </div>
 
-    <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      <NiceCards :input="cards" />
-    </div>
+    <NiceCards :input="cards" />
   </div>
 </template>
