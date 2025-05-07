@@ -1,12 +1,26 @@
 import { getGPSCoordFromZipcode, normalize } from "../../utils/gps";
 import { createContentLoader } from "../utils/createContentLoader";
 
+
+/** * carteLoad function
+ * This function loads the content of the carte or search page.
+ * It uses the createContentLoader function to load the content of the page.
+ * It then filters the posts to only include those that have a client object.
+ * It also adds the gps coordinates to the client object if they are not already present.
+ * Finally, it returns the frontmatter of the page as a string.
+ *
+ * @param {string} id - The id of the page to load.
+ * @returns {Promise<string | void>} - Returns a string of the frontmatter or void.
+ */
 export const carteLoad = async (id: string) => {
-  const regex = /^.*\/carte.md$/;
+  const regex = /^.*\/(carte|search).md$/;
   const matches = id.match(regex);
+  console.log("matches: ", matches);
   if (!matches) {
     return;
   }
+  const name = matches[1];
+  const layout = name === "carte" ? "map" : name;
   // look at all the projects and generate the frontmatter.
   const posts = await createContentLoader(`realisations/*/*.md`).load();
 
@@ -25,7 +39,7 @@ export const carteLoad = async (id: string) => {
 
   const jsonString = JSON.stringify({
     title: "Carte",
-    layout: "map",
+    layout,
     posts: filteredPosts,
   });
 
