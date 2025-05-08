@@ -1,34 +1,37 @@
 /**
  * Fuzzy search function to check if a pattern exists in a string.
- * It checks if the characters of the pattern appear in the string in the same order,
- * but not necessarily consecutively.
- * the pattern is diacritics insensitive.
+ * Spaces are ignored in both the search pattern and the target string.
  *
  * @param str - The string to search in.
  * @param pattern - The pattern to search for.
  * @returns True if the pattern is found in the string, false otherwise.
  *
  * @example
- * fuzzySearch("hello world", "hlo") // true
- * fuzzySearch("hello world", "hloz") // false
- * fuzzySearch("hello world", "") // true
- * fuzzySearch("Guénégo", "uen") // true
+ * fuzzySearch("hello world", "hw") // true
+ * fuzzySearch("hello world", "h w") // true
+ * fuzzySearch("Saint-Pierre", "stp") // true
+ * fuzzySearch("Saint Pierre", "s tp") // true
  */
 export const fuzzySearch = (str: string, pattern: string): boolean => {
   if (!pattern) return true;
 
-  // Check if the pattern is a substring of the string without diacritics
-  const patternWithoutDiacritics = pattern
+  // Remove spaces and normalize strings
+  const normalizedStr = str
     .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "");
-  const strWithoutDiacritics = str
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "");
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/\s+/g, "")
+    .toLowerCase();
 
-  const letters = patternWithoutDiacritics.toLowerCase().split("");
+  const normalizedPattern = pattern
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/\s+/g, "")
+    .toLowerCase();
+
+  const letters = normalizedPattern.split("");
   let idx = 0;
 
-  for (const char of strWithoutDiacritics.toLowerCase()) {
+  for (const char of normalizedStr) {
     if (char === letters[idx]) {
       idx++;
       if (idx === letters.length) return true;
