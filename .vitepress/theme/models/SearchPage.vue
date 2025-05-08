@@ -5,7 +5,7 @@ import { CardContent } from "../../interfaces/CardContent";
 import { Post } from "../../interfaces/Post";
 import { getImageUrl } from "../utils/getImageUrl";
 import NiceCards from "../widgets/NiceCards.vue";
-import { fuzzySearch } from "../utils/fuzzySearch";
+import { fuzzySearch, FuzzySearchResult } from "../utils/fuzzySearch";
 
 const searchQuery = ref("");
 
@@ -13,24 +13,34 @@ const { frontmatter } = useData();
 
 const posts: Post[] = frontmatter.value.posts;
 
+interface ProjectWithScore {
+  title: string;
+  url: string;
+  client: any;
+  searchScore?: number;
+}
+
 const projects = computed(() => {
-  const allProjects = posts
-    .map((post) => {
+  const allProjects = posts.map((post) => ({
+    title: post.frontmatter.title,
+    url: post.url,
+    client: post.frontmatter.client,
+  }));
+
+  if (!searchQuery.value) {
+    return allProjects.sort((a, b) => (a.title < b.title ? -1 : 1));
+  }
+
+  return allProjects
+    .map((project) => {
+      const result = fuzzySearch(project.title, searchQuery.value);
       return {
-        title: post.frontmatter.title,
-        url: post.url,
-        client: post.frontmatter.client,
-      };
+        ...project,
+        searchScore: result?.score ?? -1,
+      } as ProjectWithScore;
     })
-    .sort((a, b) => (a.title < b.title ? -1 : 1));
-
-  if (!searchQuery.value) return allProjects;
-
-  return allProjects.filter((project) => {
-    const projectTitle = project.title.toLowerCase();
-
-    return fuzzySearch(projectTitle, searchQuery.value);
-  });
+    .filter((project) => project.searchScore >= 0)
+    .sort((a, b) => (b.searchScore ?? 0) - (a.searchScore ?? 0));
 });
 
 const cards = computed(() => {
