@@ -59,7 +59,7 @@ const getHighlightedParts = computed(() => {
     <template v-for="(part, index) in getHighlightedParts" :key="index">
       <span
         :class="{
-          'font-bold text-blue-500': part.highlight,
+          'font-bold text-fuchsia-600': part.highlight,
         }"
       >
         {{ part.text }}

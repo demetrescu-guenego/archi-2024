@@ -153,7 +153,7 @@ const menu: MenuItem[] = [
         restauration par notre cabinet en 2016.
       </div>
     </section>
-    <section>
+    <section class="project-description">
       <div v-onscreen="'introduce'" class="mx-auto max-w-4xl px-2 pb-24 pt-16">
         <h1>Les architectes</h1>
         <h2 class="block-title">
@@ -196,10 +196,7 @@ const menu: MenuItem[] = [
         </ul>
         <p>
           <b>Notre cabinet d'architecture se développe et recrute ! </b>Pour
-          nous faire parvenir votre CV,
-          <a href="/contact" class="cursor-pointer text-blue-700 underline"
-            >contactez nous</a
-          >.
+          nous faire parvenir votre CV, <a href="/contact">contactez nous</a>.
         </p>
       </div>
     </section>
