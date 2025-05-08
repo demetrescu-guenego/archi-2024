@@ -39,6 +39,7 @@ const cards = computed(() => {
       title: p.title,
       url: p.url,
       imageUrl: getImageUrl(p.url),
+      pattern: searchQuery.value,
     } satisfies CardContent;
   });
 });

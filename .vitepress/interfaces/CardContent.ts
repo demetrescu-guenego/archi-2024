@@ -3,4 +3,5 @@ export interface CardContent {
   url: string;
   imageUrl: string;
   year?: number;
+  pattern?: string;
 }

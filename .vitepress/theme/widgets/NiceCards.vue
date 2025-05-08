@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { CardContent } from "../../interfaces/CardContent";
+import HighlightedText from "../components/HighlightedText.vue";
 
 defineProps<{
   input: CardContent[];
@@ -24,7 +25,9 @@ defineProps<{
         class="flex h-12 items-center justify-center px-4 text-center"
         :class="{ 'font-bold': boldLabel }"
       >
-        <span v-if="project.title" v-html="project.title"> </span>
+        <span v-if="project.title">
+          <HighlightedText :text="project.title" :pattern="project.pattern" />
+        </span>
         <span v-else class="text-neutral-400" role="presentation">
           Cliquer pour agrandir
         </span>
