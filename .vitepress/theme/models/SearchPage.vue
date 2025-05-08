@@ -3,9 +3,10 @@ import { useData } from "vitepress";
 import { computed, ref } from "vue";
 import { CardContent } from "../../interfaces/CardContent";
 import { Post } from "../../interfaces/Post";
+import { fuzzySearch } from "../utils/fuzzySearch";
 import { getImageUrl } from "../utils/getImageUrl";
 import NiceCards from "../widgets/NiceCards.vue";
-import { fuzzySearch, FuzzySearchResult } from "../utils/fuzzySearch";
+import { Client } from "../../interfaces/Client";
 
 const searchQuery = ref("");
 
@@ -16,8 +17,8 @@ const posts: Post[] = frontmatter.value.posts;
 interface ProjectWithScore {
   title: string;
   url: string;
-  client: any;
-  searchScore?: number;
+  client: Client;
+  searchScore: number;
 }
 
 const projects = computed(() => {
