@@ -50,6 +50,7 @@ const cards = computed(() => {
     <div class="mx-auto max-w-5xl">
       <input
         v-model="searchQuery"
+        v-autofocus
         type="text"
         placeholder="Rechercher par ville..."
         class="w-full rounded-lg border border-fuchsia-900 px-4 py-2 focus:border-fuchsia-700 focus:outline-none focus:ring-2 focus:ring-fuchsia-700"
