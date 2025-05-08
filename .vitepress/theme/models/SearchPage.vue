@@ -43,6 +43,11 @@ const cards = computed(() => {
     } satisfies CardContent;
   });
 });
+
+const resultCount = computed(() => projects.value.length);
+const resultsLabel = computed(() => {
+  return `${resultCount.value} projet${resultCount.value !== 1 ? "s" : ""} trouvé${resultCount.value !== 1 ? "s" : ""}`;
+});
 </script>
 
 <template>
@@ -55,6 +60,11 @@ const cards = computed(() => {
         placeholder="Rechercher par ville..."
         class="w-full rounded-lg border border-fuchsia-900 px-4 py-2 focus:border-fuchsia-700 focus:outline-none focus:ring-2 focus:ring-fuchsia-700"
       />
+
+      <!-- Results counter -->
+      <div class="mt-4 text-center text-gray-600 dark:text-gray-400">
+        {{ resultsLabel }}
+      </div>
     </div>
 
     <NiceCards :input="cards" />
