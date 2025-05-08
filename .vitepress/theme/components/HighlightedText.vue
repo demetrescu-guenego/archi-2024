@@ -6,6 +6,13 @@ const props = defineProps<{
   pattern?: string;
 }>();
 
+const normalizeText = (text: string) => {
+  return text
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase();
+};
+
 const processText = (text: string) => {
   // Always replace <br/> or <br /> with actual line break
   return text.replace(/<br\s*\/?>/gi, "\n");
@@ -16,8 +23,8 @@ const getHighlightedParts = computed(() => {
   if (!props.pattern) return [{ text: processedText, highlight: false }];
 
   const result: { text: string; highlight: boolean }[] = [];
-  const normalizedText = processedText.toLowerCase();
-  const normalizedPattern = props.pattern.toLowerCase();
+  const normalizedText = normalizeText(processedText);
+  const normalizedPattern = normalizeText(props.pattern);
   let textIndex = 0;
   let patternIndex = 0;
   let lastCut = 0;
