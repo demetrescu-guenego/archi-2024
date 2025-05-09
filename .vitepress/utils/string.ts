@@ -48,3 +48,21 @@ export function findNonContiguousMatch(text: string, pattern: string) {
   }
   return null;
 }
+
+export const findMatches = (text: string, pattern: string) => {
+  const matches: { index: number; length: number; indices?: number[] }[] = [];
+
+  // Prefer contiguous match
+  const contiguous = findContiguousMatch(text, pattern);
+  if (contiguous) {
+    matches.push(contiguous);
+    return matches;
+  }
+
+  // Fallback: non-contiguous match
+  const nonContiguous = findNonContiguousMatch(text, pattern);
+  if (nonContiguous) {
+    matches.push(nonContiguous);
+  }
+  return matches;
+};

@@ -14,7 +14,7 @@ photos:
   - url: 05.jpg
     title: Bas côté après travaux
   - url: 06.jpg
-    title: Perspective ̀d'artiste <br/> (Lizica DEMETRESCU)
+    title: Perspective ̀d'artiste <br /> (Lizica DEMETRESCU)
 
 moa:
   name: Commune de Villeneuve-sous-Dammartin (77)

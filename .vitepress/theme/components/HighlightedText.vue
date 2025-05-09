@@ -1,37 +1,11 @@
 <script setup lang="ts">
 import { computed } from "vue";
-import {
-  findContiguousMatch,
-  findNonContiguousMatch,
-  normalizeText,
-  processText,
-} from "../../utils/string";
+import { findMatches, normalizeText, processText } from "../../utils/string";
 
 const props = defineProps<{
   text: string;
   pattern?: string;
 }>();
-
-const findMatches = (normalizedText: string, normalizedPattern: string) => {
-  const matches: { index: number; length: number; indices?: number[] }[] = [];
-
-  // Prefer contiguous match
-  const contiguous = findContiguousMatch(normalizedText, normalizedPattern);
-  if (contiguous) {
-    matches.push(contiguous);
-    return matches;
-  }
-
-  // Fallback: non-contiguous match
-  const nonContiguous = findNonContiguousMatch(
-    normalizedText,
-    normalizedPattern,
-  );
-  if (nonContiguous) {
-    matches.push(nonContiguous);
-  }
-  return matches;
-};
 
 const getHighlightedParts = computed(() => {
   const processedText = processText(props.text);
