@@ -1,73 +1,35 @@
 <script setup lang="ts">
 import { computed } from "vue";
+import {
+  findContiguousMatch,
+  findNonContiguousMatch,
+  normalizeText,
+  processText,
+} from "../../utils/string";
 
 const props = defineProps<{
   text: string;
   pattern?: string;
 }>();
 
-/**
- * Normalize the text by removing accents and converting to lowercase.
- * @param text
- */
-const normalizeText = (text: string) => {
-  return text
-    .normalize("NFD") // diacritics are separated from letters
-    .replace(/[\u0300-\u036f]/g, "") // remove diacritics
-    .toLowerCase();
-};
-
-const processText = (text: string) => {
-  return text.replace(/<br\s*\/?>/gi, "\n");
-};
-
 const findMatches = (normalizedText: string, normalizedPattern: string) => {
   const matches: { index: number; length: number; indices?: number[] }[] = [];
-  let patternIndex = 0;
 
-  // First try to find contiguous matches
-  for (let i = 0; i < normalizedText.length; i++) {
-    let consecutive = 0;
-    let tempPatternIndex = 0;
-
-    for (
-      let j = i;
-      j < normalizedText.length && tempPatternIndex < normalizedPattern.length;
-      j++
-    ) {
-      if (normalizedText[j] === normalizedPattern[tempPatternIndex]) {
-        consecutive++;
-        tempPatternIndex++;
-        if (consecutive === normalizedPattern.length) {
-          matches.push({ index: i, length: consecutive });
-          i = j; // Skip ahead
-          break;
-        }
-      } else {
-        break;
-      }
-    }
+  // Prefer contiguous match
+  const contiguous = findContiguousMatch(normalizedText, normalizedPattern);
+  if (contiguous) {
+    matches.push(contiguous);
+    return matches;
   }
 
-  // If no contiguous matches found, find non-contiguous matches
-  if (matches.length === 0) {
-    const highlighted: number[] = [];
-    for (let i = 0; i < normalizedText.length; i++) {
-      if (normalizedText[i] === normalizedPattern[patternIndex]) {
-        highlighted.push(i);
-        patternIndex++;
-        if (patternIndex === normalizedPattern.length) {
-          matches.push({
-            index: highlighted[0],
-            length: highlighted[highlighted.length - 1] - highlighted[0] + 1,
-            indices: highlighted,
-          });
-          break;
-        }
-      }
-    }
+  // Fallback: non-contiguous match
+  const nonContiguous = findNonContiguousMatch(
+    normalizedText,
+    normalizedPattern,
+  );
+  if (nonContiguous) {
+    matches.push(nonContiguous);
   }
-
   return matches;
 };
 
