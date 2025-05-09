@@ -23,7 +23,7 @@ onMounted(async () => {
   }
 
   const getIcon = (localisation: Localisation) => {
-    const isEglise = localisation.url.match("(eglises|abbaye)");
+    const isEglise = localisation.url.match("(eglises/|abbaye/)");
     return new L.Icon({
       iconUrl: isEglise ? egliseIcon : greenMarkerIcon,
       shadowUrl,
