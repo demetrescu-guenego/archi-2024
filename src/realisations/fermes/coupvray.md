@@ -3,7 +3,7 @@ title: Ferme du couvent de Coupvray
 description: Restauration de la Maison de Maître - Ferme du couvent de Coupvray
 moa:
   name: Commune de Coupvray (77)
-  url: http://www.coupvray.fr/
+  url: https://www.coupvray.fr/
 interventions:
   - year: "2016"
     title: Restauration de la Maison de Maître

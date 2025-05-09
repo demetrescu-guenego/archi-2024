@@ -30,7 +30,7 @@ photos:
 
 moa:
   name: Commune de Fontains (77)
-  url: http://www.mairiefontains.fr/
+  url: https://www.mairiefontains.fr/
 interventions:
   - year: "2012"
     title: Etude préalable

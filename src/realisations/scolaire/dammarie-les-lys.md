@@ -12,7 +12,7 @@ photos:
 
 moa:
   name: Ville de Dammarie-les-Lys (77)
-  url: http://www.mairie-dammarie-les-lys.fr/
+  url: https://www.mairie-dammarie-les-lys.fr/
 interventions:
   - year: 2012
     title: Aménagement espace Jeunes

@@ -20,7 +20,7 @@ photos:
 
 moa:
   name: Commune du Mesnil-Amelot (77)
-  url: http://www.lemesnilamelot.fr/
+  url: https://www.lemesnilamelot.fr/
 interventions:
   - year: "2016"
     title:

@@ -18,7 +18,7 @@ photos:
 
 moa:
   name: Commune de Villeneuve-sous-Dammartin (77)
-  url: http://www.villeneuve-sous-dammartin.fr/
+  url: https://www.villeneuve-sous-dammartin.fr/
 interventions:
   - year: 2015 - 2017
     title: Restauration du bas-côté nord

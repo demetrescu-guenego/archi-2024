@@ -12,7 +12,7 @@ photos:
 
 moa:
   name: Commune de Varennes sur Seine (77)
-  url: http://www.varennes-sur-seine.fr/
+  url: https://www.varennes-sur-seine.fr/
 interventions:
   - year: 2015
     title: Restauration des parements intérieurs

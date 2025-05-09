@@ -12,7 +12,7 @@ photos:
 
 moa:
   name: Conseil départemental de l’Yonne (89)
-  url: http://www.yonne.fr/
+  url: https://www.yonne.fr/
 interventions:
   - year: 2012 – 2013
     title: Reprise de la structure des remparts, des charpentes et des bâtiments

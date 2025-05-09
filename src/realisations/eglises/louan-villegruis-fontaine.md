@@ -12,7 +12,7 @@ photos:
 
 moa:
   name: Commune de Louan-Villegruis-Fontaine (77)
-  url: http://www.louan-villegruis-fontaine.fr/
+  url: https://www.louan-villegruis-fontaine.fr/
 interventions:
   - year: 2013
     title: Restauration de l’église de Louan

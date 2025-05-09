@@ -5,7 +5,7 @@ description: Réfection des parements extérieurs - Crypte de l’Abbaye de Joua
 
 moa:
   name: Ville de Jouarre (77)
-  url: http://www.jouarre.fr/
+  url: https://www.jouarre.fr/
 interventions:
   - year: 2016
     title: Réfection des parements extérieurs

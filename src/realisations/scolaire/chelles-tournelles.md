@@ -18,7 +18,7 @@ photos:
 
 moa:
   name: Ville de Chelles (77)
-  url: http://www.chelles.fr/
+  url: https://www.chelles.fr/
 interventions:
   - year: 2014
     title: Travaux de mise en accessibilité de l'école primaire "Les Tournelles"

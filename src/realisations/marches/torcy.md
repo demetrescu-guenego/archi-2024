@@ -5,7 +5,7 @@ description:
 
 moa:
   name: Ville de Torcy (77)
-  url: http://www.ville-torcy.fr/
+  url: https://www.ville-torcy.fr/
 interventions:
   - year: 2009
     title: Réhabilitation du Marché couvert et réorganisation des extérieurs

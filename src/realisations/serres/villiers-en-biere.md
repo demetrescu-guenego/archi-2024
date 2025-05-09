@@ -12,7 +12,7 @@ photos:
 
 moa:
   name: Commune de Villiers-en-Bière (77)
-  url: http://www.mairievilliersenbiere.fr/
+  url: https://www.mairievilliersenbiere.fr/
 interventions:
   - year: "2017"
     ongoing: true

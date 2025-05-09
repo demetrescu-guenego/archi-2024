@@ -12,7 +12,7 @@ photos:
 
 moa:
   name: Commune Grisy-Suisnes (77)
-  url: http://www.grisy-suisnes.fr/
+  url: https://www.grisy-suisnes.fr/
 interventions:
   - year: 2010
     title: Restauration du beffroi communal à Grisy-Suisnes

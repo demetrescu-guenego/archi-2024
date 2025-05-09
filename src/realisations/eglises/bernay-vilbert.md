@@ -10,7 +10,7 @@ photos:
 
 moa:
   name: Commune de Bernay-Vilbert (77)
-  url: http://bernay-vilbert.fr/
+  url: https://bernay-vilbert.fr/
 interventions:
   - year: 2014
     title: Réfection des parements intérieurs et travaux d’électricité

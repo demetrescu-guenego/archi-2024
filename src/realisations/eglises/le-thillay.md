@@ -18,7 +18,7 @@ photos:
 
 moa:
   name: Commune du Le Thillay (95)
-  url: http://www.mairie-le-thillay.fr/
+  url: https://www.mairie-le-thillay.fr/
 
 interventions:
   - year: "2016"

@@ -35,7 +35,7 @@ photos:
 
 moa:
   name: Conseil départemental des Ardennes (08)
-  url: http://www.cd08.fr/
+  url: https://www.cd08.fr/
 interventions:
   - year: "2015"
     ongoing: true

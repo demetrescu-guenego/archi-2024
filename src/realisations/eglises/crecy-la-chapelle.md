@@ -3,7 +3,7 @@ layout: project
 title: "Eglise Saint Georges de Crécy-la-Chapelle"
 moa:
   name: Ville de Crécy-la-Chapelle (77)
-  url: http://www.crecylachapelle.eu/
+  url: https://www.crecylachapelle.eu/
 client:
   name: Crécy-la-Chapelle
   zip: 77580

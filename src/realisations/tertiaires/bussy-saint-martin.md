@@ -18,7 +18,7 @@ photos:
 
 moa:
   name: Commune de Bussy-Saint-Martin (77)
-  url: http://www.bussy-saint-martin.com/
+  url: https://www.bussy-saint-martin.com/
 interventions:
   - year: 2016
     title: Extension de la salle polyvalente à Bussy-Saint-Martin

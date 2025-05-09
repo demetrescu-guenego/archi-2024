@@ -19,7 +19,7 @@ photos:
 
 moa:
   name: Commune de Poincy (77)
-  url: http://www.poincy.fr/
+  url: https://www.poincy.fr/
 interventions:
   - year: 2016
     title: Réhabilitation de l’école
