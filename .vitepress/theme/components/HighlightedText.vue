@@ -6,10 +6,14 @@ const props = defineProps<{
   pattern?: string;
 }>();
 
+/**
+ * Normalize the text by removing accents and converting to lowercase.
+ * @param text
+ */
 const normalizeText = (text: string) => {
   return text
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
+    .normalize("NFD") // diacritics are separated from letters
+    .replace(/[\u0300-\u036f]/g, "") // remove diacritics
     .toLowerCase();
 };
 
