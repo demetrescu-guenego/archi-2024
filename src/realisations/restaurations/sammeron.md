@@ -4,15 +4,21 @@ description: Restauration des façades Mairie et Ecole à Sammeron
 
 photos:
   - url: 01.jpg
-    title: Avant travaux
+    title: Avant chantier
   - url: 02.jpg
-    title: Pendant travaux
+    title: Après chantier
   - url: 03.jpg
-    title: Réfection parements extérieurs
+    title: Vue mairie et église
+  - url: 04.jpg
+    title: Maire, Eglise Ecole
+  - url: 05.jpg
+    title: Chantier Ecole
+  - url: 06.jpg
+    title: Chantier Ecole
 
 moa:
   name: Commune de Sammeron (77)
-  url: http://www.sammeron.fr/
+  url: https://www.sammeron.fr/
 interventions:
   - year: 2012
     title: Restauration des façades Mairie et Ecole
