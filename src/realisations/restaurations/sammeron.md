@@ -6,15 +6,15 @@ photos:
   - url: 01.jpg
     title: Avant chantier
   - url: 02.jpg
-    title: Après chantier
+    title: Avant chantier
   - url: 03.jpg
-    title: Vue mairie et église
+    title: Après chantier
   - url: 04.jpg
-    title: Maire, Eglise Ecole
+    title: Maire, église, école
   - url: 05.jpg
-    title: Chantier Ecole
+    title: Chantier école
   - url: 06.jpg
-    title: Chantier Ecole
+    title: Chantier école
 
 moa:
   name: Commune de Sammeron (77)
