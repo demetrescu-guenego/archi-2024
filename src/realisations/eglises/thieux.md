@@ -35,6 +35,7 @@ interventions:
     missions:
       - Maîtrise d'oeuvre
       - OPC
+    price: 380 000 € HT
 
 client:
   name: Thieux
