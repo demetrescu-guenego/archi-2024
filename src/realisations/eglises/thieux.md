@@ -44,5 +44,49 @@ client:
   gps: 49.01087462361021, 2.6699744330094974
 ---
 
-Notre cabinet d'architecture a assuré une mission d'étude préalable et une
-mission de MOE pour la restauration de l'église Saint Médard de Thieux.
+# Église Saint-Médard à Thieux (Seine-et-Marne)
+
+L’église Saint-Médard de Thieux, située dans le département de Seine-et-Marne
+(77), est un édifice religieux catholique dont l’origine remonte au XVIe siècle.
+Elle incarne l’architecture religieuse locale en milieu rural, avec une
+structure simple mais harmonieuse.
+
+---
+
+## 🏛️ Plan et structure
+
+- L’église adopte un plan longitudinal classique avec une nef unique.
+- Le clocher, de plan carré, est situé au-dessus de la façade occidentale, dans
+  l’axe de l’entrée principale.
+- Il a été construit au XVIIIe siècle et est surmonté d’une flèche en ardoise.
+- L’édifice est orienté vers l’est, conformément à la tradition liturgique.
+
+---
+
+## 🧱 Matériaux et maçonnerie
+
+- L’ensemble de l’église est construit en pierre calcaire locale, typique de
+  l’Île-de-France.
+- Les murs extérieurs sont épaulés par des contreforts, gage de stabilité pour
+  la structure.
+- Les baies en arc brisé laissent entrer la lumière naturelle de manière
+  équilibrée dans la nef.
+
+---
+
+## 🎨 Décor et mobilier
+
+- **Retable du maître-autel** : classé au titre d’objet, il constitue un bel
+  exemple de l’art religieux du XVIIIe siècle.
+- **Tableau de Jean-Jacques Lagrenée** : également classé, ce tableau représente
+  une scène religieuse (non précisée) et reflète le style de ce peintre du
+  XVIIIe siècle.
+
+---
+
+## 🛠️ Évolutions et restaurations
+
+- L’église a connu plusieurs campagnes de restauration depuis sa construction
+  pour assurer la préservation de sa structure et de son mobilier.
+- Ces interventions ont contribué à la conservation de son caractère historique
+  et patrimonial.
