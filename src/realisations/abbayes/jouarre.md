@@ -20,12 +20,6 @@ moa:
   name: Ville de Jouarre (77)
   url: https://www.jouarre.fr/
 interventions:
-  - year: 2016
-    title: Réfection des parements extérieurs
-    missions:
-      - Etude
-      - AT
-    price: 145 360 € HT
   - year: 2015
     title: Etude préalable
 classement: Classé MH
