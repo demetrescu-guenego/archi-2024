@@ -23,7 +23,7 @@ moa:
   url: https://www.mairie-vannes.fr/musee-des-beaux-arts
 
 interventions:
-  - year: 2022
+  - year: 2022 - 2025
     title:
       Installation du musée des beaux arts sur le site du château de l'Hermine à
       Vannes
