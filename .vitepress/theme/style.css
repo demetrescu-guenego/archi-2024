@@ -2,6 +2,7 @@
 @import "./css/elements.css";
 @import "./css/animations.css";
 @import "./css/print.css";
+@import "./css/description.css";
 
 @import "tailwindcss";
 

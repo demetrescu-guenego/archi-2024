@@ -21,6 +21,7 @@ const [, , category, name] = route.path.split("/");
 const parallax = `/photos/projects/${category}/${name}/parallax.jpg`;
 
 const photos: Photo[] = frontmatter.value.photos ?? [];
+const credit_photos = frontmatter.value.credit_photos;
 
 // dangerous code
 const projectData: ProjectData = frontmatter.value as ProjectData;
@@ -122,9 +123,14 @@ onUnmounted(() => {
           <div>
             <ProjectCards :input="cards" @view="handleView" />
           </div>
+          <div v-if="credit_photos" class="text-sm text-neutral-400">
+            Crédit: {{ credit_photos }}
+          </div>
         </template>
         <h2>Description</h2>
-        <Content />
+        <div class="description">
+          <Content />
+        </div>
       </div>
     </section>
   </main>
