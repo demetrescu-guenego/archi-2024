@@ -14,10 +14,24 @@ const { frontmatter } = useData();
 
 const posts: Post[] = frontmatter.value.posts;
 
+const getFirstYear = (p: Post): number => {
+  const interventions = p.frontmatter.interventions ?? [];
+  const year = interventions
+    .map((i) => {
+      if (typeof i.year === "number") return i.year;
+      if (typeof i.year === "string") return +i.year.substring(0, 4);
+      return 0;
+    })
+    .sort()
+    .at(0);
+  return year ?? 0;
+};
+
 interface ProjectWithScore {
   title: string;
   url: string;
   client: Client;
+  year: number;
   searchScore: number;
 }
 
@@ -26,33 +40,50 @@ const projects = computed(() => {
     title: post.frontmatter.title,
     url: post.url,
     client: post.frontmatter.client,
+    year: getFirstYear(post),
   }));
-
-  if (!searchQuery.value) {
-    return allProjects.sort((a, b) => (a.title < b.title ? -1 : 1));
-  }
 
   return allProjects
     .map((project) => {
       const result = fuzzySearch(project.title, searchQuery.value);
       return {
         ...project,
-        searchScore: result?.score ?? -1,
+        searchScore: result?.score ?? (searchQuery.value ? -1 : 0),
       } as ProjectWithScore;
     })
     .filter((project) => project.searchScore >= 0)
-    .sort((a, b) => (b.searchScore ?? 0) - (a.searchScore ?? 0));
+    .sort((a, b) => {
+      if (!searchQuery.value) {
+        return a.title < b.title ? -1 : 1;
+      }
+      return (b.searchScore ?? 0) - (a.searchScore ?? 0);
+    });
 });
 
-const cards = computed(() => {
-  return projects.value.map((p) => {
-    return {
+interface CardsByYear {
+  year: number;
+  cards: CardContent[];
+}
+
+const groupedCards = computed(() => {
+  const map = new Map<number, CardContent[]>();
+
+  projects.value.forEach((p) => {
+    const card: CardContent = {
       title: p.title,
       url: p.url,
       imageUrl: getImageUrl(p.url),
       pattern: searchQuery.value,
-    } satisfies CardContent;
+    };
+    const list = map.get(p.year) ?? [];
+    list.push(card);
+    map.set(p.year, list);
   });
+
+  return Array.from(map.entries())
+    .filter(([, cards]) => cards.length > 0)
+    .sort((a, b) => b[0] - a[0])
+    .map(([year, cards]) => ({ year, cards }));
 });
 
 const resultCount = computed(() => projects.value.length);
@@ -78,6 +109,9 @@ const resultsLabel = computed(() => {
       </div>
     </div>
 
-    <NiceCards :input="cards" />
+    <div v-for="group in groupedCards" :key="group.year" class="mt-8">
+      <h2 class="text-xl font-bold">{{ group.year }}</h2>
+      <NiceCards :input="group.cards" />
+    </div>
   </div>
 </template>
