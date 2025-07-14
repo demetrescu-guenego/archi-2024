@@ -32,7 +32,7 @@ interventions:
     price: 26 500 000 € HT
 
 client:
-  name: Mairie de Vannes
+  name: Vannes
   zip: 56000
   type: Mairie
   gps: 47.65527283575739, -2.7565518249432794
