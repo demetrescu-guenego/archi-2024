@@ -65,7 +65,7 @@ interface CardsByYear {
   cards: CardContent[];
 }
 
-const groupedCards = computed(() => {
+const groupedCards = computed<CardsByYear[]>(() => {
   const map = new Map<number, CardContent[]>();
 
   projects.value.forEach((p) => {
@@ -100,7 +100,7 @@ const resultsLabel = computed(() => {
         v-autofocus
         type="text"
         placeholder="Rechercher par ville..."
-        class="w-full rounded-lg border border-fuchsia-900 px-4 py-2 focus:border-fuchsia-700 focus:outline-none focus:ring-2 focus:ring-fuchsia-700"
+        class="w-full rounded-lg border border-fuchsia-900 px-4 py-2 focus:border-fuchsia-700 focus:ring-2 focus:ring-fuchsia-700 focus:outline-none"
       />
 
       <!-- Results counter -->
