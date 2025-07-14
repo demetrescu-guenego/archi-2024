@@ -49,7 +49,7 @@ const goToSearch = () => {
     </a>
     <button
       @click="goToSearch"
-      class="flex items-center justify-center border border-transparent p-2 px-4 hover:border-white/50"
+      class="flex cursor-pointer items-center justify-center border border-transparent p-2 px-4 hover:border-white/50"
     >
       <FontAwesomeIcon :icon="faMagnifyingGlass" />
     </button>

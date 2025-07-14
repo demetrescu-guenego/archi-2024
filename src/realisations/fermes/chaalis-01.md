@@ -26,7 +26,7 @@ photos:
     title:
 
 interventions:
-  - year: "2024"
+  - year: "2025"
     title: Aménagement de chambres d'hôtes
     missions:
       - Maîtrise d'oeuvre
@@ -40,7 +40,7 @@ client:
   gps: 49.15467587734444, 2.6759047233124202
 ---
 
-### Descriptif structuré du projet (≤ 200 mots)
+### Descriptif structuré du projet
 
 **Maîtrise d’ouvrage et localisation**  
 Le projet est porté par l’Institut de France et concerne la restauration du
