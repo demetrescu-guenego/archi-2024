@@ -6,19 +6,19 @@ moa:
   url: https://www.coupvray.fr/
 
 interventions:
-  - year: 2016
-    title: Réfection de la toiture de l'aile sud de la commun du château
-    missions:
-      - Mission d'étude et de projet
-    price: 350 000 € HT
-
-  - year: 2018
+  - year: 2022
     title:
       Aménagement de l'aile ouest des communs du château, salle des écuries et
       parkings attenants
     missions:
       - Mission MOE complète
     price: 557 000 € HT
+
+  - year: 2018
+    title: Réfection de la toiture de l'aile sud de la commun du château
+    missions:
+      - Mission d'étude et de projet
+    price: 350 000 € HT
 
 photos:
   - url: 01.jpg
