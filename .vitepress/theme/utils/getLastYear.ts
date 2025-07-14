@@ -5,7 +5,10 @@ export const getLastYear = (p: Post): number => {
   const year = interventions
     .map((i) => {
       if (typeof i.year === "number") return i.year;
-      if (typeof i.year === "string") return +i.year.substring(0, 4);
+      if (typeof i.year === "string") {
+        const array = i.year.trim().split(/[ -]/);
+        return +array[array.length - 1];
+      }
       return 0;
     })
     .sort()
