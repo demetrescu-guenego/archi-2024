@@ -2,11 +2,13 @@
 import { useData } from "vitepress";
 import { computed, ref } from "vue";
 import { CardContent } from "../../interfaces/CardContent";
+import { CardsByYear } from "../../interfaces/CardsByYear";
 import { Post } from "../../interfaces/Post";
+import { ProjectWithScore } from "../../interfaces/ProjectWithScore";
 import { fuzzySearch } from "../utils/fuzzySearch";
 import { getImageUrl } from "../utils/getImageUrl";
+import { getLastYear } from "../utils/getLastYear";
 import NiceCards from "../widgets/NiceCards.vue";
-import { Client } from "../../interfaces/Client";
 
 const searchQuery = ref("");
 
@@ -14,33 +16,12 @@ const { frontmatter } = useData();
 
 const posts: Post[] = frontmatter.value.posts;
 
-const getFirstYear = (p: Post): number => {
-  const interventions = p.frontmatter.interventions ?? [];
-  const year = interventions
-    .map((i) => {
-      if (typeof i.year === "number") return i.year;
-      if (typeof i.year === "string") return +i.year.substring(0, 4);
-      return 0;
-    })
-    .sort()
-    .at(0);
-  return year ?? 0;
-};
-
-interface ProjectWithScore {
-  title: string;
-  url: string;
-  client: Client;
-  year: number;
-  searchScore: number;
-}
-
 const projects = computed(() => {
   const allProjects = posts.map((post) => ({
     title: post.frontmatter.title,
     url: post.url,
     client: post.frontmatter.client,
-    year: getFirstYear(post),
+    year: getLastYear(post),
   }));
 
   return allProjects
@@ -49,7 +30,7 @@ const projects = computed(() => {
       return {
         ...project,
         searchScore: result?.score ?? (searchQuery.value ? -1 : 0),
-      } as ProjectWithScore;
+      } satisfies ProjectWithScore;
     })
     .filter((project) => project.searchScore >= 0)
     .sort((a, b) => {
@@ -59,11 +40,6 @@ const projects = computed(() => {
       return (b.searchScore ?? 0) - (a.searchScore ?? 0);
     });
 });
-
-interface CardsByYear {
-  year: number;
-  cards: CardContent[];
-}
 
 const groupedCards = computed<CardsByYear[]>(() => {
   const map = new Map<number, CardContent[]>();
