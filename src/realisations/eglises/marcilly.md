@@ -21,20 +21,20 @@ moa:
   url: https://marcilly77.fr/
 
 interventions:
-  - year: "2017"
-    title: Restauration des façades du chevet
-    missions:
-      - Maîtrise d"oeuvre
-    price: 79 000 € HT
-  - year: "2022"
-    title: Etude préalable
-    missions:
-      - Etude préalable
   - year: "2025"
     title: Réfection des toitures du choeur et de la sacristie
     ongoing: true
     missions:
       - Maitrise d'oeuvre
+  - year: "2022"
+    title: Etude préalable
+    missions:
+      - Etude préalable
+  - year: "2017"
+    title: Restauration des façades du chevet
+    missions:
+      - Maîtrise d"oeuvre
+    price: 79 000 € HT
 
 client:
   name: Marcilly

@@ -8,7 +8,7 @@ defineProps<{
 
 <template>
   <ul>
-    <li>Maitrîse d'ouvrage : {{ input.moa.name }}</li>
+    <li>Maîtrise d'ouvrage : {{ input.moa.name }}</li>
     <li v-if="input.classement">Classement MH : {{ input.classement }}</li>
   </ul>
 </template>
