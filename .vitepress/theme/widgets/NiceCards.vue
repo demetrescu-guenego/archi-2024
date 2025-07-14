@@ -9,7 +9,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="flex flex-wrap justify-center gap-8 py-8">
+  <div class="flex flex-wrap justify-start gap-8 py-8">
     <a
       v-for="project in input"
       :key="project.title"
