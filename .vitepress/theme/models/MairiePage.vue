@@ -28,6 +28,6 @@ const cards: CardContent[] = projects.map((p) => {
       }})
     </h1>
 
-    <NiceCards :input="cards" />
+    <NiceCards :input="cards" class="justify-center" />
   </main>
 </template>

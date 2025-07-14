@@ -18,6 +18,6 @@ const cards: CardContent[] = categories.map((c) => {
 <template>
   <main class="flex flex-grow flex-col p-2">
     <h1>Nos réalisations</h1>
-    <NiceCards :input="cards" boldLabel />
+    <NiceCards :input="cards" boldLabel class="justify-center" />
   </main>
 </template>

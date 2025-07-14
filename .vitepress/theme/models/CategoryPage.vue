@@ -51,7 +51,7 @@ const title = computed(() => {
     <section class="mx-auto max-w-5xl">
       <h1 :title>{{ frontmatter.title }}</h1>
 
-      <NiceCards :input="cards" />
+      <NiceCards :input="cards" class="justify-center" />
     </section>
   </main>
 </template>

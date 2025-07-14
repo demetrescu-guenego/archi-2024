@@ -85,7 +85,7 @@ const resultsLabel = computed(() => {
       </div>
     </div>
 
-    <div v-for="group in groupedCards" :key="group.year" class="mt-8">
+    <div v-for="group in groupedCards" :key="group.year" class="mt-1">
       <h2 class="text-xl font-bold">{{ group.year }}</h2>
       <NiceCards :input="group.cards" />
     </div>
