@@ -17,7 +17,7 @@ const gotoUrl = async (url: string) => {
 </script>
 
 <template>
-  <table>
+  <table class="table">
     <thead>
       <tr class="bg-fuchsia-800 font-bold text-white">
         <th>Nom</th>

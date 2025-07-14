@@ -19,7 +19,7 @@ defineProps<{
       <img
         :src="project.imageUrl"
         alt=""
-        class="border-neutral-2=300 h-44 w-72 border-[0.2px] object-cover"
+        class="h-44 w-72 border-[0.2px] border-neutral-200 object-cover"
       />
       <div
         class="flex h-12 items-center justify-center px-4 text-center"

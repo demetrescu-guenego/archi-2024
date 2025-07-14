@@ -3,24 +3,24 @@
 @import "./css/animations.css";
 @import "./css/print.css";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer components {
-  .background {
-    @apply pointer-events-none absolute bottom-0 left-0 right-0 top-0 z-0 block overflow-hidden;
+@theme {
+  --font-sans: "Sarala", sans-serif;
+}
 
-    img {
-      @apply w-full animate-[hypnotize-mobile_240s_infinite] md:animate-[hypnotize_240s_infinite];
-    }
+.background {
+  @apply pointer-events-none absolute top-0 right-0 bottom-0 left-0 z-0 block overflow-hidden;
+
+  img {
+    @apply w-full animate-[hypnotize-mobile_240s_infinite] md:animate-[hypnotize_240s_infinite];
   }
+}
 
-  .parallax {
-    @apply m-0 overflow-hidden bg-transparent p-0;
-  }
+.parallax {
+  @apply m-0 overflow-hidden bg-transparent p-0;
+}
 
-  .introduce.first-time .block-title {
-    @apply animate-[introduce_2s_forwards];
-  }
+.introduce.first-time .block-title {
+  @apply animate-[introduce_2s_forwards];
 }

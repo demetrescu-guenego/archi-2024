@@ -22,7 +22,7 @@ const menu: MenuItem[] = [
 
 <template>
   <main class="flex flex-grow flex-col">
-    <section class="relative block h-[80vh] bg-fuchsia-900 text-white">
+    <section class="intro relative block h-[80vh] bg-fuchsia-900 text-white">
       <div role="presentation" class="background absolute block">
         <img
           src="/home/plan.svg"
@@ -43,11 +43,10 @@ const menu: MenuItem[] = [
             v-for="item in menu"
             :key="item.title"
             :href="item.href"
-            class="flex cursor-pointer items-center justify-center gap-2 border border-white px-8 py-4 text-center text-xl hover:bg-white hover:bg-opacity-10 sm:text-4xl"
+            class="flex cursor-pointer items-center justify-center gap-2 border border-white px-8 py-4 text-center text-xl hover:bg-white/10 sm:text-4xl"
             :class="{
-              'bg-opacity-25': item.primary,
-              'bg-white': item.primary,
-              'hover:bg-opacity-35': item.primary,
+              'bg-white/25': item.primary,
+              'hover:bg-white/35': item.primary,
             }"
             :target="item.newWindow ? '_blank' : '_self'"
           >
@@ -154,7 +153,7 @@ const menu: MenuItem[] = [
       </div>
     </section>
     <section class="project-description">
-      <div v-onscreen="'introduce'" class="mx-auto max-w-4xl px-2 pb-24 pt-16">
+      <div v-onscreen="'introduce'" class="mx-auto max-w-4xl px-2 pt-16 pb-24">
         <h1>Les architectes</h1>
         <h2 class="block-title">
           Suzana DEMETRESCU-GUÉNÉGO (Responsable du cabinet)

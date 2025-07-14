@@ -39,7 +39,7 @@ const goToSearch = () => {
       :href="item.href"
       v-for="item in props.list"
       :key="item.title"
-      class="border p-2 px-4 hover:border-white hover:border-opacity-50"
+      class="border p-2 px-4 hover:border-white/50"
       :class="{
         'border-white': isActive(item.href),
         'border-transparent': !isActive(item.href),
@@ -49,7 +49,7 @@ const goToSearch = () => {
     </a>
     <button
       @click="goToSearch"
-      class="flex items-center justify-center border border-transparent p-2 px-4 hover:border-white hover:border-opacity-50"
+      class="flex items-center justify-center border border-transparent p-2 px-4 hover:border-white/50"
     >
       <FontAwesomeIcon :icon="faMagnifyingGlass" />
     </button>
@@ -64,7 +64,7 @@ const goToSearch = () => {
     </button>
     <nav
       :class="isMenuOpen ? 'h-80' : 'h-0'"
-      class="fixed left-0 right-0 top-16 z-10 flex flex-col overflow-hidden border-neutral-300 bg-white text-fuchsia-900 transition-[height]"
+      class="fixed top-16 right-0 left-0 z-10 flex flex-col overflow-hidden border-neutral-300 bg-white text-fuchsia-900 transition-[height]"
     >
       <a
         :href="item.href"

@@ -7,7 +7,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <table>
+  <table class="table">
     <template v-for="(intervention, index) in props.input" :key="index">
       <thead>
         <tr>
