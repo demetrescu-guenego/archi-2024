@@ -2,12 +2,12 @@ import fs from "fs";
 import path from "path";
 import { globSync } from "glob";
 
-const baseDir = "src";
-const files = globSync(path.join(baseDir, "**/*.md"));
+const baseDir = path.resolve(process.cwd(), "src");
+const files = globSync("**/*.md", { cwd: baseDir, absolute: true });
 
 for (const file of files) {
   const text = fs.readFileSync(file, "utf8");
-  const match = text.match(/^---\n([\s\S]*?)\n---/);
+  const match = text.match(/^---\r?\n([\s\S]*?)\r?\n---/);
   if (!match) continue;
 
   const front = match[1];
@@ -39,7 +39,12 @@ for (const file of files) {
   if (!items.length) continue;
 
   const extractYear = (item) => {
-    const yearLine = item.find((l) => l.trimStart().startsWith("year:")) || "";
+    const yearLine =
+      item.find(
+        (l) =>
+          l.trimStart().startsWith("- year:") ||
+          l.trimStart().startsWith("year:"),
+      ) || "";
     const nums = yearLine.match(/\d{4}/g);
     if (!nums) return 0;
     return Math.max(...nums.map(Number));
@@ -62,5 +67,5 @@ for (const file of files) {
   const newYaml = lines.join("\n");
   const newContent = "---\n" + newYaml + "\n---" + text.slice(match[0].length);
   fs.writeFileSync(file, newContent);
-  console.log("Sorted interventions in", file);
+  console.log("Sorted interventions in", path.relative(baseDir, file));
 }
