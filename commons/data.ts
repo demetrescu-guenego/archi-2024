@@ -65,5 +65,10 @@ export const data = {
       title: "Maisons",
       name: "pontcarre",
     },
+    {
+      id: "habitations",
+      title: "Habitations",
+      name: "meaux",
+    },
   ],
 };
