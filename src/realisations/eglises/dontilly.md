@@ -4,23 +4,23 @@ title: Eglise Saint-Pierre-Saint-Paul de Donnemarie-Dontilly
 
 photos:
   - url: 01.jpg
-    title: Couverture après travaux
-  - url: 02.jpg
-    title: Couverture pendant travaux
-  - url: 03.jpg
-    title: Echafaudage
-  - url: 04.jpg
     title: Plan
+  - url: 02.jpg
+    title: Coupe
+  - url: 03.jpg
+    title: Façade
+  - url: 04.jpg
+    title: Couverture bas-côté nord
   - url: 05.jpg
-    title: Coupe projet
+    title: Pendant travaux
   - url: 06.jpg
-    title: Plan projet
+    title: Echafaudage
   - url: 07.jpg
-    title: Coupe projet
+    title: Bas-côté intérieur après travaux
   - url: 08.jpg
-    title: Façade entrée
+    title: Bas-côté intérieur après travaux
   - url: 09.jpg
-    title: Réfection parements extérieurs
+    title: Bas-côté intérieur pendant travaux
 
 moa:
   name: Communauté de communes Bassée-Montois (77)
