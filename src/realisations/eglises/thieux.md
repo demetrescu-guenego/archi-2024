@@ -27,15 +27,15 @@ moa:
   url: https://mairiedethieux.fr/
 
 interventions:
-  - year: 2016
-    title: Etude préalable
-
   - year: 2019
     title: Restauration du clocher
     missions:
       - Maîtrise d'oeuvre
       - OPC
     price: 380 000 € HT
+
+  - year: 2016
+    title: Etude préalable
 
 client:
   name: Thieux

@@ -26,10 +26,6 @@ moa:
   name: Commune de Coutençon (77)
   url: https://cc-basseemontois.fr/fr/annuaire-lieu/coutencon
 interventions:
-  - year: "2011"
-    title: Etude préalable sur l'église Notre-Dame-de-l'Assomption de Coutençon
-    missions:
-      - Etude préalable
   - year: "2017"
     title: Restauration des parements extérieurs de l'église et du clocher
     missions:
@@ -37,6 +33,10 @@ interventions:
       - OPC
     price: 297 000 € HT
 
+  - year: "2011"
+    title: Etude préalable sur l'église Notre-Dame-de-l'Assomption de Coutençon
+    missions:
+      - Etude préalable
 client:
   name: Coutençon
   zip: 77154

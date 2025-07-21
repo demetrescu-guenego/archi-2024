@@ -25,13 +25,12 @@ photos:
 moa:
   name: Commune de Dammartin-sur-Tigeaux (77)
 interventions:
-  - year: "2017-2020"
+  - year: "2024"
     ongoing: false
-    title: Restauration du clocher
+    title: Réfection des toitures de la travée ouest de la nef
     missions:
       - Maîtrise d'oeuvre
-      - OPC
-    price: 97 000 € HT
+    price: 66 000 € HT
 
   - year: "2020-2022"
     ongoing: false
@@ -41,12 +40,13 @@ interventions:
       - OPC
     price: 40 000 € HT
 
-  - year: "2024"
+  - year: "2017-2020"
     ongoing: false
-    title: Réfection des toitures de la travée ouest de la nef
+    title: Restauration du clocher
     missions:
       - Maîtrise d'oeuvre
-    price: 66 000 € HT
+      - OPC
+    price: 97 000 € HT
 
 client:
   name: Dammartin-sur-Tigeaux

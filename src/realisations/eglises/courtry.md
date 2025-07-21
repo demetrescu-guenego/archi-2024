@@ -19,13 +19,6 @@ photos:
 moa:
   name: Commune de Courtry (77)
 interventions:
-  - year: "2020"
-    ongoing: false
-    title: Refection des installations électriques et chauffage
-    missions:
-      - Maîtrise d"oeuvre
-      - OPC
-    price: 23 000 € HT
   - year: "2022"
     ongoing: false
     title: Restauration des parements intérieurs
@@ -33,6 +26,13 @@ interventions:
       - Maîtrise d"oeuvre
       - OPC
     price: 231 000 € HT
+  - year: "2020"
+    ongoing: false
+    title: Refection des installations électriques et chauffage
+    missions:
+      - Maîtrise d"oeuvre
+      - OPC
+    price: 23 000 € HT
 classement: Inscrit MH
 client:
   name: Courtry

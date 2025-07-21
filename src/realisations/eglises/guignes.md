@@ -39,8 +39,12 @@ moa:
   url: https://www.ville-guignes.fr/
 
 interventions:
-  - year: "2016"
-    title: Etude préalable
+  - year: "2019"
+    title: Restauration des parements intérieurs
+    missions:
+      - Maîtrise d'oeuvre
+      - OPC
+    price: 460 000 € HT
 
   - year: "2018"
     title:
@@ -50,12 +54,8 @@ interventions:
       - OPC
     price: 476 000 € HT
 
-  - year: "2019"
-    title: Restauration des parements intérieurs
-    missions:
-      - Maîtrise d'oeuvre
-      - OPC
-    price: 460 000 € HT
+  - year: "2016"
+    title: Etude préalable
 
 classement: " Inscrit MH"
 client:

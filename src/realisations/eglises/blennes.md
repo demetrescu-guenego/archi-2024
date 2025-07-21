@@ -27,9 +27,6 @@ moa:
   url: https://www.blennes.fr/
 
 interventions:
-  - year: 2021
-    title: Etude préalable
-
   - year: "2025"
     ongoing: true
     title: Réfection de la toiture et de la charpente du clocher
@@ -37,6 +34,9 @@ interventions:
       - Maîtrise d"oeuvre
       - OPC
     price: 680 000 € HT
+  - year: 2021
+    title: Etude préalable
+
 classement: Inscrit MH
 client:
   name: Blennes

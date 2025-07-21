@@ -38,9 +38,6 @@ moa:
   name: Commune de Chalautre-la-Petite (77)
   url: https://collectivite.fr/chalautre-la-petite
 interventions:
-  - year: "2012"
-    title: Etude préalable
-
   - year: "2016"
     title:
       Restauration des parements extérieurs, de la toiture et des vitraux de
@@ -48,6 +45,9 @@ interventions:
     missions:
       - Maîtrise d"oeuvre
     price: 191 000 € HT
+  - year: "2012"
+    title: Etude préalable
+
 client:
   name: Chalautre-la-Petite
   zip: 77160

@@ -27,14 +27,14 @@ moa:
   url: https://www.mairie-evry-gregy.fr/
 
 interventions:
-  - year: "2015"
-    title: Etude préalable
-
   - year: "2016-2018"
     title: Réfection de la chaussée et des parements
     missions:
       - Maîtrise d"oeuvre
     price: 60 000 € HT
+  - year: "2015"
+    title: Etude préalable
+
 classement: Classé MH
 client:
   name: Evry-Gregy-sur-Yerres

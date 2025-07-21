@@ -33,14 +33,6 @@ moa:
   url: https://marles-en-brie.fr/
 classement: Classé MH depuis 1922
 interventions:
-  - year: "2021"
-    ongoing: false
-    title: Réfection des toitures de la chapelle et de la sacristie
-    missions:
-      - Maîtrise d'oeuvre
-      - OPC
-    price: 136 000 € TTC
-
   - year: "2023"
     ongoing: false
     title: Réfection de la voute de la chapelle de la Vierge
@@ -48,6 +40,14 @@ interventions:
       - Maîtrise d'oeuvre
       - OPC
     price: 35 500 € TTC
+
+  - year: "2021"
+    ongoing: false
+    title: Réfection des toitures de la chapelle et de la sacristie
+    missions:
+      - Maîtrise d'oeuvre
+      - OPC
+    price: 136 000 € TTC
 
 client:
   name: Marles-en-Brie

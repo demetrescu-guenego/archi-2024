@@ -15,10 +15,6 @@ moa:
   url: https://www.bourgognefranchecomte.fr/
 
 interventions:
-  - year: "2012"
-    title: Etude préalable
-    missions:
-      - Aménagement de la cour intérieure et de la gestion du restaurant
   - year: "2017"
     title:
       Travaux de mise en conformité de la zone Laverie, de l’accès livraisons,
@@ -28,6 +24,10 @@ interventions:
       - OPC
     price: 70 000 € HT
 
+  - year: "2012"
+    title: Etude préalable
+    missions:
+      - Aménagement de la cour intérieure et de la gestion du restaurant
 client:
   name: Conseil Régional de Bourgogne
   zip: "21000"

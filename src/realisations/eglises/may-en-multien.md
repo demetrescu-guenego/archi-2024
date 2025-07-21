@@ -39,14 +39,14 @@ moa:
   url: https://may-en-multien.fr/fr
 
 interventions:
-  - year: "2019"
-    title: Etude préalable
-
   - year: "2021"
     title: Travaux d'urgence, réfection de la salle des catéchismes
     missions:
       - Maîtrise d"oeuvre
     price: 20 000 € HT
+
+  - year: "2019"
+    title: Etude préalable
 
 classement: Classée MH
 client:

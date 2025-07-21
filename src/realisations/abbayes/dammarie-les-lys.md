@@ -22,9 +22,6 @@ moa:
   name: Ville de Dammarie-les-Lys (77)
   url: https://www.mairie-dammarie-les-lys.fr/
 interventions:
-  - year: "2022"
-    title: Etude préalable
-
   - year: "2025"
     ongoing: true
     title:
@@ -33,6 +30,9 @@ interventions:
     missions:
       - Maîtrise d'oeuvre
     price: 331 000 € HT
+
+  - year: "2022"
+    title: Etude préalable
 
 classement: Classé MH
 client:

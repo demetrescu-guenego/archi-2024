@@ -32,15 +32,15 @@ moa:
   name: Commune de Fontains (77)
   url: https://www.mairiefontains.fr/
 interventions:
-  - year: "2012"
-    title: Etude préalable
-
   - year: "2018"
     title: Restauration de la façade sud et du clocher de l'église
     missions:
       - Maîtrise d"oeuvre
       - OPC
     price: 430 000 € HT
+  - year: "2012"
+    title: Etude préalable
+
 client:
   name: Fontains
   zip: 77370

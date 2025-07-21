@@ -43,8 +43,6 @@ photos:
 moa:
   name: Commune de Saint-Fiacre (77)
 interventions:
-  - year: 2015
-    title: Etude préalable
   - year: 2018
     title: Restauration des parements intérieurs et extérieurs de l’église
 
@@ -52,6 +50,8 @@ interventions:
       - Maîtrise d’œuvre
     price: 165 000 € HT
 
+  - year: 2015
+    title: Etude préalable
 client:
   name: Saint-Fiacre
   zip: 77470

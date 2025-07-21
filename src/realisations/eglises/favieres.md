@@ -26,6 +26,13 @@ moa:
   name: Commune de Favières-en-Brie (77)
   url: https://www.favieres77.fr/
 interventions:
+  - year: "2019"
+    title: Restauration des parements de la nef
+    missions:
+      - Maîtrise d"oeuvre
+      - OPC
+    price: 178 000 € HT
+
   - year: "2018"
     title:
       Restauration du bas-côté sud et réfection du porche d'entrée de l'église
@@ -34,13 +41,6 @@ interventions:
       - Maîtrise d"oeuvre
       - OPC
     price: 277 000 € HT
-  - year: "2019"
-    title: Restauration des parements de la nef
-    missions:
-      - Maîtrise d"oeuvre
-      - OPC
-    price: 178 000 € HT
-
 client:
   name: Favières
   zip: 77220

@@ -14,11 +14,11 @@ moa:
   name: Privé
 
 interventions:
-  - year: 2016
-    title: Permis de construire
   - year: 2020
     title: Permis de construire modificatif
 
+  - year: 2016
+    title: Permis de construire
 client:
   name: Privé
   zip: 93420

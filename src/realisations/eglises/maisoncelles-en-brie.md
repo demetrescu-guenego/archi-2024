@@ -43,22 +43,6 @@ photos:
 moa:
   name: Commune de Maisoncelles-en-Brie (77)
 interventions:
-  - year: 2011
-    title:
-      Travaux d’urgence, réfection ponctuelle de la toiture, travaux de peinture
-    missions:
-      - Maîtrise d'oeuvre
-    price: 15 000 € HT
-  - year: 2012
-    title: Mise en valeur des dalles funéraires
-    missions:
-      - Maîtrise d'oeuvre
-    price: 15 000 € HT
-  - year: 2018
-    title: Création d'un accès PMR
-    missions:
-      - Maîtrise d'oeuvre
-    price: 80 000 € HT
   - year: 2021
     title: Réfection des toitures et travaux divers de l’église Saint-Sulpice
     missions:
@@ -66,6 +50,22 @@ interventions:
       - OPC
     price: 308 000 € HT
 
+  - year: 2018
+    title: Création d'un accès PMR
+    missions:
+      - Maîtrise d'oeuvre
+    price: 80 000 € HT
+  - year: 2012
+    title: Mise en valeur des dalles funéraires
+    missions:
+      - Maîtrise d'oeuvre
+    price: 15 000 € HT
+  - year: 2011
+    title:
+      Travaux d’urgence, réfection ponctuelle de la toiture, travaux de peinture
+    missions:
+      - Maîtrise d'oeuvre
+    price: 15 000 € HT
 client:
   name: Maisoncelles-en-Brie
   zip: 77580
