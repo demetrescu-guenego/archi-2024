@@ -1,5 +1,5 @@
 ---
-title: Aménagement de la Maison d’Initiation à l’Environnement
+title: Maison d’Initiation à l’Environnement à Gurcy-le-Châtel
 
 photos:
   - url: 01.jpg

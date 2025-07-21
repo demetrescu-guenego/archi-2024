@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Réhabilitation de l’hôtel Macé de Montoury
+title: Réhabilitation de l’hôtel Macé de Montoury à Meaux
 
 photos:
   - url: 01.jpg
