@@ -6,7 +6,7 @@ moa:
   url: https://www.coupvray.fr/
 
 interventions:
-  - year: 2022
+  - year: 2021
     title:
       Aménagement de l'aile ouest des communs du château, salle des écuries et
       parkings attenants
