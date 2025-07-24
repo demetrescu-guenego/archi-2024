@@ -1,12 +1,25 @@
 <script setup lang="ts">
-import HeaderLayout from "./layout/HeaderLayout.vue";
-import FooterLayout from "./layout/FooterLayout.vue";
-import BodyLayout from "./layout/BodyLayout.vue";
-import RegisterSW from "./widgets/RegisterSW.vue";
-import { onMounted, onUnmounted } from "vue";
 import { useRouter } from "vitepress";
+import { computed, onMounted, onUnmounted } from "vue";
+import BodyLayout from "./layout/BodyLayout.vue";
+import FooterLayout from "./layout/FooterLayout.vue";
+import HeaderLayout from "./layout/HeaderLayout.vue";
+import RegisterSW from "./widgets/RegisterSW.vue";
+import { useRoute } from "vitepress";
 
 const router = useRouter();
+
+const route = useRoute();
+const path = computed(() => {
+  return route.path;
+});
+
+const printableType = computed(() => {
+  if (path.value.match(new RegExp("/realisations/.*/.*"))) {
+    return "printable-one";
+  }
+  return "printable-many";
+});
 
 const handleKeydown = (event: KeyboardEvent) => {
   if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === "k") {
@@ -29,7 +42,10 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="printable flex min-h-screen flex-col justify-between">
+  <div
+    class="flex min-h-screen flex-col justify-between"
+    :class="printableType"
+  >
     <HeaderLayout />
     <BodyLayout />
     <FooterLayout />

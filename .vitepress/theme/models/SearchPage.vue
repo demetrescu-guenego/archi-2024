@@ -69,7 +69,7 @@ const resultsLabel = computed(() => {
 </script>
 
 <template>
-  <div class="px-8 py-6">
+  <div class="px-8 py-6 print:hidden">
     <div class="mx-auto max-w-5xl">
       <input
         v-model="searchQuery"
@@ -86,6 +86,16 @@ const resultsLabel = computed(() => {
     </div>
 
     <div v-for="group in groupedCards" :key="group.year" class="mt-1">
+      <h2 class="text-xl font-bold">{{ group.year }}</h2>
+      <NiceCards :input="group.cards" />
+    </div>
+  </div>
+  <div class="hidden px-8 py-6 print:block">
+    <div
+      v-for="group in groupedCards"
+      :key="group.year"
+      class="mt-1 flex w-full flex-col justify-center"
+    >
       <h2 class="text-xl font-bold">{{ group.year }}</h2>
       <NiceCards :input="group.cards" />
     </div>

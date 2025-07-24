@@ -4,11 +4,19 @@
 }
 
 @media print {
-  div.printable {
+  div.printable-one {
     width: 21cm;
     height: 29.7cm;
     max-height: 29.7cm;
     overflow: hidden;
+    footer {
+      display: none;
+    }
+  }
+
+  div.printable-many {
+    width: 21cm;
+    height: 29.7cm;
     footer {
       display: none;
     }
