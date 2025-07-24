@@ -4,29 +4,29 @@ description: Eglise Saint Hubert de Les Mârets
 
 photos:
   - url: 01.jpg
-    title: Couverture après travaux
+    title: Couverture et façade après travaux
   - url: 02.jpg
-    title: Couverture pendant travaux
+    title: Couverture et façade après travaux
   - url: 03.jpg
-    title: Echafaudage
+    title: Encadrement protection vitrail
   - url: 04.jpg
-    title: Plan
+    title: Fin de chantier
   - url: 05.jpg
-    title: Coupe projet
+    title: Réfection façade
   - url: 06.jpg
-    title: Plan projet
+    title: Réfection façade
   - url: 07.jpg
-    title: Coupe projet
+    title: Réfection couverture
   - url: 08.jpg
-    title: Façade entrée
+    title: Réfection couverture
   - url: 09.jpg
-    title: Réfection parements extérieurs
+    title: Ecran sous toiture
   - url: 10.jpg
-    title: Coupe projet
+    title: Remplacement des tuiles
   - url: 11.jpg
-    title: Façade entrée
+    title: Reprise de charpente
   - url: 12.jpg
-    title: Réfection parements extérieurs
+    title: Echafaudage
 
 moa:
   name: Commune de Les Mârets (77)
@@ -68,7 +68,6 @@ client:
   L’église adopte un plan rare en milieu rural : un hexagone avec **quatre
   chapelles rayonnantes** et un **clocher-porche occidental**.  
   L’organisation spatiale suit une ligne **ouest-est** :
-
   - Clocher-porche
   - Rotonde formant la nef
   - Chœur légèrement saillant à l’est
