@@ -36,8 +36,8 @@ const goToSearch = () => {
 <template>
   <nav class="flex gap-4 px-4" v-if="isDesktop">
     <a
-      :href="item.href"
       v-for="item in props.list"
+      :href="item.href"
       :key="item.title"
       class="border p-2 px-4 hover:border-white/50"
       :class="{
