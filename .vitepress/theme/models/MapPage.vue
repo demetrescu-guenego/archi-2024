@@ -9,6 +9,9 @@ import DataMap from "../widgets/DataMap.vue";
 const { frontmatter } = useData();
 
 const getPosts = () => {
+  if (!("window" in globalThis)) {
+    return frontmatter.value.posts;
+  }
   const search = window.location.search;
   const params = new URLSearchParams(search);
   const projectUrl = params.get("projectUrl");
