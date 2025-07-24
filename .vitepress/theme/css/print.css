@@ -17,6 +17,9 @@
   div.printable-many {
     width: 21cm;
     height: 29.7cm;
+    header {
+      display: none;
+    }
     footer {
       display: none;
     }
