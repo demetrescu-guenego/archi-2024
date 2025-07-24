@@ -5,7 +5,6 @@ import { Localisation } from "../../interfaces/Localisation";
 const props = defineProps<{
   localisations: Localisation[];
 }>();
-console.log("props: ", props);
 
 const mapElt = useTemplateRef("map");
 
@@ -15,6 +14,14 @@ const egliseIcon = "/marker-church.svg";
 
 const shadowUrl =
   "https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png";
+
+const getCenterGPS = (): [number, number] => {
+  if (props.localisations.length !== 1) {
+    return [48.78648245905831, 2.712753660065945];
+  }
+  const gps = props.localisations[0].gps;
+  return [gps.latitude, gps.longitude];
+};
 
 onMounted(async () => {
   const L = await import("leaflet");
@@ -34,10 +41,9 @@ onMounted(async () => {
     });
   };
 
-  const map = L.map(mapElt.value).setView(
-    [48.78648245905831, 2.712753660065945],
-    10,
-  );
+  const centerGPS = getCenterGPS();
+
+  const map = L.map(mapElt.value).setView(centerGPS, 10);
   L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution:
       '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',

@@ -16,8 +16,6 @@ const getPosts = () => {
     return frontmatter.value.posts;
   }
   const post = frontmatter.value.posts.find((post) => {
-    console.log("post.url: ", post.url);
-    console.log("projectUrl: ", projectUrl);
     return "/" + post.url === projectUrl;
   });
   if (post === undefined) {
