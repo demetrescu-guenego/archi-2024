@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useRoute } from "vitepress";
 import { GPSCoord } from "../../interfaces/GPSCoord";
 import { ProjectData } from "../../interfaces/ProjectData";
 import { normalizeGPS } from "../../utils/normalize-gps";
@@ -6,6 +7,8 @@ import { normalizeGPS } from "../../utils/normalize-gps";
 defineProps<{
   input: ProjectData;
 }>();
+
+const route = useRoute();
 
 const showGPS = (gps: GPSCoord | undefined) => {
   if (gps === undefined) {
@@ -36,7 +39,7 @@ const showGPS = (gps: GPSCoord | undefined) => {
         <td>Localisation</td>
         <td>
           <div class="flex gap-2">
-            <a :href="`/carte?project=${input.client.gps}`"> Voir la carte </a>
+            <a :href="`/carte?projectUrl=${route.path}`"> Voir la carte </a>
             <span class="text-sm text-gray-500">{{
               showGPS(input.client.gps)
             }}</span>

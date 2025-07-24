@@ -8,7 +8,25 @@ import DataMap from "../widgets/DataMap.vue";
 
 const { frontmatter } = useData();
 
-const posts: Post[] = frontmatter.value.posts;
+const getPosts = () => {
+  const search = window.location.search;
+  const params = new URLSearchParams(search);
+  const projectUrl = params.get("projectUrl");
+  if (!projectUrl) {
+    return frontmatter.value.posts;
+  }
+  const post = frontmatter.value.posts.find((post) => {
+    console.log("post.url: ", post.url);
+    console.log("projectUrl: ", projectUrl);
+    return "/" + post.url === projectUrl;
+  });
+  if (post === undefined) {
+    return frontmatter.value.posts;
+  }
+  return [post];
+};
+
+const posts: Post[] = getPosts();
 
 const DEFAULT_GPS: GPSCoord = { latitude: 0, longitude: 0 };
 
