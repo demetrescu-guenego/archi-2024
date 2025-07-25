@@ -18,12 +18,15 @@ export const getPrintableItems = (
 };
 
 const adjustHeaderBlankFooter = (printableItems: PrintableItem[]) => {
+  console.log("printableItems size: ", printableItems.length);
   const itemPerPage = 10;
   const maxItemPerPage = itemPerPage - 2;
   // purpose is to add a header and footer every 8 elements, in order to make 10 elements per page
 
   let pageCounter = 0;
   const totalPage = Math.ceil(printableItems.length / maxItemPerPage);
+  const remainingBlank =
+    maxItemPerPage - (printableItems.length % maxItemPerPage);
 
   // add footer every 8 items.
   const p1: PrintableItem[] = [];
@@ -40,7 +43,7 @@ const adjustHeaderBlankFooter = (printableItems: PrintableItem[]) => {
     p1.push(printableItems[i]);
   }
   // at the end complet with blank
-  for (let i = 0; i < maxItemPerPage - (p1.length % maxItemPerPage); i++) {
+  for (let i = 0; i < remainingBlank; i++) {
     p1.push({ type: "blank" });
   }
   // and a footer

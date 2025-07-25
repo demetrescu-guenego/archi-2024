@@ -25,3 +25,7 @@
 .introduce.first-time .block-title {
   @apply animate-[introduce_2s_forwards];
 }
+
+@utility height-item {
+  height: 2.97cm;
+}

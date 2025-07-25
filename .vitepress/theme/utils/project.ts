@@ -20,17 +20,14 @@ export const getMontantDesTravaux = (post: Post): number | undefined => {
 export const getPriceFromIntervention = (
   priceStr: string | undefined,
 ): number | undefined => {
-  console.log("priceStr: ", priceStr);
   if (priceStr === undefined) {
     return undefined;
   }
   const onlyNbr = priceStr.replace(/\D/g, "");
-  console.log("onlyNbr: ", onlyNbr);
   return +onlyNbr;
 };
 
 export const getMissions = (post: Post) => {
-  console.log("post: ", post.frontmatter.title);
   if (post.frontmatter.interventions === undefined) {
     return undefined;
   }
@@ -41,8 +38,6 @@ export const getMissions = (post: Post) => {
     acc.push(...current.missions);
     return acc;
   }, [] as string[]);
-  console.log("missions: ", missions);
   const result = [...new Set(missions)].sort();
-  console.log("result: ", result);
   return result;
 };

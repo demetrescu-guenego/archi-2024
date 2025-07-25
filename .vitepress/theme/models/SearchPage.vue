@@ -102,7 +102,7 @@ const printableItems = getPrintableItems(groupedCards.value);
     <div
       v-for="(item, index) in printableItems"
       :key="index"
-      class="h-28 odd:bg-amber-50"
+      class="height-item odd:bg-amber-50"
     >
       <template v-if="item.type === 'header'">
         <div class="flex h-20">
@@ -118,22 +118,22 @@ const printableItems = getPrintableItems(groupedCards.value);
       </template>
       <template v-if="item.type === 'footer'">
         <div
-          class="flex h-28 items-center justify-center text-center text-gray-500"
+          class="height-item flex items-center justify-center text-center text-gray-500"
         >
           Page {{ item.current }} / {{ item.total }}
         </div>
       </template>
       <template v-if="item.type === 'year'">
-        <h2 class="pt-4 pb-2 text-xl font-bold">{{ item.year }}</h2>
+        <div class="text-xl font-bold">{{ item.year }}</div>
       </template>
       <template v-if="item.type === 'project'">
-        <div>
+        <div class="flex h-full">
           <img
             :src="item.project.imageUrl"
             alt=""
             class="h-22 w-36 border-[0.2px] border-neutral-200 object-cover"
           />
-          <div class="h-28 pl-4">
+          <div class="height-item grow pl-4">
             <div class="text-lg font-bold text-fuchsia-900">
               {{ item.project.title }}
             </div>
