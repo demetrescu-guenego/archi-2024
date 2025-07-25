@@ -10,6 +10,7 @@ import { getImageUrl } from "../utils/getImageUrl";
 import { getLastYear } from "../utils/getLastYear";
 import { getMissions, getMontantDesTravaux } from "../utils/project";
 import NiceCards from "../widgets/NiceCards.vue";
+import { getPrintableItems } from "../utils/printableSearch";
 
 const searchQuery = ref("");
 
@@ -71,6 +72,8 @@ const resultCount = computed(() => projects.value.length);
 const resultsLabel = computed(() => {
   return `${resultCount.value} projet${resultCount.value !== 1 ? "s" : ""} trouvé${resultCount.value !== 1 ? "s" : ""}`;
 });
+
+const printableItems = getPrintableItems(groupedCards.value);
 </script>
 
 <template>
@@ -95,59 +98,55 @@ const resultsLabel = computed(() => {
       <NiceCards :input="group.cards" />
     </div>
   </div>
-  <table class="px-8 py-6">
-    <thead class="h-28">
-      <tr class="h-20 align-top">
-        <td colspan="2">
-          <div class="flex h-20">
-            <span
-              class="flex w-60 flex-col items-center justify-center bg-fuchsia-900 text-white"
-            >
-              <span>Cabinet d'architecture</span>
-              <span>DEMETRESCU-GUÉNÉGO</span>
-              <span class="underline">https://guenego.com</span>
-            </span>
-            <img src="/home/header.jpg" loading="lazy" class="grow" />
-          </div>
-        </td>
-      </tr>
-    </thead>
-    <tbody>
-      <template v-for="group in groupedCards" :key="group.year">
-        <tr>
-          <td class="px-4">
-            <h2 class="text-xl font-bold">{{ group.year }}</h2>
-          </td>
-        </tr>
-        <tr v-for="project in group.cards" :key="project.title">
-          <td class="h-28 w-44 px-4 align-top">
-            <img
-              :src="project.imageUrl"
-              alt=""
-              class="h-22 w-36 border-[0.2px] border-neutral-200 object-cover"
-            />
-          </td>
-          <td class="h-28 align-top">
-            <div class="h-28 pl-4">
-              <div class="text-lg font-bold text-fuchsia-900">
-                {{ project.title }}
-              </div>
-              <div v-if="project.price">
-                Montant des travaux : {{ project.price.toLocaleString("fr") }} €
-                HT
-              </div>
-              <div v-if="project.missions">
-                Missions : {{ project.missions.join(", ") }}
-              </div>
-            </div>
-          </td>
-        </tr>
+  <div>
+    <div
+      v-for="(item, index) in printableItems"
+      :key="index"
+      class="h-28 odd:bg-amber-50"
+    >
+      <template v-if="item.type === 'header'">
+        <div class="flex h-20">
+          <span
+            class="flex w-60 flex-col items-center justify-center bg-fuchsia-900 text-white"
+          >
+            <span>Cabinet d'architecture</span>
+            <span>DEMETRESCU-GUÉNÉGO</span>
+            <span class="underline">https://guenego.com</span>
+          </span>
+          <img src="/home/header.jpg" loading="lazy" class="grow" />
+        </div>
       </template>
-    </tbody>
-    <tfoot>
-      <tr>
-        <td></td>
-      </tr>
-    </tfoot>
-  </table>
+      <template v-if="item.type === 'footer'">
+        <div
+          class="flex h-28 items-center justify-center text-center text-gray-500"
+        >
+          Page {{ item.current }} / {{ item.total }}
+        </div>
+      </template>
+      <template v-if="item.type === 'year'">
+        <h2 class="pt-4 pb-2 text-xl font-bold">{{ item.year }}</h2>
+      </template>
+      <template v-if="item.type === 'project'">
+        <div>
+          <img
+            :src="item.project.imageUrl"
+            alt=""
+            class="h-22 w-36 border-[0.2px] border-neutral-200 object-cover"
+          />
+          <div class="h-28 pl-4">
+            <div class="text-lg font-bold text-fuchsia-900">
+              {{ item.project.title }}
+            </div>
+            <div v-if="item.project.price">
+              Montant des travaux :
+              {{ item.project.price.toLocaleString("fr") }} € HT
+            </div>
+            <div v-if="item.project.missions">
+              Missions : {{ item.project.missions.join(", ") }}
+            </div>
+          </div>
+        </div>
+      </template>
+    </div>
+  </div>
 </template>
