@@ -73,11 +73,13 @@ const resultsLabel = computed(() => {
   return `${resultCount.value} projet${resultCount.value !== 1 ? "s" : ""} trouvé${resultCount.value !== 1 ? "s" : ""}`;
 });
 
-const printableItems = getPrintableItems(groupedCards.value);
+const printableItems = computed(() => {
+  return getPrintableItems(groupedCards.value);
+});
 </script>
 
 <template>
-  <div class="hidden px-8 py-6 print:hidden">
+  <div class="px-8 py-6 print:hidden">
     <div class="mx-auto max-w-5xl">
       <input
         v-model="searchQuery"
@@ -98,11 +100,11 @@ const printableItems = getPrintableItems(groupedCards.value);
       <NiceCards :input="group.cards" />
     </div>
   </div>
-  <div>
+  <div class="hidden print:block">
     <div
       v-for="(item, index) in printableItems"
       :key="index"
-      class="height-item odd:bg-amber-50"
+      class="height-item"
     >
       <template v-if="item.type === 'header'">
         <div class="flex h-20">
@@ -124,10 +126,14 @@ const printableItems = getPrintableItems(groupedCards.value);
         </div>
       </template>
       <template v-if="item.type === 'year'">
-        <div class="text-xl font-bold">{{ item.year }}</div>
+        <div
+          class="flex h-full items-end p-4 text-2xl font-bold text-fuchsia-900"
+        >
+          {{ item.year }}
+        </div>
       </template>
       <template v-if="item.type === 'project'">
-        <div class="flex h-full">
+        <div class="flex h-full px-2">
           <img
             :src="item.project.imageUrl"
             alt=""
