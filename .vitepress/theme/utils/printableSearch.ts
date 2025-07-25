@@ -26,7 +26,8 @@ const adjustHeaderBlankFooter = (printableItems: PrintableItem[]) => {
   let pageCounter = 0;
   const totalPage = Math.ceil(printableItems.length / maxItemPerPage);
   const remainingBlank =
-    maxItemPerPage - (printableItems.length % maxItemPerPage);
+    (maxItemPerPage - (printableItems.length % maxItemPerPage)) %
+    maxItemPerPage;
 
   // add footer every 8 items.
   const p1: PrintableItem[] = [];

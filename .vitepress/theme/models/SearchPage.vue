@@ -104,7 +104,7 @@ const printableItems = computed(() => {
     <div
       v-for="(item, index) in printableItems"
       :key="index"
-      class="height-item"
+      class="height-item odd:bg-amber-50"
     >
       <template v-if="item.type === 'header'">
         <div class="flex h-20">
