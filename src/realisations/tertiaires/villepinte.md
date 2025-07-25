@@ -16,6 +16,8 @@ moa:
 interventions:
   - year: 2020
     title: Permis de construire modificatif
+    missions:
+      - Permis de construire
 
   - year: 2016
     title: Permis de construire

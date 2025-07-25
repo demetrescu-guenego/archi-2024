@@ -5,9 +5,11 @@ import { CardContent } from "../../interfaces/CardContent";
 import { CardsByYear } from "../../interfaces/CardsByYear";
 import { Post } from "../../interfaces/Post";
 import { ProjectWithScore } from "../../interfaces/ProjectWithScore";
+import HeaderLayout from "../layout/HeaderLayout.vue";
 import { fuzzySearch } from "../utils/fuzzySearch";
 import { getImageUrl } from "../utils/getImageUrl";
 import { getLastYear } from "../utils/getLastYear";
+import { getMissions, getMontantDesTravaux } from "../utils/project";
 import NiceCards from "../widgets/NiceCards.vue";
 
 const searchQuery = ref("");
@@ -22,6 +24,8 @@ const projects = computed(() => {
     url: post.url,
     client: post.frontmatter.client,
     year: getLastYear(post),
+    price: getMontantDesTravaux(post),
+    missions: getMissions(post),
   }));
 
   return allProjects
@@ -50,6 +54,8 @@ const groupedCards = computed<CardsByYear[]>(() => {
       url: p.url,
       imageUrl: getImageUrl(p.url),
       pattern: searchQuery.value,
+      price: p.price,
+      missions: p.missions,
     };
     const list = map.get(p.year) ?? [];
     list.push(card);
@@ -69,7 +75,7 @@ const resultsLabel = computed(() => {
 </script>
 
 <template>
-  <div class="px-8 py-6 print:hidden">
+  <div class="hidden px-8 py-6 print:hidden">
     <div class="mx-auto max-w-5xl">
       <input
         v-model="searchQuery"
@@ -90,14 +96,48 @@ const resultsLabel = computed(() => {
       <NiceCards :input="group.cards" />
     </div>
   </div>
-  <div class="hidden px-8 py-6 print:block">
-    <div
-      v-for="group in groupedCards"
-      :key="group.year"
-      class="mt-1 flex w-full flex-col justify-center"
-    >
-      <h2 class="text-xl font-bold">{{ group.year }}</h2>
-      <NiceCards :input="group.cards" />
-    </div>
-  </div>
+  <table class="px-8 py-6">
+    <thead>
+      <tr>
+        <td>
+          <HeaderLayout />
+        </td>
+      </tr>
+    </thead>
+    <tbody>
+      <template v-for="group in groupedCards" :key="group.year">
+        <tr>
+          <td>
+            <h2 class="text-xl font-bold">{{ group.year }}</h2>
+          </td>
+        </tr>
+        <tr v-for="project in group.cards" :key="project.title">
+          <td>
+            <img
+              :src="project.imageUrl"
+              alt=""
+              class="h-44 w-72 border-[0.2px] border-neutral-200 object-cover"
+            />
+          </td>
+          <td>
+            <div>
+              <div>{{ project.title }}</div>
+              <div v-if="project.price">
+                Montant des travaux : {{ project.price.toLocaleString("fr") }} €
+                HT
+              </div>
+              <div v-if="project.missions">
+                Missions : {{ project.missions.join(", ") }}
+              </div>
+            </div>
+          </td>
+        </tr>
+      </template>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td></td>
+      </tr>
+    </tfoot>
+  </table>
 </template>

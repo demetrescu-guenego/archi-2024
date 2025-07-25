@@ -25,7 +25,7 @@ interventions:
     title: Réfection des toitures du choeur et de la sacristie
     ongoing: true
     missions:
-      - Maitrise d'oeuvre
+      - Maîtrise d'oeuvre
   - year: "2022"
     title: Etude préalable
     missions:

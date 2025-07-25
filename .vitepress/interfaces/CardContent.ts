@@ -4,4 +4,6 @@ export interface CardContent {
   imageUrl: string;
   year?: number;
   pattern?: string;
+  price?: number;
+  missions?: string[];
 }
