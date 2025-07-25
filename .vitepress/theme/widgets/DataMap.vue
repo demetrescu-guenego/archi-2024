@@ -1,12 +1,16 @@
 <script lang="ts" setup>
-import { onMounted, useTemplateRef } from "vue";
+import { onMounted, ref, useTemplateRef, watch } from "vue";
 import { Localisation } from "../../interfaces/Localisation";
+import type { Map } from "leaflet";
 
 const props = defineProps<{
   localisations: Localisation[];
 }>();
 
-const mapElt = useTemplateRef("map");
+const mapElt = useTemplateRef("mapRef");
+
+const map = ref<Map | null>(null);
+console.log("map: ", map.value);
 
 const greenMarkerIcon = "/marker.svg";
 
@@ -23,7 +27,7 @@ const getCenterGPS = (): [number, number] => {
   return [gps.latitude, gps.longitude];
 };
 
-onMounted(async () => {
+const reload = async () => {
   const L = await import("leaflet");
   if (mapElt.value === null) {
     return;
@@ -43,24 +47,37 @@ onMounted(async () => {
 
   const centerGPS = getCenterGPS();
 
-  const map = L.map(mapElt.value).setView(centerGPS, 10);
-  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    attribution:
-      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-  }).addTo(map);
+  if (map.value !== null) {
+    console.log("map.value: ", map.value);
+    console.log("remove");
+    map.value.remove();
+    map.value = null;
+  }
+
+  if (map.value === null) {
+    map.value = L.map(mapElt.value).setView(centerGPS, 10);
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    }).addTo(map.value as Map);
+  }
 
   for (const localisation of props.localisations) {
     L.marker([localisation.gps.latitude, localisation.gps.longitude], {
       icon: getIcon(localisation),
     })
-      .addTo(map)
+      .addTo(map.value as Map)
       .bindPopup(
         `<a href="${localisation.url}" style="text-decoration: underline;">${localisation.title} (${localisation.zipcode})</a>`,
       );
   }
-});
+};
+
+onMounted(reload);
+
+watch(() => props.localisations, reload);
 </script>
 
 <template>
-  <div ref="map" class="h-96 w-full"></div>
+  <div ref="mapRef" class="h-96 w-full"></div>
 </template>
