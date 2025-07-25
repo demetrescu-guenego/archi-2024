@@ -5,7 +5,6 @@ import { CardContent } from "../../interfaces/CardContent";
 import { CardsByYear } from "../../interfaces/CardsByYear";
 import { Post } from "../../interfaces/Post";
 import { ProjectWithScore } from "../../interfaces/ProjectWithScore";
-import HeaderLayout from "../layout/HeaderLayout.vue";
 import { fuzzySearch } from "../utils/fuzzySearch";
 import { getImageUrl } from "../utils/getImageUrl";
 import { getLastYear } from "../utils/getLastYear";
@@ -97,31 +96,42 @@ const resultsLabel = computed(() => {
     </div>
   </div>
   <table class="px-8 py-6">
-    <thead>
-      <tr>
-        <td>
-          <HeaderLayout />
+    <thead class="h-28">
+      <tr class="h-20 align-top">
+        <td colspan="2">
+          <div class="flex h-20">
+            <span
+              class="flex w-60 flex-col items-center justify-center bg-fuchsia-900 text-white"
+            >
+              <span>Cabinet d'architecture</span>
+              <span>DEMETRESCU-GUÉNÉGO</span>
+              <span class="underline">https://guenego.com</span>
+            </span>
+            <img src="/home/header.jpg" loading="lazy" class="grow" />
+          </div>
         </td>
       </tr>
     </thead>
     <tbody>
       <template v-for="group in groupedCards" :key="group.year">
         <tr>
-          <td>
+          <td class="px-4">
             <h2 class="text-xl font-bold">{{ group.year }}</h2>
           </td>
         </tr>
         <tr v-for="project in group.cards" :key="project.title">
-          <td>
+          <td class="h-28 w-44 px-4 align-top">
             <img
               :src="project.imageUrl"
               alt=""
-              class="h-44 w-72 border-[0.2px] border-neutral-200 object-cover"
+              class="h-22 w-36 border-[0.2px] border-neutral-200 object-cover"
             />
           </td>
-          <td>
-            <div>
-              <div>{{ project.title }}</div>
+          <td class="h-28 align-top">
+            <div class="h-28 pl-4">
+              <div class="text-lg font-bold text-fuchsia-900">
+                {{ project.title }}
+              </div>
               <div v-if="project.price">
                 Montant des travaux : {{ project.price.toLocaleString("fr") }} €
                 HT
