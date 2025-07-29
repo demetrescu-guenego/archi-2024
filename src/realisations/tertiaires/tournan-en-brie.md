@@ -22,7 +22,7 @@ moa:
   name: Ville de Tournan-en-Brie (77)
   url: https://www.tournan-en-brie.fr/
 interventions:
-  - year: "2017"
+  - year: "2019"
     title: Réhabilitation d’une ancienne grange en locaux administratifs
     missions:
       - Maîtrise d'oeuvre
